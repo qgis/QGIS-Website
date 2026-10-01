@@ -11,10 +11,10 @@ type: page
 {{<rich-box-start id="binary-availability" >}}
 
 {{<rich-content-start themeClass="coloring-2" >}}
-#### About these dates and binary availability
-The dates below are **source code** release dates. Binary installers are built by the platform maintainers and normally follow soon after, usually within a few days.
+#### Over deze datums en de beschikbaarheid van binair
+De datums hieronder zijn uitgavedatums voor de **broncode**. Binaire installatieprogramma's worden gebouwd door de beheerders van de platforms en volgen gewoonlijk kort daarna, normaal gesproken binnen een paar dagen.
 
-Currently available binaries: **LTR {{< param "ltrrelease" >}}** and **Latest {{< param "release" >}}**. Please see the [download page]({{< ref "download" >}}).
+Momenteel beschikbare binaire programma's: **Lange termijn uitgave {{< param "ltrrelease" >}}** en **Laatste uitgave {{< param "release" >}}**. Bekijk de [downloadpagina]({{< ref "download" >}}).
 
 {{<rich-content-end >}}
 

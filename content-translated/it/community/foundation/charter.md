@@ -124,41 +124,41 @@ Prima delle elezioni, il PSC uscente determina il numero totale dei seggi del co
 ### 8.2 Termini dei membri del PSC
 I membri del PSC resteranno in carica per un mandato di due anni.
 ### 8.3 Membri onorari del PSC
-Gary Sherman, as founder of the QGIS project, shall be accorded lifetime honorary membership on the QGIS PSC from its inception. By common vote, QGIS.ORG may award any individual a lifetime honorary seat on the PSC.
-## 9 Administration of QGIS.ORG
-The annual general meeting (AGM) will be held via a virtual forum. The online location and date is to be determined and communicated by the board in advance of the meeting. The board shall publish a meeting agenda prior to the meeting. The protocol of the past general meeting shall be provided by the board and sent to the voting members at least 15 days prior to each general meeting. The chair of the association authorizes the release of the protocol.
+A Gary Sherman, in qualità di fondatore del progetto QGIS, verrà riconosciuta la qualifica di membro onorario a vita del QGIS PSC fin dalla sua nascita. Con voto comune, QGIS.ORG può assegnare a qualsiasi individuo un seggio onorario a vita nel PSC.
+## 9 Amministrazione di QGIS.ORG
+L'assemblea generale annuale (AGM in inglese) si terrà tramite un forum virtuale. La sede e la data online dovranno essere determinate e comunicate dal consiglio prima della riunione. Il consiglio pubblica un ordine del giorno della riunione prima della riunione. Il protocollo della precedente assemblea generale è fornito dal consiglio e inviato ai membri votanti almeno 15 giorni prima di ciascuna assemblea generale. Il presidente dell'associazione autorizza la pubblicazione del protocollo.
 
-The meeting shall be open to all QGIS community members. Only voting members can vote on any motion. Substantial proposals made by QGIS community members for future QGIS.ORG activities should be provided to the board in writing to be added as agenda items in advance of the meeting. Minor proposals should be presented to the board and dealt with independently of the AGM.
+L'incontro sarà aperto a tutti i membri della comunità QGIS. Solo i membri votanti possono votare su qualsiasi mozione. Le proposte sostanziali avanzate dai membri della comunità QGIS per le future attività di QGIS.ORG dovranno essere fornite al consiglio per iscritto, da aggiungere come punti all'ordine del giorno prima della riunione. Le proposte minori dovrebbero essere presentate al consiglio e trattate indipendentemente dall'assemblea generale annuale.
 
-The annual general meeting shall deal with the following:
+L'assemblea generale annuale si occuperà di quanto segue:
 1. Approvazione del rapporto annuale
 2. Approvazione del rapporto finanziario annuale
 3. Approvazione del bilancio annuale
 4. Elezione del presidente del consiglio
-5. The nomination and election for the outgoing board and PSC member replacements
-6. Confirmation or selection of the financial auditors for the upcoming financial year
-7. Resolutions / voting of proposals made by the board, the PSC or voting members
+5. La nomina e l'elezione del consiglio uscente e dei sostituti dei membri del PSC
+6. Conferma o selezione dei revisori finanziari per il prossimo esercizio finanziario
+7. Risoluzioni / votazione delle proposte presentate dal consiglio, dal PSC o dai membri votanti
 8. Revisione degli statuti
-9. Deal with any matters arising
+9. Affrontare qualsiasi questione che si presenti
 
-All other decisions and competences are the responsibility of the QGIS Board.
+Tutte le altre decisioni e competenze sono di competenza del Consiglio di amministrazione del QGIS.
 
-Extraordinary meetings can be convened by the board or on demand of at least 2/5 of the voting members.
+Le riunioni straordinarie possono essere convocate dal consiglio o su richiesta di almeno 2/5 dei membri votanti.
 
-Every officially convened general meeting has a quorum. At elections and for voting a simple majority (more than 50%) of the present members decides, except for the cases listed in sections 7.1, 8.1. and 5.4.
+Ogni assemblea generale convocata ufficialmente ha il quorum. Alle elezioni e per il voto decide la maggioranza semplice (oltre il 50%) degli attuali membri, ad eccezione dei casi elencati nelle sezioni 7.1, 8.1. e 5.4.
 
-The reporting year and the accounting year starts at January 1 and ends at December 31.
+L'anno di rendicontazione e l'anno contabile iniziano il 1° gennaio e terminano il 31 dicembre.
 
-The correspondence of the QGIS.ORG Association will be carried out in English, unless otherwise requested by the authorities.
+La corrispondenza dell'Associazione QGIS.ORG sarà effettuata in inglese, salvo diversa richiesta delle autorità.
 
-The association can only be dissolved by the general motion with a majority of more than 3⁄4 of the voting members affirming the motion. In case of the liquidation of the association, the general meeting can vote on the usage of the assets of the association with a simple majority (more than 50% of voters).
-## 10 Financial arrangements
-The financial revenues of QGIS.ORG shall originate from donations, memberships, grant funding and other diverse sources.
+L'associazione può essere sciolta solo mediante mozione generale con la maggioranza di oltre 3⁄4 dei membri votanti che conferma la mozione. In caso di liquidazione dell'associazione, l'assemblea generale può votare sull'utilizzo del patrimonio dell'associazione a maggioranza semplice (oltre il 50% degli elettori).
+## 10 Accordi finanziari
+Le entrate finanziarie di QGIS.ORG proverranno da donazioni, abbonamenti, sovvenzioni e altre diverse fonti.
 
-The general meeting shall elect two financial auditors each year.
+L'assemblea generale elegge ogni anno due revisori finanziari.
 
-Limited Liability: the QGIS Association can only be held liable up to the amount of the current assets of the association. Personal liability of board members or other individual members is excluded.
+Responsabilità limitata: l'Associazione QGIS può essere ritenuta responsabile solo fino all'importo del patrimonio corrente dell'associazione. È esclusa la responsabilità personale dei membri del consiglio o di altri singoli membri.
 
-This charter was approved by the general assembly via Loomio vote on March 17, 2019.
+Questa carta è stata approvata dall'assemblea generale tramite voto di Loomio il 17 marzo 2019.
 
 {{<content-end >}}

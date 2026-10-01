@@ -292,7 +292,7 @@ Alleen gebruikers met het recht `sudo` kunnen systeembrede toepassingen voor Fla
 
 {{<rich-box-end >}}
 
-Er is een QGIS flatpak voor QGIS Stable en LTR beschikbaar, onderhouden door de gemeenschap van Flathub.
+There is a Flatpak maintained by the Flathub community only for QGIS Stable.
 
 Voor algemene instructies voor het installeren, bekijk [de website van Flathub](https://flatpak.org/setup).
 

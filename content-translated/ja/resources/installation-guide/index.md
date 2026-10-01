@@ -298,7 +298,7 @@ Flatpakはデフォルトですべてのユーザー向けにインストール�
 
 {{<rich-box-end >}}
 
-Flathubコミュニティによってメンテナンスされている、QGIS安定版とLTR向けのFlatpakが利用可能です。
+There is a Flatpak maintained by the Flathub community only for QGIS Stable.
 
 一般的なインストール手順については、　[Flathubのウェブサイト](https://flatpak.org/setup) を参照してください。
 
