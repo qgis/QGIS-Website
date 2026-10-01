@@ -179,7 +179,12 @@ class S3FileExplorer:
         return files
 
     def deduplicate_files(self, files: List[Dict]) -> List[Dict]:
-        """Prefer Windows-folder files over same-named root-level copies."""
+        """List duplicate installers under windows/ but download from the root."""
+        root_keys = {
+            file["name"]: file["key"]
+            for file in files
+            if not file["path"] or file["path"] == "."
+        }
         windows_filenames = {
             file["name"]
             for file in files
@@ -187,16 +192,21 @@ class S3FileExplorer:
             and file["path"].replace("\\", "/").split("/", 1)[0].lower() == "windows"
         }
 
-        # S3 can expose the same installer at the bucket root and under
-        # windows/. Keep the Windows path so the download remains discoverable
-        # in its expected folder, while avoiding a duplicate entry at the root.
-        deduplicated = [
-            file for file in files
-            if not (
-                (not file["path"] or file["path"] == ".")
-                and file["name"] in windows_filenames
+        deduplicated = []
+        for file in files:
+            is_root_file = not file["path"] or file["path"] == "."
+            is_windows_file = (
+                file["path"]
+                and file["path"].replace("\\", "/").split("/", 1)[0].lower()
+                == "windows"
             )
-        ]
+
+            # Remove the root row but keep its key for the Windows listing entry.
+            if is_root_file and file["name"] in windows_filenames:
+                continue
+            if is_windows_file and file["name"] in root_keys:
+                file = {**file, "key": root_keys[file["name"]]}
+            deduplicated.append(file)
 
         removed_count = len(files) - len(deduplicated)
         if removed_count > 0:
