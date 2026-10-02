@@ -292,7 +292,7 @@ Alleen gebruikers met het recht `sudo` kunnen systeembrede toepassingen voor Fla
 
 {{<rich-box-end >}}
 
-There is a Flatpak maintained by the Flathub community only for QGIS Stable.
+Er is een Flatpak dat wordt onderhouden door de gemeenschap van Flathub, alleen voor QGIS Stabiel.
 
 Voor algemene instructies voor het installeren, bekijk [de website van Flathub](https://flatpak.org/setup).
 
