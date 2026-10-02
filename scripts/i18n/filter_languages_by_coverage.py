@@ -83,6 +83,56 @@ def _mount_block(lang: str) -> str:
     )
 
 
+def normalize_language_keys(text: str) -> tuple[str, int]:
+    """Replace languageCode with locale inside every [languages.x] block.
+
+    ``hugo-gettext generate`` writes languageCode back into each language block
+    on every run (hugo_gettext/generation/g_lang.py sets it and never reads it),
+    so the daily i18n job would otherwise undo the Hugo 0.158 key migration.
+    This runs straight after it in the generate-translations target.
+
+    Returns the text and the number of languageCode lines dealt with.
+    """
+    lines = text.splitlines(keepends=True)
+    lang_header_re = re.compile(r"^\s*\[languages\.([A-Za-z0-9_-]+)\]")
+    section_start_re = re.compile(r"^\s*\[")
+    code_re = re.compile(r"^(\s*)languageCode(\s*=\s*)(.*\n?)$")
+    locale_re = re.compile(r"^\s*locale\s*=")
+
+    result: list[str] = []
+    i = 0
+    fixed = 0
+    while i < len(lines):
+        if not lang_header_re.match(lines[i]):
+            result.append(lines[i])
+            i += 1
+            continue
+
+        # Collect the whole language block, header included.
+        block = [lines[i]]
+        j = i + 1
+        while j < len(lines) and not section_start_re.match(lines[j]):
+            block.append(lines[j])
+            j += 1
+
+        has_locale = any(locale_re.match(b) for b in block)
+        rebuilt: list[str] = []
+        for b in block:
+            m = code_re.match(b)
+            if not m:
+                rebuilt.append(b)
+                continue
+            fixed += 1
+            if has_locale:
+                continue  # locale already carries the value, drop the duplicate
+            rebuilt.append(f"{m.group(1)}locale{m.group(2)}{m.group(3)}")
+            has_locale = True
+        result.extend(rebuilt)
+        i = j
+
+    return "".join(result), fixed
+
+
 # ── main transform ────────────────────────────────────────────────────────────
 
 def sync_config(
@@ -96,6 +146,7 @@ def sync_config(
     Returns:
         (new_text, kept_langs, added_langs, removed_langs)
     """
+    text, _normalized = normalize_language_keys(text)
     lines = text.splitlines(keepends=True)
 
     lang_header_re = re.compile(r"^\s*\[languages\.([A-Za-z0-9_-]+)\]")
@@ -252,6 +303,12 @@ def main() -> None:
         print(f"Removing {len(removed)} language(s) below {args.threshold}%:\n  {', '.join(removed)}")
     if not added and not removed:
         print("No language changes (all qualifying languages already present).")
+
+    # Reported separately so the i18n job's log shows when hugo-gettext has
+    # written the deprecated key back and this run cleaned it up again.
+    _, normalized = normalize_language_keys(config_text)
+    if normalized:
+        print(f"Normalised {normalized} languageCode key(s) to locale.")
 
     print(f"Active languages ({len(kept)}): {', '.join(kept)}")
 

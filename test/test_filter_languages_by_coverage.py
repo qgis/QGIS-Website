@@ -128,3 +128,63 @@ def test_written_config_is_parseable_and_mounts_match_languages():
         for m in parsed["module"]["mounts"]
     }
     assert mounted == set(kept)
+
+
+def _hugo_gettext_output(langs=("en", "nl")):
+    """config.toml as `hugo-gettext generate` leaves it.
+
+    It sets languages.<lang>.languageCode on every run and never reads it back,
+    so it lands after the keys this repo maintains.
+    """
+    head = "baseURL = 'https://qgis.org/'\nlocale = 'en-us'\n\n  [languages]\n"
+    for lang in langs:
+        head += (
+            f'    [languages.{lang}]\n'
+            f'    locale = "{lang}"\n'
+            '    weight = 2\n'
+            f'    contentDir = "content-translated/{lang}"\n'
+            f'    languageCode = "{lang}"\n\n'
+        )
+    body = "[module]\n"
+    for lang in langs:
+        body += _mounts(lang)
+    return head + body
+
+
+def test_language_code_written_back_by_hugo_gettext_is_dropped():
+    text, fixed = flbc.normalize_language_keys(_hugo_gettext_output())
+
+    assert fixed == 2
+    assert "languageCode" not in text
+    assert text.count('locale = "en"') == 1, "no duplicate locale left behind"
+    assert text.count('locale = "nl"') == 1
+
+
+def test_language_code_without_locale_is_renamed_not_dropped():
+    legacy = (
+        "  [languages]\n"
+        '    [languages.de]\n'
+        '    languageCode = "de"\n'
+        '    weight = 2\n'
+    )
+    text, fixed = flbc.normalize_language_keys(legacy)
+
+    assert fixed == 1
+    assert 'locale = "de"' in text and "languageCode" not in text
+
+
+def test_normalising_leaves_everything_else_untouched():
+    src = _hugo_gettext_output()
+    text, _ = flbc.normalize_language_keys(src)
+
+    assert text.count("[[module.mounts]]") == src.count("[[module.mounts]]")
+    assert "locale = 'en-us'" in text, "the project-level key is not a language block"
+    assert 'contentDir = "content-translated/nl"' in text
+
+
+def test_a_sync_run_also_normalises():
+    """The daily job runs this straight after hugo-gettext, so one pass must do both."""
+    text, kept, _added, removed = _sync(_hugo_gettext_output(), {"en": 100.0, "nl": 90.0})
+
+    assert kept == ["en", "nl"] and removed == []
+    assert "languageCode" not in text
