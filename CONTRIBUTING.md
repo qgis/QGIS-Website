@@ -55,9 +55,9 @@ the extended version to build SCSS/SASS.: this feature is not available
 in your current Hugo version, see https://goo.gl/YMrWcn for more information
 ```
 
-Currently, the website requires Hugo with a minimum version of `v0.139.0`. Ensure you have a compatible version installed to avoid any build issues.
+Currently, the website requires Hugo with a minimum version of `v0.158.0`. Ensure you have a compatible version installed to avoid any build issues.
 
-You can find the extended version `v0.139.0` [here](https://github.com/gohugoio/hugo/releases/tag/v0.139.0).
+You can find the extended version `v0.162.1`, the version the CI workflows use, [here](https://github.com/gohugoio/hugo/releases/tag/v0.162.1).
 
 ![Download](./img/hugo-download.png)
 
@@ -71,10 +71,10 @@ Download the latest version and then do
 Example, assuming that you use a dedicated directory for your local binaries :
 
 ```sh
-mkdir -p ~/apps/hugo_139/
-wget https://github.com/gohugoio/hugo/releases/download/v0.139.4/hugo_extended_0.139.4_linux-amd64.deb --output-document ~/apps/hugo_128/hugo_extended_0.139.3_linux-amd64.deb 
-dpkg -x hugo_extended_0.139.3_linux-amd64.deb ~/apps/hugo_139/
-~/apps/hugo_128/usr/local/bin/hugo server  
+mkdir -p ~/apps/hugo_162/
+wget https://github.com/gohugoio/hugo/releases/download/v0.162.1/hugo_extended_0.162.1_linux-amd64.deb --output-document ~/apps/hugo_162/hugo_extended_0.162.1_linux-amd64.deb
+dpkg -x ~/apps/hugo_162/hugo_extended_0.162.1_linux-amd64.deb ~/apps/hugo_162/
+~/apps/hugo_162/usr/local/bin/hugo server
 ```
 
 ### 🪟 Windows

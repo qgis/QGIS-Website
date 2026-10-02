@@ -9,7 +9,7 @@ jobs:
   i18n:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.139.0
+      HUGO_VERSION: 0.162.1
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
