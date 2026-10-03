@@ -179,27 +179,39 @@ class S3FileExplorer:
         return files
 
     def deduplicate_files(self, files: List[Dict]) -> List[Dict]:
-        """Remove files from windows folder if they exist at root level (by filename)."""
-        # Collect all filenames at root level (O(n) with O(1) lookups)
-        root_filenames = {
-            file["name"] for file in files 
+        """List duplicate installers under windows/ but download from the root."""
+        root_keys = {
+            file["name"]: file["key"]
+            for file in files
             if not file["path"] or file["path"] == "."
         }
-        
-        # Filter out windows folder files that duplicate root files (O(n))
-        deduplicated = [
-            file for file in files
-            if not (
-                file["path"] and 
-                file["path"].split("/")[0].lower() == "windows" and 
-                file["name"] in root_filenames
+        windows_filenames = {
+            file["name"]
+            for file in files
+            if file["path"]
+            and file["path"].replace("\\", "/").split("/", 1)[0].lower() == "windows"
+        }
+
+        deduplicated = []
+        for file in files:
+            is_root_file = not file["path"] or file["path"] == "."
+            is_windows_file = (
+                file["path"]
+                and file["path"].replace("\\", "/").split("/", 1)[0].lower()
+                == "windows"
             )
-        ]
-        
+
+            # Remove the root row but keep its key for the Windows listing entry.
+            if is_root_file and file["name"] in windows_filenames:
+                continue
+            if is_windows_file and file["name"] in root_keys:
+                file = {**file, "key": root_keys[file["name"]]}
+            deduplicated.append(file)
+
         removed_count = len(files) - len(deduplicated)
         if removed_count > 0:
-            print(f"   ℹ️  Removed {removed_count} duplicate files from windows folder")
-        
+            print(f"   Removed {removed_count} duplicate files from root folder")
+
         return deduplicated
 
     def build_file_tree(self, files: List[Dict], excluded_prefixes: tuple = ()) -> Dict:
