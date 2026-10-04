@@ -275,7 +275,7 @@ The filter can be activated by using the prefix \'af\', or by making it a defaul
 
 This feature was funded by [Opengis.ch](https://www.opengis.ch/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+この機能は [Denis Rouzaud](https://www.opengis.ch/) によって開発されました
 ### 機能: レイヤツリーで削除不可(必須) レイヤを強調表示します
 A new indicator \"locked\" icon is shown for any layers marked as \"required\" within the current project. This icon gives users instant feedback that a particular layer cannot be removed from the project.
 

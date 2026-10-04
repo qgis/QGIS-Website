@@ -913,7 +913,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
+この機能は [Paul Blottiere](https://hytech-imaging.fr/) によって開発されました
 ### 機能: Denis Rouzaudによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -927,7 +927,7 @@ This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+この機能は [Denis Rouzaud](https://www.opengis.ch/) によって開発されました
 ### 機能: Julien Cabiecesによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -943,7 +943,7 @@ This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
+この機能は [Julien Cabieces](https://www.oslandia.com/) によって開発されました
 ### 機能: Bertrand Rixによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -959,7 +959,7 @@ This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Bertrand Rix](https://www.oslandia.com/)
+この機能は [Bertrand Rix](https://www.oslandia.com/) によって開発されました
 ### 機能: Loïc Bartoletti によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |

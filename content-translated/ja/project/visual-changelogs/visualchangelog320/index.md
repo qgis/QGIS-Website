@@ -667,7 +667,7 @@ This feature was developed by [Paul Blottiere](https://www.qcooperative.net/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+この機能は [Denis Rouzaud](https://www.opengis.ch/) によって開発されました
 ### 機能: Loïc Bartoletti によるバグ修正
 | バグの表題 | URL (if reported, Github) | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -696,7 +696,7 @@ This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
+この機能は [Julien Cabieces](https://www.oslandia.com/) によって開発されました
 ### 機能: Peter Petrik によるバグ修正
 | バグの表題 | URL (if reported, Github) | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |

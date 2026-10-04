@@ -659,7 +659,7 @@ This feature was developed by [Even Rouault](https://www.spatialys.com/)
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+この機能は [Denis Rouzaud](https://www.opengis.ch/) によって開発されました
 ### 機能: Peter Petrik によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
