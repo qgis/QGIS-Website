@@ -260,7 +260,7 @@ HTMLラベルコンテンツでimgタグの使用が可能になります。以�
 
 この機能は [Landesamt für Vermessung und Geoinformation (LVG) Vorarlberg in collaboration with the QGIS user group Switzerland.](https://vorarlberg.at/-/landesamt-fuer-vermessung-und-geoinformation-l-1) の資金提供によって開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ## メッシュ
 ### 機能: Quantized Meshレイヤーを追加するGUIの追加
 QGISブラウザーパネルおよびデータソースマネージャーでQuantized Meshデータソースとレイヤーを読み込むための新しいGUI要素が提供されました。
@@ -387,7 +387,7 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
 この機能は [the QGIS user group Switzerland](https://qgis.ch) の資金提供で開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 機能: フィルターダイアログへの使用可能な "expression dialect" 情報の追加
 ベクターレイヤーのフィルター式入力に使用するクエリビルダーがサポートされる式ダイアレクトを表示するようになりました。
 

@@ -81,7 +81,7 @@ Users can now zoom in and out from the Map Overview panel using the mouse scroll
 
 ![image10](images/entries/77b55b4c85c9c4f5076b1a735f7971819cc2a2ee.gif)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ## ユーザー補助
 ### 機能: 色覚異常シミュレーションの改善
 This modifies the previous support for grayscale and LMS-based simulation for protanopia and deuteranopia, bringing it in line with the methodology currently used in Chromium and Firefox. QGIS now uses updated grayscale luminance calculations (renamed to achromatopsia), a precomputed protanopia matrix (renamed from protanope), a precomputed deuteranopia matrix (renamed from deuteranope), and an additional mode for tritanopia using a similarly precomputed matrix.
@@ -193,7 +193,7 @@ QGIS now offers orthographic projection support for 3D scenes, a feature often d
 
 ![image22](images/entries/7e43323cea578f6f50e83de6307c22bdef948f8d.gif)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ## 点群
 ### 機能: 点群のサポート
 Following the successful [crowdfunding campaign](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-qgis/) for point cloud support in QGIS, the engineers at Lutra, North Road, and Hobu have been able to introduce the ability for QGIS to import and render point cloud data.
@@ -360,7 +360,7 @@ Polymorphic relations are stored within a project and currently cannot be export
 
 ![image37](images/entries/6628cd483a00a52f51cd963febd883d2756eb299.webp)
 
-This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
+この機能は [Ivan Ivanov](https://api.github.com/users/suricactus) によって開発されました
 ## フォームとウィジェット
 ### 機能: フォームのソフトとハードの制約
 Historically, required fields would prevent a form from being saved entirely. Using soft constraints allow forms to notify users that expected information has been omitted, without preventing the form submission. Hard constraints, by contrast, function identically to the previous \"required fields\" functionality and will prevent form submissions unless data is correctly captured for the field.
@@ -372,7 +372,7 @@ This feature was developed by [Lutra Consulting (Viktor Sklencar)](https://www.l
 ### 機能: Nominatim geocoder API
 Although not exposed through the locator or as an algorithm, QGIS now includes a Nominatim API geocoder class. The geocoder class\' implementation insures that it respects the OpenStreetMap Foundation Terms of Use by caching results and throttling requests by default.
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ## プロセシング
 ### 機能: PointsToPath アルゴリズムで順序フィールドに式を可能にする
 `$id` may be used as an expression for a csv with ordered values, and the `ORDER_EXPRESSION` parameter has been added to the PointsToPath algorithm.
@@ -406,7 +406,7 @@ The \"Import geotagged photos\" tool has been updated so that the exif_orientati
 - 要約
 - 帰属
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ### 機能: セルスタックパーセンタイルとパーセントランクアルゴリズム
 **セル統計** プロセシングツールの特性が複製および変更され、3つの新しい処理アルゴリズムが可能になりました。これにより、QGISはスプレッドシートプログラムで使用される一般的なパーセンテージ関数と同様の方法でセル統計を計算できます。新しい処理アルゴリズムは次のとおりです：
 - **セルスタック:パーセンタイル**
@@ -507,7 +507,7 @@ In the database connection configuration widget, there are now two extra checkbo
 
 この機能は [ms.GIS](<http://msgis.com/>) によって資金提供されました
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: MS SQLのフィルタスキーマ
 ユーザーがMSSQL接続で使用可能なスキーマをフィルタリングできるようになりました。データベース接続ウィジェットに利用できるスキーマをフィルタするオプションが含まれるようになったため、QGISブラウザからは予期されるスキーマのみが利用できます。
 
@@ -515,7 +515,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 この機能は [ms.GIS](<http://msgis.com/>) によって資金提供されました
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: SAP HANAデータベースのサポート
 QGIS now supports SAP HANA databases. SAP HANA is an in-memory database with an OGC-compliant spatial engine with a free express edition available from www.sap.com
 

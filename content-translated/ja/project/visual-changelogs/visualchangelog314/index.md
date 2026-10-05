@@ -35,7 +35,7 @@ Annotations for the map canvas\' grid decoration are now fully customizable incl
 
 この機能は iMHere Asia によって資金提供されました
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ## 時系列
 ### 機能: 時間コントローラの累積的な時系列範囲の設定
 時間コントローラに設定を追加して、アニメーションの時系列範囲を累積に設定します。これにより、すべてのアニメーションフレームは同じ開始日時と、異なる終了日時を持つことになります。
@@ -46,7 +46,7 @@ This is useful is you wish to accumulate data in your temporal visualisation ins
 
 This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+この機能は [Kartoza / Samweli Mwakisambwe](https://kartoza.com) によって開発されました
 ### Feature: Add a new \"Redraw Layer Only\" mode for temporal vector layers
 このモードに設定すると、時系列範囲が変わったときにレイヤは自動的に再描画されますが、時間ベースのフィルタリングは地物に適用されません。
 
@@ -91,7 +91,7 @@ Prior discussions about QGIS temporal support can be found [here](https://github
 
 This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+この機能は [Kartoza / Samweli Mwakisambwe](https://kartoza.com) によって開発されました
 ### 機能: WMS-Tレイヤの時間制約のサポート
 この機能により、QGIS内でWMS Temporal（WMS-T）レイヤを制約する機能が追加されます。WMS-Tプロバイダからの任意の時間レイヤの日付時刻範囲を制約することができます。
 
@@ -105,7 +105,7 @@ Below is an example of the workflow. ![image6](images/entries/74638436-ee0f5c00-
 
 This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+この機能は [Kartoza / Samweli Mwakisambwe](https://kartoza.com) によって開発されました
 ### 機能: 時間API
 この機能は、QGISでの時間サポートのためのAPI実装を提供します。
 
@@ -113,7 +113,7 @@ You can find the API for Python by searching for \'Temporal\' in the python docs
 
 This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+この機能は [Kartoza / Samweli Mwakisambwe](https://kartoza.com) によって開発されました
 ## ツール
 ### 機能: QGISベクタタイルレイヤの識別ツールサポート。
 識別マップツールは、ベクタタイルの地物の属性を調査することができるようになりました。
@@ -122,7 +122,7 @@ This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.co
 
 This feature was funded by [Many funders](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 印刷レイアウトマップからウィジェットを直接スケールに設定するために、スケールウィジェットボタンの隣にメニューを表示する
 スクリーンキャストは千の言葉を語ります:
 
@@ -132,7 +132,7 @@ This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lut
 ### Feature: Add tool button to \"Deselect Features from the Current Active layer\"
 ![image11](images/entries/76692569-26616780-6661-11ea-9071-fd4c712860db.gif)
 
-This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
+この機能は [Ivan Ivanov](https://api.github.com/users/suricactus) によって開発されました
 ## ユーザーインタフェース
 ### 機能: 複数のQGISインスタンス間でレイヤのドラッグ&ドロップができる
 ![image12](images/entries/77666018-b5834f00-6f80-11ea-971e-c6d7d996d37d.gif)
@@ -145,7 +145,7 @@ If the option \"Open new attribute tables as dock windows\" is active, new attri
 
 ![image13](images/entries/80049561-d8017d00-84d8-11ea-826e-d7092ac7a5c6.gif)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ## シンボロジ
 ### 機能: ラスタレイヤの等高線レンダラ
 この新しいレンダラーは、ソースラスタバンドからオンザフライで計算された等高線を描画します。等高線の間隔と描画に使用するシンボルを設定することができます。
@@ -176,7 +176,7 @@ According to the [Feature Request](https://github.com/qgis/QGIS/issues/30057) th
 
 Both unit tests \"qgis_rasterfilltest\" and \"qgis_rastermarkertest\" were rewritten with a set of new control images for testing the proposed **percentage** value of size units.
 
-This feature was developed by [beketata](https://api.github.com/users/beketata)
+この機能は [beketata](https://api.github.com/users/beketata) によって開発されました
 ### 機能: フォントマーカーのフォントファミリ／スタイルにデータ定義型プロパティを追加
 Data-defined properties were added for the font markers\' font family and the brand new font style properties. This can come in handy for a number of scenarios, including multilingual context where a data-defined property can avoid duplicating datasets.
 
@@ -184,7 +184,7 @@ Data-defined properties were added for the font markers\' font family and the br
 
 この機能は iMHere Asia によって資金提供されました
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ### 機能: フォントマーカーに新しいフォントスタイルの設定
 この新しいフォントスタイル設定により、以前利用できなかった非デフォルトのフォントファミリのスタイルを選択することができます。
 
@@ -192,7 +192,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 
 この機能は iMHere Asia によって資金提供されました
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ## ラベリング
 ### 機能: ラベルでHTML色を配慮する
 このオプションを有効にすると、ラベルの内容をHTMLとして扱い、レンダリングされたラベルでフォアグラウンドカラーに関連するHTMLの書式設定オプションが適用されます。
@@ -251,7 +251,7 @@ An example how to set the above labeling in Python console:
     
 This feature was funded by [Many funders](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: ラベルの引き出し線にアンカーポイントの制御を追加する
 ラベルテキストに引出し線付きラベルがどこで結合するかを制御できます（以前は引出し線付きラベルが対応する地物のジオメトリにどこで結合するかの制御しか持っていませんでした）。
 
@@ -287,7 +287,7 @@ With new \"centroid\" placement:
 
 This feature was funded by [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 分類に応じたスカラの色設定
 この機能により、MDALではデータセット内の分類されたスカラ値を読み取ります。値が分類されると、デフォルトのスカラレンダリング設定には、分類された値に従ってカラーランプシェーダとラベルが設定されます。
 
@@ -295,7 +295,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 This feature was funded by [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: メッシュ要素にスナップする
 メッシュ要素にスナップするためのメソッドをAPIに追加します。
 
@@ -310,7 +310,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 This feature was funded by [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 1D メッシュの幅/色の変化
 この機能は、値に応じて変化するエッジの幅を持つ1Dメッシュをレンダリングする新しい方法を提供します。したがって、幅と色は、辺または頂点の値に応じて変化します。
 
@@ -324,7 +324,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 This feature was funded by [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: マルチパートメッシュのサポート (MDAL 0.5.91以降)
 MDAL 0.5.91への更新に加えて、この機能により1つのファイルから複数のメッシュを読み込むことができます。
 
@@ -334,7 +334,7 @@ MDAL 0.5.91への更新に加えて、この機能により1つのファイル�
 
 This feature was funded by [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: QGISの時間フレームワークにメッシュレイヤを接続
 ![image35](images/entries/77872855-31e29000-7216-11ea-80fb-82e351dbb4a2.gif)
 #### レイヤの中での時間の処理
@@ -372,7 +372,7 @@ There is also the option to set a static dataset, that is to choose a dataset th
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 頂点値から面値へのリサンプリング
 面上で定義されたデータセットに対してリサンプリングが可能です。例えば、頂点の値は面の値から計算されます。
 
@@ -380,7 +380,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 The default method is set to \"none\" for resampling from vertices to faces and to \"neighbor average\" for resampling from faces to vertices. Then the default rendering is always smooth. ![image38](images/entries/77320848-acc41c00-6ce7-11ea-85af-2bff553ecbb5.gif)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: カラーランプシェーダーを使ってメッシュベクタデータセットを着色する
 この機能により、ベクタの大きさに応じて、メッシュレイヤベクタデータセット（矢印、流線、トレース）をカラーランプシェーダーで着色することができます。
 
@@ -392,7 +392,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 This feature was funded by [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: メッシュレイヤのスタイルを保存
 この機能は、ベクタとラスタレイヤで利用されるqmlファイルにメッシュレイヤスタイルを保存するオプションを追加します。
 
@@ -400,7 +400,7 @@ The feature also refactors the raster and vector layer properties menu style. ![
 
 This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: メッシュ 1D レンダラ
 Update to [MDAL 0.5.90](https://github.com/lutraconsulting/MDAL/releases/tag/0.5.90)
 
@@ -442,7 +442,7 @@ After: ![image48](images/entries/74751042-12357080-5243-11ea-80cb-2a3217d03a78.g
 
 This feature was funded by [BMT](https://www.bmt.org/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ## 三次元機能
 ### 機能: 3Dメッシュレイヤデータセットのレンダリングの矢印
 この機能は、ベクタデータセットに応じて、メッシュレイヤデータセットの3Dエンティティに矢印を表示するオプションを追加します。
@@ -455,7 +455,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 This spacing setting also defines the maximum size of arrows because arrows can\'t overlap. ![image49](images/entries/76225819-6a80e200-61f3-11ea-88da-43e70c358530.webp)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ## 印刷レイアウト
 ### 機能: レイアウトマップアイテムの一時的な設定
 この機能は、ユーザーが地図のコンテンツをレンダリングする際に使用する時系列範囲を有効にし、設定することができる、レイアウトマップアイテムウィジェットに折りたたみ可能なセクションを追加します。
@@ -466,7 +466,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 この機能は iMHere Asia によって資金提供されました
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ### 機能：テーブルにリストされていないフィールドで属性テーブルをソートできるようにする
 表示される列とソートする列に同じデータモデルを使用する代わりに、2つのデータモデルを使うようになりました。非常に似ているため、同じAPI / ベースクラスを使います。
 
@@ -515,7 +515,7 @@ Scalebar item properties - Segments groupbox ![image54](images/entries/81009703-
 
 スケールバーの左側のセグメントに関連する動作は変更されていません。
 
-This feature was developed by [Andrea Giudiceandrea](https://api.github.com/users/agiudiceandrea)
+この機能は [Andrea Giudiceandrea](https://api.github.com/users/agiudiceandrea) によって開発されました
 ### 機能: 凡例パッチのサイズをアイテムごとに上書きできる
 ノードをダブルクリックすることで、個々の凡例ノードのシンボルパッチサイズを上書きすることができます
 
@@ -577,7 +577,7 @@ A new import content from clipboard feature has been added to QGIS\' table edito
 
 この機能は iMHere Asia によって資金提供されました
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ### Feature: Add numeric formatter \"fraction\" style
 This style represents decimal numbers as vulgar fractions, e.g. \"3/4\" instead of 0.75.
 
@@ -679,7 +679,7 @@ This feature was developed by [Alexander Bruy](https://api.github.com/users/alex
 
 ユーザー式をJSONファイルにエクスポート/インポートできるメニュー付きの新しいボタンが追加されました。メニュー項目のいずれかをクリックすると、式JSONファイルの保存先/参照先を選択するファイルセレクターダイアログが開きます。ラベルの競合が発生した場合は、現在の式を上書きするかスキップするかを確認する追加ダイアログが表示されます [インポート/エクスポートのデモ](https://imgur.com/0eiaFfu)
 
-This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
+この機能は [Ivan Ivanov](https://api.github.com/users/suricactus) によって開発されました
 ## デジタイズ
 ### 機能: 専用のジオメトリの交差/重複回避モード
 このバージョンのQGISには、地物をデジタイズする際にジオメトリの交差/重なりを回避するための新しい専用モード設定が付属しています。
@@ -706,7 +706,7 @@ The third mode\'s layers list is setup by the user via the advanced snapping con
 
 This feature was funded by [OpenGIS.ch](http://www.opengis.ch/)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ### 機能: 新スナップモード: 重心とセグメントの中央(midpoint)
 This feature is aimed at improving [snapping modes in QGIS](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/107) by getting closer to the experience of CAD tools.
 
@@ -897,7 +897,7 @@ Algorithm\'s parameters for MBTiles:
 
 This feature was funded by [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 条件分岐を作成するための新しいモデラーアルゴリズム
 このアルゴリズムによって（QGIS式を介した）複数の条件が設定できるようになり、式の評価結果に応じてモデルの対応する枝が実行されるかスキップされます。
 
@@ -1037,7 +1037,7 @@ Empty geometries do not contain coordinates. Thus, like *null* geometries, empty
 
 This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 機能: モデルデザイナーに複数選択の処理を追加、対話的なサイズ変更
 追加:
 - モデルデザイナーで複数の項目を一度に選択する機能
@@ -1143,7 +1143,7 @@ The \"Refactor Fields\" algorithm now highlights constraints, and even lets you 
 
 This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 機能: 新しい曲線に変換アルゴリズム
 We added a new algorithm to convert segmentized geometries to curved geometries.
 
@@ -1253,7 +1253,7 @@ This feature was developed by [José de Paula Rodrigues N. Assis](https://api.gi
 ### Feature: Date and DateTime field types support added to Spatialite and Delimited Text providers
 The Spatialite and Delimited Text providers now support Date and DateTime field types.
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ## QGISサーバー
 ### Feature: Add QGIS_SERVER_IGNORE_BAD_LAYERS config option
 Allows the overriding of the default behavior in the case of bad layers (which is to invalidate the whole project).
@@ -1330,7 +1330,7 @@ Now, both core and plugin devs have the option to tabify their dock widgets on t
 
 This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 機能: 出力パラメータラッパーを新しいAPIに移植
 Ports the output parameter wrappers (sinks, vector, raster, file and folder destinations) to the new c++ API for dialog and modeler.
 
@@ -1491,7 +1491,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
+この機能は [Loïc Bartoletti](https://www.oslandia.com/) によって開発されました
 ### 機能: Even Rouault によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1574,7 +1574,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Sebastien Peillet](https://www.oslandia.com/)
+この機能は [Sebastien Peillet](https://www.oslandia.com/) によって開発されました
 ### 機能: Alexander Bruyによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |

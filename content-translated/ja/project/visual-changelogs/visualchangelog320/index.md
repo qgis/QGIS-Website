@@ -681,7 +681,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
+この機能は [Loïc Bartoletti](https://www.oslandia.com/) によって開発されました
 ### 機能: Julien Cabiecesによるバグ修正
 | バグの表題 | URL (if reported, Github) | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |

@@ -33,7 +33,7 @@ Type the words \"user groups\" into the current coordinates window and watch the
 
 ![image2](images/entries/079434bceb5004b0ee2c4ad5d62edd1290c28575.webp)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ## 時系列
 ### 時間アニメーションフレームをエクスポートする機能
 後で外部アプリケーションでつなぎ合わせるために、一時的なアニメーションフレームを連続する画像にエクスポートできます。ユーザーは、画像サイズと地図範囲を正確に制御できます。
@@ -57,7 +57,7 @@ XY文字列の論理は次のとおり:
 
 ![image3](images/entries/acb9e856ac744d0e40d8de33c025deb075385856.gif)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ## ユーザーインタフェース
 ### マップキャンバスにコンテキストメニューを追加
 The map canvas now has a right-click context menu. By default, it creates the \"Copy Coordinate\" menu that was introduced with QGIS 3.14, however, it is expected that this functionality will be extended to allow many more functionalities to be accessed with spatial context in the future.
@@ -271,7 +271,7 @@ This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NE
 
 ![image24](images/entries/d4deaabbeddcf5f4784f602f19dabfac22b2d100.webp)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ### 光源を表示するオプションを追加
 3Dシーンの光源の原点にある可視の球体を切り替える機能。
 
@@ -402,7 +402,7 @@ This feature was developed by [Olivier Dalang, OPENGIS.ch](https://www.opengis.c
 ### Add to_decimal() function to convert DMS to DD
 A new `QgsCoordinateUtils::dmsToDecimal` function has been added which exposes the `to_decimal` function in expressions. This allows the conversion of DMS (degree/minute/second) strings into DD (decimal degree) format.
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ### Add \"main_angle\" function to return the estimated main angle of a geometry
 ジオメトリ値をカバーする最小バウンディングボックスの角度を返します。
 
@@ -490,7 +490,7 @@ This feature addresses issue [18634](https://github.com/qgis/QGIS/issues/18634).
 
 ![image46](images/entries/8048bb8df64e31bb733eea239c527f8be631ce6f.gif)
 
-This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
+この機能は [Ivan Ivanov](https://api.github.com/users/suricactus) によって開発されました
 ## 分析ツール
 ### デバッグツールのドックにプロジェクトの読み込みプロファイル時間を追加
 Modification of the QgsRuntimeProfiler class which performs the following functions: 1. Make the profiling thread-safe, so that it\'s possible to record times across multiple threads 2. Allows different profiling \"groups\"
@@ -546,11 +546,11 @@ This functionality was ported from <https://gis.stackexchange.com/questions/3593
 
 ![image56](images/entries/b238631365830b019300700cf59c3a8dd3d05a4f.webp)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ### 地図帳のレイアウトをPDFアルゴリズムとしてエクスポート
 新しいQGISのプロセシングアルゴリズムが追加され、地図帳をPDFにエクスポートすることができるようになりました。これは最近の地図帳レイアウトを画像にエクスポートするアルゴリズムのPDF版です。
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ### New \"Flatten Relationship\" algorithm
 このアルゴリズムは、ベクタレイヤの全てのリレーションをフラット化し、関連する地物ごとに1つのマスター地物を含む単一のレイヤをエクスポートします。このマスター地物には、関連する地物の全ての属性が含まれています。
 
@@ -566,7 +566,7 @@ It\'s designed as a quick way to de-normalize a relation from a project, e.g. to
 
 ![image57](images/entries/e4f315e60743577c9f45ad44643fd5ba9778c040.webp)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+この機能は [Mathieu Pellerin](https://api.github.com/users/nirvn) によって開発されました
 ### 新しいセル統計アルゴリズム
 **セル統計量** というラスタ解析アルゴリズムを追加しました。これは、NoDataを考慮しながらラスタレイヤのスタックに対してセルごとの統計を行います。現在の実装で利用可能な関数は以下の通りです:
 
@@ -619,7 +619,7 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 ### プロセシングの結果をレイヤーグループに読み込む
 Users can now optionally set a group name which ensures that the resulting output layers added to the project when using the *Open output file after running algorithm* option are grouped together. This allows all outputs from several processing algorithms to be grouped so that they may be easily located in the layer tree and be removed, exported, or have their visibility toggled easily. ![image58](images/entries/414c68839518d5b658d6e6f1565f6c27e1f4336f.gif)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 新しい出力を作成する、ゾーン統計量アルゴリズムを追加
 Previously, when calculating zonal statistics, the algorithm always updated the original data source, adding additional fields. A new zonal statistics algorithm has been added which creates a new output instead. This functionality is an implementation of the [29504 feature request](https://github.com/qgis/QGIS/issues/29504).
 
