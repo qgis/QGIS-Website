@@ -238,7 +238,7 @@ This is a major improvement to QGIS\'s attribute table rendering support. You ca
 
 **この機能の開発者:** [OPENGIS.ch](http://www.opengis.ch/) の Matthias Kuhn
 
-**This feature was funded by:** [Alta ehf](http://www.alta.is/)
+**この機能は次の方の資金提供で開発されました:** [Alta ehf](http://www.alta.is/)
 
 ![image9](images/entries/fcf703990b5cb743ffa5cc7778cb151022ff2d20.webp)
 ## デジタイズ
@@ -396,7 +396,7 @@ GRASS 6とGRASS 7の両方のユーザーにとって、GRASSとQGISの統合は
 
 **この機能は次の方によって開発されました:** [Radim Blazek](http://www.gissula.eu/)
 
-**This feature was funded by:** Crowd funding, see [project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/)
+**この機能は以下によって資金提供されました:** クラウドファンディング、 [プロジェクトページ](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/) 参照
 
 ![image33](images/entries/fb9ac25e9ca6c5e4030167e289435e995f5af8f5.webp)
 ## プログラマビリティ
@@ -449,9 +449,9 @@ QGIS Serverは、初期（しかし成長している）APIとPythonバインデ
     from qgis.server import QgsServer
     headers, body =  QgsServer().handleRequest(my_query_string)
     
-For more information see [this article](http://www.itopen.it/qgis-server-binding-news/)
+さらに詳しい情報は次のページを参照して下さい [this article](http://www.itopen.it/qgis-server-binding-news/)
 
-**This work has been developed and funded by**: Alessandro Pasotti at [ItOpen](http://www.itopen.it/)
+**この作品は次の方によって開発・資金提供されました:** Alessandro Pasotti at [ItOpen](http://www.itopen.it/)
 ### 機能:dxf形式におけるgetMap
 GetMap WMSリクエストの結果をDXF形式で取り出すことができるようになりました。QGISデスクトップで使用できるのと同じ機能とオプションをサポートしています。同じ制限があります。
 
