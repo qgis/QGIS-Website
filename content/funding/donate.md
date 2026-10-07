@@ -73,7 +73,7 @@ We also use the [payrexx.com](https://payrexx.com) service to receive credit car
 {{< rich-box-end >}}
 
 
-{{< rich-box-start layoutClass="has-right" mode="html" >}}
+{{< rich-box-start layoutClass="has-right mt-6" mode="html" >}}
 
 {{< rich-content-start themeClass="coloring-1" >}}
 
@@ -107,7 +107,7 @@ VAT-number:   CHE-489.853.176
 {{< rich-box-end >}}
 
 
-{{< rich-box-start layoutClass="has-right paypal mb-6" >}}
+{{< rich-box-start layoutClass="has-right paypal mt-6 mb-6" >}}
 
 {{< rich-content-start themeClass="coloring-1" >}}
 
