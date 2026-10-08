@@ -61,7 +61,7 @@ We gebruiken ook de service van [payrexx.com](https://payrexx.com) om donaties v
 
 {{<rich-box-end >}}
 
-{{<rich-box-start layoutClass="has-right" mode="html" >}}
+{{<rich-box-start layoutClass="has-right mt-6" mode="html" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Bankoverschrijving
@@ -82,7 +82,7 @@ BIC/SWIFT: POFICHBEXXX IBAN: CH09 0900 0000 9146 3839 8 Reference: Donation QGIS
 
 {{<rich-box-end >}}
 
-{{<rich-box-start layoutClass="has-right paypal mb-6" >}}
+{{<rich-box-start layoutClass="has-right paypal mt-6 mb-6" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Donatie via Paypal

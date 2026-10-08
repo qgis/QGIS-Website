@@ -60,7 +60,7 @@ QGISへの寄付は、一部の国において税控除の対象となる場合�
 
 {{<rich-box-end >}}
 
-{{<rich-box-start layoutClass="has-right" mode="html" >}}
+{{<rich-box-start layoutClass="has-right mt-6" mode="html" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## 銀行振込
@@ -80,7 +80,7 @@ Account name: QGIS.ORG Address: Via Geinas 2 CH-7031 Laax BIC/SWIFT: POFICHBEXXX
 
 {{<rich-box-end >}}
 
-{{<rich-box-start layoutClass="has-right paypal mb-6" >}}
+{{<rich-box-start layoutClass="has-right paypal mt-6 mb-6" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Paypal による寄付
