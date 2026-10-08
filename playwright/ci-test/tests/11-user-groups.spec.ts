@@ -89,6 +89,18 @@ test.describe("Local user groups", () => {
         expect(errors).toEqual([]);
     });
 
+    test("both maps open on the flat map", async ({ page }) => {
+        for (const path of ["/community/groups/map/", "/community/contributors/map/"]) {
+            await page.goto(path);
+            await expect(page.locator("#flat-map-view")).toBeVisible();
+            await expect(page.locator("#globe-view")).toBeHidden();
+            await expect(page.locator("#flat-view-btn")).toHaveAttribute("aria-pressed", "true");
+        }
+        await page.click("#globe-view-btn");
+        await expect(page.locator("#globe-view")).toBeVisible();
+        await expect(page).toHaveURL(/view=globe/);
+    });
+
     test("contributors map still works with the shared map base", async ({ page }) => {
         const errors: string[] = [];
         page.on("pageerror", (e) => errors.push(e.message));
