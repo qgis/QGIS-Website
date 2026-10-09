@@ -7,7 +7,7 @@
 
 title: "QGIS Grant Programme 2024 Results"
 date: "2024-05-01"
-description: "We are extremely pleased to announce the 5 winning proposals for our 2024 QGIS.ORG grant programme: QEP#289 Authentication system revision…"
+description: "We are extremely pleased to announce the 5 winning proposals for our 2024 QGIS.ORG grant programme: Funding for the programme…"
 link: "https://blog.qgis.org/2024/05/01/qgis-grant-programme-2024-results/"
 author: "underdark"
 draft: false
