@@ -233,6 +233,7 @@ See ```.github/workflows/playwright-e2e.yml```
 - **Manual donors:** Use `scripts/update_donors_from_file.py <donor_file.txt>`
 - **Stripe donors:** Run `scripts/update_donors.py` (requires Stripe API access). Runs nightly via GitHub Actions
 - **File format:** Plain text files with donor names
+- **Hidden donors:** Names in the `EXCLUDED_DONORS` Actions variable are never added and are purged from `data/donors.json` on every run. See [Hiding donors from the list](#hiding-donors-from-the-list)
 
 #### 📋 Visual Changelogs
 - **Source:** changelog.qgis.org
@@ -529,6 +530,39 @@ static txt file using the script `script/update_donors_from_file.py`:
 
 ```sh
 python scripts/update_donors_from_file.py <path_to_donors.txt> <path_to_donors2.txt> ...
+```
+
+### Hiding donors from the list
+
+Some donors ask not to appear on the donors page. Their names are kept in the
+`EXCLUDED_DONORS` GitHub Actions variable, so they never need to be committed.
+On every run of `.github/workflows/update-donors.yml`, the Stripe and Payrexx
+scripts skip these names, and `scripts/donor_exclusions.py` then removes any
+of them already in `data/donors.json`.
+
+To add or edit the list, go to **Settings → Secrets and variables → Actions →
+Variables** and create (or edit) the repository variable `EXCLUDED_DONORS`.
+Put one name per line:
+
+```
+John Doe
+Jane Smith
+María García
+```
+
+- Matching ignores case, surrounding spaces and trailing dots or commas
+  (`john doe.` hides `John Doe`); otherwise the name must match exactly as it
+  appears in `data/donors.json`.
+- Don't separate names with commas: `John Doe, Jane Smith` is read as one name.
+- Removing a name from the variable doesn't add the donor back automatically.
+- Repository variables are visible to collaborators with access to the repo
+  settings, but are not shown on the public site. A name purged from
+  `data/donors.json` still exists in the git history.
+
+To apply the list locally:
+
+```sh
+EXCLUDED_DONORS="$(printf 'John Doe\nJane Smith')" python scripts/donor_exclusions.py
 ```
 
 ### Donors scraping

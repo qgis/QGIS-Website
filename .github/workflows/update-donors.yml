@@ -38,10 +38,13 @@ jobs:
         PAYREXX_INSTANCE: ${{ secrets.PAYREXX_INSTANCE }}
         PAYREXX_API_SECRET: ${{ secrets.PAYREXX_API_SECRET }}
         LIST_AS_DONOR_LABEL: ${{ secrets.LIST_AS_DONOR_LABEL }}
+        EXCLUDED_DONORS: ${{ vars.EXCLUDED_DONORS }}
       run: |
         cd ./qgis-website
         pipenv run ./scripts/update_donors.py
         pipenv run ./scripts/update_payrexx_donors.py
+        # Purge donors who asked not to be listed (EXCLUDED_DONORS Actions variable, one name per line)
+        pipenv run ./scripts/donor_exclusions.py
 
     - name: '⬇️ Pull latest changes before commit'
       run: |

@@ -28,6 +28,8 @@ import sys
 import stripe
 import os
 
+from donor_exclusions import is_excluded, load_excluded_donors
+
 TIMESTAMP_FILE = "scripts/latest_donation.txt"
 
 def log(msg):
@@ -129,6 +131,7 @@ def get_donors(donors_json_file, custom_field_label):
             5. Update and save the latest timestamp if new donations are found.
     """
     latest_timestamp = get_latest_timestamp()
+    excluded = load_excluded_donors()
 
     customers = stripe.Customer.list(limit=100, created={'gt': latest_timestamp})
     new_latest_timestamp = latest_timestamp
@@ -151,6 +154,10 @@ def get_donors(donors_json_file, custom_field_label):
             new_donor_name = donor['name']
 
             if not new_donor_name:
+                continue
+
+            if is_excluded(new_donor_name, excluded):
+                new_latest_timestamp = max(new_latest_timestamp, donor['date'])
                 continue
 
             if list_me_as_donor:
