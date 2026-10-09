@@ -149,6 +149,7 @@ The `scripts/` folder contains utility scripts to assist with data loading, and 
 | `scripts/sanitize_commercial_supports.py`  | Checks each supporter's URL and removes invalid ones from commercial support listings | 🏪 Commercial Support page (`/resources/support/commercial-support/`) |
 | `scripts/update_donors_from_file.py`  | Updates `data/donors.json` ordered alphabetically by first name based on input file | 💰 Donors page (`/funding/donate/`) |
 | `scripts/update_donors.py`  | Updates `data/donors.json` ordered alphabetically by first name based on Stripe donations | 💰 Donors page (`/funding/donate/`) |
+| `scripts/donor_exclusions.py`  | Removes names listed in the `EXCLUDED_DONORS` Actions variable from `data/donors.json` | 💰 Donors page (`/funding/donate/`) |
 | `scripts/update-schedule.py`  | Updates `data/conf.json` and `content/schedule.ics` with release schedule information | 📅 Download page, Release schedule, LTR/LT version info |
 | `scripts/update_individual_contributors.py`  | Aggregates GitHub stats for individual contributors across QGIS repositories | 👥 Individual Contributors section (`/community/organisation/contributors/`) |
 | `scripts/update_contributing_orgs.py`  | Aggregates GitHub stats for contributing organizations across QGIS repositories | 🏢 Contributing Organizations section (`/community/organisation/organisations/`) |
@@ -501,6 +502,39 @@ static txt file using the script `script/update_donors_from_file.py`:
 
 ```sh
 python scripts/update_donors_from_file.py <path_to_donors.txt> <path_to_donors2.txt> ...
+```
+
+### Hiding donors from the list
+
+Some donors ask not to appear on the donors page. Their names are kept in the
+`EXCLUDED_DONORS` GitHub Actions variable, so they never need to be committed.
+On every run of `.github/workflows/update-donors.yml`, the Stripe and Payrexx
+scripts skip these names, and `scripts/donor_exclusions.py` then removes any
+of them already in `data/donors.json`.
+
+To add or edit the list, go to **Settings → Secrets and variables → Actions →
+Variables** and create (or edit) the repository variable `EXCLUDED_DONORS`.
+Put one name per line:
+
+```
+John Doe
+Jane Smith
+María García
+```
+
+- Matching ignores case, surrounding spaces and trailing dots or commas
+  (`john doe.` hides `John Doe`); otherwise the name must match exactly as it
+  appears in `data/donors.json`.
+- Don't separate names with commas: `John Doe, Jane Smith` is read as one name.
+- Removing a name from the variable doesn't add the donor back automatically.
+- Repository variables are visible to collaborators with access to the repo
+  settings, but are not shown on the public site. A name purged from
+  `data/donors.json` still exists in the git history.
+
+To apply the list locally:
+
+```sh
+EXCLUDED_DONORS="$(printf 'John Doe\nJane Smith')" python scripts/donor_exclusions.py
 ```
 
 ### Donors scraping
