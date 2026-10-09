@@ -358,6 +358,13 @@ layoutClass = "half"
 listTitle = "QGIS Canada User Group"
 listSubtitle = "Contact: Jeff McKenna" >}}
 
+{{< rich-list
+listLink = "https://qgis.hr/"
+icon = "🇭🇷"
+layoutClass = "half"
+listTitle = "QGIS Croatia User Group"
+listSubtitle = "Contact: Dominik Cindrić" >}}
+
 ## Goals of a user group
 
 
