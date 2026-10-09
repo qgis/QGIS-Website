@@ -91,6 +91,16 @@ Other projects can reuse the groups: [`https://qgis.org/data/user_groups/user_gr
 
 Direct pushes to `main` take the same build path. If the source file is invalid, the build fails without committing, and its summary says why.
 
+Everything for the user groups lives in this repository, not in the theme submodule. Files at the same path as a theme file override it, so changing them never needs a theme pull request.
+
+| Path | What it is |
+|---|---|
+| `layouts/shortcodes/user-groups-list.html`, `user-groups-stats.html`, `user-groups-map.html` | The list, the landing page counts and the map |
+| `layouts/partials/user-group-*.html`, `user-groups-data.html`, `user-groups-edit-button.html` | Cards, table rows, flag, data loading and the "Suggest a change" button |
+| `assets/js/user-groups-map.js`, `assets/js/globe-flat-map.js` | The map, and the globe and Equal Earth flat map base it shares with the contributors map |
+| `assets/sass/user-groups.sass`, `assets/sass/maps.sass` | Styles for the user groups pages, and the shared map styles |
+| `layouts/shortcodes/contributors-map.html`, `assets/js/contributors-map.js`, `assets/js/contributors-filter.js` | Override the theme files of the same name: the contributors map on the shared map base, and the list filter both lists use |
+
 To run it yourself from the project root:
 
 1. Run `pip install -r REQUIREMENTS.txt`.

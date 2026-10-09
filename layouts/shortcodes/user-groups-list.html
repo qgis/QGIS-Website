@@ -2,8 +2,8 @@
     Local QGIS user groups: search, continent filters, grid and table views.
     Data: static/data/user_groups/user_groups.json, built from
     data/user_groups/groups.json by scripts/update_user_groups.py (shared with the map).
-    Reuses the DOM hooks of individual-contributors so the theme's
-    contributors-filter.js drives this page as well.
+    Reuses the DOM hooks of individual-contributors so the site's
+    assets/js/contributors-filter.js drives this page as well.
 */}}
 {{ $continentOrder := slice "africa" "asia" "europe" "north-america" "oceania" "south-america" "global" }}
 
@@ -30,6 +30,9 @@
     {{ if .group.active }}{{ $activeCount = add $activeCount 1 }}{{ end }}
     {{ $usedContinents = merge $usedContinents (dict .group.continent true) }}
 {{ end }}
+
+{{ $userGroupsCss := resources.Get "sass/user-groups.sass" | css.Sass }}
+<link rel="stylesheet" href="{{ $userGroupsCss.RelPermalink }}">
 
 <!-- Filter and Search Section -->
 <div class="contributors-filter-section notification is-light p-5 mb-5 mt-5">
