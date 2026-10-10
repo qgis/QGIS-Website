@@ -101,6 +101,8 @@ type: page
 {{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algerije gebruikersgroep" listSubtitle="Contact: Walid Moulahoum" >}}
 
 {{<rich-list listLink="https://qgis.ca/" icon="🇨🇦" layoutClass="half" listTitle="QGIS Canada gebruikersgroep" listSubtitle="Contact: Jeff McKenna" >}}
+
+{{<rich-list listLink="https://qgis.hr/" icon="🇭🇷" layoutClass="half" listTitle="QGIS Croatia User Group" listSubtitle="Contact: Dominik Cindrić" >}}
 ## Doelen van een gebruikersgroep
 * Organiseren van gebruikersbijeenkomsten
 * Coördinatie van ontwikkeling, met de nadruk op regionale/nationale standaarden en vereisten 

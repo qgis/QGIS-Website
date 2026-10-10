@@ -101,6 +101,8 @@ type: page
 {{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="Gruppo utenti QGIS Algeria" listSubtitle="Contatto: Walid Moulahoum" >}}
 
 {{<rich-list listLink="https://qgis.ca/" icon="🇨🇦" layoutClass="half" listTitle="Gruppo utenti QGIS Canada" listSubtitle="Contatto: Jeff McKenna" >}}
+
+{{<rich-list listLink="https://qgis.hr/" icon="🇭🇷" layoutClass="half" listTitle="QGIS Croatia User Group" listSubtitle="Contact: Dominik Cindrić" >}}
 ## Obiettivi di un gruppo di utenti
 * Organizzazione di incontri per gli utenti
 * Coordinamento dello sviluppo, con particolare attenzione agli standard e ai requisiti regionali/nazionali

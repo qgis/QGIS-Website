@@ -1,7 +1,7 @@
 ---
 author: Edward Crowther
 categories:
-- Case studies
+- Estudos de caso
 date: '2015-04-01'
 description: The Danish Demining Group (DDG), the specialised mine action unit of
   the Danish Refugee Council, has been working in Afghanistan since 1999, undertaking
