@@ -1,7 +1,7 @@
 baseURL = 'https://www.qgis.org/'
 publishDir = "public_www"
-minify = true
-
+[minify]
+  minifyOutput = true
 [params]
 langRedirectEnabled = false
 langRedirectThreshold = 35

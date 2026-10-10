@@ -1,6 +1,6 @@
 # May be overwritten in .github/workflows/github-pages.yml or other config files
 baseURL = 'https://qgis.org/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'QGIS Web Site'
 theme = 'qgis-website-theme'
 # Default pagination.
@@ -31,7 +31,7 @@ enableRobotsTXT = false
 
 [params]
 # Min hugo version
-minHugoVersion = "0.139.0"
+minHugoVersion = "0.158.0"
 # Brand colours:
 primary1 = "#589632"
 primary2 = "#55828b"
@@ -1055,37 +1055,37 @@ sectionPagesMenu = 'main'
         ]
   [languages]
     [languages.en]
-    languageCode = "en"
+    locale = "en"
     title = "QGIS"
     weight = 2
     contentDir = "content-translated/en"
 
     [languages.nl]
-    languageCode = "nl"
+    locale = "nl"
     weight = 2
     contentDir = "content-translated/nl"
 
 
     [languages.ro]
-    languageCode = "ro"
+    locale = "ro"
     weight = 2
     contentDir = "content-translated/ro"
 
 
     [languages.ja]
-    languageCode = "ja"
+    locale = "ja"
     weight = 2
     contentDir = "content-translated/ja"
 
 
     [languages.it]
-    languageCode = "it"
+    locale = "it"
     weight = 2
     contentDir = "content-translated/it"
 
 
     [languages.hu]
-    languageCode = "hu"
+    locale = "hu"
     weight = 2
     contentDir = "content-translated/hu"
 
@@ -1094,50 +1094,56 @@ sectionPagesMenu = 'main'
   [[module.mounts]]
     source = "content"
     target = "content"
-    lang = "en"
-
+    [module.mounts.sites.matrix]
+      languages = ["en"]
   # All other languages - translated content first, fallback to original
   [[module.mounts]]
     source = "content-translated/nl"
     target = "content"
-    lang = "nl"
+    [module.mounts.sites.matrix]
+      languages = ["nl"]
   [[module.mounts]]
     source = "content"
     target = "content"
-    lang = "nl"
-
+    [module.mounts.sites.matrix]
+      languages = ["nl"]
   [[module.mounts]]
     source = "content-translated/ro"
     target = "content"
-    lang = "ro"
+    [module.mounts.sites.matrix]
+      languages = ["ro"]
   [[module.mounts]]
     source = "content"
     target = "content"
-    lang = "ro"
-
+    [module.mounts.sites.matrix]
+      languages = ["ro"]
   [[module.mounts]]
     source = "content-translated/ja"
     target = "content"
-    lang = "ja"
+    [module.mounts.sites.matrix]
+      languages = ["ja"]
   [[module.mounts]]
     source = "content"
     target = "content"
-    lang = "ja"
-
+    [module.mounts.sites.matrix]
+      languages = ["ja"]
   [[module.mounts]]
     source = "content-translated/it"
     target = "content"
-    lang = "it"
+    [module.mounts.sites.matrix]
+      languages = ["it"]
   [[module.mounts]]
     source = "content"
     target = "content"
-    lang = "it"
-
+    [module.mounts.sites.matrix]
+      languages = ["it"]
   [[module.mounts]]
     source = "content-translated/hu"
     target = "content"
-    lang = "hu"
+    [module.mounts.sites.matrix]
+      languages = ["hu"]
   [[module.mounts]]
     source = "content"
     target = "content"
-    lang = "hu"
+    [module.mounts.sites.matrix]
+      languages = ["hu"]
