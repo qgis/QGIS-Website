@@ -1,0 +1,70 @@
+# Builds the local user groups data after a change reaches main, whether it
+# came from a merged pull request or a direct push.
+#
+# Runs the trusted script from main: it validates data/user_groups/groups.json,
+# downloads new or changed logos (only public addresses, size capped, raster
+# images re-encoded as WebP), converts uploads from user-groups-logos/, and
+# regenerates the published static/data/user_groups/user_groups.json and
+# the country outlines in data/user_groups/countries.json.
+# The result is committed back to main, like the other 🤖 workflows.
+#
+# A push made with GITHUB_TOKEN does not trigger other workflows, so this
+# job starts the Pages deploy itself when it committed something. That bot
+# commit does not trigger this workflow again either.
+name: 🌍 Build user groups and commit
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'data/user_groups/groups.json'
+      - 'user-groups-logos/**'
+      - 'scripts/update_user_groups.py'
+      - 'scripts/resize_image.py'
+  workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: update-user-groups
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    if: github.repository_owner == 'qgis'
+    steps:
+      - name: 🛒 Checkout QGIS Website
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+          cache-dependency-path: REQUIREMENTS.txt
+
+      - name: 🚸 Install dependencies
+        run: pip install -r REQUIREMENTS.txt
+
+      - name: 🌍 Build the user groups data
+        run: python scripts/update_user_groups.py
+
+      - name: ⬇️ Pull latest changes before commit
+        run: |
+          # Another job may have pushed to main while this one ran. Rebase on
+          # top of it first (autostash tucks the generated files aside) so the
+          # commit below is a fast forward.
+          git pull --rebase --autostash origin main
+
+      - name: ✉️ Commit and push changes
+        id: commit
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: '🤖 User groups data updated via GitHub Action'
+          file_pattern: 'static/data/user_groups/user_groups.json data/user_groups/countries.json data/user_groups/logos.json static/img/user-groups user-groups-logos'

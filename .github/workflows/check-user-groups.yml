@@ -1,0 +1,56 @@
+# Checks a pull request that changes the local user groups.
+#
+# Runs the PR's own copy of scripts/update_user_groups.py in --check mode: it
+# validates data/user_groups/groups.json, downloads and converts any new or changed
+# logo into a preview folder, and writes a report to the job summary. It
+# writes nothing to the repository.
+#
+# Security: this uses `pull_request`, never `pull_request_target`, so the job
+# gets a read only token and no secrets even for pull requests from forks.
+# GitHub asks a maintainer to approve the run for first time contributors.
+# The files are generated after the merge by update-user-groups.yml.
+name: 🌍 Check user groups
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'data/user_groups/groups.json'
+      - 'user-groups-logos/**'
+      - 'scripts/update_user_groups.py'
+      - 'scripts/resize_image.py'
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 🛒 Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+          cache-dependency-path: REQUIREMENTS.txt
+
+      - name: 🚸 Install dependencies
+        run: pip install -r REQUIREMENTS.txt
+
+      - name: 🌍 Check the user groups and their logos
+        run: python scripts/update_user_groups.py --check --preview-dir user-group-logo-previews
+
+      - name: 🖼️ Upload the converted logos for review
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: user-group-logo-previews
+          path: user-group-logo-previews
+          if-no-files-found: ignore
+          retention-days: 14

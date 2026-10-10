@@ -1,0 +1,28 @@
+{{/*
+    Count of active local user groups or of the countries they cover.
+    Usage: {{< user-groups-stats "groups" "/community/groups/list/" >}}
+           {{< user-groups-stats "countries" "/community/groups/map/" >}}
+*/}}
+{{ $type := .Get 0 | default "groups" }}
+{{ $link := .Get 1 | default "" }}
+{{ $groups := 0 }}
+{{ $countries := dict }}
+{{ range (partial "user-groups-data.html" .).features }}
+    {{ if .properties.active }}
+        {{ $groups = add $groups 1 }}
+        {{ with .properties.country }}{{ $countries = merge $countries (dict . true) }}{{ end }}
+    {{ end }}
+{{ end }}
+<div class="container">
+    <div class="stats-grid">
+        <a href="{{ $link }}" class="stat-card">
+            {{ if eq $type "countries" }}
+            <div class="has-text-weight-semibold is-size-2">{{ len $countries }}</div>
+            <div class="stat-label">{{ i18n "userGroupsStatCountries" }}</div>
+            {{ else }}
+            <div class="has-text-weight-semibold is-size-2">{{ $groups }}</div>
+            <div class="stat-label">{{ i18n "userGroupsStatGroups" }}</div>
+            {{ end }}
+        </a>
+    </div>
+</div>

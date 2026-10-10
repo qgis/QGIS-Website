@@ -1,0 +1,109 @@
+{{/*
+    Map of local QGIS user groups: country polygons plus group logos.
+    The groups are fetched by the script from the published
+    /data/user_groups/user_groups.json, like the contributors map does.
+    The country outlines from data/user_groups/countries.json are embedded
+    below, because they are not published as a file.
+    Shares its look and globe/flat behaviour with contributors-map. Lives in
+    the site, not the theme, like everything else for the user groups.
+*/}}
+{{ $sass := resources.Get "sass/contributors-map.sass" }}
+{{ $style := $sass | css.Sass }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $maps := resources.Get "sass/maps.sass" | css.Sass }}
+<link rel="stylesheet" href="{{ $maps.RelPermalink }}">
+{{ $userGroupsCss := resources.Get "sass/user-groups.sass" | css.Sass }}
+<link rel="stylesheet" href="{{ $userGroupsCss.RelPermalink }}">
+
+<!-- Load Font Awesome -->
+{{ $fontawesome := resources.Get "css/fontawesome.css" }}
+<link rel="stylesheet" href="{{ $fontawesome.RelPermalink }}">
+
+<!-- Load MapLibre GL -->
+{{ $maplibreCSS := resources.Get "libs/maplibre/maplibre-gl.css" }}
+<link rel="stylesheet" href="{{ $maplibreCSS.RelPermalink }}">
+
+<!-- Load OpenLayers -->
+{{ $olCSS := resources.Get "libs/openlayers/ol.css" }}
+<link rel="stylesheet" href="{{ $olCSS.RelPermalink }}">
+
+{{ $globeLabel := i18n "userGroupsMapGlobe" | default "Globe view" }}
+{{ $flatLabel := i18n "userGroupsMapFlat" | default "Flat map" }}
+
+<div class="contributors-map-container user-groups-map"
+     data-groups-url="{{ "data/user_groups/user_groups.json" | relURL }}"
+     data-default-logo="img/logosign.svg"
+     data-since="{{ i18n "userGroupsSince" (dict "Year" "__YEAR__") | default "Since __YEAR__" }}"
+     data-contact="{{ i18n "userGroupsContact" (dict "Names" "__NAMES__") | default "Contact: __NAMES__" }}"
+     data-load-error="{{ i18n "userGroupsMapLoadError" | default "We could not load the map. Refresh the page to try again." }}">
+  <div class="loading-spinner" role="status">
+    {{ i18n "userGroupsMapLoading" | default "Loading the map" }}
+  </div>
+
+  <!-- Map Controls -->
+  <div class="map-controls" role="group" aria-label="{{ i18n "userGroupsMapDisplay" | default "Map display" }}">
+    <button id="globe-view-btn" class="map-view-toggle" title="{{ $globeLabel }}" aria-label="{{ $globeLabel }}" aria-pressed="false">
+      <i class="fas fa-globe" aria-hidden="true"></i>
+    </button>
+    <button id="flat-view-btn" class="map-view-toggle active" title="{{ $flatLabel }}" aria-label="{{ $flatLabel }}" aria-pressed="true">
+      <i class="fas fa-map" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <!-- Globe View -->
+  <div id="globe-view"></div>
+
+  <!-- Flat Map View -->
+  <div id="flat-map-view"></div>
+</div>
+
+<div class="mt-4">
+  {{ partial "user-groups-edit-button.html" . }}
+</div>
+
+<!-- Shared popup overlay -->
+<div id="popup-overlay" class="popup-overlay"></div>
+
+<!-- User group popup (filled by user-groups-map.js) -->
+<div id="user-group-popup" class="contributor-tooltip user-group-popup" role="dialog" aria-modal="true" aria-labelledby="user-group-popup-title">
+  <button class="tooltip-close" aria-label="{{ i18n "userGroupsClose" | default "Close" }}">×</button>
+  <div class="card contributor-card user-group-popup-card">
+    <div class="card-content">
+      <h2 class="title is-5 mb-4" id="user-group-popup-title"></h2>
+      <div id="user-group-popup-body"></div>
+    </div>
+  </div>
+</div>
+
+<template id="user-group-entry-template">
+  <article class="user-group-entry">
+    <img class="user-group-entry-logo" src="" alt="" loading="lazy">
+    <div class="user-group-entry-info">
+      <h3 class="title is-6 mb-1">
+        <a class="user-group-entry-name" target="_blank" rel="noopener"></a>
+      </h3>
+      <span class="tag is-light is-rounded user-group-entry-since"></span>
+      <p class="user-group-entry-contacts is-size-7 has-text-grey mt-1"></p>
+      <a class="button is-small is-primary3 is-outlined mt-2 user-group-entry-visit" target="_blank" rel="noopener">
+        <span class="icon"><i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+        <span>{{ i18n "userGroupsVisitWebsite" | default "Visit website" }}</span>
+      </a>
+    </div>
+  </article>
+</template>
+
+<script type="application/json" id="user-groups-countries">{{ site.Data.user_groups.countries | jsonify | safeJS }}</script>
+
+<!-- Load MapLibre GL JS -->
+{{ $maplibreJS := resources.Get "libs/maplibre/maplibre-gl.js" }}
+<script src="{{ $maplibreJS.RelPermalink }}"></script>
+
+<!-- Load OpenLayers JS -->
+{{ $olJS := resources.Get "libs/openlayers/ol.js" }}
+<script src="{{ $olJS.RelPermalink }}"></script>
+
+<!-- Load map functionality -->
+{{ $baseJs := resources.Get "js/globe-flat-map.js" }}
+<script src="{{ $baseJs.RelPermalink }}"></script>
+{{ $js := resources.Get "js/user-groups-map.js" }}
+<script src="{{ $js.RelPermalink }}"></script>

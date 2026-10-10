@@ -154,12 +154,14 @@ The `scripts/` folder contains utility scripts to assist with data loading, and 
 | `scripts/update_individual_contributors.py`  | Aggregates GitHub stats for individual contributors across QGIS repositories | 👥 Individual Contributors section (`/community/organisation/contributors/`) |
 | `scripts/update_contributing_orgs.py`  | Aggregates GitHub stats for contributing organizations across QGIS repositories | 🏢 Contributing Organizations section (`/community/organisation/organisations/`) |
 | `scripts/match_commercial_contributors.py`  | Matches commercial support organizations with contributing organizations based on domain/name | 🏪 Commercial Support badges, 🏢 Contributing Organizations links |
+| `scripts/update_user_groups.py`  | Builds the user groups list and map data from `data/user_groups/groups.json`: country names, continents, map points, country outlines and logos. Runs on pull requests (`--check`) and after merges. See [docs/user-groups.md](docs/user-groups.md) | 🌍 Local User Groups list and map (`/community/groups/list/`, `/community/groups/map/`) |
 | **GitHub Actions (Automated)** | **Scheduled workflows for content updates** | **Multiple areas** |
 | `.github/workflows/update-gh-sponsors.yml` | Updates GitHub Sponsors list twice daily | 💖 GitHub Sponsors page (`content/funding/donate/github-sponsors.md`) |
 | `.github/workflows/update-donors.yml` | Updates Stripe donors list twice daily | 💰 Donors page (`data/donors.json`) |
 | `.github/workflows/update-feeds.yml` | Updates feeds and hub maps twice daily | 🏢 Funders, 📰 News feeds, 🗺️ Hub maps |
 | `.github/workflows/check-commercial-support-links.yml` | Sanitizes commercial support links weekly | 🏪 Commercial Support page |
 | `.github/workflows/update-contributors.yml` | Runs the contributor, organization, and commercial-support-matching scripts twice daily | 👥 Contributors, 🏢 Organizations, 🏪 Commercial Support badges (`data/contributors/*.json`, `data/commercial_support/contributor_matches.json`) |
+| `.github/workflows/update-user-groups.yml` | Builds the user groups data and logos after a change to `data/user_groups/groups.json` reaches `main`, commits it and redeploys | 🌍 Local User Groups (`static/data/user_groups/user_groups.json`, `data/user_groups/countries.json`, `static/img/user-groups/`) |
 
 > ✏️ **Note:** Run each script from the project root. Some scripts may require environment variables or configuration—see comments within each script for usage details.
 

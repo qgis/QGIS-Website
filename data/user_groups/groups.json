@@ -1,0 +1,476 @@
+{
+  "_how_to_edit": "One entry per group. Required: name, country (two letter code such as \"KE\", or null for a worldwide group), year and contacts. Optional: id, website, logo_url and removed (the year the group stopped). Leave out id for a new group. The website builds everything else. Full guide: docs/user-groups.md",
+  "groups": [
+    {
+      "id": "qgis-br",
+      "name": "QGIS Brasil",
+      "country": "BR",
+      "website": "https://qgisbrasil.org/",
+      "year": 2016,
+      "contacts": [
+        "Narcélio de Sá"
+      ],
+      "logo_url": "https://i1.wp.com/qgisbrasil.org/wp-content/uploads/2017/08/mini_qgis_brasil_original.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-dk",
+      "name": "QGIS Brugergruppe Danmark",
+      "country": "DK",
+      "website": "https://qgis.dk/",
+      "year": 2015,
+      "contacts": [
+        "Mie Winstrup"
+      ],
+      "logo_url": "https://changelog.qgis.org/media/images/projects/d21940f669c52525e7d73835885f27a570d3c80c.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-uk",
+      "name": "QGIS UK",
+      "country": "GB",
+      "website": "https://uk.osgeo.org/qgis.html",
+      "year": 2015,
+      "contacts": [
+        "Ant Scott",
+        "Ross McDonald",
+        "Kevin Williams"
+      ],
+      "logo_url": "https://pbs.twimg.com/profile_images/864206708272484352/rqOeGldR_400x400.jpg",
+      "removed": null
+    },
+    {
+      "id": "qgis-de",
+      "name": "QGIS Anwendergruppe Deutschland",
+      "country": "DE",
+      "website": "https://qgis.de/",
+      "year": 2015,
+      "contacts": [
+        "Thomas Schüttenberg"
+      ],
+      "logo_url": "https://qgis.de/lib/exe/fetch.php?w=164&tok=7ed605&media=site:qgis-de3_b.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-it",
+      "name": "Gruppo degli utenti italiani di QGIS",
+      "country": "IT",
+      "website": "http://qgis.it/",
+      "year": 2015,
+      "contacts": [
+        "Matteo Ghetta"
+      ],
+      "logo_url": "http://qgis.it/img/logo.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-jp",
+      "name": "QGIS User Group Japan (OSGeo.JP)",
+      "country": "JP",
+      "website": "http://qgis.jp/",
+      "year": 2016,
+      "contacts": [
+        "Kosuke ASAHI"
+      ],
+      "logo_url": "http://www.osgeo.jp/wp-content/uploads/2014/08/logo.gif",
+      "removed": null
+    },
+    {
+      "id": "qgis-pe",
+      "name": "QGIS Perú Official Users Group",
+      "country": "PE",
+      "website": "https://qgis.pe/",
+      "year": 2015,
+      "contacts": [
+        "Anibal Alarcon"
+      ],
+      "logo_url": "https://avatars0.githubusercontent.com/u/68319150?s=200&v=4",
+      "removed": null
+    },
+    {
+      "id": "qgis-pl",
+      "name": "Polska Grupa Użytkowników QGIS",
+      "country": "PL",
+      "website": "https://qgis.pl/",
+      "year": 2016,
+      "contacts": [
+        "Michał Żugajewicz"
+      ],
+      "logo_url": "http://qgis.pl/_static/logo.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-pt",
+      "name": "QGIS Portugal",
+      "country": "PT",
+      "website": "https://qgis.pt/",
+      "year": 2015,
+      "contacts": [
+        "Giovanni Manghi"
+      ],
+      "logo_url": "https://www.qgis.pt/wp-content/uploads/2020/01/index-1-150x150.jpg",
+      "removed": null
+    },
+    {
+      "id": "qgis-ch",
+      "name": "QGIS user group Switzerland",
+      "country": "CH",
+      "website": "https://qgis.ch/",
+      "year": 2015,
+      "contacts": [
+        "François Voisard"
+      ],
+      "logo_url": "https://qgis.ch/assets/img/logo.png",
+      "removed": null
+    },
+    {
+      "id": "niwa-nz",
+      "name": "NIWA QGIS user group",
+      "country": "NZ",
+      "website": "https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group",
+      "year": 2016,
+      "contacts": [
+        "Brent Wood"
+      ],
+      "removed": 2018
+    },
+    {
+      "id": "qgis-no",
+      "name": "QGIS Norge",
+      "country": "NO",
+      "website": "https://qgis.no/",
+      "year": 2017,
+      "contacts": [
+        "James Stott"
+      ],
+      "logo_url": "https://www-static.qgis.no/wp-content/uploads/2021/05/cropped-QGISNorge-192x192.jpg",
+      "removed": null
+    },
+    {
+      "id": "qgis-za",
+      "name": "QGIS ZA",
+      "country": "ZA",
+      "website": "https://qgis.org.za/",
+      "year": 2017,
+      "contacts": [
+        "Admire Nyakudya"
+      ],
+      "removed": null
+    },
+    {
+      "id": "qgis-fr",
+      "name": "Groupe des Utilisateurs de QGIS France",
+      "country": "FR",
+      "website": "https://www.osgeo.fr/",
+      "year": 2017,
+      "contacts": [
+        "Harrissou Sant-anna"
+      ],
+      "removed": null
+    },
+    {
+      "id": "qgis-se",
+      "name": "QGIS Sverige",
+      "country": "SE",
+      "website": "https://qgis.se/",
+      "year": 2017,
+      "contacts": [
+        "Karl-Magnus Jönsson"
+      ],
+      "logo_url": "http://www.qgis.se/wp-content/uploads/2017/05/qgis_sverige_logotyp-1.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-ke",
+      "name": "QGIS Kenya",
+      "country": "KE",
+      "website": "https://qgis.or.ke",
+      "year": 2017,
+      "contacts": [
+        "Benard Mitto"
+      ],
+      "logo_url": "https://qgis.or.ke/images/qgiskenya_logo.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-au",
+      "name": "QGIS Australia",
+      "country": "AU",
+      "website": "https://qgis-australia.org/",
+      "year": 2017,
+      "contacts": [
+        "Emma Hain"
+      ],
+      "removed": null
+    },
+    {
+      "id": "qgis-us",
+      "name": "QGIS USA",
+      "country": "US",
+      "website": "http://qgis-us.org",
+      "year": 2017,
+      "contacts": [
+        "Randal Hale"
+      ],
+      "logo_url": "https://pbs.twimg.com/profile_images/949318914533543936/lPkMi_Xx_400x400.jpg",
+      "removed": null
+    },
+    {
+      "id": "qgis-mx",
+      "name": "QGIS México",
+      "country": "MX",
+      "website": "https://qgis.mx",
+      "year": 2017,
+      "contacts": [
+        "Hennessy Amor Becerra Ayala"
+      ],
+      "logo_url": "https://pbs.twimg.com/profile_images/1248456549250392065/4d7uAf5v_400x400.jpg",
+      "removed": null
+    },
+    {
+      "id": "qgis-ge",
+      "name": "QGIS Georgia",
+      "country": "GE",
+      "year": 2017,
+      "contacts": [
+        "Zurab Archvadze"
+      ],
+      "removed": 2018
+    },
+    {
+      "id": "qgis-ro",
+      "name": "Asociația Utilizatorilor QGIS",
+      "country": "RO",
+      "website": "https://qgis.ro/",
+      "year": 2018,
+      "contacts": [
+        "Tudor Bărăscu"
+      ],
+      "logo_url": "https://qgis.ro/content/images/size/w300/2018/03/asociatia_qgis_1200.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-es",
+      "name": "Association of QGIS users in Spain",
+      "country": "ES",
+      "website": "https://qgis.es/",
+      "year": 2018,
+      "contacts": [
+        "Carlos López Quintanilla"
+      ],
+      "logo_url": "http://qgis.es/images/qgis_logo.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-co",
+      "name": "Grupo de Usuarios QGIS Colombia",
+      "country": "CO",
+      "website": "https://github.com/qgisco",
+      "year": 2018,
+      "contacts": [
+        "Germán Carrillo"
+      ],
+      "logo_url": "https://raw.githubusercontent.com/qgisco/material-difusion/master/logos/qgisco_logo_qgis_colombia_347x150.png",
+      "removed": 2025
+    },
+    {
+      "id": "qgis-nl",
+      "name": "QGIS gebruikersgroep",
+      "country": "NL",
+      "website": "https://qgis.nl/",
+      "year": 2020,
+      "contacts": [
+        "Raymond Nijssen"
+      ],
+      "logo_url": "https://pbs.twimg.com/profile_images/1188779173705330688/VDJW42Jw_400x400.png",
+      "removed": null
+    },
+    {
+      "id": "asociacion-qgis-mx",
+      "name": "Asociación QGIS México",
+      "country": "MX",
+      "website": "https://qgis.org.mx/",
+      "year": 2020,
+      "contacts": [
+        "Hennessy Amor Becerra Ayala"
+      ],
+      "removed": null
+    },
+    {
+      "id": "qgis-id",
+      "name": "Komunitas Pengguna QGIS Indonesia",
+      "country": "ID",
+      "website": "https://qgis-id.github.io/",
+      "year": 2020,
+      "contacts": [
+        "Ismail Sunni"
+      ],
+      "logo_url": "https://pbs.twimg.com/profile_images/1234428372781977601/KOOccZoG_400x400.jpg",
+      "removed": null
+    },
+    {
+      "id": "qgis-sk",
+      "name": "QGIS Slovensko",
+      "country": "SK",
+      "website": "https://qgis.sk/",
+      "year": 2020,
+      "contacts": [
+        "Jana Michalkova"
+      ],
+      "logo_url": "https://raw.githubusercontent.com/qgis-sk/qgis-sk.github.io/master/images/qgis_logo.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-ec",
+      "name": "Grupo de usuarios QGIS Ecuador",
+      "country": "EC",
+      "website": "https://qgis.ec/",
+      "year": 2020,
+      "contacts": [
+        "Adrián Benavides"
+      ],
+      "logo_url": "https://avatars.githubusercontent.com/u/77024709?v=4",
+      "removed": null
+    },
+    {
+      "id": "qgis-at",
+      "name": "QGIS Anwendergruppe Österreich",
+      "country": "AT",
+      "website": "https://qgis.at/",
+      "year": 2021,
+      "contacts": [
+        "Paul Stampfl"
+      ],
+      "logo_url": "https://pbs.twimg.com/profile_images/1006428230033838080/MlKWhfp__400x400.jpg",
+      "removed": null
+    },
+    {
+      "id": "qgis-gh",
+      "name": "QGIS Ghana",
+      "country": "GH",
+      "website": "https://qgisghana.org/",
+      "year": 2021,
+      "contacts": [
+        "Enock Seth Nyamador"
+      ],
+      "logo_url": "https://pbs.twimg.com/profile_images/1380616469969567750/lG7Q4Qzn_400x400.jpg",
+      "removed": null
+    },
+    {
+      "id": "qgis-ar",
+      "name": "QGIS Argentina",
+      "country": "AR",
+      "website": "https://qgis.ar/",
+      "year": 2022,
+      "contacts": [
+        "Ariel Anthieni"
+      ],
+      "logo_url": "https://pbs.twimg.com/profile_images/1320478408997036032/f0KZMOOp_400x400.jpg",
+      "removed": null
+    },
+    {
+      "id": "qgis-global-facebook",
+      "name": "QGIS Global virtual Facebook group",
+      "country": null,
+      "website": "https://www.facebook.com/groups/612486875596534",
+      "year": 2024,
+      "contacts": [
+        "Adelcides Varela"
+      ],
+      "removed": null
+    },
+    {
+      "id": "qgis-mk",
+      "name": "QGIS North Macedonia",
+      "country": "MK",
+      "website": "https://qgis-mk.blogspot.com",
+      "year": 2024,
+      "contacts": [
+        "Ivica Milevski"
+      ],
+      "logo_url": "https://bit.ly/qgismk",
+      "removed": null
+    },
+    {
+      "id": "qgis-al",
+      "name": "QGIS Albania",
+      "country": "AL",
+      "website": "https://qgis-al.blogspot.com/",
+      "year": 2024,
+      "contacts": [
+        "Emiliano Qose"
+      ],
+      "logo_url": "https://bit.ly/qgisal",
+      "removed": null
+    },
+    {
+      "id": "qgis-xk",
+      "name": "QGIS Republic of Kosova",
+      "country": "XK",
+      "website": "https://www.facebook.com/profile.php?id=100094072457586",
+      "year": 2024,
+      "contacts": [
+        "Milot Lubishtani"
+      ],
+      "removed": null
+    },
+    {
+      "id": "qgis-tz",
+      "name": "QGIS Tanzania",
+      "country": "TZ",
+      "website": "https://heed725.github.io/qgistz/",
+      "year": 2025,
+      "contacts": [
+        "Antidy Kawamala"
+      ],
+      "removed": null
+    },
+    {
+      "id": "qgis-in",
+      "name": "QGIS India User Group",
+      "country": "IN",
+      "website": "https://in.qgis.org/",
+      "year": 2026,
+      "contacts": [
+        "Ujaval Gandhi"
+      ],
+      "logo_url": "https://in.qgis.org/img/qgis_in.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-am",
+      "name": "QGIS Armenia",
+      "country": "AM",
+      "website": "https://qgis.am/",
+      "year": 2026,
+      "contacts": [
+        "Suren Poghosyan"
+      ],
+      "removed": null
+    },
+    {
+      "id": "qgis-dz",
+      "name": "QGIS Algeria User Group",
+      "country": "DZ",
+      "website": "https://dz.qgis.org/",
+      "year": 2026,
+      "contacts": [
+        "Walid Moulahoum"
+      ],
+      "logo_url": "https://dz.qgis.org/img/QGIS_DZ.png",
+      "removed": null
+    },
+    {
+      "id": "qgis-ca",
+      "name": "QGIS Canada User Group",
+      "country": "CA",
+      "website": "https://qgis.ca/",
+      "year": 2026,
+      "contacts": [
+        "Jeff McKenna"
+      ],
+      "logo_url": "https://qgis.ca/images/qgis-ca-icon128.png",
+      "removed": null
+    }
+  ]
+}
