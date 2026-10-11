@@ -227,7 +227,7 @@ Also adds a rendering test for brightness and contrast filter which has no test 
 
 ![image19](images/entries/bf6076062db63bc4c789bc18d3b029c14b2ddc8e.gif)
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+この機能は [Alexander Bruy](https://api.github.com/users/alexbruy) によって開発されました
 ## 三次元機能
 ### スタイル/プロジェクトに3D素材のテクスチャファイルを埋め込むことができる
 いくつかのAPIとコードの小さなクリーンアップが行われ、また、プロジェクト内に埋め込むために3DテクスチャファイルにQgsImageCacheの使用が導入されました。
@@ -465,7 +465,7 @@ The following image displays a histogram of a DEM (value range is 85-243) ![imag
 
 Addresses [Issue 26099](https://github.com/qgis/QGIS/issues/26099).
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+この機能は [Alexander Bruy](https://api.github.com/users/alexbruy) によって開発されました
 ## フォームとウィジェット
 ### ひとつの関連に複数のウィジェット
 ひとつの関連に複数の関連ウィジェットが作成できるようになり、それぞれが独自の設定を持っています。
@@ -651,7 +651,7 @@ This functionality directly addresses the limitations outlined in [Issue 18738](
 
 ![image59](images/entries/5cc48d8ea8bc276446f8eae4a1c838e0d1f91a40.webp)
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+この機能は [Alexander Bruy](https://api.github.com/users/alexbruy) によって開発されました
 ### MacOSでGRASSインストールフォルダを検出
 MacOS previously had a platform-specific custom parameter setting Grass7Utils.GRASS_FOLDER. This caused crashes for many users with multiple QGIS installations or who had some invalid folder settings. The parameter has been removed and a GISBASE environment variable has been introduced instead, which is commonly used in GRASS scripts as the \"root\" installation directory, emulating the behavior used for GRASS detection in Windows environments. If GISBASE is not present (default), a search is performed for grass folders in `QgsApplication.prefixPath()` (when packaged in bundle format). If not found, the standalone GRASS instance is searched for. The new behaviour for GRASS is in-line with the methodology used for the GDAL and SAGA processing tools.
 

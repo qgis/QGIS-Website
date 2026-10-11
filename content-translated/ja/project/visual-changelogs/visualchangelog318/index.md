@@ -45,7 +45,7 @@ QgsMessageLogViewer では、ログビューアパネルのコンテキストメ
 
 ![image4](images/entries/5adbd9ce0bfeb73ec308ed003603aacceab728d4.webp)
 
-This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
+この機能は [Olivier Dalang](https://api.github.com/users/olivierdalang) によって開発されました
 ### 機能：レイヤーソースウィジェット用 API 
 An API has been added in the provider GUI to allow a provider to create a custom widget, which exposes options to customize and change the layer\'s source. For example, a file-based layer provider could expose a widget for selecting a new file path, or an online provider could expose widgets for changing the host or authentication information.
 
@@ -92,7 +92,7 @@ The georeferencer canvas can now be rotated in order to facilitate the placement
 
 ![image11](images/entries/aba35ba4bb5ff0f2a8c1afcb55673e496efea18a.gif)
 
-This feature was developed by [uclaros](https://api.github.com/users/uclaros)
+この機能は [uclaros](https://api.github.com/users/uclaros) によって開発されました
 ## シンボロジ
 ### 機能: データ定義による全体的なシンボルの不透明度
 While it was previously possible to set the opacity for individual symbol layer colors via data defined expressions, it is now possible to set a data defined expression to control the overall symbol opacity.
@@ -113,7 +113,7 @@ New export options have been added for mesh layers. These allow the following op
 
 ![image13](images/entries/4738ffe8180f8fc320cf464121ec10fc27bd4c33.webp)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+この機能は [Lutra Consulting](https://www.lutraconsulting.co.uk) によって資金提供されました
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
 ### 機能: メッシュレイヤのネイティブなエクスポート
@@ -121,7 +121,7 @@ Previous versions of QGIS required the utilization of the crayfish plugin, howev
 
 ![image14](images/entries/41bdfc3d3c6afabc0e3e23986e42dbc22eb794df.gif)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+この機能は [Lutra Consulting](https://www.lutraconsulting.co.uk) によって資金提供されました
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
 ### 機能: 3D向けのメッシュの簡素化
@@ -139,7 +139,7 @@ A number of new processing algorithms have been ported from the crayfish plugin,
 
 ![image16](images/entries/3acf2cfe05dc7550f16e183026350914d028a6da.webp)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+この機能は [Lutra Consulting](https://www.lutraconsulting.co.uk) によって資金提供されました
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
 ## レンダリング
@@ -169,7 +169,7 @@ The eye dome lighting is, by principle, an image-based rendering solution simila
 
 ![image19](images/entries/4e7b365e9e991bf06f15a3ad15ff50a0ac9692e2.webp)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+この機能は [Lutra Consulting](https://www.lutraconsulting.co.uk) によって資金提供されました
 
 この機能は [Lutra Consulting (Nedjima Belgacem)](https://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: データ定義による 3D マテリアルカラー
@@ -280,7 +280,7 @@ There is now a string format parameter available for the `uuid()` function in QG
 ### Feature: Layer CRS variable for expressions
 QGIS expressions now support a *layer_crs* variable which will return the AuthID for a particular layer\'s coordinate reference system. This allows expressions to identify the layer CRS dynamically and perform transformations without needing to manually specify the CRS.
 
-This feature was developed by [Alex](https://api.github.com/users/roya0045)
+この機能は [Alex](https://api.github.com/users/roya0045) によって開発されました
 ### 機能: 数値配列に min、max、majority、sum、mean、median 関数をサポート
 QGIS expressions now include aggregate functions for arrays, which allow the easy retrieval of specific values from an array that may be used in QGIS elements such as symbologies. The following functions have been introduced:
 - array_min
@@ -290,11 +290,11 @@ QGIS expressions now include aggregate functions for arrays, which allow the eas
 - array_mean
 - array_median
 
-This feature was developed by [uclaros](https://api.github.com/users/uclaros)
+この機能は [uclaros](https://api.github.com/users/uclaros) によって開発されました
 ### 機能: array_get 関数における負のインデックス
 array_get 関数は、負のインデックス位置の使用に対応できるようになりました。
 
-This feature was developed by [Alex](https://api.github.com/users/roya0045)
+この機能は [Alex](https://api.github.com/users/roya0045) によって開発されました
 ### 関数: map_credits 関数の追加
 A *map_credits* function was added that collates a list of all the layer metadata attribution strings for the layers shown inside a specified map item.
 
@@ -329,7 +329,7 @@ Existing curve tracing settings [were introduced previously](https://github.com/
 
 ![image34](images/entries/29b75d5574181d5b7570090b9801ede92bec2fcd.webp)
 
-This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
+この機能は [Olivier Dalang](https://api.github.com/users/olivierdalang) によって開発されました
 ### 機能: 地物を拡大ツール
 A new digitizing tool allows for selected features to be scaled when in editing mode. This implementation was based on the work of [\@roya0045](https://github.com/roya0045) with [#40650](https://github.com/qgis/QGIS/pull/40650).
 
@@ -346,7 +346,7 @@ The georeferencer now reprojects data points in a desired output projection, rat
 
 ![image36](images/entries/50d4d1d6353ebfa251c53ea29c28821bf4c5ac18.gif)
 
-This feature was developed by [Alex](https://api.github.com/users/roya0045)
+この機能は [Alex](https://api.github.com/users/roya0045) によって開発されました
 ### Feature: Polymorphic relations/ Document management system
 A new GUI is available to manage polymorphic relations, implemented as a part of the dynamic relations described in [QEP #79](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/79).
 
@@ -365,7 +365,7 @@ Polymorphic relations are stored within a project and currently cannot be export
 ### 機能: フォームのソフトとハードの制約
 Historically, required fields would prevent a form from being saved entirely. Using soft constraints allow forms to notify users that expected information has been omitted, without preventing the form submission. Hard constraints, by contrast, function identically to the previous \"required fields\" functionality and will prevent form submissions unless data is correctly captured for the field.
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+この機能は [Lutra Consulting](https://www.lutraconsulting.co.uk) によって資金提供されました
 
 This feature was developed by [Lutra Consulting (Viktor Sklencar)](https://www.lutraconsulting.co.uk)
 ## 分析ツール
@@ -430,7 +430,7 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 - Avoid creating invalid lines with a single vertex
 - Avoid creating closed lines with two vertices
 
-This feature was developed by [uclaros](https://api.github.com/users/uclaros)
+この機能は [uclaros](https://api.github.com/users/uclaros) によって開発されました
 ## アプリケーションとプロジェクトのオプション
 ### 機能: 隠れレイヤ
 QGIS Projects now support the inclusion of hidden layers, which are capable of being included in a project but are not visible in the table of contents.
@@ -477,7 +477,7 @@ Implements a native DXF export algorithm using `QgsDxfExport` functionality, whi
 
 ![image43](images/entries/7800af6d2597ad04650532f201c8d4ee005c8e53.gif)
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+この機能は [Alexander Bruy](https://api.github.com/users/alexbruy) によって開発されました
 ### 機能: PostGISエクスポートの追加のジオメトリタイプ
 Some available geometry types from the GDAL ogr2ogr operation used for exporting data to PostGIS databases have been added to the tool interface. This functionality also includes the option to specify vector dimensions for exported data and resolves issue [39003](https://github.com/qgis/QGIS/issues/39003).
 
