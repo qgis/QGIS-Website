@@ -28,6 +28,10 @@ from zipfile import ZipFile
 from datetime import datetime
 from resize_image import resize_image, convert_to_webp, is_valid_image
 
+# (connect, read), matching the other harvesters. The read half is generous
+# because this downloads a changelog archive.
+REQUEST_TIMEOUT = (10, 300)
+
 class ChangelogHarvester:
     def __init__(self, version=None, release_date=None):
         """
@@ -49,7 +53,7 @@ class ChangelogHarvester:
     def download_and_extract_zip(self):
 
         print(f'Downloading {self.url}')
-        response = requests.get(self.url)
+        response = requests.get(self.url, timeout=REQUEST_TIMEOUT)
         if response.status_code != 200:
             print(f"Error: Could not download the file from {self.url}. HTTP status code: {response.status_code}")
             return

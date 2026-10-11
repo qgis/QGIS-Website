@@ -451,7 +451,8 @@ class GitHubContributionCounter:
             response = requests.post(
                 self.api_url,
                 json={"query": query, "variables": {"login": login}},
-                headers=self.headers
+                headers=self.headers,
+                timeout=30  # Add timeout, as in the other two queries
             )
             
             data = response.json()
