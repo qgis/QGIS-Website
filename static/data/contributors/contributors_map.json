@@ -5,7 +5,7 @@
     "how_to_update": "Run 'python scripts/update_individual_contributors.py --geojson-only' or with --token to update both files",
     "documentation": "See CONTRIBUTING.md section: Automated Content and Manual Edit Guidelines"
   },
-  "generated_at": "2026-10-12T03:53:31.809840+00:00",
+  "generated_at": "2026-10-12T09:59:20.804735+00:00",
   "type": "FeatureCollection",
   "features": [
     {
@@ -83,9 +83,9 @@
       "properties": {
         "login": "elpaso",
         "avatar_url": "https://avatars.githubusercontent.com/u/142164?u=90a3ff628d57bc0c14bf0513b33e9a23bbcd58da&v=4",
-        "total_contributions": 5712,
+        "total_contributions": 5713,
         "has_github_account": true,
-        "qgis_core": 5113,
+        "qgis_core": 5114,
         "documentation": 222,
         "web_sites": 377
       },
@@ -361,9 +361,9 @@
       "properties": {
         "login": "g-sherman",
         "avatar_url": "https://avatars.githubusercontent.com/u/494282?u=83d8f2c771f9a41efcb50143b69993d38d7cc2f7&v=4",
-        "total_contributions": 1113,
+        "total_contributions": 1105,
         "has_github_account": true,
-        "qgis_core": 1099,
+        "qgis_core": 1091,
         "web_sites": 12,
         "documentation": 2,
         "is_honorary": true,
@@ -632,6 +632,25 @@
     {
       "type": "Feature",
       "properties": {
+        "login": "gacarrillor",
+        "avatar_url": "https://avatars.githubusercontent.com/u/652785?u=048be2c6cf318a2138c67f6d861c793d99af2019&v=4",
+        "total_contributions": 535,
+        "has_github_account": true,
+        "qgis_core": 485,
+        "documentation": 40,
+        "web_sites": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07595,
+          4.59805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "login": "benoitdm-oslandia",
         "avatar_url": "https://avatars.githubusercontent.com/u/64401067?u=85e5e2118921f9f6948e8087e5402dfc3f59e848&v=4",
         "total_contributions": 534,
@@ -645,25 +664,6 @@
         "coordinates": [
           -1.01,
           46.13
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "login": "gacarrillor",
-        "avatar_url": "https://avatars.githubusercontent.com/u/652785?u=048be2c6cf318a2138c67f6d861c793d99af2019&v=4",
-        "total_contributions": 533,
-        "has_github_account": true,
-        "qgis_core": 483,
-        "documentation": 40,
-        "web_sites": 10
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.07595,
-          4.59805
         ]
       }
     },
@@ -874,24 +874,11 @@
     {
       "type": "Feature",
       "properties": {
-        "login": "lajunek",
-        "avatar_url": "https://avatars.githubusercontent.com/u/47246213?u=898e0b18c8be6ef9e0ef69261d01869cb2c84ffd&v=4",
-        "total_contributions": 344,
-        "has_github_account": true,
-        "documentation": 344,
-        "web_sites": 0,
-        "qgis_core": 0
-      },
-      "geometry": null
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "login": "domi4484",
         "avatar_url": "https://avatars.githubusercontent.com/u/9881900?u=c50f0e8ca05dd408d55573a68ff756d43e384e04&v=4",
-        "total_contributions": 342,
+        "total_contributions": 347,
         "has_github_account": true,
-        "qgis_core": 328,
+        "qgis_core": 333,
         "documentation": 14,
         "web_sites": 0
       },
@@ -902,6 +889,19 @@
           46.5279
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "login": "lajunek",
+        "avatar_url": "https://avatars.githubusercontent.com/u/47246213?u=898e0b18c8be6ef9e0ef69261d01869cb2c84ffd&v=4",
+        "total_contributions": 344,
+        "has_github_account": true,
+        "documentation": 344,
+        "web_sites": 0,
+        "qgis_core": 0
+      },
+      "geometry": null
     },
     {
       "type": "Feature",
