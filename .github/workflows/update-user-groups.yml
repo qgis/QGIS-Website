@@ -1,11 +1,11 @@
 # Builds the local user groups data after a change reaches main, whether it
 # came from a merged pull request or a direct push.
 #
-# Runs the trusted script from main: it validates data/user_groups/groups.json,
-# downloads new or changed logos (only public addresses, size capped, raster
-# images re-encoded as WebP), and regenerates the published
-# static/data/user_groups/user_groups.json and
-# the country outlines in data/user_groups/countries.json.
+# Runs the trusted script from main: it validates data/user_groups/groups.json
+# and the logo files, then regenerates the published
+# static/data/user_groups/user_groups.json and the country outlines in
+# data/user_groups/countries.json. Logos are committed by hand in the pull
+# request, so nothing is downloaded or converted here.
 # The result is committed back to main, like the other 🤖 workflows.
 #
 # A push made with GITHUB_TOKEN does not trigger other workflows, so this
@@ -18,8 +18,8 @@ on:
     branches: [ main ]
     paths:
       - 'data/user_groups/groups.json'
+      - 'static/img/user-groups/**'
       - 'scripts/update_user_groups.py'
-      - 'scripts/resize_image.py'
   workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
 
 permissions:
@@ -66,4 +66,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: '🤖 User groups data updated via GitHub Action'
-          file_pattern: 'static/data/user_groups/user_groups.json data/user_groups/countries.json data/user_groups/logos.json static/img/user-groups'
+          file_pattern: 'static/data/user_groups/user_groups.json data/user_groups/countries.json static/img/user-groups'

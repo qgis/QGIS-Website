@@ -2,7 +2,7 @@
 
 This page is for anyone who looks after the QGIS local user groups. It shows you how to add, change or retire a group using only the GitHub website. You need a GitHub account, and nothing to install.
 
-Everything on the [list](https://qgis.org/community/groups/list/) and the [map](https://qgis.org/community/groups/map/) comes from one file: [`data/user_groups/groups.json`](../data/user_groups/groups.json). You edit that file. A workflow does the rest: it finds the country name and continent, places the group on the map, and downloads, checks and converts the logo.
+Everything on the [list](https://qgis.org/community/groups/list/) and the [map](https://qgis.org/community/groups/map/) comes from one file: [`data/user_groups/groups.json`](../data/user_groups/groups.json). You edit that file, and attach the group's logo next to it. A workflow does the rest: it finds the country name and continent, and places the group on the map.
 
 ## Add a group
 
@@ -22,7 +22,6 @@ Here is a complete new group:
   "website": "https://qgis.or.ke",
   "year": 2017,
   "contacts": ["Benard Mitto"],
-  "logo_url": "https://qgis.or.ke/images/qgiskenya_logo.png",
   "removed": null
 }
 ```
@@ -45,30 +44,31 @@ Do not change a group's `id`. Links to the group and its logo use it.
 | `year` | Yes | `2017` | The year the group was registered. A number, without quotes. |
 | `contacts` | Yes | `["Benard Mitto"]` | One or more names, in square brackets. |
 | `website` | No | `"https://qgis.or.ke"` | The full link to the group's website. |
-| `logo_url` | No | `"https://qgis.or.ke/logo.png"` | A link to the logo image itself, not to a web page. |
 | `removed` | No | `2025` | The year the group stopped. `null` while it is active. |
 | `id` | No | `"qgis-kenya"` | Made from the name when you leave it out. Existing groups keep theirs. |
 | `country_name` | No | `"USA"` | Only if the country name we show is wrong for your group. |
 
 ## Logos
 
-Put a link to your logo in `logo_url`. That is the only way to set one: you never add an image file to the repository yourself. To get the link, right click the logo on the group's website and choose to copy the image address.
+Attach the logo to the same pull request as a WebP file. There is no link field: the file you attach is exactly what the site shows.
 
-The link must point at the image itself, not at a page showing it. The image can be a PNG, JPEG, GIF or WebP, at least 16 pixels wide and high, and under 5 MB. SVG is not accepted, because an SVG file can carry code.
+**1. Save it as WebP, 256 pixels or smaller.** The file must stay under 200 KB, which it will easily.
 
-The pull request check downloads your logo and shows you the result. After the merge, a workflow resizes it to 256 pixels, saves it as `static/img/user-groups/<id>.webp` and shows it on the site. When a group has no logo, the QGIS logo is shown.
+**2. Name it after the group's id**, for example `qgis-kenya.webp`. That is the `id` in `groups.json`, or the one made from the name when you left `id` out.
 
-If your logo only exists as an SVG, ask a maintainer in your pull request. They can convert it by hand, as they did for France, Australia and Croatia.
+**3. Add it on GitHub.** Open [`static/img/user-groups`](../static/img/user-groups/), select **Add file**, then **Upload files**, and drag your file in. Commit it to the same branch as your `groups.json` change, so both arrive in one pull request.
+
+To change a logo later, upload the new file over the old one with the same name. A group with no file shows the QGIS logo instead.
+
+SVG is not accepted, because an SVG file can carry code. Convert it to WebP first, as above.
 
 ## What happens after you open the pull request
 
 1. A check called **Check user groups** runs. For a first pull request, a maintainer approves it first.
 2. If something is wrong, the check fails. Select **Details**, then **Summary**, to read what to fix, for example "the country must be a two letter code in capitals".
-3. When it passes, the summary lists each change. Download **user-group-logo-previews** at the bottom of the summary to see the logos exactly as they will appear.
+3. When it passes, the summary lists each change. Your logo appears under **Files changed**, exactly as it will look on the site.
 4. A maintainer reviews and merges your pull request.
 5. A workflow builds the data, commits it and updates the website within a few minutes.
-
-If a logo link stops working later, the group keeps its current logo.
 
 ## For maintainers
 
@@ -76,9 +76,8 @@ If a logo link stops working later, the group keeps its current logo.
 |---|---|---|
 | `data/user_groups/groups.json` | People | The source: one small entry per group |
 | `static/data/user_groups/user_groups.json` | Workflow | GeoJSON read by the list, map and landing page. Published at `/data/user_groups/user_groups.json` for anyone to reuse |
-| `data/user_groups/logos.json` | Workflow | The link each logo was downloaded from, so an unchanged logo is not downloaded again. Not published |
 | `data/user_groups/countries.json` | Workflow | Country outlines, names, continents and label points from Natural Earth (public domain). Embedded in the map page, not published as a file |
-| `static/img/user-groups/<id>.webp` | Workflow | Converted logos. A few, for groups whose only logo is an SVG, were converted by hand and have no `logo_url` |
+| `static/img/user-groups/<id>.webp` | People | One logo per group, attached to the pull request. Checked, never rewritten |
 
 | Workflow | Runs on | Does |
 |---|---|---|

@@ -1,9 +1,9 @@
 # Checks a pull request that changes the local user groups.
 #
 # Runs the PR's own copy of scripts/update_user_groups.py in --check mode: it
-# validates data/user_groups/groups.json, downloads and converts any new or changed
-# logo into a preview folder, and writes a report to the job summary. It
-# writes nothing to the repository.
+# validates data/user_groups/groups.json and any logo attached to the pull
+# request, and writes a report to the job summary. It writes nothing to the
+# repository and makes no network request.
 #
 # Security: this uses `pull_request`, never `pull_request_target`, so the job
 # gets a read only token and no secrets even for pull requests from forks.
@@ -16,8 +16,8 @@ on:
     branches: [ main ]
     paths:
       - 'data/user_groups/groups.json'
+      - 'static/img/user-groups/**'
       - 'scripts/update_user_groups.py'
-      - 'scripts/resize_image.py'
 
 permissions:
   contents: read
@@ -43,13 +43,4 @@ jobs:
         run: pip install -r REQUIREMENTS.txt
 
       - name: 🌍 Check the user groups and their logos
-        run: python scripts/update_user_groups.py --check --preview-dir user-group-logo-previews
-
-      - name: 🖼️ Upload the converted logos for review
-        if: always()
-        uses: actions/upload-artifact@v7
-        with:
-          name: user-group-logo-previews
-          path: user-group-logo-previews
-          if-no-files-found: ignore
-          retention-days: 14
+        run: python scripts/update_user_groups.py --check

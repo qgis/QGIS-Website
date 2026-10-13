@@ -10,13 +10,12 @@ script turns it into everything the website needs:
   map read, with each group's id, country name, continent, map point and logo
   filled in. It is published at /data/user_groups/user_groups.json so
   anyone can reuse it;
-* data/user_groups/logos.json, the link each logo was downloaded from, so an
-  unchanged logo is not downloaded again. Not published;
 * data/user_groups/countries.json, the outlines of the countries that host a
   group, from Natural Earth (public domain). Hugo embeds it in the map page,
   it is not published as a file;
-* static/img/user-groups/<id>.webp, each group's logo, downloaded from the
-  group's logo link, checked and re-encoded as WebP.
+Logos are not generated. Each group's logo is a static/img/user-groups/<id>.webp
+file added by hand in the same pull request as the group, and this script only
+checks that it is a WebP of the right name and size.
 
 Usage:
     python scripts/update_user_groups.py           # build and write everything
@@ -33,7 +32,6 @@ import math
 import os
 import re
 import sys
-import tempfile
 import unicodedata
 from datetime import date
 from pathlib import Path
@@ -41,19 +39,18 @@ from urllib.parse import urlsplit
 
 import requests
 
-from resize_image import LogoError, fetch_image_bytes, normalize_logo
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE_PATH = ROOT / "data" / "user_groups" / "groups.json"
 GENERATED_PATH = ROOT / "static" / "data" / "user_groups" / "user_groups.json"
 COUNTRIES_PATH = ROOT / "data" / "user_groups" / "countries.json"
-LOGO_SOURCES_PATH = ROOT / "data" / "user_groups" / "logos.json"
 STATIC_DIR = ROOT / "static"
 LOGO_DIR = STATIC_DIR / "img" / "user-groups"
 LOGO_PUBLIC_PATH = "img/user-groups"  # where LOGO_DIR is served, relative to the site root
-# Logos are only ever written by this script, from each group's logo link,
-# so a WebP at the size we produce is the one thing that belongs in LOGO_DIR.
+# A logo is attached to the pull request, so LOGO_DIR holds exactly one
+# WebP per group that has one, small enough to sit on a card or a map pin.
 LOGO_MAX_PX = 256
+LOGO_MAX_BYTES = 200 * 1024
 
 NE_COMMIT = "ca96624a56bd078437bca8184e78163e5039ad19"
 NE_URL = (
@@ -339,59 +336,17 @@ def load_natural_earth(source=None):
 # ---------------------------------------------------------------------------
 # Logos
 # ---------------------------------------------------------------------------
-def resolve_logos(source, previous_sources, logo_dir, write, preview_dir=None, fetch=None):
-    """Work out each group's logo.
-
-    A logo comes from the group's logo link, downloaded only when the link is
-    new or has changed. Without a link the logo already on disk is kept, which
-    is how the few groups whose only logo is an SVG keep a hand made WebP.
-    With write=False nothing in the repository changes: new logos go to
-    preview_dir instead.
-
-    previous_sources maps each id to the link its logo on disk came from.
-
-    Returns (logos, report, problems):
-      logos    {id: {"logo": path under static/ or None, "logo_source": url or None}}
-      report   [(id, status)] for logos that were added or changed
-      problems [(id, message)] for logos that could not be used
-    """
-    fetch = fetch or fetch_image_bytes
-    logo_dir = Path(logo_dir)
-    previous_sources = previous_sources or {}
-    logos, report, problems = {}, [], []
-    if not write:
-        preview_dir = Path(preview_dir or tempfile.mkdtemp(prefix="user-group-logos-"))
-
-    for entry in source["groups"]:
-        gid = group_id(entry)
-        final = logo_dir / f"{gid}.webp"
-        target = final if write else preview_dir / f"{gid}.webp"
-        logo_rel = f"{LOGO_PUBLIC_PATH}/{gid}.webp"
-        url = entry.get("logo_url")
-        prev_url = previous_sources.get(gid)
-        kept = {"logo": logo_rel, "logo_source": prev_url} if final.is_file() else {"logo": None, "logo_source": None}
-
-        if url and not (final.is_file() and prev_url == url):
-            try:
-                normalize_logo(fetch(url), target)
-                logos[gid] = {"logo": logo_rel, "logo_source": url}
-                report.append((gid, "logo downloaded and converted"))
-            except LogoError as error:
-                problems.append((gid, str(error)))
-                logos[gid] = kept
-            continue
-
-        logos[gid] = kept
-    return logos, report, problems
+def logo_for(gid, logo_dir):
+    """The group's logo path under static/, or None when it has no logo."""
+    return f"{LOGO_PUBLIC_PATH}/{gid}.webp" if (Path(logo_dir) / f"{gid}.webp").is_file() else None
 
 
 def check_logo_files(source, logo_dir, max_px=LOGO_MAX_PX):
     """Problems with the files sitting in the logo folder.
 
-    Everything there is served from the website, and the build writes it all
-    from each group's logo link. So every file must be an <id>.webp for a
-    group that exists, and must still decode at the size we produce. That
-    catches a file added by hand instead of through a logo link.
+    Everything there is served from the website and is added by hand, so each
+    file must be an <id>.webp for a group that exists, must decode, and must
+    be small enough for a card or a map pin.
     """
     from PIL import Image
 
@@ -401,7 +356,7 @@ def check_logo_files(source, logo_dir, max_px=LOGO_MAX_PX):
         if not path.is_file():
             continue
         if path.suffix.lower() != ".webp":
-            problems.append((path.name, 'logos are set with "logo_url" in data/user_groups/groups.json, not by adding a file here.'))
+            problems.append((path.name, "a logo must be a WebP file named after the group's id, for example qgis-kenya.webp. See docs/user-groups.md."))
         elif path.stem not in ids:
             problems.append((path.name, "no group has this id."))
         else:
@@ -412,7 +367,9 @@ def check_logo_files(source, logo_dir, max_px=LOGO_MAX_PX):
                 problems.append((path.name, "this file is damaged and cannot be read."))
             else:
                 if max(width, height) > max_px:
-                    problems.append((path.name, f"this logo is {width} by {height} pixels, larger than the {max_px} the build produces."))
+                    problems.append((path.name, f"this logo is {width} by {height} pixels. Resize it so the longest side is {max_px} pixels or less."))
+                elif path.stat().st_size > LOGO_MAX_BYTES:
+                    problems.append((path.name, f"this logo is {path.stat().st_size // 1024} KB. Save it again so it is under {LOGO_MAX_BYTES // 1024} KB."))
     return problems
 
 
@@ -430,14 +387,13 @@ def remove_orphan_logos(source, logo_dir):
 # ---------------------------------------------------------------------------
 # Generated GeoJSON
 # ---------------------------------------------------------------------------
-def build_generated(source, countries, logos):
+def build_generated(source, countries, logo_dir):
     by_code = {f["properties"]["iso_a2"]: f["properties"] for f in countries["features"]}
     features = []
     for entry in source["groups"]:
         gid = group_id(entry)
         code = entry.get("country")
         country = by_code.get(code, {}) if code else {}
-        logo = logos.get(gid, {"logo": None})
         features.append({
             "type": "Feature",
             "properties": {
@@ -451,7 +407,7 @@ def build_generated(source, countries, logos):
                 "contacts": entry["contacts"],
                 "active": entry.get("removed") is None,
                 "removed": entry.get("removed"),
-                "logo": logo["logo"],
+                "logo": logo_for(gid, logo_dir),
             },
             "geometry": {"type": "Point", "coordinates": country["label"]} if code else None,
         })
@@ -463,17 +419,6 @@ def build_generated(source, countries, logos):
             "warning": "This file is generated. Do NOT edit it by hand. Edit data/user_groups/groups.json instead.",
         },
         "features": features,
-    }
-
-
-def build_logo_sources(logos):
-    """The link each logo on disk came from, keyed by id. Uploads have none."""
-    return {
-        "_automated_warning": {
-            "generated_by": "scripts/update_user_groups.py",
-            "warning": "This file is generated. Do NOT edit it by hand. It records the link each logo was downloaded from, so unchanged logos are not downloaded again.",
-        },
-        "sources": {gid: logo["logo_source"] for gid, logo in sorted(logos.items()) if logo.get("logo_source")},
     }
 
 
@@ -512,16 +457,14 @@ def changed_groups(previous, generated):
 # ---------------------------------------------------------------------------
 # Reporting
 # ---------------------------------------------------------------------------
-def _logo_column(gid, logo_report, logo_problems, generated):
+def _logo_column(gid, logo_problems, generated):
     if gid in dict(logo_problems):
         return "not used, see above"
-    if gid in dict(logo_report):
-        return dict(logo_report)[gid]
     props = next((f["properties"] for f in (generated or {}).get("features", []) if f["properties"]["slug"] == gid), {})
-    return "unchanged" if props.get("logo") else "none, the QGIS logo is shown"
+    return "attached" if props.get("logo") else "none, the QGIS logo is shown"
 
 
-def write_report(title, errors, changes, logo_report, logo_problems, summary_path=None, generated=None):
+def write_report(title, errors, changes, logo_problems, summary_path=None, generated=None):
     """Print a report, and write it as Markdown to the GitHub job summary."""
     lines = [f"## {title}", ""]
     if errors:
@@ -530,15 +473,12 @@ def write_report(title, errors, changes, logo_report, logo_problems, summary_pat
     if logo_problems:
         lines += ["**These logos could not be used:**", ""]
         lines += [f"- `{gid}`: {message}" for gid, message in logo_problems] + [""]
-    if changes or logo_report:
+    if changes:
         lines += ["| Group | Change | Logo |", "|---|---|---|"]
-        ids = list(dict.fromkeys([gid for gid, _ in changes] + [gid for gid, _ in logo_report]))
-        what = dict(changes)
-        for gid in ids:
-            logo = _logo_column(gid, logo_report, logo_problems, generated)
-            lines.append(f"| `{gid}` | {what.get(gid, 'logo only')} | {logo} |")
+        for gid, what in changes:
+            lines.append(f"| `{gid}` | {what} | {_logo_column(gid, logo_problems, generated)} |")
         lines.append("")
-    if not (errors or logo_problems or changes or logo_report):
+    if not (errors or logo_problems or changes):
         lines += ["Nothing to change.", ""]
     text = "\n".join(lines)
     print(text)
@@ -569,13 +509,11 @@ def _write_if_changed(path, text):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    parser.add_argument("--check", action="store_true", help="validate and test the logos, write nothing")
-    parser.add_argument("--preview-dir", help="with --check, save converted logos here for review")
+    parser.add_argument("--check", action="store_true", help="validate the groups and their logos, write nothing")
     parser.add_argument("--source", help="local Natural Earth GeoJSON instead of downloading it")
     parser.add_argument("--groups", default=str(SOURCE_PATH), help=argparse.SUPPRESS)
     parser.add_argument("--generated", default=str(GENERATED_PATH), help=argparse.SUPPRESS)
     parser.add_argument("--countries", default=str(COUNTRIES_PATH), help=argparse.SUPPRESS)
-    parser.add_argument("--logo-sources", default=str(LOGO_SOURCES_PATH), help=argparse.SUPPRESS)
     parser.add_argument("--logo-dir", default=str(LOGO_DIR), help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -585,11 +523,11 @@ def main(argv=None):
         source = json.loads(Path(args.groups).read_text(encoding="utf-8"))
     except json.JSONDecodeError as error:
         write_report(title, [f"The file is not valid JSON near line {error.lineno}, column {error.colno}: {error.msg}. "
-                             "A missing comma or quote is the usual cause."], [], [], [], summary)
+                             "A missing comma or quote is the usual cause."], [], [], summary)
         return 1
     errors = validate_source(source)
     if errors:
-        write_report(title, errors, [], [], [], summary)
+        write_report(title, errors, [], [], summary)
         return 1
 
     codes = source_country_codes(source)
@@ -599,20 +537,15 @@ def main(argv=None):
         countries, missing = build_countries_geojson(load_natural_earth(args.source), codes)
         if missing:
             write_report(title, [f'No country has the code "{code}". Use a two letter ISO 3166 code.' for code in missing],
-                         [], [], [], summary)
+                         [], [], summary)
             return 1
 
     previous = _load_json(args.generated)
-    previous_sources = (_load_json(args.logo_sources) or {}).get("sources", {})
-    logos, logo_report, logo_problems = resolve_logos(
-        source, previous_sources, args.logo_dir,
-        write=not args.check, preview_dir=args.preview_dir,
-    )
-    logo_problems += check_logo_files(source, args.logo_dir)
-    generated = build_generated(source, countries, logos)
+    logo_problems = check_logo_files(source, args.logo_dir)
+    generated = build_generated(source, countries, args.logo_dir)
     errors = check_continents(generated)
     changes = changed_groups(previous, generated)
-    write_report(title, errors, changes, logo_report, logo_problems, summary, generated)
+    write_report(title, errors, changes, logo_problems, summary, generated)
     if errors:
         return 1
     if args.check:
@@ -624,7 +557,6 @@ def main(argv=None):
         print(f"Wrote {len(countries['features'])} country outlines to {args.countries}")
     if _write_if_changed(args.generated, to_json(generated)):
         print(f"Wrote {len(generated['features'])} groups to {args.generated}")
-    _write_if_changed(args.logo_sources, to_json(build_logo_sources(logos)))
     for name in remove_orphan_logos(source, args.logo_dir):
         print(f"Removed the logo {name}, its group is no longer in the file")
     return 0
