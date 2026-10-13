@@ -89,7 +89,7 @@ def test_committed_generated_files_match_a_fresh_build(tmp_path):
 
     logos, report, problems = uut.resolve_logos(
         source, _load(LOGO_SOURCES_PATH)["sources"], os.path.join(ROOT_DIR, "static", "img", "user-groups"),
-        tmp_path, write=False, preview_dir=tmp_path, fetch=no_network,
+        write=False, preview_dir=tmp_path, fetch=no_network,
     )
     assert report == [] and problems == []
     rebuilt = uut.build_generated(source, countries, logos)
@@ -538,10 +538,9 @@ def test_fetch_reports_http_errors(dns):
 # ---------------------------------------------------------------------------
 @pytest.fixture
 def dirs(tmp_path):
-    logo_dir, upload_dir, preview_dir = tmp_path / "logos", tmp_path / "uploads", tmp_path / "preview"
-    for d in (logo_dir, upload_dir):
-        d.mkdir()
-    return logo_dir, upload_dir, preview_dir
+    logo_dir, preview_dir = tmp_path / "logos", tmp_path / "preview"
+    logo_dir.mkdir()
+    return logo_dir, preview_dir
 
 
 def _previous(gid, logo_source):
@@ -549,10 +548,10 @@ def _previous(gid, logo_source):
 
 
 def test_new_logo_link_is_downloaded(dirs):
-    logo_dir, upload_dir, _ = dirs
+    logo_dir, _ = dirs
     fetched = []
     fetch = lambda url: fetched.append(url) or _image_bytes()
-    logos, report, problems = uut.resolve_logos(_source(_entry()), None, logo_dir, upload_dir, write=True, fetch=fetch)
+    logos, report, problems = uut.resolve_logos(_source(_entry()), None, logo_dir, write=True, fetch=fetch)
     assert fetched == ["https://qgis.ch/logo.png"]
     assert logos["qgis-ch"] == {"logo": "img/user-groups/qgis-ch.webp", "logo_source": "https://qgis.ch/logo.png"}
     assert report == [("qgis-ch", "logo downloaded and converted")] and problems == []
@@ -560,94 +559,93 @@ def test_new_logo_link_is_downloaded(dirs):
 
 
 def test_unchanged_logo_link_is_not_downloaded_again(dirs):
-    logo_dir, upload_dir, _ = dirs
+    logo_dir, _ = dirs
     (logo_dir / "qgis-ch.webp").write_bytes(_image_bytes("WEBP"))
     def fetch(url):
         raise AssertionError("should not download")
     logos, report, _ = uut.resolve_logos(
-        _source(_entry()), _previous("qgis-ch", "https://qgis.ch/logo.png"), logo_dir, upload_dir, write=True, fetch=fetch
+        _source(_entry()), _previous("qgis-ch", "https://qgis.ch/logo.png"), logo_dir, write=True, fetch=fetch
     )
     assert logos["qgis-ch"]["logo_source"] == "https://qgis.ch/logo.png" and report == []
 
 
 def test_changed_logo_link_is_downloaded_again(dirs):
-    logo_dir, upload_dir, _ = dirs
+    logo_dir, _ = dirs
     (logo_dir / "qgis-ch.webp").write_bytes(_image_bytes("WEBP"))
     logos, report, _ = uut.resolve_logos(
         _source(_entry(logo_url="https://qgis.ch/new.png")), _previous("qgis-ch", "https://qgis.ch/logo.png"),
-        logo_dir, upload_dir, write=True, fetch=lambda url: _image_bytes(),
+        logo_dir, write=True, fetch=lambda url: _image_bytes(),
     )
     assert logos["qgis-ch"]["logo_source"] == "https://qgis.ch/new.png"
     assert report == [("qgis-ch", "logo downloaded and converted")]
 
 
-def test_upload_wins_over_link_and_is_removed_after_conversion(dirs):
-    logo_dir, upload_dir, _ = dirs
-    (upload_dir / "qgis-ch.PNG").write_bytes(_image_bytes("PNG"))
-    def fetch(url):
-        raise AssertionError("should not download")
-    logos, report, _ = uut.resolve_logos(_source(_entry()), None, logo_dir, upload_dir, write=True, fetch=fetch)
-    assert logos["qgis-ch"] == {"logo": "img/user-groups/qgis-ch.webp", "logo_source": None}
-    assert report == [("qgis-ch", "uploaded file qgis-ch.PNG converted")]
-    assert (logo_dir / "qgis-ch.webp").is_file() and not any(upload_dir.iterdir())
-
-
 def test_check_mode_writes_only_to_the_preview_folder(dirs):
-    logo_dir, upload_dir, preview_dir = dirs
-    (upload_dir / "qgis-ch.jpg").write_bytes(_image_bytes("JPEG"))
-    uut.resolve_logos(_source(_entry()), None, logo_dir, upload_dir, write=False, preview_dir=preview_dir)
+    logo_dir, preview_dir = dirs
+    uut.resolve_logos(_source(_entry()), None, logo_dir, write=False, preview_dir=preview_dir,
+                      fetch=lambda url: _image_bytes("PNG"))
     assert (preview_dir / "qgis-ch.webp").is_file()
     assert not any(logo_dir.iterdir())
-    assert (upload_dir / "qgis-ch.jpg").is_file()
 
 
 def test_failed_download_keeps_the_previous_logo(dirs):
-    logo_dir, upload_dir, _ = dirs
+    logo_dir, _ = dirs
     (logo_dir / "qgis-ch.webp").write_bytes(_image_bytes("WEBP"))
     def fetch(url):
         raise LogoError("The logo link answered with error 404.")
     logos, report, problems = uut.resolve_logos(
         _source(_entry(logo_url="https://qgis.ch/new.png")), _previous("qgis-ch", "https://qgis.ch/logo.png"),
-        logo_dir, upload_dir, write=True, fetch=fetch,
+        logo_dir, write=True, fetch=fetch,
     )
     assert problems == [("qgis-ch", "The logo link answered with error 404.")]
     assert logos["qgis-ch"] == {"logo": "img/user-groups/qgis-ch.webp", "logo_source": "https://qgis.ch/logo.png"}
 
 
 def test_failed_first_download_falls_back_to_no_logo(dirs):
-    logo_dir, upload_dir, _ = dirs
+    logo_dir, _ = dirs
     def fetch(url):
         raise LogoError("SVG logos are not accepted.")
-    logos, _, problems = uut.resolve_logos(_source(_entry()), None, logo_dir, upload_dir, write=True, fetch=fetch)
+    logos, _, problems = uut.resolve_logos(_source(_entry()), None, logo_dir, write=True, fetch=fetch)
     assert logos["qgis-ch"] == {"logo": None, "logo_source": None} and len(problems) == 1
 
 
-def test_bad_upload_is_reported_and_kept_for_the_editor(dirs):
-    logo_dir, upload_dir, _ = dirs
-    (upload_dir / "qgis-ch.png").write_bytes(b"<svg></svg>")
-    _, _, problems = uut.resolve_logos(_source(_entry()), None, logo_dir, upload_dir, write=True, fetch=lambda u: b"")
-    assert problems == [("qgis-ch", "qgis-ch.png: SVG logos are not accepted. Use a PNG, JPEG, GIF or WebP image.")]
-
-
 def test_group_without_link_keeps_its_existing_logo(dirs):
-    logo_dir, upload_dir, _ = dirs
+    logo_dir, _ = dirs
     (logo_dir / "qgis-ch.webp").write_bytes(_image_bytes("WEBP"))
-    logos, _, _ = uut.resolve_logos(_source(_entry(logo_url=...)), None, logo_dir, upload_dir, write=True)
+    logos, _, _ = uut.resolve_logos(_source(_entry(logo_url=...)), None, logo_dir, write=True)
     assert logos["qgis-ch"]["logo"] == "img/user-groups/qgis-ch.webp"
 
 
-def test_unmatched_uploads_are_reported(dirs):
-    _, upload_dir, _ = dirs
-    for name in ("README.md", "qgis-ch.png", "qgis-chh.png", "qgis-ch.svg"):
-        (upload_dir / name).write_bytes(b"x")
-    problems = dict(uut.unmatched_uploads(_source(_entry()), upload_dir))
-    assert set(problems) == {"qgis-chh.png", "qgis-ch.svg"}
-    assert "no group has this id" in problems["qgis-chh.png"]
-    assert "only PNG, JPEG, GIF or WebP" in problems["qgis-ch.svg"]
+def test_only_webp_logos_for_known_groups_are_allowed(dirs):
+    """The folder is served, and only the build writes it."""
+    logo_dir, _ = dirs
+    (logo_dir / "qgis-ch.webp").write_bytes(_image_bytes("WEBP"))
+    (logo_dir / "qgis-ch.png").write_bytes(_image_bytes("PNG"))
+    (logo_dir / "gone.webp").write_bytes(_image_bytes("WEBP"))
+    problems = dict(uut.check_logo_files(_source(_entry()), logo_dir))
+    assert set(problems) == {"qgis-ch.png", "gone.webp"}
+    assert 'logos are set with "logo_url"' in problems["qgis-ch.png"]
+    assert "no group has this id" in problems["gone.webp"]
+
+
+def test_a_hand_added_oversized_or_broken_logo_is_reported(dirs):
+    logo_dir, _ = dirs
+    (logo_dir / "qgis-ch.webp").write_bytes(_image_bytes("WEBP", size=(900, 900)))
+    problems = dict(uut.check_logo_files(_source(_entry()), logo_dir))
+    assert "larger than the 256" in problems["qgis-ch.webp"]
+
+    (logo_dir / "qgis-ch.webp").write_bytes(b"not an image")
+    problems = dict(uut.check_logo_files(_source(_entry()), logo_dir))
+    assert "damaged" in problems["qgis-ch.webp"]
+
+
+def test_committed_logos_pass_the_file_check():
+    logo_dir = os.path.join(ROOT_DIR, "static", "img", "user-groups")
+    assert uut.check_logo_files(_load(SOURCE_PATH), logo_dir) == []
 
 
 def test_orphan_logos_are_removed(dirs):
-    logo_dir, _, _ = dirs
+    logo_dir, _ = dirs
     for name in ("qgis-ch.webp", "gone.webp"):
         (logo_dir / name).write_bytes(b"x")
     assert uut.remove_orphan_logos(_source(_entry()), logo_dir) == ["gone.webp"]
@@ -664,7 +662,6 @@ def workspace(tmp_path, monkeypatch):
     ne = tmp_path / "ne.geojson"
     ne.write_text(json.dumps(NATURAL_EARTH), encoding="utf-8")
     (tmp_path / "logos").mkdir()
-    (tmp_path / "uploads").mkdir()
     fetched = []
     monkeypatch.setattr(uut, "fetch_image_bytes", lambda url: fetched.append(url) or _image_bytes())
 
@@ -673,7 +670,7 @@ def workspace(tmp_path, monkeypatch):
         return uut.main([
             *extra, "--source", str(ne), "--groups", str(tmp_path / "groups.json"),
             "--generated", str(tmp_path / "generated.json"), "--countries", str(tmp_path / "countries.json"),
-            "--logo-dir", str(tmp_path / "logos"), "--upload-dir", str(tmp_path / "uploads"),
+            "--logo-dir", str(tmp_path / "logos"),
             "--logo-sources", str(tmp_path / "logo_sources.json"),
         ])
 

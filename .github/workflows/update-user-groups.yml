@@ -3,8 +3,8 @@
 #
 # Runs the trusted script from main: it validates data/user_groups/groups.json,
 # downloads new or changed logos (only public addresses, size capped, raster
-# images re-encoded as WebP), converts uploads from user-groups-logos/, and
-# regenerates the published static/data/user_groups/user_groups.json and
+# images re-encoded as WebP), and regenerates the published
+# static/data/user_groups/user_groups.json and
 # the country outlines in data/user_groups/countries.json.
 # The result is committed back to main, like the other 🤖 workflows.
 #
@@ -18,7 +18,6 @@ on:
     branches: [ main ]
     paths:
       - 'data/user_groups/groups.json'
-      - 'user-groups-logos/**'
       - 'scripts/update_user_groups.py'
       - 'scripts/resize_image.py'
   workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
@@ -67,4 +66,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: '🤖 User groups data updated via GitHub Action'
-          file_pattern: 'static/data/user_groups/user_groups.json data/user_groups/countries.json data/user_groups/logos.json static/img/user-groups user-groups-logos'
+          file_pattern: 'static/data/user_groups/user_groups.json data/user_groups/countries.json data/user_groups/logos.json static/img/user-groups'

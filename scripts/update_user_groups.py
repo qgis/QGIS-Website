@@ -15,9 +15,8 @@ script turns it into everything the website needs:
 * data/user_groups/countries.json, the outlines of the countries that host a
   group, from Natural Earth (public domain). Hugo embeds it in the map page,
   it is not published as a file;
-* static/img/user-groups/<id>.webp, each group's logo, downloaded from its
-  logo link or taken from user-groups-logos/<id>.<png|jpg|gif|webp>, checked
-  and re-encoded as WebP.
+* static/img/user-groups/<id>.webp, each group's logo, downloaded from the
+  group's logo link, checked and re-encoded as WebP.
 
 Usage:
     python scripts/update_user_groups.py           # build and write everything
@@ -52,8 +51,9 @@ LOGO_SOURCES_PATH = ROOT / "data" / "user_groups" / "logos.json"
 STATIC_DIR = ROOT / "static"
 LOGO_DIR = STATIC_DIR / "img" / "user-groups"
 LOGO_PUBLIC_PATH = "img/user-groups"  # where LOGO_DIR is served, relative to the site root
-UPLOAD_DIR = ROOT / "user-groups-logos"
-UPLOAD_EXTENSIONS = (".png", ".jpg", ".jpeg", ".gif", ".webp")
+# Logos are only ever written by this script, from each group's logo link,
+# so a WebP at the size we produce is the one thing that belongs in LOGO_DIR.
+LOGO_MAX_PX = 256
 
 NE_COMMIT = "ca96624a56bd078437bca8184e78163e5039ad19"
 NE_URL = (
@@ -339,20 +339,14 @@ def load_natural_earth(source=None):
 # ---------------------------------------------------------------------------
 # Logos
 # ---------------------------------------------------------------------------
-def find_upload(gid, upload_dir):
-    for ext in UPLOAD_EXTENSIONS:
-        for candidate in (Path(upload_dir) / f"{gid}{ext}", Path(upload_dir) / f"{gid}{ext.upper()}"):
-            if candidate.is_file():
-                return candidate
-    return None
-
-
-def resolve_logos(source, previous_sources, logo_dir, upload_dir, write, preview_dir=None, fetch=None):
+def resolve_logos(source, previous_sources, logo_dir, write, preview_dir=None, fetch=None):
     """Work out each group's logo.
 
-    Order: an uploaded file, then the logo link (downloaded only when it is
-    new or changed), then the logo already on disk. With write=False nothing
-    in the repository changes: new logos go to preview_dir instead.
+    A logo comes from the group's logo link, downloaded only when the link is
+    new or has changed. Without a link the logo already on disk is kept, which
+    is how the few groups whose only logo is an SVG keep a hand made WebP.
+    With write=False nothing in the repository changes: new logos go to
+    preview_dir instead.
 
     previous_sources maps each id to the link its logo on disk came from.
 
@@ -362,7 +356,7 @@ def resolve_logos(source, previous_sources, logo_dir, upload_dir, write, preview
       problems [(id, message)] for logos that could not be used
     """
     fetch = fetch or fetch_image_bytes
-    logo_dir, upload_dir = Path(logo_dir), Path(upload_dir)
+    logo_dir = Path(logo_dir)
     previous_sources = previous_sources or {}
     logos, report, problems = {}, [], []
     if not write:
@@ -376,19 +370,6 @@ def resolve_logos(source, previous_sources, logo_dir, upload_dir, write, preview
         url = entry.get("logo_url")
         prev_url = previous_sources.get(gid)
         kept = {"logo": logo_rel, "logo_source": prev_url} if final.is_file() else {"logo": None, "logo_source": None}
-
-        upload = find_upload(gid, upload_dir)
-        if upload:
-            try:
-                normalize_logo(upload.read_bytes(), target)
-                logos[gid] = {"logo": logo_rel, "logo_source": None}
-                report.append((gid, f"uploaded file {upload.name} converted"))
-                if write:
-                    upload.unlink()
-            except LogoError as error:
-                problems.append((gid, f"{upload.name}: {error}"))
-                logos[gid] = kept
-            continue
 
         if url and not (final.is_file() and prev_url == url):
             try:
@@ -404,17 +385,34 @@ def resolve_logos(source, previous_sources, logo_dir, upload_dir, write, preview
     return logos, report, problems
 
 
-def unmatched_uploads(source, upload_dir):
-    """Files in the upload folder that no group will pick up."""
+def check_logo_files(source, logo_dir, max_px=LOGO_MAX_PX):
+    """Problems with the files sitting in the logo folder.
+
+    Everything there is served from the website, and the build writes it all
+    from each group's logo link. So every file must be an <id>.webp for a
+    group that exists, and must still decode at the size we produce. That
+    catches a file added by hand instead of through a logo link.
+    """
+    from PIL import Image
+
     ids = {group_id(g) for g in source["groups"]}
     problems = []
-    for path in sorted(Path(upload_dir).glob("*")):
-        if not path.is_file() or path.name == "README.md":
+    for path in sorted(Path(logo_dir).glob("*")):
+        if not path.is_file():
             continue
-        if path.suffix.lower() not in UPLOAD_EXTENSIONS:
-            problems.append((path.name, "only PNG, JPEG, GIF or WebP files can be uploaded."))
+        if path.suffix.lower() != ".webp":
+            problems.append((path.name, 'logos are set with "logo_url" in data/user_groups/groups.json, not by adding a file here.'))
         elif path.stem not in ids:
-            problems.append((path.name, "no group has this id. Name the file after the group's id, for example qgis-kenya.png."))
+            problems.append((path.name, "no group has this id."))
+        else:
+            try:
+                with Image.open(path) as image:
+                    width, height = image.size
+            except Exception:
+                problems.append((path.name, "this file is damaged and cannot be read."))
+            else:
+                if max(width, height) > max_px:
+                    problems.append((path.name, f"this logo is {width} by {height} pixels, larger than the {max_px} the build produces."))
     return problems
 
 
@@ -579,7 +577,6 @@ def main(argv=None):
     parser.add_argument("--countries", default=str(COUNTRIES_PATH), help=argparse.SUPPRESS)
     parser.add_argument("--logo-sources", default=str(LOGO_SOURCES_PATH), help=argparse.SUPPRESS)
     parser.add_argument("--logo-dir", default=str(LOGO_DIR), help=argparse.SUPPRESS)
-    parser.add_argument("--upload-dir", default=str(UPLOAD_DIR), help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     title = "User groups check" if args.check else "User groups build"
@@ -608,10 +605,10 @@ def main(argv=None):
     previous = _load_json(args.generated)
     previous_sources = (_load_json(args.logo_sources) or {}).get("sources", {})
     logos, logo_report, logo_problems = resolve_logos(
-        source, previous_sources, args.logo_dir, args.upload_dir,
+        source, previous_sources, args.logo_dir,
         write=not args.check, preview_dir=args.preview_dir,
     )
-    logo_problems += unmatched_uploads(source, args.upload_dir)
+    logo_problems += check_logo_files(source, args.logo_dir)
     generated = build_generated(source, countries, logos)
     errors = check_continents(generated)
     changes = changed_groups(previous, generated)

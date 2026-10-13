@@ -52,14 +52,13 @@ Do not change a group's `id`. Links to the group and its logo use it.
 
 ## Logos
 
-A logo can be a PNG, JPEG, GIF or WebP image, at least 16 pixels wide and high, and under 5 MB. SVG is not accepted, because an SVG file can carry code.
+Put a link to your logo in `logo_url`. That is the only way to set one: you never add an image file to the repository yourself. To get the link, right click the logo on the group's website and choose to copy the image address.
 
-You have two ways to give a logo:
+The link must point at the image itself, not at a page showing it. The image can be a PNG, JPEG, GIF or WebP, at least 16 pixels wide and high, and under 5 MB. SVG is not accepted, because an SVG file can carry code.
 
-* **A link.** Put the link to the image in `logo_url`. To get it, right click the logo on the group's website and choose to copy the image address.
-* **A file.** Upload the image to the [`user-groups-logos`](../user-groups-logos/) folder in the same pull request, named after the group's id, for example `qgis-kenya.png`. A file wins over a link.
+The pull request check downloads your logo and shows you the result. After the merge, a workflow resizes it to 256 pixels, saves it as `static/img/user-groups/<id>.webp` and shows it on the site. When a group has no logo, the QGIS logo is shown.
 
-We resize every logo to 256 pixels and save it as WebP. When a group has no logo, the QGIS logo is shown.
+If your logo only exists as an SVG, ask a maintainer in your pull request. They can convert it by hand, as they did for France, Australia and Croatia.
 
 ## What happens after you open the pull request
 
@@ -76,11 +75,10 @@ If a logo link stops working later, the group keeps its current logo.
 | File | Edited by | Purpose |
 |---|---|---|
 | `data/user_groups/groups.json` | People | The source: one small entry per group |
-| `user-groups-logos/<id>.<ext>` | People | Uploaded logos, removed once converted |
 | `static/data/user_groups/user_groups.json` | Workflow | GeoJSON read by the list, map and landing page. Published at `/data/user_groups/user_groups.json` for anyone to reuse |
 | `data/user_groups/logos.json` | Workflow | The link each logo was downloaded from, so an unchanged logo is not downloaded again. Not published |
 | `data/user_groups/countries.json` | Workflow | Country outlines, names, continents and label points from Natural Earth (public domain). Embedded in the map page, not published as a file |
-| `static/img/user-groups/<id>.webp` | Workflow | Converted logos |
+| `static/img/user-groups/<id>.webp` | Workflow | Converted logos. A few, for groups whose only logo is an SVG, were converted by hand and have no `logo_url` |
 
 | Workflow | Runs on | Does |
 |---|---|---|
@@ -109,4 +107,4 @@ To run it yourself from the project root:
 
 A group's map point is its country's label point from Natural Earth, a point inside the main landmass. Groups in the same country share it, and the map shows their logos side by side.
 
-Both flat maps, user groups and contributors, use the Equal Earth projection, so countries keep their true relative size. It lives in `equalEarthProjection()` in the theme's `assets/js/globe-flat-map.js`, with no extra library.
+Both flat maps, user groups and contributors, use the Equal Earth projection, so countries keep their true relative size. It lives in `equalEarthProjection()` in `assets/js/globe-flat-map.js`, with no extra library.

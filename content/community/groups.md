@@ -59,20 +59,6 @@ text = "Open the map" >}}
 
 {{< rich-box-end >}}
 
-{{< rich-list
-listLink = "https://qgis.hr/"
-icon = "🇭🇷"
-layoutClass = "half"
-listTitle = "QGIS Croatia User Group"
-listSubtitle = "Contact: Dominik Cindrić" >}}
-
-{{< rich-list
-listLink = "https://cyprus.qgis.org/"
-icon = "🇨🇾"
-layoutClass = "half"
-listTitle = "QGIS Cyprus"
-listSubtitle = "Contact: Marios Kyriakou" >}}
-
 ## Goals of a user group
 
 
