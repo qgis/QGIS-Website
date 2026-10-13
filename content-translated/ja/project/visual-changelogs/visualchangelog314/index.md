@@ -857,7 +857,7 @@ This tool, which is available from the new F12 \"dev tools\" panel, is a native 
 
 この機能は [Meteorological Service of Canada](https://weather.gc.ca) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (for Kartoza)](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson (for Kartoza)](https://api.github.com/users/nyalldawson) によって開発されました
 ## プロセシング
 ### 機能: 乱数ラスタ生成アルゴリズムのコレクション
 この機能により、乱数ラスタ生成アルゴリズムの大規模なコレクションが追加されました。これらのアルゴリズムは、特定の乱数分布に従って乱数ラスタを出力することができます。以下の分布が利用できます:
@@ -871,7 +871,7 @@ This feature was developed by [Nyall Dawson (for Kartoza)](https://api.github.co
 
 ![image86](images/entries/6304472935d29f8292cf24c7cb0198e95a4de137.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+この機能は [Clemens Raffler](https://api.github.com/users/root676) によって開発されました
 ### 機能: ベクタタイルレイヤ - パート8（プロセシングのライタ）
 この機能は、ベクタータイルを書き出すためのプロセシングの統合を追加します。これは既存のQgsVectorTileWriterクラスのラッパーにすぎません。
 
@@ -879,11 +879,11 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 
 ![image87](images/entries/81117303-224a1b80-8f27-11ea-851d-f4271ce66ed3.webp)
 
-Algorithm\'s parameters for XYZ:
+XYZのためのアルゴリズムのパラメータ:
 
 ![image88](images/entries/81117371-4279da80-8f27-11ea-9d8b-bbe1c78d9bf1.webp)
 
-Algorithm\'s parameters for MBTiles:
+MBTilesのためのアルゴリズムのパラメータ
 
 ![image89](images/entries/81117466-6ccb9800-8f27-11ea-85e7-9c9a1df87920.webp)
 
@@ -895,7 +895,7 @@ Algorithm\'s parameters for MBTiles:
 
 ![image91](images/entries/81117621-ae5c4300-8f27-11ea-993b-782d7de4a10e.webp)
 
-This feature was funded by [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
+この機能は [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/) によって資金提供されました
 
 この機能は [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 条件分岐を作成するための新しいモデラーアルゴリズム
@@ -907,23 +907,23 @@ This feature was funded by [QGIS Community](https://www.lutraconsulting.co.uk/cr
 
 この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: モデルの入力を並び替えられる
-Instead of forcing a quasi-random ordering of inputs for models, this feature exposes a new \"Reorder Model Inputs\" option in the model designer which allows users control over the exact order of inputs to show users for their model.
+この機能は、モデルの入力の外見上の順不同を強制する代わりに、モデルデザイナーの新しい「モデル入力の並べ替え」オプションを見えるようにします。これにより、ユーザーは入力の正確な順序を制御して、モデルを表示できます。
 
-No more illogical ordering like showing a field choice before the layer choice it\'s based on!
+フィールドの選択がそれに基づくレイヤの選択よりも前に表示されるような、非論理的な順序はもうありません！
 
 NaturalGISによって後援されました
 
 この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: モデルの検証を延期
-Instead of forcing all child algorithms to be immediately valid and have all parameters correctly filled, this feature defers model validation until run time or when a new \"Validate model\" action is triggered.
+全ての子アルゴリズムを即座に有効とし、全てのパラメータが正しく入力されていることを強制する代わりに、この機能はモデルの検証を実行時または新しい「モデルの検証」アクションがトリガーされるまで延期します。
 
-A common frustration with the QGIS model designer is that it constantly forces models to be valid, even work-in-progress models. This means it's impossible to add a component to a model and only partially populate its settings --- you have to fill in everything upfront. If you realise mid way through this that you need to make a change somewhere else in your model, it's impossible to do without canceling and losing all the settings you've already configured.
+QGISモデルデザイナーの一般的な不満点は、モデルの作成中であっても、常にモデルが有効であることを強制されることです。これは、モデルにコンポーネントを追加し、その設定を一部だけ入力することが不可能であること－全ての設定を最初から埋める必要があることを意味します。もしモデルのどこかで変更が必要なことに気づいたとき、既に設定した全ての設定を取り消して失うことなく変更することは不可能です。
 
 この変更では、モデルの検証が実行時まで延期されます。モデルは一時的に無効になる場合があります（例：部分的に構成されたアルゴリズムコンポーネントを持つ場合）。必要な値が不足している場合、既存の設定を失うことなく後で埋めることができます。有効でないモデルを実行すると、モデルの構成を完了するために変更が必要なことを示す説明的な警告が表示されます。
 
 この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: 定数ラスタを作成アルゴリズムに別のラスタデータ型のサポートを追加
-With this feature we added a new advanced **OUTPUT_TYPE** parameter for the *Create constant raster layer* algorithm. Via this parameter, you can now specify an output data type for your constant raster layers.
+この機能により、*定数ラスタを作成* アルゴリズムの新しい高度な **OUTPUT_TYPE** パラメータが追加されました。このパラメータを使用することで、定数ラスタレイヤの出力データ型を指定できます。
 - Byte
 - Integer16
 - Unsigned Integer16
@@ -934,7 +934,7 @@ With this feature we added a new advanced **OUTPUT_TYPE** parameter for the *Cre
 
 ![image93](images/entries/b7b0b73f7d48104cb49f33ed2d453a70d188cbd6.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+この機能は [Clemens Raffler](https://api.github.com/users/root676) によって開発されました
 ### 機能: ラスタ値を四捨五入アルゴリズムを追加
 この新しいプロセシングアルゴリズムにより、QGISで **ラスタの値を丸める** ことができます。
 
@@ -944,7 +944,7 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 
 ![image94](images/entries/650983141141fc954abc96f79e5255e4634c5051.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+この機能は [Clemens Raffler](https://api.github.com/users/root676) によって開発されました
 ### 機能: モデル要素をコピー／切り取り／貼り付けできる
 この機能を使うと、モデル要素を同じモデル内および異なるモデル間でコピーして貼り付けることができます
 
@@ -954,7 +954,7 @@ Refs NRCan Contract#3000707093
 
 この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: 既存のレイヤにプロセシングの結果を追加できる
-When appending results, users are given a field mapping panel choice to allow them to manually set how fields are mapped to the destination layer\'s fields:
+結果を追加する際、フィールドマッピングパネルの選択肢を与えられ、フィールドが宛先レイヤのフィールドにどのようにマッピングされるかを手動で設定することができます。
 
 ![image96](images/entries/78631098-b9976100-78de-11ea-8f18-f7c7473e0945.gif)
 
@@ -964,7 +964,7 @@ Refs NRCan Contract#3000707093
 ### 機能: モデルでグループボックスを作成できる
 モデルデザイナーに以下の機能を追加します:
 - モデル内の個々のコメントの色をカスタマイズする機能
-- Allow creation of \"Group Boxes\" in models, which are a visual indicator of logically linked model components (e.g. \'Data Preparation Steps\', \'NDVI Calculation Steps\', \... etc). Users can customise the color and title for group boxes.
+- モデル内で、論理的にリンクされたモデル要素の視覚的な表示である「グループボックス」が作れます（例「データの準備段階」、「NDVI計算段階」など）。ユーザーはグループボックスの色と表題をカスタマイズできます。
 - ビューメニューからグループボックスへ直接移動でき、複雑なモデルの移動を助けます。
 
 ![image97](images/entries/78090538-bba87e00-740d-11ea-9476-144163d8f1ca.gif)
@@ -977,13 +977,13 @@ Refs NRCan Contract#3000707093
 
 ![image98](images/entries/77991113-5d749000-7366-11ea-986c-652f6e2229e7.webp)
 
-This is very useful for debugging models \-- you can see a much clearer visual picture of the flow of values through the model.
+これはデバッグするために非常に役立ちます \-- モデル内の値のフローをより明確で視覚的なイメージを見ることができます。
 
 Refs NRCan Contract#3000707093
 
 この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
-### Feature: Add \"Save Log to File\" algorithm for models
-This algorithm saves the contents of the execution log (right up to the point in the model at which the \'save log\' algorithm executes) to a file.
+### 機能: モデルに「ログをファイルに保存」アルゴリズムを追加
+このアルゴリズムは、実行ログの内容（「ログを保存」アルゴリズムが実行されるモデル内のポイントまで）をファイルに保存します。
 
 後で参照したり透明性のために、モデルを実行する際にデバッグログを自動的に保存するのに使うことができます。
 
@@ -1003,7 +1003,7 @@ Refs NRCan Contract#3000707093
 ### 機能: プロセシング入力の高度なオプション「地物ソースごと」を見えるようにする
 この機能は、高度なオプション「地物ソースごと」を次のように見えるようにします:
 - ソースから読み込む地物の数を制限する機能。 (モデル開発に便利で、入力レイヤの小さなサブセットを使ったモデルのテスト実行を簡単に行うことができます)
-- The ability to override on a per-input basis the global processing option for how to handle invalid geometries. Now you can safely leave the default processing setting at the conservative \"Stop algorithm execution when a geometry is invalid\" setting while easily temporarily overriding this for one particular input!
+- 入力ごとに、無効なジオメトリを処理する方法のグローバル処理オプションをオーバーライドする機能。これで、デフォルトの処理設定を控えめな「ジオメトリが無効な場合はアルゴリズムの実行を停止する」設定のままにして、特定の入力に対して一時的にこれを簡単にオーバーライドできます。
 
 ![image100](images/entries/77395930-64dbec80-6dee-11ea-9590-b7fadcd242c1.gif)
 
@@ -1020,7 +1020,7 @@ Additionally, I\'ve added a helpful \"select all\" action for quickly selecting 
 Refs NRCan Contract#3000707093
 
 この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
-### Feature: Add \"filter by geometry type\" and \"filter by layer type\" algorithms to processing
+### 機能: プロセシングに「ジオメトリ型でフィルタ」および「レイヤ型でフィルタ」アルゴリズムを追加
 This update adds two new algorithms to processing:
 - \"Filter by geometry type\": This algorithm filters features by their geometry type. Incoming features will be directed to different outputs based on whether they have a point, line or polygon geometry. It allows for model creation which responds to different input layer geometry types by applying different logic depending on the input geometry type.
 - \"Filter by layer type\": This algorithm allows conditional model branching based on an input layer type. For instance, it allows a model to adapt to the actual layer type of a generic \"map layer\" parameter input, and decide which branch of the model to run as a result.
@@ -1030,12 +1030,12 @@ It also adds in the required API to allow algorithms to \"prune\" model branches
 Refs NRCan Contract#3000707093
 
 この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
-### Feature: \"Remove Null Geometries\" algorithm can also remove EMPTY geometries
-Empty geometries do not contain coordinates. Thus, like *null* geometries, empty geometries are not spatial data in a strict sense. To make it easier for users to clean a vector layer, the *Remove Null Gometries* algorithm now has an \"**Also remove empty geometries**\" option.
+### 機能: 「NULLジオメトリを削除」アルゴリズムは、EMPTY ジオメトリも削除できます
+空のジオメトリには座標が含まれていません。したがって、 *null* ジオメトリのように、空のジオメトリは厳密な意味での空間データではありません。ユーザーがベクターレイヤーを簡単にクリーンアップできるように、 *NullGometriesの削除* アルゴリズムに「 **空のジオメトリも削除** 」オプションが追加されました。
 
 ![image101](images/entries/76703713-81b34a00-66a1-11ea-9818-ebf771885206.webp)
 
-This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
+この機能は [SwissTierras Colombia](https://swisstierrascolombia.com/) によって資金提供されました
 
 この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 機能: モデルデザイナーに複数選択の処理を追加、対話的なサイズ変更
@@ -1125,7 +1125,7 @@ The algorithm scans an input raster dataset for NoData cells and fills them with
 
 ![image105](images/entries/6cbf249116a09b4d342729da1e09060b9f0ec52f.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+この機能は [Clemens Raffler](https://api.github.com/users/root676) によって開発されました
 ### 機能: プロセシングのための様々な修正
 - Finalize work on range parameters support in GRASS algorithms;
 - Fix broken r.series algorithm
@@ -1141,7 +1141,7 @@ The \"Refactor Fields\" algorithm now highlights constraints, and even lets you 
 
 ![image106](images/entries/75100644-6079a500-559e-11ea-91b6-f99fa05451de.webp)
 
-This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
+この機能は [SwissTierras Colombia](https://swisstierrascolombia.com/) によって資金提供されました
 
 この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 機能: 新しい曲線に変換アルゴリズム
@@ -1328,7 +1328,7 @@ Now, both core and plugin devs have the option to tabify their dock widgets on t
 
 ![image116](images/entries/80051225-4b0cf280-84dd-11ea-9016-84a4303f230f.gif)
 
-This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
+この機能は [SwissTierras Colombia](https://swisstierrascolombia.com/) によって資金提供されました
 
 この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 機能: 出力パラメータラッパーを新しいAPIに移植
@@ -1399,7 +1399,7 @@ There is currently no support for labeling.
 ### ありがとうございます
 Huge thanks to all funders who have contributed to the crowdfunding and made this possible - <https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors>
 
-This feature was funded by [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
+この機能は [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/) によって資金提供されました
 
 This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk)
 ### 機能: プロセシング範囲パラメータを新しいAPIに移行し、その他多くの改善を行う

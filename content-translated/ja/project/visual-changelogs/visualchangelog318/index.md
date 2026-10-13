@@ -423,7 +423,7 @@ All algorithms provide different methods for calculating percentiles and percent
 
 ![image39](images/entries/febde74bab33bb165971509e90fb112c4b643001.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+この機能は [Clemens Raffler](https://api.github.com/users/root676) によって開発されました
 ### 機能: ポイントをラインへプロセシングアルゴリズム
 ポイントレイヤからラインレイヤを作るネイティブなプロセシングアルゴリズムが c++ 加わりました。既存の python *点を線に変換* に似ていますが、機能性が拡張されています:
 - Added support for *natural sorting* ( \'10\' \> \'9\' )

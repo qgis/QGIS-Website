@@ -585,13 +585,13 @@ It\'s designed as a quick way to de-normalize a relation from a project, e.g. to
 
 ![image49](images/entries/fca13f48b118ed13ebe84191a226ca0e20c37bfa.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+この機能は [Clemens Raffler](https://api.github.com/users/root676) によって開発されました
 ### 新しい、値の一致頻度アルゴリズム
 ラスタスタック内でセルごとに動作するいくつかの新しいラスタアルゴリズムを追加しました。ラスタスタックの値の一致頻度アルゴリズムは、入力ラスタスタックの値が、値ラスタの値と等しい頻度（回数）をセルごとに評価します。
 
 ![image50](images/entries/e368e10cfa5e19992176930121e0cb846c3d1ca8.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+この機能は [Clemens Raffler](https://api.github.com/users/root676) によって開発されました
 ### 新しい、ラスタスタックの値の超過頻度アルゴリズム
 ラスタスタック内でセルごとに動作するいくつかの新しいラスタアルゴリズムを追加しました。ラスタスタックの値の超過頻度アルゴリズムは、入力ラスタスタックの値が、値ラスタの値よりも大きい頻度（回数）をセルごとに評価します。
 
