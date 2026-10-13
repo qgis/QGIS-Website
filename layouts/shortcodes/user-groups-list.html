@@ -1,0 +1,160 @@
+{{/*
+    Local QGIS user groups: search, continent filters, grid and table views.
+    Data: static/data/user_groups/user_groups.json, built from
+    data/user_groups/groups.json by scripts/update_user_groups.py (shared with the map).
+    Reuses the DOM hooks of individual-contributors so the site's
+    assets/js/contributors-filter.js drives this page as well.
+*/}}
+{{ $continentOrder := slice "africa" "asia" "europe" "north-america" "oceania" "south-america" "global" }}
+
+{{/* Translated continent names, keyed by slug */}}
+{{ $continentNames := dict }}
+{{ range $continentOrder }}
+    {{ $key := printf "userGroupsContinent%s" (replace (title .) "-" "") }}
+    {{ $continentNames = merge $continentNames (dict . (i18n $key)) }}
+{{ end }}
+
+{{/* Sort by country, then name. Worldwide groups sort under their continent label. */}}
+{{ $sorted := slice }}
+{{ range (partial "user-groups-data.html" .).features }}
+    {{ $g := .properties }}
+    {{ $continent := index $continentNames $g.continent }}
+    {{ $key := printf "%s|%s" ($g.country_name | default $continent | lower) (lower $g.name) }}
+    {{ $sorted = $sorted | append (dict "key" $key "group" $g "continent" $continent) }}
+{{ end }}
+{{ $sorted = sort $sorted "key" }}
+
+{{ $activeCount := 0 }}
+{{ $usedContinents := dict }}
+{{ range $sorted }}
+    {{ if .group.active }}{{ $activeCount = add $activeCount 1 }}{{ end }}
+    {{ $usedContinents = merge $usedContinents (dict .group.continent true) }}
+{{ end }}
+
+{{ $userGroupsCss := resources.Get "sass/user-groups.sass" | css.Sass }}
+<link rel="stylesheet" href="{{ $userGroupsCss.RelPermalink }}">
+
+<!-- Filter and Search Section -->
+<div class="contributors-filter-section notification is-light p-5 mb-5 mt-5">
+    <!-- Search Bar -->
+    <div class="field mb-5">
+        <div class="control has-icons-left is-large">
+            <input
+                class="input is-rounded"
+                type="search"
+                id="contributor-search"
+                placeholder="{{ i18n "userGroupsSearchPlaceholder" }}"
+                aria-label="{{ i18n "userGroupsSearchLabel" }}"
+            >
+            <span class="icon is-left is-large">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="mb-4">
+        <div class="has-text-weight-semibold has-text-grey-dark is-uppercase" id="continent-filter-label">
+            <span class="icon-text">
+                <span class="icon"><i class="fas fa-filter" aria-hidden="true"></i></span>
+                <span>{{ i18n "userGroupsFilterByContinent" }}</span>
+            </span>
+        </div>
+        <div class="buttons are-small" role="group" aria-labelledby="continent-filter-label">
+            {{ range $continentOrder }}
+            {{ if index $usedContinents . }}
+            <button class="button filter-button" data-thematic="{{ . }}">
+                <span>{{ index $continentNames . }}</span>
+            </button>
+            {{ end }}
+            {{ end }}
+            <button class="button is-outlined is-primary3 mr-2" id="reset-filters">
+                <span class="icon"><i class="fas fa-redo" aria-hidden="true"></i></span>
+                <span>{{ i18n "userGroupsResetFilters" }}</span>
+            </button>
+        </div>
+        <label class="checkbox include-inactive-toggle">
+            <input type="checkbox" id="include-inactive">
+            {{ i18n "userGroupsIncludeInactive" }}
+        </label>
+    </div>
+
+    <!-- Stats -->
+    <p class="has-text-grey-dark mb-0" aria-live="polite">
+        {{ i18n "userGroupsCount" (dict
+            "Showing" (printf `<strong id="stats-showing">%d</strong>` $activeCount)
+            "Total" (printf `<strong id="stats-total">%d</strong>` $activeCount)) | safeHTML }}
+    </p>
+</div>
+
+<div class="mb-4">
+    {{ partial "user-groups-edit-button.html" . }}
+</div>
+
+<div class="field has-addons mb-0" id="view-toggle" role="group" aria-label="{{ i18n "userGroupsDisplayMode" }}">
+    <p class="control">
+        <button class="button is-active is-primary3" id="view-grid-btn" aria-pressed="true">
+            <span class="icon"><i class="fas fa-th" aria-hidden="true"></i></span>
+            <span>{{ i18n "userGroupsGridView" }}</span>
+        </button>
+    </p>
+    <p class="control">
+        <button class="button" id="view-table-btn" aria-pressed="false">
+            <span class="icon"><i class="fas fa-table" aria-hidden="true"></i></span>
+            <span>{{ i18n "userGroupsTableView" }}</span>
+        </button>
+    </p>
+</div>
+
+<!-- No Results Message (hidden by default) -->
+<div class="contributors-no-results notification has-text-centered py-6" style="display: none;">
+    <span class="icon is-large has-text-grey-lighter mb-4">
+        <i class="fas fa-search-minus fa-3x" aria-hidden="true"></i>
+    </span>
+    <h3 class="title is-4 has-text-grey">{{ i18n "userGroupsNoResultsTitle" }}</h3>
+    <p class="has-text-grey">{{ i18n "userGroupsNoResultsHint" }}</p>
+</div>
+
+<!-- Groups Grid -->
+<div class="columns is-multiline mt-4" id="contributors-grid-view">
+    {{ range $sorted }}
+        {{ partial "user-group-card.html" . }}
+    {{ end }}
+</div>
+
+<!-- Groups Table View (hidden by default) -->
+<div id="contributors-table-view" style="display:none;"
+     data-default-sort="country:asc"
+     data-text-cols="name country continent">
+    <div class="table-container">
+        <table class="table is-fullwidth is-hoverable is-striped">
+            <thead>
+                <tr>
+                    <th><span class="is-sr-only">{{ i18n "userGroupsColumnLogo" }}</span></th>
+                    <th class="sortable" data-col="name">
+                        {{ i18n "userGroupsColumnName" }} <span class="sort-icon"><i class="fas fa-sort" aria-hidden="true"></i></span>
+                    </th>
+                    <th class="sortable" data-col="country">
+                        {{ i18n "userGroupsColumnCountry" }} <span class="sort-icon"><i class="fas fa-sort-up" aria-hidden="true"></i></span>
+                    </th>
+                    <th class="sortable" data-col="continent">
+                        {{ i18n "userGroupsColumnContinent" }} <span class="sort-icon"><i class="fas fa-sort" aria-hidden="true"></i></span>
+                    </th>
+                    <th class="sortable" data-col="year">
+                        {{ i18n "userGroupsColumnSince" }} <span class="sort-icon"><i class="fas fa-sort" aria-hidden="true"></i></span>
+                    </th>
+                    <th>{{ i18n "userGroupsColumnContacts" }}</th>
+                </tr>
+            </thead>
+            <tbody id="contributors-table-body">
+                {{ range $sorted }}
+                    {{ partial "user-group-table-row.html" . }}
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Load filter functionality (shared with the contributors list) -->
+{{ $js := resources.Get "js/contributors-filter.js" | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>

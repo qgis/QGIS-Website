@@ -1,0 +1,15 @@
+{{/*
+    Invites readers to fix or add a user group. Opens GitHub's web editor on
+    the file people edit, data/user_groups/groups.json. GitHub handles the
+    fork and the pull request. Shown on the user groups list and map.
+
+    Usage: {{ partial "user-groups-edit-button.html" . }}
+*/}}
+{{- $repo := site.Params.githubRepo | default "https://github.com/qgis/QGIS-Website" -}}
+<div class="user-groups-edit is-flex is-align-items-center is-flex-wrap-wrap">
+    <p class="mr-3 mb-2 has-text-grey-dark">{{ i18n "userGroupsSuggestChangeHint" | default "Is your group missing or out of date?" }}</p>
+    <a class="button is-primary1 is-light mb-2" href="{{ $repo }}/blob/main/docs/user-groups.md" target="_blank" rel="noopener">
+        <span class="icon"><i class="fab fa-github" aria-hidden="true"></i></span>
+        <span>{{ i18n "userGroupsSuggestChange" | default "Suggest a change" }}</span>
+    </a>
+</div>

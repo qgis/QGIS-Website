@@ -2,6 +2,7 @@ from PIL import Image
 import os
 import xml.etree.ElementTree as ET
 
+
 SUPPORTED_FORMATS = ['png', 'jpg', 'jpeg', 'tiff']
 
 def resize_image(image_filename, max_height=120):

@@ -1,0 +1,162 @@
+{{/*
+    Contributors map. This site file overrides the theme's
+    layouts/shortcodes/contributors-map.html: it adds the shared globe/flat
+    base (assets/js/globe-flat-map.js), the Equal Earth flat map shown by
+    default, and the site stylesheet assets/sass/maps.sass.
+*/}}
+{{ $sass := resources.Get "sass/contributors-map.sass" }}
+{{ $style := $sass | css.Sass }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $maps := resources.Get "sass/maps.sass" | css.Sass }}
+<link rel="stylesheet" href="{{ $maps.RelPermalink }}">
+
+<!-- Load Font Awesome -->
+{{ $fontawesome := resources.Get "css/fontawesome.css" }}
+<link rel="stylesheet" href="{{ $fontawesome.RelPermalink }}">
+
+<!-- Load MapLibre GL -->
+{{ $maplibreCSS := resources.Get "libs/maplibre/maplibre-gl.css" }}
+<link rel="stylesheet" href="{{ $maplibreCSS.RelPermalink }}">
+
+<!-- Load OpenLayers -->
+{{ $olCSS := resources.Get "libs/openlayers/ol.css" }}
+<link rel="stylesheet" href="{{ $olCSS.RelPermalink }}">
+
+<div class="contributors-map-container">
+  <div class="loading-spinner">
+    Loading contributors map...
+  </div>
+  
+  <!-- Map Controls -->
+  <div class="map-controls">
+    <button id="globe-view-btn" class="map-view-toggle" title="Globe View" aria-pressed="false">
+      <i class="fas fa-globe"></i>
+    </button>
+    <button id="flat-view-btn" class="map-view-toggle active" title="Flat Map" aria-pressed="true">
+      <i class="fas fa-map"></i>
+    </button>
+  </div>
+
+  <!-- Category Filter Legend (inside map overlay) -->
+  <div class="map-category-legend">
+    <label class="map-legend-checkbox-label">
+      <input type="checkbox" id="filter-code" checked>
+      <span class="map-legend-marker code-marker-preview"></span>
+      Code Contributors
+    </label>
+    <label class="map-legend-checkbox-label supporting-checkbox-label">
+      <input type="checkbox" id="filter-supporting" checked>
+      <div class="supporting-legend-types">
+        <span class="supporting-legend-main-label">Supporting Contributors</span>
+        <div class="supporting-legend-type-row">
+          <span class="map-legend-marker supporting-marker-preview"></span>
+          <span>Individual</span>
+        </div>
+        <div class="supporting-legend-type-row">
+          <span class="map-legend-marker supporting-marker-preview supporting-org-preview"></span>
+          <span>Organisation</span>
+        </div>
+      </div>
+    </label>
+  </div>
+  
+  <!-- Globe View -->
+  <div id="globe-view"></div>
+  
+  <!-- Flat Map View -->
+  <div id="flat-map-view"></div>
+</div>
+
+<!-- Legend (outside map container) -->
+<div class="map-legend">
+  <h4>Contribution Levels</h4>
+  <div class="legend-items-grid">
+    <div class="legend-item">
+      <div class="legend-circle" style="width: 84px; height: 84px;"></div>
+      <span>10,000+ commits</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-circle" style="width: 66px; height: 66px;"></div>
+      <span>5,000+ commits</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-circle" style="width: 54px; height: 54px;"></div>
+      <span>1,000+ commits</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-circle" style="width: 42px; height: 42px;"></div>
+      <span>500+ commits</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-circle" style="width: 36px; height: 36px;"></div>
+      <span>&lt; 500 commits</span>
+    </div>
+  </div>
+</div>
+
+<!-- Shared popup overlay -->
+<div id="popup-overlay" class="popup-overlay"></div>
+
+<!-- Code Contributor Popup -->
+<div id="contributor-popup" class="contributor-tooltip">
+  <button id="popup-close" class="tooltip-close">×</button>
+  <div class="card contributor-card" id="popup-card">
+    <div class="card-content has-text-centered">
+      <div class="avatar-container">
+        <img id="popup-avatar" src="" alt="Avatar" class="avatar">
+      </div>
+      <h3 class="title is-4">
+        <a id="popup-username-link" href="" target="_blank" rel="noopener" class="external-link"></a>
+      </h3>
+      <div class="total-contributions mb-4 is-flex is-justify-content-center is-align-items-center">
+        <span class="tag is-light is-medium has-text-weight-semibold mr-1 is-rounded">
+          <i class="fab fa-git-alt mr-1 has-text-info"></i>
+          <span id="popup-total-contributions"></span>
+        </span>
+        <span class="has-text-grey">commits</span>
+      </div>
+      <div class="contribution-badges" id="popup-thematics-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Supporting Contributor Popup -->
+<div id="supporting-contributor-popup" class="contributor-tooltip supporting-contributor-popup">
+  <button id="supporting-popup-close" class="tooltip-close">×</button>
+  <div class="card contributor-card supporting-card" id="supporting-popup-card">
+    <div class="card-content">
+      <div class="columns is-vcentered is-mobile">
+        <div class="column is-narrow">
+          <div class="supporting-avatar-container">
+            <img id="supporting-popup-avatar" src="" alt="Avatar" class="supporting-popup-avatar">
+            <span class="supporting-s-badge">S</span>
+          </div>
+        </div>
+        <div class="column">
+          <h3 class="title is-5 mb-1">
+            <a id="supporting-popup-name-link" href="" target="_blank" rel="noopener" class="external-link"></a>
+            <span id="supporting-popup-name-text" style="display:none;"></span>
+          </h3>
+          <div id="supporting-popup-status" class="mb-2"></div>
+          <div id="supporting-popup-dates" class="is-size-7 has-text-grey mb-2"></div>
+        </div>
+      </div>
+      <div class="content is-small supporting-popup-description" id="supporting-popup-description"></div>
+      <div class="contribution-badges" id="supporting-popup-roles"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Load MapLibre GL JS -->
+{{ $maplibreJS := resources.Get "libs/maplibre/maplibre-gl.js" }}
+<script src="{{ $maplibreJS.RelPermalink }}"></script>
+
+<!-- Load OpenLayers JS -->
+{{ $olJS := resources.Get "libs/openlayers/ol.js" }}
+<script src="{{ $olJS.RelPermalink }}"></script>
+
+<!-- Load map functionality -->
+{{ $baseJs := resources.Get "js/globe-flat-map.js" }}
+<script src="{{ $baseJs.RelPermalink }}"></script>
+{{ $js := resources.Get "js/contributors-map.js" }}
+<script src="{{ $js.RelPermalink }}"></script>

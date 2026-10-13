@@ -1,0 +1,14 @@
+{{/*
+    The local user groups GeoJSON, as a map, for pages rendered at build
+    time (the list and the landing page counts).
+
+    The file lives in static/ so the deployed site publishes it at
+    /data/user_groups/user_groups.json for anyone to reuse, and the map
+    fetches it from there. Hugo cannot read static/ through site.Data, so
+    read it here. It is built from data/user_groups/groups.json by
+    scripts/update_user_groups.py.
+
+    Usage: {{ $groups := partial "user-groups-data.html" . }}
+*/}}
+{{- $groups := readFile "static/data/user_groups/user_groups.json" | transform.Unmarshal -}}
+{{- return $groups -}}

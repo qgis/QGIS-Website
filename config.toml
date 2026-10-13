@@ -326,6 +326,22 @@ sectionPagesMenu = 'main'
   [menu.main.params]
     i18n_key = "menuLocalUserGroups"
 
+[[menu.main]]
+  parent = "Local User Groups"
+  name = "Group list"
+  url = "/community/groups/list"
+  weight = 111
+  [menu.main.params]
+    i18n_key = "menuUserGroupList"
+
+[[menu.main]]
+  parent = "Local User Groups"
+  name = "Group map"
+  url = "/community/groups/map"
+  weight = 112
+  [menu.main.params]
+    i18n_key = "menuUserGroupMap"
+
 
 
 

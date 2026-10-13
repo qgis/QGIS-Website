@@ -1,0 +1,103 @@
+// Local user groups: list cards, table and map popup.
+//
+// Loaded by the user-groups-list and user-groups-map shortcodes, after the
+// theme's stylesheets, so rules with the same specificity win. It is compiled
+// on its own, so theme variables are not available here: colours are written
+// out with the config.toml parameter they come from.
+
+$primary5: #93B023  // config.toml params.primary5
+
+// ─── List: reuses the theme's contributor cards ─────────────────────────────
+
+.flag-emoji
+  font-family: "Twemoji Country Flags", "Apple Color Emoji", "Segoe UI Emoji", sans-serif
+
+.contributor-card.user-group
+  .avatar
+    border: none
+    border-radius: 12%
+    object-fit: contain
+    background: white
+
+  .user-group-contacts
+    overflow-wrap: anywhere
+
+  &.is-inactive
+    opacity: 0.65
+    filter: grayscale(0.6)
+
+.user-group-logo-small
+  width: 36px
+  height: 36px
+  object-fit: contain
+  border-radius: 12%
+  background: white
+
+.contributor-badge-continent
+  color: #4d6370
+  background: #ecf1f4
+
+.include-inactive-toggle
+  cursor: pointer
+  user-select: none
+
+  input
+    margin-right: 0.4rem
+    accent-color: $primary5
+
+// ─── Map ─────────────────────────────────────────────────────────────────────
+
+.user-group-marker
+  &:focus-visible
+    outline: 3px solid #ee7913
+    outline-offset: 3px
+    border-radius: 50%
+
+.contributor-tooltip.user-group-popup
+  max-width: 420px
+  width: 92%
+
+  .card-content
+    max-height: 80vh
+    overflow-y: auto
+
+.user-group-popup-card
+  border-top: 4px solid #589632 !important
+
+  &:hover
+    transform: none !important
+
+.user-group-entry
+  display: flex
+  gap: 1rem
+  align-items: flex-start
+
+  & + &
+    margin-top: 1.25rem
+    padding-top: 1.25rem
+    border-top: 1px solid #e1e1e1
+
+.user-group-entry-logo
+  width: 72px
+  height: 72px
+  flex-shrink: 0
+  object-fit: contain
+  background: white
+  border: 2px solid #589632
+  border-radius: 10%
+  padding: 4px
+
+.user-group-entry-info
+  min-width: 0
+  overflow-wrap: anywhere
+
+// The world is about twice as wide as it is tall in Equal Earth: size the
+// user groups flat view to match, so the whole world fills the frame. The
+// contributors map keeps its taller frame, which leaves room for its legend.
+.contributors-map-container.user-groups-map
+  min-height: 0
+
+  #flat-map-view
+    height: auto
+    aspect-ratio: 2.05 / 1
+    min-height: 320px

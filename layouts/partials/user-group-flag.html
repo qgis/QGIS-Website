@@ -1,0 +1,11 @@
+{{/*
+    Flag emoji for an ISO 3166 alpha 2 country code (e.g. "CH" -> 🇨🇭).
+    Groups without a country (worldwide groups) get a globe icon.
+    Context: the country code string, or nil.
+*/}}
+{{- $indicators := dict "A" "🇦" "B" "🇧" "C" "🇨" "D" "🇩" "E" "🇪" "F" "🇫" "G" "🇬" "H" "🇭" "I" "🇮" "J" "🇯" "K" "🇰" "L" "🇱" "M" "🇲" "N" "🇳" "O" "🇴" "P" "🇵" "Q" "🇶" "R" "🇷" "S" "🇸" "T" "🇹" "U" "🇺" "V" "🇻" "W" "🇼" "X" "🇽" "Y" "🇾" "Z" "🇿" -}}
+{{- with . -}}
+<span class="flag-emoji" aria-hidden="true">{{ index $indicators (substr . 0 1) }}{{ index $indicators (substr . 1 1) }}</span>
+{{- else -}}
+<span class="icon" aria-hidden="true"><i class="fas fa-globe"></i></span>
+{{- end -}}
