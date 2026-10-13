@@ -1,7 +1,7 @@
 ---
 author: Anders Skoglund e Kenichi Matsuoka
 categories:
-- Case studies
+- Estudos de caso
 date: '2015-04-01'
 description: Quantarctica is a collection of Antarctic geographical datasets, such
   as base maps, satellite imagery, glaciology and geophysics data from data centres

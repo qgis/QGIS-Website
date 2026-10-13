@@ -1,7 +1,7 @@
 ---
 author: 'Prof. Alberto Vázquez & Mauro Novara '
 categories:
-- Case studies
+- Estudos de caso
 date: '2011-09-01'
 description: 'In our region, Argentinean Patagonia, we have very few references about
   the application of GIS in High School for the construction of geographical knowledge

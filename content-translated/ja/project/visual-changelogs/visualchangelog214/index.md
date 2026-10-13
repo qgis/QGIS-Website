@@ -91,12 +91,12 @@ QGIS 2.14は、メインの地図キャンバスにノースアロー、スケ�
 ![image50](images/entries/e2390ce8f4bc93ebf00228e1545b192315d2cb57.png.400x300_q85_crop.webp)
 ### 機能: 資金援助されたバグ修正
 各リリースに先立って、私たちは開発者に可能な限り多くのバグを解決するための資金を提供する有料のバグ修正プログラムを開催します。 私たちは、changelogレポートの一環として、有料バグ修正プログラムの報告書を追加することにしました。 このリストは **網羅的ではありません** 。
-- Sandro Santilli: [Postgis Connection freeze if you press \"Set filter\" during loading of data](http://hub.qgis.org/issues/13141)
-- Sandro Santilli: [db_manager is unable to load rasters from connections with no dbname specified](http://hub.qgis.org/issues/10600)
-- Sandro Santilli: [Plugin layers do not work correctly with rotation](http://hub.qgis.org/issues/11900)
-- Sandro Santilli: Crash in QgsGeomColumnTypeThread stopping connection scan [#14140](http://hub.qgis.org/issues/14140) [#13806](http://hub.qgis.org/issues/13806)
-- Sandro Santilli: [Crash after bulk change of attribute value in shapefile](http://hub.qgis.org/issues/11422)
-- Sandro Santilli: [KMZ causes QGIS application crash (Mac)](http://hub.qgis.org/issues/13865)
+- Sandro Santilli: [データのロード中に \"Set filter\"を押すとPostgis Connectionがフリーズする](http://hub.qgis.org/issues/13141)
+- Sandro Santilli: [db_managerはdbnameが指定されていない接続からラスタをロードできません](http://hub.qgis.org/issues/10600)
+- Sandro Santilli: [Pluginのレイヤーがローテーションで正しく動作しない](http://hub.qgis.org/issues/11900)
+- Sandro Santilli：QgsGeomColumnTypeThreadでクラッシュして接続スキャンを停止する [#14140](http://hub.qgis.org/issues/14140) [#13806](http://hub.qgis.org/issues/13806)
+- Sandro Santilli: [シェープファイルの属性値の一括変更の後クラッシュ](http://hub.qgis.org/issues/11422)
+- Sandro Santilli: [KMZがQGISアプリケーションをクラッシュさせる（Mac）](http://hub.qgis.org/issues/13865)
 - Sandro Santilli: [QGIS 2.8.1 crash opening FileGDB (openGDB-Driver)](http://hub.qgis.org/issues/12416)
 - Sandro Santilli: [QGIS crashes when removing vertex of a multipart geometry](http://hub.qgis.org/issues/14188)
 - Sandro Santilli: [test -V -R qgis_analyzertest segfaults](http://hub.qgis.org/issues/14176)

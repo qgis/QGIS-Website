@@ -5,12 +5,12 @@ Reviewer: Tim Sutton
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-title: Certification Programme
+title: Sertifikavimo programa
 type: page
 
 ---
 {{<content-start >}}
-# Certification Programme
+# Sertifikavimo programa
 ## QGIS Certificate
 Are you looking for courses with the official QGIS certificate? At the [QGIS Certification Programme website](https://certification.qgis.org/), you can explore an interactive map to locate organisations in your country that offer certified QGIS training and find upcoming courses that provide an official QGIS certificate.
 

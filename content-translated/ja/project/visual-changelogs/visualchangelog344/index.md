@@ -64,7 +64,7 @@ QGISのメッセージログパネルで特定のタブにメッセージを開�
 
 この機能は [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html) の資金提供で開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ## シンボロジ
 ### 機能: カテゴリ分類シンボルレンダラーウィジェットへの未使用カテゴリの削除オプションの追加
 カテゴリ分類シンボルウィジェットに、ユーザーが未使用のカテゴリを一括削除できる新しいオプションが追加されました。
@@ -313,7 +313,7 @@ Additional enhancements include:
 
 この機能は [the QGIS user group Switzerland](https://qgis.ch/) の資金提供で開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 機能: 属性フォームデザイナーへの検索ボックスの追加
 [QEP#401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md) に従って、ドラッグ＆ドロップフォームデザイナーに名前またはエイリアスでアイテムをフィルタリングする検索ボックスが追加されました。これにより、属性フィールドが多数あるテーブルやデータセットでの作業が格段に容易になります。
 
@@ -323,7 +323,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
 この機能は [the QGIS user group Switzerland](https://qgis.ch) の資金提供で開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ## 分析ツール
 ### 機能: モデラーのツールボックスへの入力パラメーターの追加
 グラフィカルモデラーに単一の　"ツールボックス" パネルが追加されました。これにより入力パネルとアルゴリズムパネルのオブジェクトが1つのパネルに統合されます。これによりグラフィカルモデラーのUXが簡素化され、モデラーツールの個別タブを管理するのではなく検索フィルターを使用できるようになります。
@@ -541,7 +541,7 @@ GPSツールクラスが `QgisInterface::gpsTools()` を通じてアクセスで
 
 この機能は [the Danish Nature Agency, Naturstyrelsen](https://naturstyrelsen.dk/) の資金提供で開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ## 注目すべき修正
 ### Feature: Bug fixes by Even Rouault (Spatialys)
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |

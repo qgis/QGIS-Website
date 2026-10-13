@@ -165,7 +165,7 @@ QGISは新しいメッシュレイヤの作成に対応するようになりま�
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: メッシュフレームの編集
 QGISは、メッシュフレームの編集に対応するようになり、メッシュの一貫性を確保する機能と、編集操作の元に戻すおよびやり直す機能を提供しています。
 
@@ -175,7 +175,7 @@ This introduces the `QgsMeshEditor` class to the QGIS Python API, which allows f
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: メッシュフレームの編集ライフサイクル
 This feature has been introduced in the scope of [QEP 228](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/228) which outlines the introduction of Mesh Editing tools, implements changes to the User Interface, and exposes new functionality to the API.
 
@@ -185,7 +185,7 @@ This feature has been introduced in the scope of [QEP 228](https://github.com/qg
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: メッシュマップの編集ツール
 This feature has been introduced in the scope of [QEP 228](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/228) which outlines the introduction of Mesh Editing tools.
 
@@ -202,7 +202,7 @@ This feature has been introduced in the scope of [QEP 228](https://github.com/qg
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 高度なメッシュ編集の拡張
 This feature has been introduced in the scope of [QEP 228](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/228) which outlines the introduction of Mesh Editing tools, implements changes to the User Interface, and exposes new functionality to the API.
 
@@ -220,7 +220,7 @@ QGIS APIは、新しいインタフェース抽象クラスQgsMeshAdvancedEditin
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 編集可能なメッシュ要素をポリゴンで選択
 メッシュ編集を行う際に、デジタイズした領域内のメッシュ要素を選択することができるようになりました。ポリゴンの各頂点は左クリックでデジタイズされ、右クリックでポリゴンを完成させ、正しいことを確認し、交差するメッシュ要素（面と頂点）が選択されます。バックスペースキーを使って最後の頂点を削除でき、エスケープキーを使うと、ユーザーは通常のデジタイズモードに戻ることができます。
 
@@ -232,7 +232,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: メッシュ要素を既存のジオメトリで選択
 既存のベクタレイヤに存在するジオメトリからメッシュ要素を選択するための2つのアクションが追加されました。
 
@@ -242,7 +242,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: メッシュ要素を式で選択
 An interface has been created for selecting mesh elements by expression during mesh editing. In addition, a contextual expression function `$face_area` has been added that returns the area of a mesh face.
 
@@ -250,7 +250,7 @@ An interface has been created for selecting mesh elements by expression during m
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 単一の頂点を変換
 新しいメッシュ変形ツールの編集モードでは、単一の選択された頂点の座標をインポートすることができます。
 
@@ -260,7 +260,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### Feature: Reindex/ renumber mesh layer
 Users are now able to reindex (or renumber) the vertices and faces of a mesh layer during editing. The renumbering is an optimization of the mesh with the Cuthill-McKee algorithm.
 
@@ -268,7 +268,7 @@ Users are now able to reindex (or renumber) the vertices and faces of a mesh lay
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### Feature: Force mesh by polylines
 When editing mesh features, users can now transform features by forcing them to conform to a surface defined by existing polylines, or break lines. Faces are forced to follow the break lines, that is, edges of encountered faces have to be on these lines. Users may select break line geometries and then use the dedicated button to transform intersecting mesh elements.
 
@@ -285,7 +285,7 @@ Whilst the term \"break lines\" is typically used to refer to polylines that con
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 式によるメッシュの変形
 User can perform geometrical transformations on a mesh using an expression to change the vertices\' coordinates. All coordinates (X,Y,Z) of selected vertices can be calculated with an expression, allowing transformation of the mesh while the mesh is still valid.
 
@@ -299,7 +299,7 @@ Once applied, users have the option to undo or redo the operation.
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ## レンダリング
 ### Feature: Allow using physical DPI for map canvas
 A new setting has been made available for correctly using the physical screen DPI instead of logical DPI, allowing symbols to be rendered equally on different attached devices (hi dpi and low dpi), and in mobile applications such as QField.
@@ -340,13 +340,13 @@ These two functions are contextual and need to be added in a `QgsExpressionConte
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### Feature: Expression function for \$z
 The z value for the current feature in an expression context can now be retrieved using `$z`
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### Feature: Affine transform expression
 An affine_transform function has been added to QGIS Expressions.
 
@@ -626,7 +626,7 @@ In most instances where transactions are desired, activating this option is like
 
 This feature was funded by [ms.GIS](http://www.msgis.com)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### Feature: Show system and internal tables in sublayer selection
 A check box has been added to the sublayer selection dialog to control whether system and internal tables should be shown. This will be turned off by default, but will be useful in instances where users have a particular need to load a system table into QGIS for viewing or manipulation purposes.
 

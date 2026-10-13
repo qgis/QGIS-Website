@@ -67,7 +67,7 @@ When editing attributes in the **attribute table or forms**, you can now enter e
 ### 機能：ブックマークのインポート/エクスポートが可能
 ブックマークをファイルに保存/読み込むことが可能になりました。これにより、ブックマークされた場所を簡単に共有したり、コンピュータ間で簡単に移動することができます。
 
-**この機能は、によって開発されました：** Salvatore Larosa
+**この機能は、以下によって開発されました:** Salvatore Larosa
 
 ![](images/entries/e3d35c32da659821bc0c657b8e7ba40587a1bfb2.webp)
 ### 機能：式の改良

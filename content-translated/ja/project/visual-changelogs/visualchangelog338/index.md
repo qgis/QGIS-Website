@@ -271,7 +271,7 @@ This feature was developed by [mhugent](https://github.com/mhugent)
 
 この機能は [the QGIS user group Switzerland](https://qgis.ch/) の資金提供で開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 機能：データ定義プロパティを持つポイントシンボルのDXFブロックの作成
 特に複雑なデータ定義プロパティに対して、DXF内での参照の利用能力に追加機能が加えられ、繰り返されるポイントシンボルを含む複雑なレイヤーのDXF出力がはるかに小さくなります。
 
@@ -291,7 +291,7 @@ DXFエクスポートダイアログに、現在の選択でアクティブな�
 
 この機能は [the QGIS user group Switzerland](https://www.qgis.ch/) の資金提供で開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ### 機能：’DXFエクスポート" ダイアログ設定のインポート/エクスポートの追加
 ユーザーがDXFエクスポートダイアログのGUI設定を保存および復元でき、再利用性を向上させるまたはコラボレーションを強化するために同僚と共有するための任意の数の設定をエクスポートできるようになります。
 
@@ -301,7 +301,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
 この機能は [the QGIS user group Switzerland](https://qgis.ch/) の資金提供で開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ## フォームとウィジェット
 ### 機能：カラーウィジェットへのCMYKサポートの追加
 [CMYK QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283) に沿って、カラーウィジェットにCMYKカラーサポートが追加されました。
@@ -559,7 +559,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 この機能は [the QGIS user group Switzerland](https://www.qgis.ch/) の資金提供で開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ## 注目すべき修正
 ### Feature: Bug fixes by Even Rouault (Spatialys)
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.34 backport commit (GitHub) |
