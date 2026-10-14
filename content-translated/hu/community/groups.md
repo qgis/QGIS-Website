@@ -10,99 +10,43 @@ type: page
 ---
 {{<content-start >}}
 # Felhasználói csoportok
-## QGIS felhasználói csoportok aktuális listája
-### 2016-ban vagy korábban regisztrált
-{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazília)" listSubtitle="Contact: Narcélio de Sá" >}}
+Local user groups bring QGIS users together in their own country and language. They run meetings, share know how and help shape QGIS. This page explains how a group works and how to start one.
 
-{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Dánia)" listSubtitle="Contact: Mie Winstrup" >}}
+{{<rich-box-start layoutClass="has-right rounded" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (Anglia) " listSubtitle="Contact: Ant Scott" >}}
+{{<rich-content-start themeClass="coloring-1" >}}
+## Find a group near you
+Search the groups by name, country or continent. Switch between cards and a sortable table.
 
-{{<rich-list listLink="https://qgis.de/" icon="🇩🇪 " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (Németország) " listSubtitle="Kapcsolattartó: Thomas Schüttenberg" >}}
+{{<button class="is-success" link="/community/groups/list/" text="Browse the list" >}}
 
-{{<rich-list listLink="http://qgis.it/" icon="🇮🇹 " layoutClass="half" listTitle="Gruppo degli utenti italiani di QGIS (Olaszország) " listSubtitle="Kapcsolattartó: Matteo Ghetta" >}}
+{{<rich-content-end >}}
 
-{{<rich-list listLink="http://qgis.jp/" icon="🇯🇵 " layoutClass="half" listTitle="QGIS User Group Japan (OSGeo.JP) " listSubtitle="Kapcsolattartó: Kosuke ASAHI" >}}
+{{<rich-right-start >}}
 
-{{<rich-list listLink="https://qgis.pe/" icon="🇵🇪 " layoutClass="half" listTitle="QGIS Perú Official Users Group " listSubtitle="Kapcsolattartó: Anibal Alarcon" >}}
+{{<user-groups-stats "groups" "/community/groups/list/" >}}
 
-{{<rich-list listLink="https://qgis.pl/" icon="🇵🇱 " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Lengyelország) " listSubtitle="Kapcsolattartó: Michał Żugajewicz" >}}
+{{<rich-right-end >}}
 
-{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugália " listSubtitle="Contact: Giovanni Manghi" >}}
+{{<rich-box-end >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿 " layoutClass="half" listTitle="QGIS UK (Skócia) " listSubtitle="Kapcsolattartó: Ross McDonald" >}}
+{{<rich-box-start layoutClass="has-right rounded" >}}
 
-{{<rich-list listLink="https://qgis.ch/" icon="🇨🇭 " layoutClass="half" listTitle="QGIS user group Switzerland " listSubtitle="Kapcsolattartó: François Voisard" >}}
+{{<rich-content-start themeClass="coloring-1" >}}
+## See the groups on a map
+Every highlighted country has a local group. Select a logo to meet the group.
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁷󠁬󠁳󠁿 " layoutClass="half" listTitle="QGIS UK (Wales/Cymru) " listSubtitle="Kapcsolattartó: Kevin Williams" >}}
+{{<button class="is-success" link="/community/groups/map/" text="Open the map" >}}
 
-{{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS user group (Új-Zéland) " listSubtitle="Kapcsolattartó: Brent Wood → eltávolítva 2018-ban" >}}
-### 2017-ben regisztrált
-{{<rich-list listLink="https://qgis.no/" icon="🇳🇴" layoutClass="half" listTitle="QGIS Norge (Norvégia)" listSubtitle="Kapcsolattartó: James Stott" >}}
+{{<rich-content-end >}}
 
-{{<rich-list listLink="https://qgis.org.za/" icon="🇿🇦" layoutClass="half" listTitle="QGIS ZA (Dél-Afrika)" listSubtitle="Kapcsolattartó: Admire Nyakudya" >}}
+{{<rich-right-start >}}
 
-{{<rich-list listLink="https://www.osgeo.fr/" icon="🇫🇷" layoutClass="half" listTitle="Groupe des Utilisateurs de QGIS - France (Franciaország)" listSubtitle="Kapcsolattartó: Harrissou Sant-anna" >}}
+{{<user-groups-stats "countries" "/community/groups/map/" >}}
 
-{{<rich-list listLink="https://qgis.se/" icon="🇸🇪" layoutClass="half" listTitle="QGIS Sverige (Svédország)" listSubtitle="Kapcsolattartó: Karl-Magnus Jönsson" >}}
+{{<rich-right-end >}}
 
-{{<rich-list listLink="https://qgis.or.ke" icon="🇰🇪" layoutClass="half" listTitle="QGIS Kenya" listSubtitle="Kapcsolattartó: Benard Mitto" >}}
-
-{{<rich-list listLink="https://qgis-australia.org/" icon="🇦🇺" layoutClass="half" listTitle="QGIS Ausztrália" listSubtitle="Kapcsolattartó: Emma Hain" >}}
-
-{{<rich-list listLink="http://qgis-us.org" icon="🇺🇸" layoutClass="half" listTitle="QGIS USA" listSubtitle="Kapcsolattartó: Randal Hale" >}}
-
-{{<rich-list listLink="https://qgis.mx" icon="🇲🇽" layoutClass="half" listTitle="QGIS Mexico" listSubtitle="Kapcsolattartó: Hennessy Amor Becerra Ayala" >}}
-
-{{<rich-list listLink="https://qgis.org" icon="🇬🇪" layoutClass="half" listTitle="QGIS Grúzia" listSubtitle="Kapcsolattartó: Zurab Archvadze → eltávolítva 2018-ban" >}}
-### 2018-ban regisztrált
-{{<rich-list listLink="https://qgis.ro/" icon="🇷🇴" layoutClass="half" listTitle="Asociația Utilizatorilor QGIS (Románia)" listSubtitle="Kapcsolattartó: Tudor Bărăscu" >}}
-
-{{<rich-list listLink="https://qgis.es/" icon="🇪🇸" layoutClass="half" listTitle="Spanyolországi QGIS-felhasználók egyesülete" listSubtitle="Kapcsolattartó: Carlos López Quintanilla" >}}
-
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="Contact: Germán Carrillo –> REMOVED in 2025" >}}
-### 2018-ban eltávolított
-{{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS user group (Új-Zéland)" listSubtitle="Kapcsolattartó: Brent Wood" >}}
-
-{{<rich-list listLink="https://qgis.org" icon="🇬🇪" layoutClass="half" listTitle="QGIS Grúzia" listSubtitle="Kapcsolattartó: Zurab Archvadze" >}}
-### 2020-ban regisztrált
-{{<rich-list listLink="https://qgis.nl/" icon="🇳🇱" layoutClass="half" listTitle="QGIS gebruikersgroep (Hollandia)" listSubtitle="Kapcsolattartó: Raymond Nijssen" >}}
-
-{{<rich-list listLink="https://qgis.org.mx/" icon="🇲🇽" layoutClass="half" listTitle="Asociación QGIS México" listSubtitle="Kapcsolattartó: Hennessy Amor Becerra Ayala" >}}
-
-{{<rich-list listLink="https://qgis-id.github.io/" icon="🇮🇩" layoutClass="half" listTitle="Komunitas Pengguna QGIS Indonesia" listSubtitle="Kapcsolattartó: Ismail Sunni" >}}
-
-{{<rich-list listLink="https://qgis.sk/" icon="🇸🇰" layoutClass="half" listTitle="QGIS Slovensko (Szlovákia)" listSubtitle="Kapcsolattartó: Jana Michalkova" >}}
-
-{{<rich-list listLink="https://qgis.ec/" icon="🇪🇨" layoutClass="half" listTitle="Grupo de usuarios QGIS Ecuador" listSubtitle="Kapcsolattartó: Adrián Benavides" >}}
-### 2021-ben regisztrált
-{{<rich-list listLink="https://qgis.at/" icon="🇦🇹" layoutClass="half" listTitle="QGIS Anwendergruppe Österreich (Ausztria)" listSubtitle="Kapcsolattartó: Paul Stampfl" >}}
-
-{{<rich-list listLink="https://qgisghana.org/" icon="🇬🇭" layoutClass="half" listTitle="QGIS Ghana" listSubtitle="Kapcsolattartó: Enock Seth Nyamador" >}}
-### 2022-ben regisztrált
-{{<rich-list listLink="https://qgis.ar/" icon="🇦🇷" layoutClass="half" listTitle="QGIS Argentina" listSubtitle="Kapcsolattartó: Ariel Anthieni" >}}
-### 2024-ben regisztrált
-{{<rich-list listLink="https://www.facebook.com/groups/612486875596534" icon="🌐" layoutClass="half" listTitle="QGIS globális virtuális Facebook-csoport" listSubtitle="Kapcsolattartó: Adelcides Varela" >}}
-
-{{<rich-list listLink="https://qgis-mk.blogspot.com" icon="🇲🇰" layoutClass="half" listTitle="QGIS Észak-Macedónia" listSubtitle="Kapcsolattartó: Ivica Milevski" >}}
-
-{{<rich-list listLink="https://qgis-al.blogspot.com/" icon="🇦🇱" layoutClass="half" listTitle="QGIS Albánia" listSubtitle="Kapcsolattartó: Emiliano Qose" >}}
-
-{{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Koszovói Köztársaság" listSubtitle="Kapcsolattartó: Milot Lubishtani" >}}
-### 2025-ben regisztrált
-{{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzánia" listSubtitle="Kapcsolattartó: Antidy Kawamala" >}}
-### Removed 2025
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="Kapcsolattartó: Germán Carrillo" >}}
-### 2026-ban regisztrált
-{{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Kapcsolattartó: Ujaval Gandhi" >}}
-
-{{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenia" listSubtitle="Contact: Suren Poghosyan" >}}
-
-{{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="Contact: Walid Moulahoum" >}}
-
-{{<rich-list listLink="https://qgis.ca/" icon="🇨🇦" layoutClass="half" listTitle="QGIS Canada User Group" listSubtitle="Contact: Jeff McKenna" >}}
-
-{{<rich-list listLink="https://qgis.hr/" icon="🇭🇷" layoutClass="half" listTitle="QGIS Croatia User Group" listSubtitle="Contact: Dominik Cindrić" >}}
+{{<rich-box-end >}}
 ## A felhasználói csoportok céljai
 * Felhasználói találkozók szervezése
 * A fejlesztés összehangolása, különös tekintettel a regionális/nemzeti szabványokra és követelményekre

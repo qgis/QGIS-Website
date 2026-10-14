@@ -10,99 +10,43 @@ type: page
 ---
 {{<content-start >}}
 # ユーザーグループ
-## 現行のQGISユーザグループ一覧
-### 2016年またはそれ以前に登録 
-{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazil)" listSubtitle="連絡先: Narcélio de Sá" >}}
+Local user groups bring QGIS users together in their own country and language. They run meetings, share know how and help shape QGIS. This page explains how a group works and how to start one.
 
-{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Denmark)" listSubtitle="連絡先: Mie Winstrup" >}}
+{{<rich-box-start layoutClass="has-right rounded" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (England)" listSubtitle="連絡先: Ant Scott" >}}
+{{<rich-content-start themeClass="coloring-1" >}}
+## Find a group near you
+Search the groups by name, country or continent. Switch between cards and a sortable table.
 
-{{<rich-list listLink="https://qgis.de/" icon="🇩🇪 " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (Germany)" listSubtitle="連絡先: Thomas Schüttenberg" >}}
+{{<button class="is-success" link="/community/groups/list/" text="Browse the list" >}}
 
-{{<rich-list listLink="http://qgis.it/" icon="🇮🇹 " layoutClass="half" listTitle="Gruppo degli utenti italiani di QGIS (Italy)" listSubtitle="連絡先: Matteo Ghetta" >}}
+{{<rich-content-end >}}
 
-{{<rich-list listLink="http://qgis.jp/" icon="🇯🇵 " layoutClass="half" listTitle="QGIS User Group Japan (OSGeo.JP)" listSubtitle="連絡先: Kosuke ASAHI" >}}
+{{<rich-right-start >}}
 
-{{<rich-list listLink="https://qgis.pe/" icon="🇵🇪 " layoutClass="half" listTitle="QGIS Perú Official Users Group" listSubtitle="連絡先: Anibal Alarcon" >}}
+{{<user-groups-stats "groups" "/community/groups/list/" >}}
 
-{{<rich-list listLink="https://qgis.pl/" icon="🇵🇱 " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Poland)" listSubtitle="連絡先: Michał Żugajewicz" >}}
+{{<rich-right-end >}}
 
-{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugal" listSubtitle="連絡先: Giovanni Manghi" >}}
+{{<rich-box-end >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿 " layoutClass="half" listTitle="QGIS UK (Scotland)" listSubtitle="連絡先: Ross McDonald" >}}
+{{<rich-box-start layoutClass="has-right rounded" >}}
 
-{{<rich-list listLink="https://qgis.ch/" icon="🇨🇭 " layoutClass="half" listTitle="QGIS user group Switzerland" listSubtitle="連絡先: François Voisard" >}}
+{{<rich-content-start themeClass="coloring-1" >}}
+## See the groups on a map
+Every highlighted country has a local group. Select a logo to meet the group.
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁷󠁬󠁳󠁿 " layoutClass="half" listTitle="QGIS UK (Wales/Cymru)" listSubtitle="連絡先: Kevin Williams" >}}
+{{<button class="is-success" link="/community/groups/map/" text="Open the map" >}}
 
-{{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS user group (New Zealand)" listSubtitle="連絡先: Brent Wood –> 2018年に抹消" >}}
-### 2017年登録
-{{<rich-list listLink="https://qgis.no/" icon="🇳🇴" layoutClass="half" listTitle="QGIS Norge (Norway)" listSubtitle="連絡先: James Stott" >}}
+{{<rich-content-end >}}
 
-{{<rich-list listLink="https://qgis.org.za/" icon="🇿🇦" layoutClass="half" listTitle="QGIS ZA (South Africa)" listSubtitle="連絡先: Admire Nyakudya" >}}
+{{<rich-right-start >}}
 
-{{<rich-list listLink="https://www.osgeo.fr/" icon="🇫🇷" layoutClass="half" listTitle="Groupe des Utilisateurs de QGIS - France (France)" listSubtitle="連絡先: Harrissou Sant-anna" >}}
+{{<user-groups-stats "countries" "/community/groups/map/" >}}
 
-{{<rich-list listLink="https://qgis.se/" icon="🇸🇪" layoutClass="half" listTitle="QGIS Sverige (Sweden)" listSubtitle="連絡先: Karl-Magnus Jönsson" >}}
+{{<rich-right-end >}}
 
-{{<rich-list listLink="https://qgis.or.ke" icon="🇰🇪" layoutClass="half" listTitle="QGIS Kenya" listSubtitle="連絡先: Benard Mitto" >}}
-
-{{<rich-list listLink="https://qgis-australia.org/" icon="🇦🇺" layoutClass="half" listTitle="QGIS Australia" listSubtitle="連絡先: Emma Hain" >}}
-
-{{<rich-list listLink="http://qgis-us.org" icon="🇺🇸" layoutClass="half" listTitle="QGIS USA" listSubtitle="連絡先: Randal Hale" >}}
-
-{{<rich-list listLink="https://qgis.mx" icon="🇲🇽" layoutClass="half" listTitle="QGIS Mexico" listSubtitle="連絡先: Hennessy Amor Becerra Ayala" >}}
-
-{{<rich-list listLink="https://qgis.org" icon="🇬🇪" layoutClass="half" listTitle="QGIS Georgia" listSubtitle="連絡先: Zurab Archvadze –> 2018年に抹消" >}}
-### 2018年登録
-{{<rich-list listLink="https://qgis.ro/" icon="🇷🇴" layoutClass="half" listTitle="Asociația Utilizatorilor QGIS (Romania)" listSubtitle="連絡先: Tudor Bărăscu" >}}
-
-{{<rich-list listLink="https://qgis.es/" icon="🇪🇸" layoutClass="half" listTitle="Association of QGIS users in Spain" listSubtitle="連絡先: Carlos López Quintanilla" >}}
-
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="Contact: Germán Carrillo –> REMOVED in 2025" >}}
-### 2018年に抹消
-{{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS user group (New Zealand)" listSubtitle="連絡先: Brent Wood" >}}
-
-{{<rich-list listLink="https://qgis.org" icon="🇬🇪" layoutClass="half" listTitle="QGIS Georgia" listSubtitle="連絡先: Zurab Archvadze" >}}
-### 2020年登録
-{{<rich-list listLink="https://qgis.nl/" icon="🇳🇱" layoutClass="half" listTitle="QGIS gebruikersgroep (Netherlands)" listSubtitle="連絡先: Raymond Nijssen" >}}
-
-{{<rich-list listLink="https://qgis.org.mx/" icon="🇲🇽" layoutClass="half" listTitle="Asociación QGIS México" listSubtitle="連絡先: Hennessy Amor Becerra Ayala" >}}
-
-{{<rich-list listLink="https://qgis-id.github.io/" icon="🇮🇩" layoutClass="half" listTitle="Komunitas Pengguna QGIS Indonesia" listSubtitle="連絡先: Ismail Sunni" >}}
-
-{{<rich-list listLink="https://qgis.sk/" icon="🇸🇰" layoutClass="half" listTitle="QGIS Slovensko (Slovakia)" listSubtitle="連絡先: Jana Michalkova" >}}
-
-{{<rich-list listLink="https://qgis.ec/" icon="🇪🇨" layoutClass="half" listTitle="Grupo de usuarios QGIS Ecuador" listSubtitle="連絡先: Adrián Benavides" >}}
-### 2021年登録
-{{<rich-list listLink="https://qgis.at/" icon="🇦🇹" layoutClass="half" listTitle="QGIS Anwendergruppe Österreich (Austria)" listSubtitle="連絡先: Paul Stampfl" >}}
-
-{{<rich-list listLink="https://qgisghana.org/" icon="🇬🇭" layoutClass="half" listTitle="QGIS Ghana" listSubtitle="連絡先: Enock Seth Nyamador" >}}
-### 2022年登録
-{{<rich-list listLink="https://qgis.ar/" icon="🇦🇷" layoutClass="half" listTitle="QGIS Argentina" listSubtitle="連絡先: Ariel Anthieni" >}}
-### 2024年登録
-{{<rich-list listLink="https://www.facebook.com/groups/612486875596534" icon="🌐" layoutClass="half" listTitle="QGIS Global virtual FB group" listSubtitle="連絡先: Adelcides Varela" >}}
-
-{{<rich-list listLink="https://qgis-mk.blogspot.com" icon="🇲🇰" layoutClass="half" listTitle="QGIS North Macedonia" listSubtitle="連絡先: Ivica Milevski" >}}
-
-{{<rich-list listLink="https://qgis-al.blogspot.com/" icon="🇦🇱" layoutClass="half" listTitle="QGIS Albania" listSubtitle="連絡先: Emiliano Qose" >}}
-
-{{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Republic of Kosova" listSubtitle="連絡先: Milot Lubishtani" >}}
-### 2025年登録
-{{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="連絡先: Antidy Kawamala" >}}
-### Removed 2025
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="連絡先: Germán Carrillo" >}}
-### 2026年登録
-{{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="連絡先: Ujaval Gandhi" >}}
-
-{{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenia" listSubtitle="連絡先: Suren Poghosyan" >}}
-
-{{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="連絡先: Walid Moulahoum" >}}
-
-{{<rich-list listLink="https://qgis.ca/" icon="🇨🇦" layoutClass="half" listTitle="QGIS Canada User Group" listSubtitle="Contact: Jeff McKenna" >}}
-
-{{<rich-list listLink="https://qgis.hr/" icon="🇭🇷" layoutClass="half" listTitle="QGIS Croatia User Group" listSubtitle="Contact: Dominik Cindrić" >}}
+{{<rich-box-end >}}
 ## ユーザグループの目的
 * ユーザー会議の企画
 * 地域・国レベルの標準規格や要件を重視した開発の調整・取りまとめ

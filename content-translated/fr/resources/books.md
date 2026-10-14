@@ -14,6 +14,13 @@ Si vous souhaitez que votre livre soit ajouté ici, veuillez écrire à [psc@qgi
 
 Remarque : les ouvrages sont classés par ordre chronologique, les plus récents apparaissant en premier. Après les ouvrages en anglais, on trouve des ouvrages en français, en grec, en polonais et dans d'autres langues.
 ## En anglais
+### Geomorphometry: Concepts, Software, Applications - Second Edition
+Concepts, software and applications for quantitative land-surface analysis, including a chapter on terrain analysis with QGIS.
+- [https://shop.elsevier.com/books/geomorphometry/reuter/978-0-443-33376-7](https://shop.elsevier.com/books/geomorphometry/reuter/978-0-443-33376-7)
+- Editors: Hannes I. Reuter, Vincent Lecours, Carlos Henrique Grohmann
+- Author chapter 14 (Geomorphometry in QGIS/PCRaster): Hans van der Kwast
+- Date: September 2026
+
 ### Apprendre QGIS - Cinquième édition (accès anticipé)
 "Apprendre QGIS (5e édition)" propose une initiation pratique à l'analyse SIG moderne avec QGIS et Python, destinée aussi bien aux étudiants qu'aux professionnels. L'ouvrage aborde l'observation de la Terre, la collecte de données mobiles et l'intégration de l'IA et de l'apprentissage automatique dans les SIG, tout en traitant des questions de sécurité des données et des aspects éthiques.
 - [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)
