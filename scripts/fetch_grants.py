@@ -14,6 +14,9 @@ from urllib.parse import urlparse
 
 FEED_URL = "http://blog.qgis.org/category/qgis-grant-programme/feed"
 GRANTS_FOLDER = "content/community/organisation/grants"
+# (connect, read), matching the other harvesters. Without it a stalled server
+# hangs the nightly update-feeds job indefinitely.
+REQUEST_TIMEOUT = (10, 300)
 
 
 
@@ -34,7 +37,7 @@ def extract_description(raw_html):
 def fetch_grants():
     os.makedirs(GRANTS_FOLDER, exist_ok=True)
 
-    response = requests.get(FEED_URL)
+    response = requests.get(FEED_URL, timeout=REQUEST_TIMEOUT)
     response.raise_for_status()
 
     root = ET.fromstring(response.content)

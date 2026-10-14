@@ -476,3 +476,29 @@ def test_generate_geojson_missing_input_returns_false(monkeypatch, tmp_path):
     assert mod.generate_geojson(
         str(tmp_path / "missing.json"), str(tmp_path / "out.json")
     ) is False
+
+
+def test_get_user_avatar_passes_a_timeout_and_survives_one(monkeypatch):
+    """The avatar query runs per contributor, so a stall there holds the job open.
+
+    Its bare ``except`` already swallows failures into the fallback URL, which
+    is why a missing timeout turned into a hang rather than an error.
+    """
+    import requests
+
+    counter = make_counter(monkeypatch)
+    seen = {}
+
+    def fake_post(url, **kwargs):
+        seen.update(kwargs)
+        return FakeResponse({"data": {"user": {"avatarUrl": "https://avatars/x.png"}}})
+
+    monkeypatch.setattr(mod.requests, "post", fake_post)
+    assert counter.get_user_avatar("someone") == "https://avatars/x.png"
+    assert seen.get("timeout"), "the avatar query must not wait forever"
+
+    def timing_out(url, **kwargs):
+        raise requests.exceptions.Timeout("too slow")
+
+    monkeypatch.setattr(mod.requests, "post", timing_out)
+    assert counter.get_user_avatar("someone") == "https://github.com/someone.png"
