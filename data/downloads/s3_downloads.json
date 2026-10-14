@@ -1,20 +1,20 @@
 {
   "bucket_name": "qgis-download",
   "prefix": "",
-  "generated_at": "2026-10-13T23:05:10.960080+00:00",
+  "generated_at": "2026-10-14T00:11:52.337935+00:00",
   "statistics": {
-    "total_files": 187280,
-    "total_size": 5986185245633,
-    "total_size_formatted": "5.44 TB",
+    "total_files": 187347,
+    "total_size": 6017559022491,
+    "total_size_formatted": "5.47 TB",
     "by_category": {
       "installer": {
-        "count": 173956,
-        "size": 5067423441334,
-        "size_formatted": "4.61 TB"
+        "count": 174014,
+        "size": 5098496302426,
+        "size_formatted": "4.64 TB"
       },
       "other": {
-        "count": 8089,
-        "size": 35601395496,
+        "count": 8097,
+        "size": 35601401530,
         "size_formatted": "33.16 GB"
       },
       "image": {
@@ -28,24 +28,24 @@
         "size_formatted": "99.34 KB"
       },
       "archive": {
-        "count": 5108,
-        "size": 883127345441,
-        "size_formatted": "822.48 GB"
+        "count": 5109,
+        "size": 883428255173,
+        "size_formatted": "822.76 GB"
       }
     },
     "by_extension": {
-      ".deb": 173153,
-      ".gz": 4253,
-      ".dsc": 3305,
+      ".deb": 173189,
+      ".gz": 4254,
+      ".dsc": 3306,
       "no extension": 2264,
       ".bz2": 852,
-      ".sha256sum": 543,
+      ".sha256sum": 550,
       ".ddeb": 504,
       ".exe": 391,
       ".md5sum": 361,
       ".gpg": 352
     },
-    "last_updated": "2026-10-13T23:05:10.879195+00:00"
+    "last_updated": "2026-10-14T00:11:52.288721+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -18655,6 +18655,17 @@
             "category": "other"
           },
           {
+            "key": "windows/QGIS-OSGeo4W-3.28.4-2.msi",
+            "name": "QGIS-OSGeo4W-3.28.4-2.msi",
+            "path": "windows",
+            "size": 1123623936,
+            "size_formatted": "1.05 GB",
+            "last_modified": "2023-03-04T15:37:50+00:00",
+            "last_modified_timestamp": 1677944270,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
             "key": "windows/QGIS-OSGeo4W-3.28.4-2.sha256sum",
             "name": "QGIS-OSGeo4W-3.28.4-2.sha256sum",
             "path": "windows",
@@ -18664,6 +18675,17 @@
             "last_modified_timestamp": 1677944281,
             "extension": ".sha256sum",
             "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.28.4-3.msi",
+            "name": "QGIS-OSGeo4W-3.28.4-3.msi",
+            "path": "windows",
+            "size": 1130046464,
+            "size_formatted": "1.05 GB",
+            "last_modified": "2023-03-09T17:35:50+00:00",
+            "last_modified_timestamp": 1678383350,
+            "extension": ".msi",
+            "category": "installer"
           },
           {
             "key": "windows/QGIS-OSGeo4W-3.28.4-3.sha256sum",
@@ -18677,6 +18699,17 @@
             "category": "other"
           },
           {
+            "key": "windows/QGIS-OSGeo4W-3.28.5-1.msi",
+            "name": "QGIS-OSGeo4W-3.28.5-1.msi",
+            "path": "windows",
+            "size": 1220821504,
+            "size_formatted": "1.14 GB",
+            "last_modified": "2023-04-01T19:10:37+00:00",
+            "last_modified_timestamp": 1680376237,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
             "key": "windows/QGIS-OSGeo4W-3.28.5-1.sha256sum",
             "name": "QGIS-OSGeo4W-3.28.5-1.sha256sum",
             "path": "windows",
@@ -18686,6 +18719,17 @@
             "last_modified_timestamp": 1680376251,
             "extension": ".sha256sum",
             "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.28.6-1.msi",
+            "name": "QGIS-OSGeo4W-3.28.6-1.msi",
+            "path": "windows",
+            "size": 1222788096,
+            "size_formatted": "1.14 GB",
+            "last_modified": "2023-04-28T17:29:43+00:00",
+            "last_modified_timestamp": 1682702983,
+            "extension": ".msi",
+            "category": "installer"
           },
           {
             "key": "windows/QGIS-OSGeo4W-3.28.6-1.sha256sum",
@@ -18699,6 +18743,17 @@
             "category": "other"
           },
           {
+            "key": "windows/QGIS-OSGeo4W-3.28.7-1.msi",
+            "name": "QGIS-OSGeo4W-3.28.7-1.msi",
+            "path": "windows",
+            "size": 1229124096,
+            "size_formatted": "1.14 GB",
+            "last_modified": "2023-05-27T11:10:53+00:00",
+            "last_modified_timestamp": 1685185853,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
             "key": "windows/QGIS-OSGeo4W-3.28.7-1.sha256sum",
             "name": "QGIS-OSGeo4W-3.28.7-1.sha256sum",
             "path": "windows",
@@ -18708,6 +18763,17 @@
             "last_modified_timestamp": 1685185868,
             "extension": ".sha256sum",
             "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.28.8-1.msi",
+            "name": "QGIS-OSGeo4W-3.28.8-1.msi",
+            "path": "windows",
+            "size": 1237131776,
+            "size_formatted": "1.15 GB",
+            "last_modified": "2023-06-24T02:53:44+00:00",
+            "last_modified_timestamp": 1687575224,
+            "extension": ".msi",
+            "category": "installer"
           },
           {
             "key": "windows/QGIS-OSGeo4W-3.28.8-1.sha256sum",
@@ -18721,6 +18787,17 @@
             "category": "other"
           },
           {
+            "key": "windows/QGIS-OSGeo4W-3.28.9-1.msi",
+            "name": "QGIS-OSGeo4W-3.28.9-1.msi",
+            "path": "windows",
+            "size": 1234418688,
+            "size_formatted": "1.15 GB",
+            "last_modified": "2023-07-24T17:58:03+00:00",
+            "last_modified_timestamp": 1690221483,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
             "key": "windows/QGIS-OSGeo4W-3.28.9-1.sha256sum",
             "name": "QGIS-OSGeo4W-3.28.9-1.sha256sum",
             "path": "windows",
@@ -18730,6 +18807,17 @@
             "last_modified_timestamp": 1690221496,
             "extension": ".sha256sum",
             "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.30.0-1.msi",
+            "name": "QGIS-OSGeo4W-3.30.0-1.msi",
+            "path": "windows",
+            "size": 1120260096,
+            "size_formatted": "1.04 GB",
+            "last_modified": "2023-03-03T23:52:37+00:00",
+            "last_modified_timestamp": 1677887557,
+            "extension": ".msi",
+            "category": "installer"
           },
           {
             "key": "windows/QGIS-OSGeo4W-3.30.0-1.sha256sum",
@@ -18743,6 +18831,17 @@
             "category": "other"
           },
           {
+            "key": "windows/QGIS-OSGeo4W-3.30.0-2.msi",
+            "name": "QGIS-OSGeo4W-3.30.0-2.msi",
+            "path": "windows",
+            "size": 1116016128,
+            "size_formatted": "1.04 GB",
+            "last_modified": "2023-03-09T16:35:02+00:00",
+            "last_modified_timestamp": 1678379702,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
             "key": "windows/QGIS-OSGeo4W-3.30.0-2.sha256sum",
             "name": "QGIS-OSGeo4W-3.30.0-2.sha256sum",
             "path": "windows",
@@ -18752,6 +18851,17 @@
             "last_modified_timestamp": 1678379714,
             "extension": ".sha256sum",
             "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.30.1-1.msi",
+            "name": "QGIS-OSGeo4W-3.30.1-1.msi",
+            "path": "windows",
+            "size": 1213764608,
+            "size_formatted": "1.13 GB",
+            "last_modified": "2023-04-01T20:15:52+00:00",
+            "last_modified_timestamp": 1680380152,
+            "extension": ".msi",
+            "category": "installer"
           },
           {
             "key": "windows/QGIS-OSGeo4W-3.30.1-1.sha256sum",
@@ -18765,6 +18875,17 @@
             "category": "other"
           },
           {
+            "key": "windows/QGIS-OSGeo4W-3.30.2-1.msi",
+            "name": "QGIS-OSGeo4W-3.30.2-1.msi",
+            "path": "windows",
+            "size": 1215908864,
+            "size_formatted": "1.13 GB",
+            "last_modified": "2023-04-28T16:25:31+00:00",
+            "last_modified_timestamp": 1682699131,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
             "key": "windows/QGIS-OSGeo4W-3.30.2-1.sha256sum",
             "name": "QGIS-OSGeo4W-3.30.2-1.sha256sum",
             "path": "windows",
@@ -18774,6 +18895,17 @@
             "last_modified_timestamp": 1682699146,
             "extension": ".sha256sum",
             "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.30.3-1.msi",
+            "name": "QGIS-OSGeo4W-3.30.3-1.msi",
+            "path": "windows",
+            "size": 1222355456,
+            "size_formatted": "1.14 GB",
+            "last_modified": "2023-05-27T09:54:22+00:00",
+            "last_modified_timestamp": 1685181262,
+            "extension": ".msi",
+            "category": "installer"
           },
           {
             "key": "windows/QGIS-OSGeo4W-3.30.3-1.sha256sum",
@@ -18787,6 +18919,17 @@
             "category": "other"
           },
           {
+            "key": "windows/QGIS-OSGeo4W-3.32.0-1.msi",
+            "name": "QGIS-OSGeo4W-3.32.0-1.msi",
+            "path": "windows",
+            "size": 1231609856,
+            "size_formatted": "1.15 GB",
+            "last_modified": "2023-06-24T01:18:08+00:00",
+            "last_modified_timestamp": 1687569488,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
             "key": "windows/QGIS-OSGeo4W-3.32.0-1.sha256sum",
             "name": "QGIS-OSGeo4W-3.32.0-1.sha256sum",
             "path": "windows",
@@ -18796,6 +18939,17 @@
             "last_modified_timestamp": 1687569506,
             "extension": ".sha256sum",
             "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.32.1-1.msi",
+            "name": "QGIS-OSGeo4W-3.32.1-1.msi",
+            "path": "windows",
+            "size": 1228976640,
+            "size_formatted": "1.14 GB",
+            "last_modified": "2023-07-24T16:40:22+00:00",
+            "last_modified_timestamp": 1690216822,
+            "extension": ".msi",
+            "category": "installer"
           },
           {
             "key": "windows/QGIS-OSGeo4W-3.32.1-1.sha256sum",
@@ -18809,6 +18963,17 @@
             "category": "other"
           },
           {
+            "key": "windows/QGIS-OSGeo4W-3.32.2-1.msi",
+            "name": "QGIS-OSGeo4W-3.32.2-1.msi",
+            "path": "windows",
+            "size": 1231697408,
+            "size_formatted": "1.15 GB",
+            "last_modified": "2023-08-18T16:14:52+00:00",
+            "last_modified_timestamp": 1692375292,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
             "key": "windows/QGIS-OSGeo4W-3.32.2-1.sha256sum",
             "name": "QGIS-OSGeo4W-3.32.2-1.sha256sum",
             "path": "windows",
@@ -18816,6 +18981,160 @@
             "size_formatted": "92.00 B",
             "last_modified": "2023-08-18T16:15:09+00:00",
             "last_modified_timestamp": 1692375309,
+            "extension": ".sha256sum",
+            "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.32.3-1.msi",
+            "name": "QGIS-OSGeo4W-3.32.3-1.msi",
+            "path": "windows",
+            "size": 1245598208,
+            "size_formatted": "1.16 GB",
+            "last_modified": "2023-09-15T16:24:23+00:00",
+            "last_modified_timestamp": 1694795063,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.32.3-1.sha256sum",
+            "name": "QGIS-OSGeo4W-3.32.3-1.sha256sum",
+            "path": "windows",
+            "size": 92,
+            "size_formatted": "92.00 B",
+            "last_modified": "2023-09-15T16:24:38+00:00",
+            "last_modified_timestamp": 1694795078,
+            "extension": ".sha256sum",
+            "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.0-1.msi",
+            "name": "QGIS-OSGeo4W-3.34.0-1.msi",
+            "path": "windows",
+            "size": 1246257664,
+            "size_formatted": "1.16 GB",
+            "last_modified": "2023-10-27T18:50:33+00:00",
+            "last_modified_timestamp": 1698432633,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.0-1.sha256sum",
+            "name": "QGIS-OSGeo4W-3.34.0-1.sha256sum",
+            "path": "windows",
+            "size": 92,
+            "size_formatted": "92.00 B",
+            "last_modified": "2023-10-27T18:50:49+00:00",
+            "last_modified_timestamp": 1698432649,
+            "extension": ".sha256sum",
+            "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.0-2.msi",
+            "name": "QGIS-OSGeo4W-3.34.0-2.msi",
+            "path": "windows",
+            "size": 1246292480,
+            "size_formatted": "1.16 GB",
+            "last_modified": "2023-11-07T12:41:34+00:00",
+            "last_modified_timestamp": 1699360894,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.0-2.sha256sum",
+            "name": "QGIS-OSGeo4W-3.34.0-2.sha256sum",
+            "path": "windows",
+            "size": 92,
+            "size_formatted": "92.00 B",
+            "last_modified": "2023-11-07T12:41:50+00:00",
+            "last_modified_timestamp": 1699360910,
+            "extension": ".sha256sum",
+            "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.1-1.msi",
+            "name": "QGIS-OSGeo4W-3.34.1-1.msi",
+            "path": "windows",
+            "size": 1247287296,
+            "size_formatted": "1.16 GB",
+            "last_modified": "2023-11-24T17:23:22+00:00",
+            "last_modified_timestamp": 1700846602,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.1-1.sha256sum",
+            "name": "QGIS-OSGeo4W-3.34.1-1.sha256sum",
+            "path": "windows",
+            "size": 92,
+            "size_formatted": "92.00 B",
+            "last_modified": "2023-11-24T17:23:38+00:00",
+            "last_modified_timestamp": 1700846618,
+            "extension": ".sha256sum",
+            "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.1-2.msi",
+            "name": "QGIS-OSGeo4W-3.34.1-2.msi",
+            "path": "windows",
+            "size": 1247670784,
+            "size_formatted": "1.16 GB",
+            "last_modified": "2023-12-03T23:35:25+00:00",
+            "last_modified_timestamp": 1701646525,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.1-2.sha256sum",
+            "name": "QGIS-OSGeo4W-3.34.1-2.sha256sum",
+            "path": "windows",
+            "size": 92,
+            "size_formatted": "92.00 B",
+            "last_modified": "2023-12-03T23:35:40+00:00",
+            "last_modified_timestamp": 1701646540,
+            "extension": ".sha256sum",
+            "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.10-1.msi",
+            "name": "QGIS-OSGeo4W-3.34.10-1.msi",
+            "path": "windows",
+            "size": 1272696832,
+            "size_formatted": "1.19 GB",
+            "last_modified": "2024-08-16T19:30:43+00:00",
+            "last_modified_timestamp": 1723836643,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.10-1.sha256sum",
+            "name": "QGIS-OSGeo4W-3.34.10-1.sha256sum",
+            "path": "windows",
+            "size": 93,
+            "size_formatted": "93.00 B",
+            "last_modified": "2024-08-16T19:30:55+00:00",
+            "last_modified_timestamp": 1723836655,
+            "extension": ".sha256sum",
+            "category": "other"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.11-1.msi",
+            "name": "QGIS-OSGeo4W-3.34.11-1.msi",
+            "path": "windows",
+            "size": 1273032704,
+            "size_formatted": "1.19 GB",
+            "last_modified": "2024-09-13T14:06:09+00:00",
+            "last_modified_timestamp": 1726236369,
+            "extension": ".msi",
+            "category": "installer"
+          },
+          {
+            "key": "windows/QGIS-OSGeo4W-3.34.11-1.sha256sum",
+            "name": "QGIS-OSGeo4W-3.34.11-1.sha256sum",
+            "path": "windows",
+            "size": 93,
+            "size_formatted": "93.00 B",
+            "last_modified": "2024-09-13T14:06:19+00:00",
+            "last_modified_timestamp": 1726236379,
             "extension": ".sha256sum",
             "category": "other"
           },
