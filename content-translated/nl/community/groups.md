@@ -10,15 +10,15 @@ type: page
 ---
 {{<content-start >}}
 # Gebruikersgroepen
-Local user groups bring QGIS users together in their own country and language. They run meetings, share know how and help shape QGIS. This page explains how a group works and how to start one.
+Lokale gebruikersgroepen brengen gebruikers van QGIS samen in hun eigen land en taal. Ze organiseren bijeenkomsten, delen kennis en helpen QGIS vorm te geven. Deze pagina legt uit hoe een groep werkt en hoe er een te beginnen.
 
 {{<rich-box-start layoutClass="has-right rounded" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## Find a group near you
-Search the groups by name, country or continent. Switch between cards and a sortable table.
+## Zoek een groep in de buurt
+Zoek in de groepen op naam of continent. Wissel tussen kaarten en een te sorteren tabel.
 
-{{<button class="is-success" link="/community/groups/list/" text="Browse the list" >}}
+{{<button class="is-success" link="/community/groups/list/" text="Door de lijst bladeren" >}}
 
 {{<rich-content-end >}}
 
@@ -33,10 +33,10 @@ Search the groups by name, country or continent. Switch between cards and a sort
 {{<rich-box-start layoutClass="has-right rounded" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## See the groups on a map
-Every highlighted country has a local group. Select a logo to meet the group.
+## Bekijk de groepen op een kaart
+Elk geaccentueerd land heeft een lokale gebruikersgroep. Selecteer een logo om kennis te maken met de groep.
 
-{{<button class="is-success" link="/community/groups/map/" text="Open the map" >}}
+{{<button class="is-success" link="/community/groups/map/" text="Open de kaart" >}}
 
 {{<rich-content-end >}}
 
