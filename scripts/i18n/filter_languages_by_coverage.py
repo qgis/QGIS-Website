@@ -63,7 +63,7 @@ def get_coverage(lang: str, coverage: dict[str, float]) -> float:
 def _lang_block(lang: str) -> str:
     return (
         f"\n    [languages.{lang}]\n"
-        f"    languageCode = \"{lang}\"\n"
+        f"    locale = \"{lang}\"\n"
         f"    weight = 2\n"
     )
 
@@ -73,12 +73,64 @@ def _mount_block(lang: str) -> str:
         f"\n  [[module.mounts]]\n"
         f"    source = \"content-translated/{lang}\"\n"
         f"    target = \"content\"\n"
-        f"    lang = \"{lang}\"\n"
+        f"    [module.mounts.sites.matrix]\n"
+        f"      languages = [\"{lang}\"]\n"
         f"  [[module.mounts]]\n"
         f"    source = \"content\"\n"
         f"    target = \"content\"\n"
-        f"    lang = \"{lang}\"\n"
+        f"    [module.mounts.sites.matrix]\n"
+        f"      languages = [\"{lang}\"]\n"
     )
+
+
+def normalize_language_keys(text: str) -> tuple[str, int]:
+    """Replace languageCode with locale inside every [languages.x] block.
+
+    ``hugo-gettext generate`` writes languageCode back into each language block
+    on every run (hugo_gettext/generation/g_lang.py sets it and never reads it),
+    so the daily i18n job would otherwise undo the Hugo 0.158 key migration.
+    This runs straight after it in the generate-translations target.
+
+    Returns the text and the number of languageCode lines dealt with.
+    """
+    lines = text.splitlines(keepends=True)
+    lang_header_re = re.compile(r"^\s*\[languages\.([A-Za-z0-9_-]+)\]")
+    section_start_re = re.compile(r"^\s*\[")
+    code_re = re.compile(r"^(\s*)languageCode(\s*=\s*)(.*\n?)$")
+    locale_re = re.compile(r"^\s*locale\s*=")
+
+    result: list[str] = []
+    i = 0
+    fixed = 0
+    while i < len(lines):
+        if not lang_header_re.match(lines[i]):
+            result.append(lines[i])
+            i += 1
+            continue
+
+        # Collect the whole language block, header included.
+        block = [lines[i]]
+        j = i + 1
+        while j < len(lines) and not section_start_re.match(lines[j]):
+            block.append(lines[j])
+            j += 1
+
+        has_locale = any(locale_re.match(b) for b in block)
+        rebuilt: list[str] = []
+        for b in block:
+            m = code_re.match(b)
+            if not m:
+                rebuilt.append(b)
+                continue
+            fixed += 1
+            if has_locale:
+                continue  # locale already carries the value, drop the duplicate
+            rebuilt.append(f"{m.group(1)}locale{m.group(2)}{m.group(3)}")
+            has_locale = True
+        result.extend(rebuilt)
+        i = j
+
+    return "".join(result), fixed
 
 
 # ── main transform ────────────────────────────────────────────────────────────
@@ -94,12 +146,16 @@ def sync_config(
     Returns:
         (new_text, kept_langs, added_langs, removed_langs)
     """
+    text, _normalized = normalize_language_keys(text)
     lines = text.splitlines(keepends=True)
 
     lang_header_re = re.compile(r"^\s*\[languages\.([A-Za-z0-9_-]+)\]")
     mount_header_re = re.compile(r"^\s*\[\[module\.mounts\]\]")
     module_section_re = re.compile(r"^\[module\]")
     section_start_re = re.compile(r"^\s*\[")
+    # A mount block owns its [module.mounts.sites.matrix] sub-table, so that
+    # header does not end the block; the next [[...]] or unrelated [...] does.
+    mount_block_end_re = re.compile(r"^\s*(?:\[\[|\[(?!module\.mounts\.))")
 
     # Languages currently present in config.toml.
     present: set[str] = {
@@ -138,14 +194,18 @@ def sync_config(
         if mount_header_re.match(line):
             block: list[str] = [line]
             j = i + 1
-            while j < len(lines) and not section_start_re.match(lines[j]):
+            while j < len(lines) and not mount_block_end_re.match(lines[j]):
                 block.append(lines[j])
                 j += 1
             lang_in_block: str | None = None
             for bl in block:
-                kv = re.match(r'^\s*lang\s*=\s*"([^"]+)"', bl)
+                kv = re.match(
+                    r'^\s*(?:lang\s*=\s*"([^"]+)"'
+                    r'|languages\s*=\s*\[\s*"([^"]+)")',
+                    bl,
+                )
                 if kv:
-                    lang_in_block = kv.group(1)
+                    lang_in_block = kv.group(1) or kv.group(2)
                     break
             if lang_in_block and lang_in_block in to_remove:
                 i = j
@@ -243,6 +303,12 @@ def main() -> None:
         print(f"Removing {len(removed)} language(s) below {args.threshold}%:\n  {', '.join(removed)}")
     if not added and not removed:
         print("No language changes (all qualifying languages already present).")
+
+    # Reported separately so the i18n job's log shows when hugo-gettext has
+    # written the deprecated key back and this run cleaned it up again.
+    _, normalized = normalize_language_keys(config_text)
+    if normalized:
+        print(f"Normalised {normalized} languageCode key(s) to locale.")
 
     print(f"Active languages ({len(kept)}): {', '.join(kept)}")
 
