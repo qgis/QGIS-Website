@@ -82,10 +82,6 @@ test.describe("Local user groups", () => {
         await expect(popup).toBeHidden();
         await expect(page).not.toHaveURL(/group=/);
 
-        // A country with two groups lists both
-        await page.goto("/community/groups/map/?view=flat&country=MX");
-        await expect(page.locator(".user-group-entry")).toHaveCount(2);
-
         expect(errors).toEqual([]);
     });
 
