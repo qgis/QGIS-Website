@@ -4,8 +4,8 @@
 People edit data/user_groups/groups.json, often in the GitHub web editor, and a
 workflow builds everything else. These tests make sure:
 
-* the committed generated files match a fresh build of the committed source,
-  so nobody edits a generated file by hand or forgets a rebuild;
+* the committed source and logos are valid, so a pull request that breaks
+  them fails before a maintainer reviews it;
 * each source validation rule catches the mistake it exists for, with a
   message the editor can act on;
 * ids, country names, continents and map points are derived correctly;
@@ -27,7 +27,6 @@ import update_user_groups as uut
 
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
 SOURCE_PATH = os.path.join(ROOT_DIR, "data", "user_groups", "groups.json")
-GENERATED_PATH = os.path.join(ROOT_DIR, "static", "data", "user_groups", "user_groups.json")
 COUNTRIES_PATH = os.path.join(ROOT_DIR, "data", "user_groups", "countries.json")
 COMMITTED_LOGO_DIR = os.path.join(ROOT_DIR, "static", "img", "user-groups")
 
@@ -72,27 +71,16 @@ def test_committed_source_is_valid():
     assert uut.validate_source(_load(SOURCE_PATH)) == []
 
 
-def test_committed_generated_file_matches_a_fresh_build():
-    """Fails when someone edits the generated file or forgets to rebuild."""
-    source = _load(SOURCE_PATH)
-    countries = _load(COUNTRIES_PATH)
-    assert uut.countries_are_current(countries, uut.source_country_codes(source))
-    rebuilt = uut.build_generated(source, countries, COMMITTED_LOGO_DIR)
-    with open(GENERATED_PATH, encoding="utf-8") as fh:
-        assert fh.read() == uut.to_json(rebuilt)
+# Nothing here compares data/user_groups/groups.json with the generated
+# static/data/user_groups/user_groups.json. On a pull request the generated
+# file is deliberately out of date: the workflow on main rebuilds and commits
+# it after the merge. Asserting they match would fail every pull request and
+# send people to run the script locally, which is what this all avoids.
 
 
 def test_committed_source_has_no_logo_url():
     """Logos are files in the pull request, not links."""
     assert all("logo_url" not in g for g in _load(SOURCE_PATH)["groups"])
-
-
-def test_every_committed_logo_is_a_webp_in_use():
-    generated = _load(GENERATED_PATH)
-    in_use = {f["properties"]["logo"] for f in generated["features"] if f["properties"]["logo"]}
-    on_disk = {f"img/user-groups/{name}" for name in os.listdir(COMMITTED_LOGO_DIR)}
-    assert on_disk == in_use
-    assert all(name.endswith(".webp") for name in on_disk)
 
 
 def test_committed_logos_pass_the_file_check():
@@ -108,8 +96,15 @@ def test_main_check_passes_on_committed_data(monkeypatch):
 # Source validation
 # ---------------------------------------------------------------------------
 def test_minimal_entry_is_valid():
-    entry = {"name": "QGIS Kenya", "country": "KE", "year": 2017, "contacts": ["Benard Mitto"]}
+    entry = {"id": "qgis-ke", "name": "QGIS Kenya", "country": "KE", "year": 2017, "contacts": ["Benard Mitto"]}
     assert uut.validate_source(_source(entry)) == []
+
+
+def test_id_is_required_and_the_message_explains_why():
+    """It names the logo file, so it cannot be guessed from the name."""
+    entry = {"name": "QGIS Kenya", "country": "KE", "year": 2017, "contacts": ["Benard Mitto"]}
+    errors = uut.validate_source(_source(entry))
+    assert any('the "id" field is missing' in e and "qgis-ke" in e for e in errors)
 
 
 @pytest.mark.parametrize("source", [None, [], {}, {"groups": {}}, {"groups": "x"}])
@@ -175,19 +170,19 @@ def test_rejects_badly_formed_id(gid):
     assert any("the id may only use" in e for e in errors)
 
 
-def test_rejects_duplicate_ids_including_derived_ones():
+def test_rejects_duplicate_ids():
     errors = uut.validate_source(_source(_entry(), _entry()))
     assert any('the id "qgis-ch" is already used' in e for e in errors)
 
-    first = {"name": "QGIS México", "country": "MX", "year": 2017, "contacts": ["A"]}
-    second = {"name": "QGIS Mexico", "country": "MX", "year": 2020, "contacts": ["B"]}
-    errors = uut.validate_source(_source(first, second))
-    assert any('the id "qgis-mexico" is already used' in e for e in errors)
 
+def test_a_name_that_slugifies_to_nothing_still_only_needs_an_id():
+    """Two Mexican groups share a name shape, so the id is what keeps them apart."""
+    first = {"id": "qgis-mx", "name": "QGIS México", "country": "MX", "year": 2017, "contacts": ["A"]}
+    second = {"id": "asociacion-qgis-mx", "name": "QGIS Mexico", "country": "MX", "year": 2020, "contacts": ["B"]}
+    assert uut.validate_source(_source(first, second)) == []
 
-def test_rejects_name_without_usable_id():
     entry = {"name": "日本", "country": "JP", "year": 2016, "contacts": ["A"]}
-    assert any("add an id" in e for e in uut.validate_source(_source(entry)))
+    assert any('the "id" field is missing' in e for e in uut.validate_source(_source(entry)))
 
 
 def test_messages_name_the_group():
@@ -422,7 +417,7 @@ def _snapshot(path):
 
 
 def test_build_is_idempotent(workspace):
-    source = _source(_entry(country="FR"), {"name": "QGIS USA", "country": "US", "year": 2017, "contacts": ["R"]})
+    source = _source(_entry(country="FR"), {"id": "qgis-usa", "name": "QGIS USA", "country": "US", "year": 2017, "contacts": ["R"]})
     _webp(workspace.logos / "qgis-ch.webp")
     assert workspace(source) == 0
     first = _snapshot(workspace.path)

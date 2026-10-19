@@ -1,5 +1,5 @@
 {
-  "_how_to_edit": "One entry per group. Required: name, country (two letter code such as \"KE\", or null for a worldwide group), year and contacts. Optional: id, website and removed (the year the group stopped). Leave out id for a new group. A logo is a WebP file added at static/img/user-groups/<id>.webp. The website builds everything else. Full guide: docs/user-groups.md",
+  "_how_to_edit": "One entry per group. Required: id (\"qgis-\" and the country code, for example \"qgis-ke\"), name, country (two letter code in capitals, or null for a worldwide group), year and contacts. Optional: website and removed (the year the group stopped). The logo is a WebP file at static/img/user-groups/<id>.webp. The website builds everything else. Full guide: docs/user-groups.md",
   "groups": [
     {
       "id": "qgis-br",

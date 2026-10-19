@@ -62,8 +62,8 @@ NE_SHA256 = "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb"
 CONTINENTS = {"africa", "asia", "europe", "north-america", "south-america", "oceania", "global"}
 
 TOP_LEVEL_KEYS = {"_how_to_edit", "groups"}
-REQUIRED_FIELDS = ("name", "country", "year", "contacts")
-OPTIONAL_FIELDS = ("id", "website", "logo_url", "removed", "country_name")
+REQUIRED_FIELDS = ("id", "name", "country", "year", "contacts")
+OPTIONAL_FIELDS = ("website", "removed", "country_name")
 FIRST_YEAR = 2000
 MAX_TEXT = 120
 MAX_URL = 500
@@ -134,13 +134,17 @@ def validate_source(source, this_year=None):
             errors.append(f'{label}: unknown field "{key}". Check the spelling.')
         missing = [key for key in REQUIRED_FIELDS if key not in entry]
         for key in missing:
-            errors.append(f'{label}: the "{key}" field is missing.')
+            if key == "id":
+                errors.append(f'{label}: the "id" field is missing. Use "qgis-" and the country code, '
+                              f'for example "qgis-ke". The logo file is named after it.')
+            else:
+                errors.append(f'{label}: the "{key}" field is missing.')
 
         if "name" in entry and not _short_text(entry["name"]):
             errors.append(f"{label}: the name must be text of at most {MAX_TEXT} characters.")
 
         if "id" in entry and not (isinstance(entry["id"], str) and ID_PATTERN.match(entry["id"]) and len(entry["id"]) <= 60):
-            errors.append(f'{label}: the id may only use lower case letters, digits and single hyphens, for example "qgis-kenya".')
+            errors.append(f'{label}: the id may only use lower case letters, digits and single hyphens, for example "qgis-ke".')
 
         if "country" in entry:
             country = entry["country"]
@@ -170,11 +174,9 @@ def validate_source(source, this_year=None):
             elif isinstance(year, int) and removed < year:
                 errors.append(f"{label}: the group cannot stop before the year it started.")
 
-        if "name" in entry or "id" in entry:
-            gid = group_id(entry)
-            if not gid:
-                errors.append(f"{label}: add an id, because the name gives no usable one.")
-            elif gid in seen:
+        gid = entry.get("id")
+        if gid:
+            if gid in seen:
                 errors.append(f'{label}: the id "{gid}" is already used by {seen[gid]}. Add a different "id".')
             else:
                 seen[gid] = label
@@ -358,7 +360,8 @@ def check_logo_files(source, logo_dir, max_px=LOGO_MAX_PX):
         if path.suffix.lower() != ".webp":
             problems.append((path.name, "a logo must be a WebP file named after the group's id, for example qgis-kenya.webp. See docs/user-groups.md."))
         elif path.stem not in ids:
-            problems.append((path.name, "no group has this id."))
+            problems.append((path.name, "no group has this id. If you are removing the group, delete this file too. "
+                                        "Otherwise check the file name matches the group's id."))
         else:
             try:
                 with Image.open(path) as image:
