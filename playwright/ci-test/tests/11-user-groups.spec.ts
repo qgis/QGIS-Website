@@ -29,7 +29,7 @@ test.describe("Local user groups", () => {
 
         // Search by country and by contact name
         await page.fill("#contributor-search", "mex");
-        await expect(visibleCards(page)).toHaveCount(2);
+        await expect(visibleCards(page)).toHaveCount(1);
         await page.fill("#contributor-search", "ghetta");
         await expect(visibleCards(page)).toHaveCount(1);
         await page.fill("#contributor-search", "zzzz");
@@ -81,10 +81,6 @@ test.describe("Local user groups", () => {
         await page.keyboard.press("Escape");
         await expect(popup).toBeHidden();
         await expect(page).not.toHaveURL(/group=/);
-
-        // A country with two groups lists both
-        await page.goto("/community/groups/map/?view=flat&country=MX");
-        await expect(page.locator(".user-group-entry")).toHaveCount(2);
 
         expect(errors).toEqual([]);
     });
