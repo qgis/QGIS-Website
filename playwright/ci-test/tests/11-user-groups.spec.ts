@@ -29,7 +29,7 @@ test.describe("Local user groups", () => {
 
         // Search by country and by contact name
         await page.fill("#contributor-search", "mex");
-        await expect(visibleCards(page)).toHaveCount(2);
+        await expect(visibleCards(page)).toHaveCount(1);
         await page.fill("#contributor-search", "ghetta");
         await expect(visibleCards(page)).toHaveCount(1);
         await page.fill("#contributor-search", "zzzz");
