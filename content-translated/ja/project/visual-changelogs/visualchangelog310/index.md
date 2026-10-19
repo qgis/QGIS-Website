@@ -553,7 +553,7 @@ QGIS 3.10の新機能として、ウェルカムページから直接プロジ�
 
 ![image59](images/entries/5adaa5a973e0b232bae3a8dbab8739c8887ac70e.webp)
 
-This feature was funded by [The QGIS Project](https://www.qgis.org)
+この機能は [The QGIS Project](https://www.qgis.org) によって資金提供されました
 
 この機能は [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch) によって開発されました
 ## データプロバイダ
