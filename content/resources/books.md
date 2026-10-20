@@ -18,6 +18,14 @@ Note: The books are listed in order of newest first. After the English books, th
 
 ## English
 
+### Geomorphometry: Concepts, Software, Applications - Second Edition
+
+Concepts, software and applications for quantitative land-surface analysis, including a chapter on terrain analysis with QGIS.
+
+- [https://shop.elsevier.com/books/geomorphometry/reuter/978-0-443-33376-7](https://shop.elsevier.com/books/geomorphometry/reuter/978-0-443-33376-7)
+- Editors: Hannes I. Reuter, Vincent Lecours, Carlos Henrique Grohmann
+- Author chapter 14 (Geomorphometry in QGIS/PCRaster): Hans van der Kwast
+- Date: September 2026
 
 ### Learn QGIS - Fifth Edition (Early Access)
 

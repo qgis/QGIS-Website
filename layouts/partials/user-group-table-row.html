@@ -1,0 +1,28 @@
+{{/*
+    Local user group table row.
+    Context: dict "group" <user group properties> "continent" <translated continent name>
+*/}}
+{{ $g := .group }}
+{{ $logo := $g.logo | default "img/logosign.svg" }}
+<tr class="contributor-table-row"
+    data-login="{{ $g.slug }}"
+    data-name="{{ $g.name }}"
+    data-country="{{ $g.country_name | default .continent }}"
+    data-continent="{{ .continent }}"
+    data-year="{{ $g.year }}"
+    data-active="{{ $g.active }}"
+    {{ if not $g.active }}style="display: none;"{{ end }}>
+    <td><img src="{{ $logo | relURL }}" alt="" class="user-group-logo-small" loading="lazy"></td>
+    <td>
+        {{ with $g.website }}
+        <a href="{{ . }}" target="_blank" rel="noopener">{{ $g.name }}</a>
+        {{ else }}
+        {{ $g.name }}
+        {{ end }}
+        {{ if not $g.active }}<span class="tag is-warning is-light ml-1">{{ i18n "userGroupsRemoved" (dict "Year" $g.removed) }}</span>{{ end }}
+    </td>
+    <td>{{ partial "user-group-flag.html" $g.country }} {{ $g.country_name | default .continent }}</td>
+    <td>{{ .continent }}</td>
+    <td>{{ $g.year }}</td>
+    <td class="is-size-7">{{ delimit $g.contacts ", " }}</td>
+</tr>

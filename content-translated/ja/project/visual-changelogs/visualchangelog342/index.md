@@ -227,7 +227,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 この機能は Ville de Pully (Switzerland) の資金提供で開発されました
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+この機能は [Germán Carrillo](https://github.com/gacarrillor) によって開発されました
 ## プロセシング
 ### 機能: プロセッシングメタデータツール
 レイヤーメタデータをより適切に処理するための新しいネイティブアルゴリズムがプロセッシングツールボックスに追加されました。

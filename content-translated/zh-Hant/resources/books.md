@@ -14,6 +14,13 @@ Please write to [psc@qgis.org](mailto:psc%40qgis.org) if you want to have your b
 
 Note: The books are listed in order of newest first. After the English books, there are items in French, Greek, Polish and other languages.
 ## 英語
+### Geomorphometry: Concepts, Software, Applications - Second Edition
+Concepts, software and applications for quantitative land-surface analysis, including a chapter on terrain analysis with QGIS.
+- [https://shop.elsevier.com/books/geomorphometry/reuter/978-0-443-33376-7](https://shop.elsevier.com/books/geomorphometry/reuter/978-0-443-33376-7)
+- Editors: Hannes I. Reuter, Vincent Lecours, Carlos Henrique Grohmann
+- Author chapter 14 (Geomorphometry in QGIS/PCRaster): Hans van der Kwast
+- Date: September 2026
+
 ### Learn QGIS - Fifth Edition (Early Access)
 Learn QGIS (5th Edition)” offers a hands-on introduction to modern GIS analysis with QGIS and Python for students and professionals alike, covering Earth observation, mobile data collection, and the integration of AI and machine learning in GIS, while addressing data security and ethical aspects.
 - [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)

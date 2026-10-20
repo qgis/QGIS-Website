@@ -10,97 +10,43 @@ type: page
 ---
 {{<content-start >}}
 # Потребителски групи
-## Текущ списък с потребителски групи на QGIS
-### Регистриран през 2016 г. или по-рано
-{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Бразилия (Бразилия)" listSubtitle="Contact: Narcélio de Sá" >}}
+Local user groups bring QGIS users together in their own country and language. They run meetings, share know how and help shape QGIS. This page explains how a group works and how to start one.
 
-{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Дания)" listSubtitle="Contact: Mie Winstrup" >}}
+{{<rich-box-start layoutClass="has-right rounded" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (Англия)" listSubtitle="Contact: Ant Scott" >}}
+{{<rich-content-start themeClass="coloring-1" >}}
+## Find a group near you
+Search the groups by name, country or continent. Switch between cards and a sortable table.
 
-{{<rich-list listLink="https://qgis.de/" icon="🇩🇪 " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (Германия)" listSubtitle="Контакт: Томас Шютенберг" >}}
+{{<button class="is-success" link="/community/groups/list/" text="Browse the list" >}}
 
-{{<rich-list listLink="http://qgis.it/" icon="🇮🇹 " layoutClass="half" listTitle="Gruppo degli utenti italiani di QGIS (Италия)" listSubtitle="Контакт: Матео Гета" >}}
+{{<rich-content-end >}}
 
-{{<rich-list listLink="http://qgis.jp/" icon="🇯🇵 " layoutClass="half" listTitle="Потребителска група на QGIS Япония (OSGeo.JP)" listSubtitle="Контакт: Косуке АСАХИ" >}}
+{{<rich-right-start >}}
 
-{{<rich-list listLink="https://qgis.pe/" icon="🇵🇪 " layoutClass="half" listTitle="Официална потребителска група на QGIS Перу" listSubtitle="Контакт: Анибал Аларкон" >}}
+{{<user-groups-stats "groups" "/community/groups/list/" >}}
 
-{{<rich-list listLink="https://qgis.pl/" icon="🇵🇱 " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Полша)" listSubtitle="Контакт: Михал Жугаевич" >}}
+{{<rich-right-end >}}
 
-{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Португалия" listSubtitle="Contact: Giovanni Manghi" >}}
+{{<rich-box-end >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿 " layoutClass="half" listTitle="QGIS UK (Шотландия)" listSubtitle="Контакт: Рос Макдоналд" >}}
+{{<rich-box-start layoutClass="has-right rounded" >}}
 
-{{<rich-list listLink="https://qgis.ch/" icon="🇨🇭 " layoutClass="half" listTitle="Потребителска група на QGIS Швейцария" listSubtitle="Контакт: Франсоа Воазар" >}}
+{{<rich-content-start themeClass="coloring-1" >}}
+## See the groups on a map
+Every highlighted country has a local group. Select a logo to meet the group.
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁷󠁬󠁳󠁿 " layoutClass="half" listTitle="QGIS UK (Уелс/Кимру)" listSubtitle="Контакт: Кевин Уилямс" >}}
+{{<button class="is-success" link="/community/groups/map/" text="Open the map" >}}
 
-{{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="Потребителска група на NIWA QGIS (Нова Зеландия)" listSubtitle="Контакт: Брент Ууд –> ПРЕМАХНАТ през 2018 г." >}}
-### Регистриран 2017 г.
-{{<rich-list listLink="https://qgis.no/" icon="🇳🇴" layoutClass="half" listTitle="QGIS Norge (Норвегия)" listSubtitle="Контакт: Джеймс Стот" >}}
+{{<rich-content-end >}}
 
-{{<rich-list listLink="https://qgis.org.za/" icon="🇿🇦" layoutClass="half" listTitle="QGIS ZA (Южна Африка)" listSubtitle="Контакт: Възхищавам се на Някудя" >}}
+{{<rich-right-start >}}
 
-{{<rich-list listLink="https://www.osgeo.fr/" icon="🇫🇷" layoutClass="half" listTitle="Groupe des Utilisateurs de QGIS - Франция (Франция)" listSubtitle="Контакт: Харису Сант-ана" >}}
+{{<user-groups-stats "countries" "/community/groups/map/" >}}
 
-{{<rich-list listLink="https://qgis.se/" icon="🇸🇪" layoutClass="half" listTitle="QGIS Sverige (Швеция)" listSubtitle="Контакт: Карл-Магнус Йонсон" >}}
+{{<rich-right-end >}}
 
-{{<rich-list listLink="https://qgis.or.ke" icon="🇰🇪" layoutClass="half" listTitle="QGIS Кения" listSubtitle="Контакт: Бенард Мито" >}}
-
-{{<rich-list listLink="https://qgis-australia.org/" icon="🇦🇺" layoutClass="half" listTitle="QGIS Австралия" listSubtitle="Контакт: Ема Хейн" >}}
-
-{{<rich-list listLink="http://qgis-us.org" icon="🇺🇸" layoutClass="half" listTitle="QGIS САЩ" listSubtitle="Контакт: Рандал Хейл" >}}
-
-{{<rich-list listLink="https://qgis.mx" icon="🇲🇽" layoutClass="half" listTitle="QGIS Мексико" listSubtitle="Контакт: Хенеси Амор Бесера Аяла" >}}
-
-{{<rich-list listLink="https://qgis.org" icon="🇬🇪" layoutClass="half" listTitle="QGIS Грузия" listSubtitle="Контакт: Зураб Арчвадзе –> ПРЕМАХНАТ през 2018 г." >}}
-### Регистриран 2018 г.
-{{<rich-list listLink="https://qgis.ro/" icon="🇷🇴" layoutClass="half" listTitle="Asociația Utilizatorilor QGIS (Румъния)" listSubtitle="Контакт: Тудор Баръску" >}}
-
-{{<rich-list listLink="https://qgis.es/" icon="🇪🇸" layoutClass="half" listTitle="Асоциация на потребителите на QGIS в Испания" listSubtitle="За контакт: Карлос Лопес Кинтанила" >}}
-
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Колумбия" listSubtitle="Contact: Germán Carrillo –> REMOVED in 2025" >}}
-### Премахнато през 2018 г.
-{{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="Потребителска група на NIWA QGIS (Нова Зеландия)" listSubtitle="Контакт: Брент Ууд" >}}
-
-{{<rich-list listLink="https://qgis.org" icon="🇬🇪" layoutClass="half" listTitle="QGIS Грузия" listSubtitle="Контакт: Зураб Арчвадзе" >}}
-### Регистриран 2020 г.
-{{<rich-list listLink="https://qgis.nl/" icon="🇳🇱" layoutClass="half" listTitle="QGIS gebruikersgroep (Холандия)" listSubtitle="Контакт: Реймънд Найсен" >}}
-
-{{<rich-list listLink="https://qgis.org.mx/" icon="🇲🇽" layoutClass="half" listTitle="Асоциация QGIS Мексико" listSubtitle="Контакт: Хенеси Амор Бесера Аяла" >}}
-
-{{<rich-list listLink="https://qgis-id.github.io/" icon="🇮🇩" layoutClass="half" listTitle="Комунитас Пенгуна QGIS Индонезия" listSubtitle="Контакт: Исмаил Суни" >}}
-
-{{<rich-list listLink="https://qgis.sk/" icon="🇸🇰" layoutClass="half" listTitle="QGIS Словакия (Словакия)" listSubtitle="Контакт: Яна Михалкова" >}}
-
-{{<rich-list listLink="https://qgis.ec/" icon="🇪🇨" layoutClass="half" listTitle="Grupo de usuarios QGIS Еквадор" listSubtitle="Контакт: Адриан Бенавидес" >}}
-### Регистриран 2021 г.
-{{<rich-list listLink="https://qgis.at/" icon="🇦🇹" layoutClass="half" listTitle="QGIS Anwendergruppe Österreich (Австрия)" listSubtitle="Контакт: Пол Стампфл" >}}
-
-{{<rich-list listLink="https://qgisghana.org/" icon="🇬🇭" layoutClass="half" listTitle="QGIS Гана" listSubtitle="Контакт: Енок Сет Нямадор" >}}
-### Регистриран 2022 г.
-{{<rich-list listLink="https://qgis.ar/" icon="🇦🇷" layoutClass="half" listTitle="QGIS Аржентина" listSubtitle="Контакт: Ариел Антиени" >}}
-### Регистриран 2024 г.
-{{<rich-list listLink="https://www.facebook.com/groups/612486875596534" icon="🌐" layoutClass="half" listTitle="Виртуална Facebook група на QGIS Global" listSubtitle="Контакт: Аделсидес Варела" >}}
-
-{{<rich-list listLink="https://qgis-mk.blogspot.com" icon="🇲🇰" layoutClass="half" listTitle="QGIS Северна Македония" listSubtitle="Контакт: Ивица Милевски" >}}
-
-{{<rich-list listLink="https://qgis-al.blogspot.com/" icon="🇦🇱" layoutClass="half" listTitle="QGIS Албания" listSubtitle="Контакт: Емилиано Квосе" >}}
-
-{{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Република Косово" listSubtitle="Контакт: Милот Лубищани" >}}
-### Регистриран 2025 г.
-{{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Танзания" listSubtitle="Контакт: Антиди Кавамала" >}}
-### Removed 2025
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Колумбия" listSubtitle="Контакт: Херман Карийо" >}}
-### <div></div>
-{{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="Потребителска група на QGIS Индия" listSubtitle="Контакт: Уджавал Ганди" >}}
-
-{{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenia" listSubtitle="Contact: Suren Poghosyan" >}}
-
-{{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="Contact: Walid Moulahoum" >}}
-
-{{<rich-list listLink="https://qgis.ca/" icon="🇨🇦" layoutClass="half" listTitle="QGIS Canada User Group" listSubtitle="Contact: Jeff McKenna" >}}
+{{<rich-box-end >}}
 ## Цели на потребителската група
 * Организиране на потребителски срещи
 * Координация на развитието, с акцент върху регионалните/националните стандарти и изисквания

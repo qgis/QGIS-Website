@@ -1,7 +1,7 @@
 ---
 author: Radoslaw Guzinski
 categories:
-- Case studies
+- Estudos de caso
 date: '2015-04-01'
 description: Enabling the Use of Earth Observation Data for Integrated Water Resource
   Management in Africa

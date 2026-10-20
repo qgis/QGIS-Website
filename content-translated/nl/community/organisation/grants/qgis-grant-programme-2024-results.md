@@ -2,8 +2,8 @@
 HasBanner: false
 author: underdark
 date: '2024-05-01'
-description: 'We are extremely pleased to announce the 5 winning proposals for our
-  2024 QGIS.ORG grant programme: QEP#289 Authentication system revision…'
+description: 'We zijn erg blij om de 5 winnende aanvragen voor ons 2024 QGIS.ORG grant
+  programme aan te kondigen: QEP#289 Authentication system revision…'
 draft: false
 link: https://blog.qgis.org/2024/05/01/qgis-grant-programme-2024-results/
 sidebar: true

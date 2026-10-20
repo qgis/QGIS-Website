@@ -91,12 +91,12 @@ QGIS 2.14は、メインの地図キャンバスにノースアロー、スケ�
 ![image50](images/entries/e2390ce8f4bc93ebf00228e1545b192315d2cb57.png.400x300_q85_crop.webp)
 ### 機能: 資金援助されたバグ修正
 各リリースに先立って、私たちは開発者に可能な限り多くのバグを解決するための資金を提供する有料のバグ修正プログラムを開催します。 私たちは、changelogレポートの一環として、有料バグ修正プログラムの報告書を追加することにしました。 このリストは **網羅的ではありません** 。
-- Sandro Santilli: [Postgis Connection freeze if you press \"Set filter\" during loading of data](http://hub.qgis.org/issues/13141)
-- Sandro Santilli: [db_manager is unable to load rasters from connections with no dbname specified](http://hub.qgis.org/issues/10600)
-- Sandro Santilli: [Plugin layers do not work correctly with rotation](http://hub.qgis.org/issues/11900)
-- Sandro Santilli: Crash in QgsGeomColumnTypeThread stopping connection scan [#14140](http://hub.qgis.org/issues/14140) [#13806](http://hub.qgis.org/issues/13806)
-- Sandro Santilli: [Crash after bulk change of attribute value in shapefile](http://hub.qgis.org/issues/11422)
-- Sandro Santilli: [KMZ causes QGIS application crash (Mac)](http://hub.qgis.org/issues/13865)
+- Sandro Santilli: [データのロード中に \"Set filter\"を押すとPostgis Connectionがフリーズする](http://hub.qgis.org/issues/13141)
+- Sandro Santilli: [db_managerはdbnameが指定されていない接続からラスタをロードできません](http://hub.qgis.org/issues/10600)
+- Sandro Santilli: [Pluginのレイヤーがローテーションで正しく動作しない](http://hub.qgis.org/issues/11900)
+- Sandro Santilli：QgsGeomColumnTypeThreadでクラッシュして接続スキャンを停止する [#14140](http://hub.qgis.org/issues/14140) [#13806](http://hub.qgis.org/issues/13806)
+- Sandro Santilli: [シェープファイルの属性値の一括変更の後クラッシュ](http://hub.qgis.org/issues/11422)
+- Sandro Santilli: [KMZがQGISアプリケーションをクラッシュさせる（Mac）](http://hub.qgis.org/issues/13865)
 - Sandro Santilli: [QGIS 2.8.1 crash opening FileGDB (openGDB-Driver)](http://hub.qgis.org/issues/12416)
 - Sandro Santilli: [QGIS crashes when removing vertex of a multipart geometry](http://hub.qgis.org/issues/14188)
 - Sandro Santilli: [test -V -R qgis_analyzertest segfaults](http://hub.qgis.org/issues/14176)
@@ -194,18 +194,18 @@ QGIS 2.14は、メインの地図キャンバスにノースアロー、スケ�
 - `exterior_ring`: ポリゴンジオメトリの外部リングを返します
 - `is_closed`: ラインストリングが閉じている場合はtrueを返します
 - 新しいジオメトリアクセッサ関数： `geometry_n` （コレクション内から特定のジオメトリを返します）、 `interior_ring_n`（ポリゴン内から内部リングを返します）
-- `num_geometries`: returns number of geometries inside a collection
-- `num_rings`: returns number of rings in a polygon geometry object
-- `num_interior_rings`: returns number of interior rings in a polygon
+- `num_geometries`: コレクション内のジオメトリの数を返します
+- `num_rings`: ポリゴンジオメトリオブジェクトのリングの数を返します
+- `num_interior_rings`: ポリゴン内の内部リングの数を返します
 - `nodes_to_points`, for converting every node in a geometry to a multipoint geometry
 - `segments_to_lines`, for converting every segment in a geometry to a multiline geometry
 - `closest_point`: returns closest point in a geometry to a second geometry
-- `shortest_line`: returns the shortest possible line joining two geometries
+- `shortest_line`: 2つのジオメトリを結合する最短の行を返します
 
-`nodes_to_points` and `segments_to_lines` are intended for use with geometry generator symbology, eg to allow use of m and z values for nodes/lines with data defined symbology.
+`nodes_to_points` と `segments_to_lines` は、ジオメトリジェネレータシンボルとの使用を意図しています。例えば、データがシンボルで定義されたノード/ラインにmとzの値を使用できるようにします。
 
 その他の改善点:
-- geometries and features can now be used in conditional functions. For instance, this allows expressions like `case when $geometry then ... else ...` and `case when get_feature(...) then ... else ...`
+- ジオメトリと地物が条件付き関数で使用できるようになりました。例えば、 `case when $geometry then ... else ...` や `case when get_feature(...) then ... else ... ` のような式ができます
 
 ![image52](images/entries/98616590f44281e09aa24f6c30d7f668c8665c31.png.400x300_q85_crop.webp)
 ## 解析ツール
@@ -224,10 +224,10 @@ QGIS 2.14は、メインの地図キャンバスにノースアロー、スケ�
 ### 機能: 距離と面積の単位および座標形式の操作方法の統一
 QGIS 2.14では、距離単位、エリア単位、座標表示に関するさまざまなオプションの処理が統一され、簡素化され、プロジェクトプロパティに移動されました。この変更により、次のような多くの利点がもたらされます。
 - 識別ツールの結果やステータスバーの表示など、座標がユーザーに表示されるたびに、プロジェクトプロパティで指定された座標形式が一貫して使用されます。
-- The setting for distance and area units in Project Properties is respected for all distance and area calculations, including the measure tool, identify results, and use of the `$area`, `$length` and `$perimeter` functions.
+- プロジェクトプロパティの距離と面積単位の設定は、測定ツール、結果の識別、 `$area` 、 `$length` および `$perimeter` 関数の使用を含む、すべての距離と面積の計算で尊重されます。
 - 平方ヤード、エーカー、ヘクタールなどの追加の面積単位が追加されました。
 - 角度測定ツールに追加の角度単位が追加されました。これには、回転、弧の分、弧の秒が含まれます。
-- It\'s now possible to show the coordinates in latitude and longitude in the status bar even when using a projected CRS.
+- 投影されたCRSを使用していてもステータスバーに座標を緯度と経度で表示することができます。
 
 ![image29](images/entries/b086f236720ecb5cac0aa8bb7383275799affff4.png.400x300_q85_crop.webp)
 
@@ -245,7 +245,7 @@ QGISブラウザはファイルシステムのOGC Webサービスとデータベ
 この機能はNathan Woodrowによって開発されました
 ## データプロバイダ
 ### 機能: WMSケーパビリティのキャッシュ
-QGIS will now cache WMS `GetCapabilities` requests so that on subsequent use response times will be quicker when using that service. By default the cache period is 24 hours, but you can adjust this in the `Network` tab of the QGIS Settings dialog.
+QGISはWMSの `GetCapabilities` 要求をキャッシュして、そのサービスを使用する際の後続の使用応答時間が早くなるようにします。デフォルトではキャッシュ期間は24時間ですが、これはQGIS設定ダイアログの `ネットワーク` タブで調整することができます。
 
 ![image31](images/entries/743840449ddf09f45251e9710e9666cf4da86081.png.400x300_q85_crop.webp)
 
@@ -268,7 +268,7 @@ QGIS 2.14では、次のような時間フィールドタイプと日時フィ�
 
 この機能はJürgen Fischer、Nyall Dawsonによって開発されました
 ### 機能: デリミティッドテキストプロバイダーにおける Z/M 値のサポート
-The delimited text provider has gained support for WKT strings containing Z and M coordinates. For example you can express a point with z and measure elements like this : `POINT ZM (1 1 5 60)`.
+区切テキストプロバイダは、ZおよびM座標を含むWKT文字列をサポートしています。例えば、zと測定値要素を持ったポイントを次のように表現することができます: `POINT ZM (1 1 5 60)` 。
 
 ![image34](images/entries/41d5c223ac43b4f8f392894109414e9d053c9136.png.400x300_q85_crop.webp)
 
@@ -283,13 +283,13 @@ The delimited text provider has gained support for WKT strings containing Z and 
 - トランザクショングループ内の1つのレイヤがコミットされると、すべてのレイヤがコミットされます（データベーストランザクション）
 - トランザクション・グループ内の1つのレイヤーがロールバックされると、すべてのレイヤーがロールバックされます（データベース・トランザクション）
 
-This feature is currently **Experimental**. If you find any problems, please [report them](https://www.qgis.org/en/site/getinvolved/development/bugreporting.html).
+この機能は現在 **実験的** です。問題が見つかった場合は、[報告してください](https://www.qgis.org/en/site/getinvolved/development/bugreporting.html) 。
 
 これは現時点でpostgresデータベースに対してのみ実装されています。
 
 ![image35](images/entries/bb8a03f09c9675985409cf4360308509830d38d4.png.400x300_q85_crop.webp)
 
-This feature was funded by [SIGE](http://www.sige.ch/)
+この機能は [SIGE](http://www.sige.ch/) によって資金提供されました
 
 この機能は [Sourcepole による作業に基づいて Matthias Kuhn OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能: Postgres プロバイダでのPKI認証
@@ -297,13 +297,13 @@ This feature was funded by [SIGE](http://www.sige.ch/)
 
 ![image36](images/entries/6e8f65042bd5981e585812ce2d957d0c6055ba3f.jpg.400x300_q85_crop.webp)
 
-This feature was funded by [Boundless Spatial](http://boundlessgeo.com)
+この機能は [Boundless Spatial](http://boundlessgeo.com) によって資金提供されました
 
 この機能はLuigi Pirelliによって開発されました
 ### 機能: 仮想レイヤ
 レイヤーフォーマット自体にSQLクエリがサポートされていなくても、QGISがロードできるあらゆる種類のベクタレイヤで動的SQLクエリを使用できるようになりました。
 
-A new kind of vector layer called \"virtual layer\" is now available for that purpose. These allow you to create a virtual layer by defining a query (including support for aggregates and joins) from other layers in your project. The resultant layer will be a live, dynamic view of the query result, so any changes to the source layers will be automatically and immediately reflected in the virtual layer!
+そのために、新しい種類の「仮想レイヤー」と呼ばれるベクターレイヤーが利用可能になりました。これらを使用すると、プロジェクト内の他のレイヤーからのクエリ（集約と結合のサポートを含む）を定義して仮想レイヤーを作成できます。結果レイヤーはクエリ結果のライブビューとなり、ソースレイヤーへの変更は自動的かつ即座にその仮想レイヤーに反映されます。
 
 サポートされているSQLダイアレクトは、SQLite with Spatialite関数です。クエリーでもQGIS式関数を使用できます。クエリーでは、さまざまなデータプロバイダの複数のレイヤーを含め、あらゆる種類のベクターレイヤーにアクセスして結合することができます。
 
@@ -311,7 +311,7 @@ Support for virtual layers has also been added to DB Manager as well as to the P
 
 ![image37](images/entries/58bc1a2fea31fe8d6ab70ff33c763c9ddac40ade.png.400x300_q85_crop.webp)
 
-This feature was funded by [MEDDE (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr)
+この機能は [MEDDE（フランス政府持続可能な発展省）](http://www.developpement-durable.gouv.fr)
 
 この機能は [Hugo Mercier / Oslandia](http://oslandia.com) によって開発されました
 ### GDALおよびOGRプロバイダのファイル選択で利用可能なファイル拡張子の追加
@@ -350,8 +350,8 @@ This feature was funded by [MEDDE (French Ministry of Sustainable Development)](
 ![image38](images/entries/7a628a66f2f63454bd65fbedda309ff5a7d25f1e.png.400x300_q85_crop.webp)
 
 この機能は [Médéric Ribreux](https://medspx.fr) によって開発されました
-### Feature: Use ST_RemoveRepeatedPoints for server-side simplification with PostGIS 2.2 (or newer) layers
-When using a PostGIS 2.2 instance, QGIS now uses the ST_RemoveRepeatedPoints function instead of the ST_SnapToGrid function to process server-side simplification, as described by [Paul Ramsey](http://blog.cartodb.com/smaller-faster/).
+### 機能: PostGIS 2.2 (またはそれ以降) のレイヤにおけるサーバー側での簡素化のために ST_RemoveRepeatedPoints が利用可能に
+PostGIS 2.2インスタンスを使用する場合、QGISはST_SnapToGrid関数の代わりにST_RemoveRepeatedPoints関数を使用するようになり、 [Paul Ramsey](http://blog.cartodb.com/smaller-faster/) で説明されているように、サーバー側の簡素化を処理します。
 
 この方法は、QGISがサーバからダウンロードする必要があるジオメトリの頂点の数を減らし、QGISとPostgreSQLサーバの間でレンダリング速度を向上させ、帯域を節約します。
 
@@ -368,7 +368,7 @@ The \"SPIT\" plugin is no longer bundled with QGIS, as the plugin was unmaintain
 ### 機能: DXFエクスポート: アプリケーションやサーバでのDXFレイヤ名の代わりにタイトルが使用可能に
 ![image41](images/entries/e09652676e15a883821ca9b269c03ab0239aacb3.png.400x300_q85_crop.webp)
 
-This feature was funded by [City of Uster](http://gis.uster.ch/)
+この機能の資金は [City of Uster](http://gis.uster.ch/) によって資金提供されました
 
 この機能はJürgenFischerによって開発されました
 ### 機能: ベクタの保存ダイアログにてジオメトリタイプの上書きが可能に
@@ -381,9 +381,9 @@ This feature was funded by [City of Uster](http://gis.uster.ch/)
 この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: QLOレイヤ定義ファイル内にベクタ結合が保存可能に
 ### 機能: 外部リソースウィジェット
-A new form widget is now available. It is named \"External resource\" and it allows a more complete handling of attributes assigned to file paths storing. Here is a complete summary of the widget features:
-- You can set an **extension filter** to force the storing of fixed file formats. If a filter is set, the file selector will only show file names that are relevant to the filter (it is still possible to select any file by using \'\*\' character in the search field). Filter syntax is the same than [Qt widget QFileDialog::getOpenFileName](https://doc.qt.io/qt-4.8/qfiledialog.html#getOpenFileName).
-- You can set a **default path**. Each time a user triggers the widget, a file selector will open at the default path (if set). If no default path has been set, the file selector will use the last path selected from an \"External resource\" widget. If the widget has never been used, the file selector defaults to opening on the project path.
+新しいフォームウィジェットが利用可能になりました。これは「外部リソース」と呼ばれ、格納されているファイルパスに割り当てられた属性のより完全な処理を可能にします。ウィジェットの機能の完全な概要を以下に示します:
+- **拡張フィルタ** を設定して、固定ファイル形式を強制的に保存することができます。フィルタが設定されている場合、ファイルセレクタはフィルタに関連するファイル名のみを表示します（検索フィールドで \'\*\' 文字を使用してあらゆるファイルを選択することは可能です）。フィルタ構文は [Qtウィジェット QFileDialog::getOpenFileName](https://doc.qt.io/qt-4.8/qfiledialog.html#getOpenFileName) と同じです。
+- **デフォルトパス** を設定することができます。ユーザーがウィジェットをトリガーするたびに、ファイルセレクターがデフォルトパス（設定されている場合）で開きます。デフォルトパスが設定されていない場合、ファイルセレクタは「外部リソース」ウィジェットから選択された最後のパスを使用します。ウィジェットが一度も使用されていない場合、ファイルセレクタはデフォルトでプロジェクトパス上で開きます。
 - **相対パス保存**を定義して設定することができます。相対パスの保存は、デフォルトパスの後（デフォルトパスが設定されている場合）または現在のプロジェクトパスの後にあるパスの一部だけを保存することを可能にします。これは、長いパスを限られたサイズの属性（254文字に制限されているシェイプファイルのテキスト属性など）に保存する場合や、配布用に独立したプロジェクトおよびデータファイルアーカイブを作成する場合に特に便利です。
 - ウィジェットを使いやすくするもう1つの新機能は、**ファイルパスをハイパーリンク**として表示できるようにすることです。ハイパーリンクをクリックすると、QGISからリンクされたファイルが直接開きます。このオプションを設定すると、ファイルの絶対パスまたはファイル名のみを表示できます。ファイルは、オペレーティングシステムのファイル形式のデフォルトのハンドラを使用して開きます。
 - **ファイルパス**の代わりにURLを使用することもできます。ウィジェットはそれをURLとして解釈し、デフォルトのWebブラウザで直接リンクされたWebページを開くことができます。
@@ -392,7 +392,7 @@ A new form widget is now available. It is named \"External resource\" and it all
 
 設定オプションの詳細については、設定ダイアログボックスのツールヒントを使用してください。
 
-The main aim of this new widget is to fix and improve the two existing \'File name\' and \'Photo\' widgets, and replace them with a single unified widget. For the moment, you can still use the old widgets but they will be deprecated and removed for QGIS 3.0. We recommend to switch your projects to use the new \'External Resource\' widget now.
+この新しいウィジェットの主な目的は、既存の2つの「ファイル名」と「写真」ウィジェットを修正して改良し、それらをひとつの統一されたウィジェットに置き換えることです。現時点では古いウィジェットを使用することはできますが、非推奨になりQGIS 3.0で廃止予定です。新しい「外部リソース」ウィジェットを使用するようにプロジェクトを切り替えることをおすすめします。
 
 **この機能は次の方によって開発されました**:
 - [Denis Rouzaud](https://github.com/3nids)
@@ -410,8 +410,8 @@ The main aim of this new widget is to fix and improve the two existing \'File na
 QGISはデータベース管理システムではありません。
 
 基礎となるデータベースシステムに関する前提に基づいています。特に：
-- it expects an `ON DELETE CASCADE` or similar measure on the second relation
-- it does not take care of setting the primary key when adding features. Either users need to be instructed to set them manually or - if it\'s a database derived value - the layers need to be in transaction mode
+- 第2の関係について `ON DELETE CASCADE` または同様の尺度が期待される
+- 地物を追加するときに主キーの設定を考慮しません。ユーザーは手動で設定する必要があります。または、データベースから導出された値の場合は、レイヤーをトランザクションモードにする必要があります
 
 ![image44](images/entries/9f033883617b01432aae23c35be54070c1a9f5b3.png.400x300_q85_crop.webp)
 
@@ -433,7 +433,7 @@ QGISはデータベース管理システムではありません。
 - キーボードの** T **を押してデジタイズしている間に有効および無効にすることができます
 - 高速で使いやすい
 
-You can read more about this feature [here](http://www.lutraconsulting.co.uk/blog/2016/02/16/qgis-trace-digitising/) and with [this tutorial](http://www.lutraconsulting.co.uk/products/autotrace/TraceDigitising).
+この機能については [ここ](http://www.lutraconsulting.co.uk/blog/2016/02/16/qgis-trace-digitising/) と [このチュートリアル](http://www.lutraconsulting.co.uk/products/autotrace/TraceDigitising) で読めます。
 
 この機能の資金は、ウィンザーとメイデンヘッドのロイヤル・ボロー、ニース・ポート・タルボット・カウンティ・ボロー・カウンシル、ウジャヴァル・ガンディー、サリー・ヒース・ボロー・カウンシル、マティアス・アーノルド、ノーサンバーランド国立公園局、ブリューリュー・エステイツ・リミテッド、カントリースケープ
 
@@ -441,8 +441,8 @@ You can read more about this feature [here](http://www.lutraconsulting.co.uk/blo
 
 この機能は [Lutra Consulting](http://www.lutraconsulting.co.uk) によって開発されました
 ## ラベリング
-### Feature: \"Cartographic\" placement mode for point labels
-この配置モードでは、理想的な地図配置ルールに従ってポイントラベル候補が生成されます。たとえば、ラベル配置は次の順序で優先順位付けされます。
+### 機能: ポイントラベルの配置オプションに「カートグラフィック」モードの追加
+この配置モードでは、理想的な地図作成上の配置ルールに従ってポイントラベル候補が生成されます。たとえば、ラベル配置は次の順序で優先順位付けされます。
 - 右上
 - 左上
 - 右下
@@ -454,7 +454,7 @@ You can read more about this feature [here](http://www.lutraconsulting.co.uk/blo
 
 （Krygier and Wood（2011）および他の作図マスター作品のガイドラインを尊重する）
 
-優先順位付けされたポジションのデータ定義リストを使用して、個々の地物に配置優先度を設定することもできます。これにより、特定のプレースメントだけを使用することもできます。たとえば、沿岸の地物の場合、土地の上にラベルが配置されないようにすることができます。
+優先順位付けされたポジションのデータ定義リストを使用して、個々の地物に配置優先度を設定することもできます。これにより、特定の配置だけを使用することもできます。たとえば、沿岸の地物の場合、土地の上にラベルが配置されないようにすることができます。
 
 ![image53](images/entries/23cdbb38f45b05ea930fbeec8ad461e2616ef2a9.png.400x300_q85_crop.webp)
 
@@ -472,7 +472,7 @@ You can read more about this feature [here](http://www.lutraconsulting.co.uk/blo
 
 この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: ラベル描画順序の制御
-A new control for setting a label\'s \"z-index\" has been added to the labeling properties dialog. This control (which also accepts data-defined overrides for individual features) determines the order in which labels are rendered. Label layers with a higher z-index are rendered on top of labels from a layer with a lower z-index.
+ラベルの \"z-index\" を設定するための新しいコントロールが、ラベルリングプロパティダイアログに追加されました。このコントロール（個々の地物のデータ定義による上書きも受け入れます）は、ラベルのレンダリング順序を決定します。zインデックスが高いラベルレイヤーは、zインデックスが小さいレイヤーのラベルの上に表示されます。
 
 さらに、2つのラベルに一致するz-インデックスがある場合、ロジックは調整されています。
 - 同じレイヤーからのものであれば、小さいラベルは常に大きいラベルの上に描画されます
@@ -509,7 +509,7 @@ A new control for setting a label\'s \"z-index\" has been added to the labeling 
 
 ![image59](images/entries/8c957ae820bc98f0a23a7d660abd40264af6e31d.png.400x300_q85_crop.webp)
 
-This feature was funded by [Agence de l\'Eau Adour-Garonne (Adour-Garonne Water Agency)](http://www.eau-adour-garonne.fr)
+この機能は、[Agence de l\'Eau Adour-Garonne (Adour-Garonne Water Agency)](http://www.eau-adour-garonne.fr) によって資金提供されました
 
 この機能は [Hugo Mercier / Oslandia](http://oslandia.com) によって開発されました
 ## マップコンポーザー
@@ -524,13 +524,13 @@ This feature was funded by [Agence de l\'Eau Adour-Garonne (Adour-Garonne Water 
 
 この機能は [Hugo Mercier (Oslandia)](http://oslandia.com/) によって開発されました
 ### 機能: コンポーザテンプレートへのパスの追加
-You can now define custom paths that should be used for QGIS to find composer templates. This means that you can for example put a bunch of templates in a network share and give your users access to that folder in addition to the local ones that exist on their own system. To manage the composer template search paths, look in `Settings -> Options -> Composer`
+QGISがコンポーザーテンプレートを見つけるために使用するカスタムパスを定義できるようになりました。つまり、ネットワーク共有に多数のテンプレートを入れ、自分のシステムに存在するローカルフォルダに加えてそのフォルダにアクセスできるようにすることができます。コンポーザーテンプレートの検索パスを管理するには、 `設定 -> オプション -> コンポーザ` を見てください
 
 ![image60](images/entries/bd36891d76ee01ee79e516b0167f403a89fa49de.png.400x300_q85_crop.webp)
 
 この機能はNathan Woodrowによって開発されました
 ### 機能: コンポーザ管理での複数選択
-Composer Managerは、複数の曲を同時に管理するためのサポートを得ています。Ctrlキーを押しながらリストから複数のコンポジションを選択することで、一度に複数のコンポジションを開いたり、削除したりすることができます。
+Composer Managerは、複数の構図を同時に管理することに対応しました。Ctrlキーを使ってリストから複数の構図を選択し、一度に複数の構図を開いたり削除したりすることができます。
 
 ![image61](images/entries/2603b37c6a6ccec10f56f37951d9494cb44c8d0a.png.400x300_q85_crop.webp)
 
@@ -541,7 +541,7 @@ Composer Managerは、複数の曲を同時に管理するためのサポート�
 
 ![image62](images/entries/7b66e68eb37b27b0ecabcab7d0656985e222e8c0.png.400x300_q85_crop.webp)
 
-This feature was funded by [Boundless Spatial](http://boundlessgeo.com)
+この機能は [Boundless Spatial](http://boundlessgeo.com) によって資金提供されました
 
 この機能はLarry Shafferによって開発されました
 ## プロセシング
@@ -552,18 +552,18 @@ This feature was funded by [Boundless Spatial](http://boundlessgeo.com)
 
 #### GDAL/OGR ジオアルゴリズム
 - gdal2tiles：TMSタイル、KML、シンプルなWebビューアでディレクトリを構築します。
-- gdal_retile: retiles a set of tiles and/or build tiled pyramid levels.
+- gdal_retile: 一連のタイルを再編成し、および/またはタイル型ピラミッドレベルを構築します。
 
 ### 機能: ユニットテスト Q/A
 処理モジュールの長期安定性を保証するために、新しいテストフレームワークが導入されました。
 
 ジオアルゴリズムの処理は、QGISソースコードに当たるすべての変更の後に実行され、その結果は正しい動作を保証するために制御データセットと比較されます。これは、可能性のある回帰についての即時のフィードバックを与える。
 
-It is possible - and desired - that more tests are added. You can read more about [how to participate](https://www.opengis.ch/2016/02/04/increasing-the-stability-of-processing-algorithms/).
+より多くのテストが追加されることが可能であり、また望まれます。[参加方法](https://www.opengis.ch/2016/02/04/increasing-the-stability-of-processing-algorithms/) について詳細を読むことができます。
 
 ![image63](images/entries/4121e58bd51cfe5c8b2c0cd14d1420eaeb1f4473.png.400x300_q85_crop.webp)
 
-This feature was funded by [The QGIS Project](https://www.qgis.org)
+この機能は [The QGIS Project](https://www.qgis.org) によって資金提供されました
 
 この機能は [Matthias Kuhn, OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能: ツールボックスの改善
@@ -571,7 +571,7 @@ This feature was funded by [The QGIS Project](https://www.qgis.org)
 
 ![image64](images/entries/2a135d5384f592e77938c59c0563cc2d0f6c3ebf.jpg.400x300_q85_crop.webp)
 
-This feature was funded by [Boundless Spatial](http://boundlessgeo.com/)
+この機能は [Boundless Spatial](http://boundlessgeo.com/) によって資金提供されました
 
 この機能はVíctorOlayaによって開発されました
 ### 機能: バッチ処理インターフェイスでのバッチ処理の保存と呼び出し
@@ -579,13 +579,13 @@ This feature was funded by [Boundless Spatial](http://boundlessgeo.com/)
 ### 機能: わかりやすいアルゴリズムダイアログの追加
 アルゴリズムのパラメータとともに短い説明が表示され、アルゴリズムの目的を理解しやすくなりました。
 
-Also, batch processes can be now started from the algorithm dialog, using the "Run as batch process..." button
+また、「バッチプロセスとして実行...」ボタンを使用して、アルゴリズムダイアログからバッチプロセスを開始することもできるようになりました
 
 ![image66](images/entries/c4039a87ddc906921e5e3ce47f8c7aadc7ab2263.jpg.400x300_q85_crop.webp)
 ### 機能: GRASS7 v.net モジュール
-QGIS 2.14 Processing now incorporates v.net GRASS modules (only for GRASS7). Those modules are a set of algorithms that perform on graph line vector layers (networks). [A graph](https://en.wikipedia.org/wiki/Graph_theory#Graph) is a set of vertices (or nodes or points) linked together with a set of edges (or arcs or lines). The set of edges is often called a network.
+QGIS 2.14のプロセシングに v.net GRASS モジュールが組み込まれました（GRASS7のみ）。これらのモジュールは、グラフ線ベクターレイヤー（ネットワーク）上で実行するアルゴリズムのセットです。 [グラフ](https://en.wikipedia.org/wiki/Graph_theory#Graph) とは、一連の辺（または円弧または線）によって相互に連結された一連の頂点（またはノードまたは点）です。この一連の辺は、しばしばネットワークと呼ばれます。
 
-Thanks to v.net modules, you can easily calculate the shortest path between a set of nodes on the network or even compute the [isochrone map](https://en.wikipedia.org/wiki/Isochrone_map) from a set of central points. you can also easily solve [the complex travelling salesman problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem) from a network and a set of travel nodes.
+v.netモジュールのおかげで、ネットワーク上のノード間の最短経路を簡単に計算することや、一連の中心点から [isochrone map](https://en.wikipedia.org/wiki/Isochrone_map) を計算することもできます。ネットワークと一連のトラベルノードから [複雑な巡回セールスマン問題](https://en.wikipedia.org/wiki/Travelling_salesman_problem) を簡単に解決することもできます。
 
 v.netのアルゴリズムでは、（ネットワーク用の）線ベクターレイヤーと、計算に使用するノードを表すポイントレイヤーを使用することがよくあります。問題を避けるために、ネットワークレイヤーに真のグラフ線ベクターレイヤーを使用してください（辺間の交差なしに頂点に接続する必要があります）。コスト計算に任意のネットワークレイヤー属性を使用することもできます（属性の内容は、辺の移動コストを計算するために使用されます）。
 
@@ -593,8 +593,8 @@ v.netのアルゴリズムでは、（ネットワーク用の）線ベクター
 - v.net.alloc：最も近いセンターからサブネットを割り当てます。
 - v.net.allpairs：ネットワーク内のすべてのノードペア間の最短経路を計算します。
 - v.net.arcs：点のファイルから円弧を作成します。
-- v.net.articulation: Computes the [articulation points](https://en.wikipedia.org/wiki/Biconnected_component) in the network.
-- v.net.bridge: Computes [bridges](https://en.wikipedia.org/wiki/Bridge_%28graph_theory%29) of the network.
+- v.net.articulation：ネットワーク内の [間接点](https://en.wikipedia.org/wiki/Biconnected_component) を計算します。
+- v.net.bridge: ネットワーク内の [橋](https://en.wikipedia.org/wiki/Bridge_%28graph_theory%29) を計算します。
 - v.net.centrality：ネットワークの各ノードの度合い、中心性、中間度、近さおよび固有ベクターの中心性を計算します。
 - v.net.components：ネットワーク内の強く弱く接続されたコンポーネントを計算します。
 - v.net.connect：ポイント（ノード）をネットワークの最も近いアークに接続します（必要に応じてエッジを追加します）。
@@ -606,12 +606,12 @@ v.netのアルゴリズムでは、（ネットワーク用の）線ベクター
 - v.net.nreports：ノードに関する情報を報告します。
 - v.net.path：2つのノード間のネットワーク上の最短パスを検索します。
 - v.net.report：ネットワークのエッジに関する情報を報告します。
-- v.net.salesman: Computes the [travelling salesman path](https://en.wikipedia.org/wiki/Travelling_salesman_problem) from a set of nodes on the network.
-- v.net.spanningtree: Computes the [Spanning tree](https://en.wikipedia.org/wiki/Spanning_tree) of the network.
-- v.net.steiner: Creates [a Steiner tree](https://en.wikipedia.org/wiki/Steiner_tree_problem) for the network and given nodes.
+- v.net.salesman: ネットワーク上の一連のノードから [巡回セールスマンの経路](https://en.wikipedia.org/wiki/Travelling_salesman_problem) を計算します。
+- v.net.spanningtree: ネットワークの [スパニングツリー](https://en.wikipedia.org/wiki/Spanning_tree) を計算します。
+- v.net.steiner: ネットワークと与えられたノードの [シュタイナー木](https://en.wikipedia.org/wiki/Steiner_tree_problem) を作成します。
 - v.net.visibility：可視性グラフの作成を実行します。
 
-Use the \"Help\" tab on each of the v.net Processing algorithm to read [the official GRASS7 documentation](https://grass.osgeo.org/grass70/manuals/topic_network.html) directly for more information.
+詳細については、各 v.net プロセシングアルゴリズムの「ヘルプ」タブを使用すると、[公式GRASS7のドキュメント](https://grass.osgeo.org/grass70/manuals/topic_network.html) を直接読むことができます。
 
 ![image67](images/entries/655bbfccc4997a5a3e3d1f5c709da5277eef6000.png.400x300_q85_crop.webp)
 

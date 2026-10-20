@@ -40,6 +40,8 @@ from urllib.parse import urlencode
 
 import requests
 
+from donor_exclusions import is_excluded, load_excluded_donors
+
 TIMESTAMP_FILE = "scripts/latest_payrexx_transaction.txt"
 POSITIVE_VALUES = [
   'yes', 'ja', 'si', 'oui', 'sí', 'sim', 'да', 'tak', 'ano', 'igen',
@@ -187,6 +189,7 @@ def get_donors(donors_json_file, custom_field_label):
     custom_field_label (str): Name of the custom field to check for consent
   """
   latest_timestamp = get_latest_timestamp()
+  excluded = load_excluded_donors()
 
   payrexx_instance = os.getenv("PAYREXX_INSTANCE")
   payrexx_api_secret = os.getenv("PAYREXX_API_SECRET")
@@ -278,6 +281,10 @@ def get_donors(donors_json_file, custom_field_label):
       continue
     
     name = f"{firstname} {lastname}".strip()
+
+    # Never list donors who asked to be hidden
+    if is_excluded(name, excluded):
+      continue
     
     # Check if the donor wants to be listed (default to False)
     list_me_as_donor = False

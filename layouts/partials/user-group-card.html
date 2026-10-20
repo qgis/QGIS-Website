@@ -1,0 +1,53 @@
+{{/*
+    Local user group grid card. Reuses the contributor card hooks so
+    contributors-filter.js drives search, filters and the count.
+    Context: dict "group" <user group properties> "continent" <translated continent name>
+*/}}
+{{ $g := .group }}
+{{ $logo := $g.logo | default "img/logosign.svg" }}
+<div class="column is-one-third-fullhd is-half-tablet is-full-mobile contributor-card-column"
+     data-login="{{ $g.slug }}"
+     data-search="{{ $g.name }} {{ $g.country_name }} {{ $g.country }} {{ delimit $g.contacts " " }} {{ .continent }}"
+     data-thematics="{{ $g.continent }}"
+     data-active="{{ $g.active }}"
+     {{ if not $g.active }}style="display: none;"{{ end }}>
+    <div class="card contributor-card user-group{{ if not $g.active }} is-inactive{{ end }}" id="{{ $g.slug }}">
+        <div class="card-content has-text-centered">
+            <div class="avatar-container">
+                <img src="{{ $logo | relURL }}" alt="" class="avatar" loading="lazy">
+            </div>
+            <h3 class="title is-5 mb-2">
+                <a class="heading-anchor" href="#{{ $g.slug }}" style="margin-left: -22.3px;" aria-hidden="true" tabindex="-1">¶</a>
+                {{ with $g.website }}
+                <a href="{{ . }}" class="external-link" target="_blank" rel="noopener">{{ $g.name }}</a>
+                {{ else }}
+                {{ $g.name }}
+                {{ end }}
+            </h3>
+            <p class="mb-3">
+                {{ partial "user-group-flag.html" $g.country }}
+                <span>{{ $g.country_name | default .continent }}</span>
+            </p>
+            <div class="tags is-centered mb-2">
+                <span class="tag is-light is-rounded">
+                    <i class="fas fa-calendar-alt mr-1 has-text-info" aria-hidden="true"></i>
+                    {{ i18n "userGroupsSince" (dict "Year" $g.year) }}
+                </span>
+                {{ if not $g.active }}
+                <span class="tag is-warning is-light is-rounded">{{ i18n "userGroupsRemoved" (dict "Year" $g.removed) }}</span>
+                {{ end }}
+            </div>
+            {{ with $g.contacts }}
+            <p class="is-size-7 has-text-grey user-group-contacts">{{ i18n "userGroupsContact" (dict "Names" (delimit . ", ")) }}</p>
+            {{ end }}
+            <div class="contribution-badges">
+                <button type="button"
+                        class="contributor-badge badge-filter-btn contributor-badge-continent"
+                        data-thematic="{{ $g.continent }}"
+                        title="{{ i18n "userGroupsFilterByThisContinent" }}">
+                    <span><i class="fas fa-globe mr-1" aria-hidden="true"></i> {{ .continent }}</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

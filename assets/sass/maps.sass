@@ -1,0 +1,12 @@
+// Shared additions for the globe and flat maps (contributors and user groups).
+//
+// Loaded by both map shortcodes right after the theme's contributors-map.sass,
+// so these rules win over the theme's rules of the same specificity.
+
+// The flat map shows first; the globe is built when the reader asks for it
+// (see assets/js/globe-flat-map.js).
+#globe-view
+  display: none
+
+#flat-map-view
+  display: block

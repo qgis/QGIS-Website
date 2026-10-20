@@ -581,7 +581,7 @@ This feature was developed by [Julien Cabieces](https://oslandia.com/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
+この機能は [Paul Blottiere](https://hytech-imaging.fr/) によって開発されました
 ### 機能: Sandro Santilliによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |

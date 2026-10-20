@@ -14,6 +14,13 @@ type: page
 
 注意：書籍は新刊順に掲載されています。英語の書籍の後に、フランス語・ギリシャ語・ポーランド語・その他の言語の書籍が続きます。
 ## 英語
+### Geomorphometry: Concepts, Software, Applications - Second Edition
+Concepts, software and applications for quantitative land-surface analysis, including a chapter on terrain analysis with QGIS.
+- [https://shop.elsevier.com/books/geomorphometry/reuter/978-0-443-33376-7](https://shop.elsevier.com/books/geomorphometry/reuter/978-0-443-33376-7)
+- Editors: Hannes I. Reuter, Vincent Lecours, Carlos Henrique Grohmann
+- Author chapter 14 (Geomorphometry in QGIS/PCRaster): Hans van der Kwast
+- Date: September 2026
+
 ### Learn QGIS - Fifth Edition (Early Access)
 Learn QGIS (5th Edition)” は、学生や専門家を対象に、QGISとPythonを用いた現代的なGIS分析の実践的な入門書を提供します。地球観測、モバイルデータ収集、GISにおけるAIと機械学習の統合といった内容を網羅し、同時にデータのセキュリティや倫理的な側面についても触れています。
 - [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)

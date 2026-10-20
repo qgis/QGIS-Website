@@ -346,6 +346,10 @@
   translation: StackExchange
 - id: menuTesting
   translation: Testen
+- id: menuUserGroupList
+  translation: Lijst met groepen
+- id: menuUserGroupMap
+  translation: Kaart met groepen
 - id: menuVisualChangelogs
   translation: Visueel log met wijzigingen
 - id: menuWindows
@@ -436,23 +440,23 @@
 - id: reportIssue
   translation: Problemen met deze website? Rapporteer een probleem hier 🐙
 - id: searchAllTags
-  translation: ''
+  translation: alle tags
 - id: searchClose
-  translation: ''
+  translation: Zoeken sluiten
 - id: searchHint
-  translation: ''
+  translation: Druk op Enter om te zoeken, Esc om te sluiten
 - id: searchNoResults
-  translation: ''
+  translation: Geen overeenkomsten gevonden
 - id: searchPlaceholder
   translation: Zoeken
 - id: searchPrompt
-  translation: ''
+  translation: Voer hierboven een woord of frase in, of bekijk
 - id: searchResults
   translation: Zoekresultaten
 - id: searchResultsCount
-  translation: ''
+  translation: overeenkomende gedeelten
 - id: searchTitle
-  translation: ''
+  translation: Zoeken op de website van QGIS
 - id: seconds
   translation: Sec.
 - id: skipToDownload
@@ -475,6 +479,84 @@
   translation: Up-to-date documentatie
 - id: usedBy
   translation: Gebruikt door
+- id: userGroupsClose
+  translation: Sluiten
+- id: userGroupsColumnContacts
+  translation: Contacten
+- id: userGroupsColumnContinent
+  translation: Continent
+- id: userGroupsColumnCountry
+  translation: Land
+- id: userGroupsColumnLogo
+  translation: Logo
+- id: userGroupsColumnName
+  translation: Groep
+- id: userGroupsColumnSince
+  translation: Vanaf
+- id: userGroupsContact
+  translation: 'Contact: {{ .Names }}'
+- id: userGroupsContinentAfrica
+  translation: Afrika
+- id: userGroupsContinentAsia
+  translation: Azië
+- id: userGroupsContinentEurope
+  translation: Europa
+- id: userGroupsContinentGlobal
+  translation: Wereldwijd
+- id: userGroupsContinentNorthAmerica
+  translation: Noord-Amerika
+- id: userGroupsContinentOceania
+  translation: Oceanië
+- id: userGroupsContinentSouthAmerica
+  translation: Zuid-Amerika
+- id: userGroupsCount
+  translation: Weergegeven {{ .Showing }} van {{ .Total }} gebruikersgroepen
+- id: userGroupsDisplayMode
+  translation: Modus weergave
+- id: userGroupsFilterByContinent
+  translation: Filteren op continent
+- id: userGroupsFilterByThisContinent
+  translation: Alleen groepen op dit continent weergeven
+- id: userGroupsGridView
+  translation: Rasterweergave
+- id: userGroupsIncludeInactive
+  translation: Neem ook groepen op die niet langer actief zijn
+- id: userGroupsMapDisplay
+  translation: Kaartweergave
+- id: userGroupsMapFlat
+  translation: Platte kaart
+- id: userGroupsMapGlobe
+  translation: Weergave globe
+- id: userGroupsMapLoadError
+  translation: We konden de kaart niet laden. Vernieuw de pagina om opnieuw te proberen.
+- id: userGroupsMapLoading
+  translation: De kaart laden
+- id: userGroupsNoResultsHint
+  translation: Probeer een andere naam of land, of herstel de filters.
+- id: userGroupsNoResultsTitle
+  translation: Er komen geen gebruikersgroepen overeen met uw zoekactie
+- id: userGroupsRemoved
+  translation: Inactief vanaf {{ .Year }}
+- id: userGroupsResetFilters
+  translation: Filters herstellen
+- id: userGroupsSearchLabel
+  translation: Gebruikersgroepen zoeken
+- id: userGroupsSearchPlaceholder
+  translation: Brazilië, QGIS Zweden of een contactnaam
+- id: userGroupsSince
+  translation: Vanaf {{ .Year }}
+- id: userGroupsStatCountries
+  translation: Landen
+- id: userGroupsStatGroups
+  translation: Actieve groepen
+- id: userGroupsSuggestChange
+  translation: Stel een wijziging voor
+- id: userGroupsSuggestChangeHint
+  translation: Ontbreekt uw groep of zijn de gegevens verouderd?
+- id: userGroupsTableView
+  translation: Tabelweergave
+- id: userGroupsVisitWebsite
+  translation: Website bezoeken
 - id: vectorAndRasterFormats
   translation: Indelingen voor vector en raster
 - id: vectorEditing

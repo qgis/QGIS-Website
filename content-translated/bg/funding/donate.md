@@ -61,7 +61,7 @@ We also use the [payrexx.com](https://payrexx.com) service to receive credit car
 
 {{<rich-box-end >}}
 
-{{<rich-box-start layoutClass="has-right" mode="html" >}}
+{{<rich-box-start layoutClass="has-right mt-6" mode="html" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Банков превод
@@ -81,7 +81,7 @@ Account name: QGIS.ORG Address: Via Geinas 2 CH-7031 Laax BIC/SWIFT: POFICHBEXXX
 
 {{<rich-box-end >}}
 
-{{<rich-box-start layoutClass="has-right paypal mb-6" >}}
+{{<rich-box-start layoutClass="has-right paypal mt-6 mb-6" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Дарение чрез PayPal
