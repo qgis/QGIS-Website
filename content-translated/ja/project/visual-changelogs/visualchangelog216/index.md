@@ -681,7 +681,7 @@ postgresデータベースのフィールドのデフォルト値を生成する
 
     nextval('serial')
     
-A new option in the \"project properties\" (tab \"Data Sources\") allows evaluating the expression before opening the form and will directly print the new value in the feature form.
+「プロジェクトプロパティ」（タブ「データソース」）の新しいオプションでは、フォームを開く前に式を評価し、新しい値を地物フォームに直接印刷します。
 
     23
     
@@ -698,7 +698,7 @@ This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
 この機能は [Marco Hugentobler, Sourcepole](https://www.sourcepole.com/) によって開発されました
 ### 機能：サーバのデフォルトのデータ変換
-Will have to dig through <https://github.com/qgis/QGIS/commit/70863ecaf0ccfcb538e3892af4b528304b21a0a2> to find details
+詳細を見つけるには<https://github.com/qgis/QGIS/commit/70863ecaf0ccfcb538e3892af4b528304b21a0a2> を掘り下げなければなりません
 
 この機能は [Marco Hugentobler (Sourcepole)](https://www.sourcepole.com/) によって開発されました
 ## プラグイン

@@ -622,13 +622,13 @@ v.netのアルゴリズムでは、（ネットワーク用の）線ベクター
 
 ![image68](images/entries/b42e959476310932713777f75f5eced4826df20a.png.400x300_q85_crop.webp)
 ### 機能: python init コードをプロジェクト内に保存
-Adds an option and code editor to store python form init code into the project (and the DB, since it\'s in the style section)
+オプションとコードエディタを追加してPythonフォームのinitコードをプロジェクトに保存します（そして、スタイルセクションにあるのでDBにします）
 
 ![image69](images/entries/67bad1306d40aa9b32b64f4d025b77649ae2f775.png.400x300_q85_crop.webp)
 ### 機能: QgsFeatureRequest でのフィルタ・ソートオプションの追加
 QgsFeatureRequestは、返される地物の数の上限を設定できるようになりました。多くの場合、この制限はプロバイダーに渡され、設定された数の地物だけが必要な場合には大幅なパフォーマンスの向上をもたらします。
 
-Additionally, QgsFeatureRequest now supports setting ordering for returned features. Again, in many cases this ordering is delegated to the provider so that it is performed \"server side\" for optimal performance.
+さらに、QgsFeatureRequestは返された地物の設定順序をサポートするようになりました。ここでも、多くの場合、この順序付けはプロバイダーに委任され、最適なパフォーマンスを得るために「サーバー側」で実行されます。
 
 ![image70](images/entries/6e136c8a4bdf4361b9307f88175369b62d4648d6.png.400x300_q85_crop.webp)
 ### 機能: Pythonコードオプションでの地物フォームのカスタマイズ
@@ -641,16 +641,16 @@ Additionally, QgsFeatureRequest now supports setting ordering for returned featu
 
 ![image71](images/entries/65e82ab529ee1287c631712127e1ac75f78d05c6.png.400x300_q85_crop.webp)
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.gov.it/)
+この機能は [ARPA Piemonte](http://www.arpa.piemonte.gov.it/) によって資金提供されました
 
 この機能は [Alessandro Pasotti（ItOpen）](http://www.itopen.it)
 ### 機能: 新しい PyQGIS クラスの追加（v2.14）
 ### 新しいコアクラス
 - [QgsAttributeEditorElement](https://qgis.org/api/classQgsAttributeEditorElement.html)
-  - abstract base class for any elements of a drag and drop form
+  - ドラッグ＆ドロップフォームのあらゆる要素に使われる抽象基底クラス
 - [QgsAttributeEditorContainer](https://qgis.org/api/classQgsAttributeEditorContainer.html)
   
-  \- container for attribute editors, used to group them visually in an attribute form
+  \- 属性エディタのコンテナ。属性フォームで視覚的にグループ化するのに使われます
 - [QgsAttributeEditorField](https://qgis.org/api/classQgsAttributeEditorField.html)
   - element for loading a field\'s widget onto a form
 - [QgsAttributeEditorRelation](https://qgis.org/api/classQgsAttributeEditorRelation.html)
@@ -659,7 +659,7 @@ This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.gov.it/)
   - stores and sets configuration parameters for attribute editor forms
 - [QgsFeatureFilterProvider](https://qgis.org/api/classQgsFeatureFilterProvider.html)
   
-  \- provides an interface for modifying a QgsFeatureRequest in place to apply additional filters to the request
+  \- リクエストに追加のフィルタを適用するためにQgsFeatureRequestを修正するためのインターフェイスを提供する
 - [QgsTracer](https://qgis.org/api/classQgsTracer.html) - provides graph creation and shortest path search for vector layers
 - [QgsTransactionGroup](https://qgis.org/api/classQgsTransactionGroup.html)
   - interface for grouping layers into single edit transactions
@@ -680,14 +680,14 @@ This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.gov.it/)
 #### 再利用可能なウィジェット：
 - [QgsExternalResourceWidget](https://qgis.org/api/classQgsExternalResourceWidget.html)
   
-  \- widget for displaying a file path with a push button for an \"open file\" dialog, and optional display of pictures or HTML files
+  \- 「ファイルを開く」ダイアログ用のプッシュボタンを備えたファイルパスを表示するためのウィジェットで、オプションで画像やHTMLファイルを表示します
 - [QgsFileWidget](https://qgis.org/api/classQgsFileWidget.html) -widget for selecting a file or a folder
 - [QgsLegendFilterButton](https://qgis.org/api/classQgsLegendFilterButton.html)
   
-  \- tool button widget that allows enabling or disabling legend filter by contents of the map
+  \- 地図の内容で凡例フィルタを有効または無効にすることができるツールボタンウィジェット
 - [QgsMapCanvasTracer](https://qgis.org/api/classQgsMapCanvasTracer.html)
   
-  \- an extension of QgsTracer that provides extra functionality for interacting with map canvases
+  \- QgsTracerの拡張で、マップキャンバスと対話するための特別な機能を提供します
 - [Qgs25DRendererWidget](https://qgis.org/api/classQgs25DRendererWidget.html)
   - widget for setting properties for a 2.5D renderer
 - [QgsColorWidgetAction](https://qgis.org/api/classQgsColorWidgetAction.html)
