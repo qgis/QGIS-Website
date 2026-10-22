@@ -196,7 +196,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Expression functions for creating triangular/square/curved waves
 We\'ve added some new expression functions which produce \"wavy lines\" along geometry boundaries. Multiple wave shapes are available, including:
 - Wave (sine-like)
-- Triangular
+- Kolmnurkne
 - Ruut
 
 In addition, expressions functions have also been added for creating waves in a regular fashion or with randomization.

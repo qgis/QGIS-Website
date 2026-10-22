@@ -348,9 +348,9 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 ## Töötlen
 ### Feature: Additional options for XYZ Tile exports when using Leaflet html output
 Three new optional advanced parameters have been exposed for the XYZ Tile generation algorithm:
-- Leaflet HTML output title
-- Leaflet HTML output attribution
-- Include OpenStreetMap basemap in Leaflet HTML output
+- Leafleti HTML-väljundi pealkiri
+- Leafleti HTML-väljundi viide
+- Lisa Leafleti HTML-väljundisse OpenStreetMapi aluskaart
 
 ![image22](images/entries/a96f4972c9664c8887220b0a218103c053050e71.webp)
 

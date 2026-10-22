@@ -36,7 +36,7 @@ Annotations for the map canvas\' grid decoration are now fully customizable incl
 This feature was funded by iMHere Asia
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
-## Temporal
+## Ajaline
 ### Feature: Cumulative temporal range setting in temporal controller
 Adds a setting in the temporal controller to set the animation temporal range to cumulative. This means that all animation frames will have the same start date-time but different end dates and times.
 
@@ -273,7 +273,7 @@ With new \"centroid\" placement:
 ![image29](images/entries/76173706-6d78d400-61ed-11ea-89c1-ce4e2477dfef.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-## Mesh
+## Võrgustik
 ### Feature: Use only specified dataset group
 This feature allows the user to choose the dataset groups that are used. This can be done in the mesh layer properties dialog in the source tab.
 
@@ -476,7 +476,7 @@ This allows users to manually override the legend\'s default setting for \"split
 - Follows the default legend setting for splitting
 - Can ALWAYS be split over multiple columns (regardless of the legend\'s setting)
 
-or
+või
 - Can NEVER be split over multiple columns (regardless of the legend\'s setting)
 
 Sponsored by SLYR
@@ -836,7 +836,7 @@ This feature was developed by [Ivan Ivanov](https://github.com/suricactus)
 ## Analysis Tools
 ### Feature: Network logger - more functionality
 Adds some more useful tools to the network logger:
-- Copy URL
+- Kopeeri URL
 - Copy request as JSON
 - Save log to file (after a big warning to users that the log may contain sensitive information and should be treated as confidential)
 
@@ -861,13 +861,13 @@ This feature was developed by [Nyall Dawson (for Kartoza)](https://api.github.co
 ## Töötlen
 ### Feature: Collection of random raster generation algorithms
 With this feature we added a large collection of random number raster generation algorithms. The algorithms are capable of outputting random rasters following specific random number distributions. The following distributions are available:
-1. Create random raster layer (binomial distribution)
-2. Create random raster layer (exponential distribution)
-3. Create random raster layer (gamma distribution)
-4. Create random raster layer (negative binomial distribution)
-5. Create random raster layer (normal distribution)
-6. Create random raster layer (poisson distribution)
-7. Create random raster layer (uniform distribution)
+1. Loo juhuslik rasterkiht (binoomjaotus)
+2. Loo juhuslik rasterkiht (eksponentjaotus)
+3. Loo juhuslik rasterkiht (gammajaotus)
+4. Loo juhuslik rasterkiht (negatiivne binoomjaotus)
+5. Loo juhuslik rasterkiht (normaaljaotus)
+6. Loo juhuslik rasterkiht (Poissoni jaotus)
+7. Loo juhuslik rasterkiht (ühtlane jaotus)
 
 ![image86](images/entries/6304472935d29f8292cf24c7cb0198e95a4de137.webp)
 
@@ -1097,7 +1097,7 @@ Running:
 
     qgis_process run native:centroids --INPUT="my_shapefile.shp" --OUTPUT="centroids.kml"
     
-or
+või
 
     qgis_process run native:buffer --INPUT=/home/me/my.shp --DISTANCE=20 --OUTPUT=/home/me/buffered.shp
     

@@ -108,7 +108,7 @@ Map rotation can now be stored and applied in Spatial bookmarks, which includes 
 ![image10](images/entries/ea7e07b0c6a753ab205dd31d20454a4006c17bba.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
-## Annotations
+## Märkused
 ### Feature: Annotation tool improvements
 A number of improvements have been made to the behavior of annotation tools including:
 - Preventing the resizing of an annotation when the cursor is not actually over the frame
@@ -534,7 +534,7 @@ When activated, this option ensures that the horizontal and vertical scales are 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-## Sensors
+## Andurid
 ### Feature: Core sensors framework
 A core sensors framework provides a sensor types registry, a sensor manager, and three simple QIODevice-based sensor types as follows:
 - TCP socket

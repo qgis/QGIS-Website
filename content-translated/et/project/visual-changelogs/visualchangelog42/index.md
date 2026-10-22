@@ -332,7 +332,7 @@ Topocentric CRS support has been added to QGIS, with a new widget provided for s
 <img src="images/entries/405bc086bd84189e5113544155ac4ef7d85ed836.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Dominik Cindric](https://github.com/ViperMiniQ)
-## Sensors
+## Andurid
 ### Feature: Add support for SensorThings 2.0, including Sensing, Sampling and Relations extensions
 QGIS now includes support for layers utilising SensorThings 2.0 specifications, including the new Sensing, Sampling and Relations extensions.<br />This also exposes these choices for SensorThings 2.0-enabled services. The service version and extensions are determined dynamically when connecting to a service via the browser or data source manager.
 

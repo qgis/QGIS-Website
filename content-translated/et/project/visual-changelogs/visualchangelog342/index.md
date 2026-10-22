@@ -98,7 +98,7 @@ Supports line-height in either points or percent, e.g. "line-height: 40pt" or "l
 This feature was funded by City of Freiburg im Breisgau
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-## Mesh
+## Võrgustik
 ### Feature: Mesh Render Extent Settings
 The renderer setting for Mesh now includes an option for setting the Min/Max limits of the Color Ramp renderer based on the current canvas extent. This can be locked to a specific canvas instance or changed based on the active canvas using the same rendering behaviors as Raster Layers.
 

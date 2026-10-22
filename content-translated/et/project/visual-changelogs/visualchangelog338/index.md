@@ -29,7 +29,7 @@ QGIS is a community effort, and we would like to extend a big thank you to the d
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very thank you to all of our sponsors!
 
 QGIS is free software and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of their financial or social status - we believe that empowering people with spatial decision-making tools will result in a better society for all of humanity.
-## Temporal
+## Ajaline
 ### Feature: New temporal mode: pixel value as temporal datetime
 A new temporal mode for raster layers is provided that interprets each pixel as a datetime value.
 
@@ -428,7 +428,7 @@ This can be specified through the Elevation tab (renamed from "Terrain") in the 
 ![](images/entries/c9f0765306562047cdba7a675587d484d5a7ce51.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-## Sensors
+## Andurid
 ### Feature: Support feature expansion
 This change allows SensorThings entities to be expanded to contain their related child feature attributes, exposing the relational SensorThings model as a traditional "flat" GIS-friendly table structure.
 

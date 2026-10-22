@@ -34,7 +34,7 @@ QGIS is free software and you are under no obligation to pay anything to use it 
 **Due to a lack of ongoing maintenance, we've made the difficult decision to remove the Orfeo ToolBox (OTB) Processing provider from QGIS. Any users, plugins or scripts which require this functionality will need to be modified accordingly.**
 
 Motivated members from the QGIS community are encouraged to create a 3rd party community maintained plugin to restore OTB support.
-## Temporal
+## Ajaline
 ### Feature: "Movie Mode" for the temporal controller
 We've added a brand new "Movie" mode to the temporal controller. This mode has been designed to facilitate creating animated movies from maps. Unlike the other temporal controller modes, while movie mode is activated no time-based filtering of data is performed.
 
@@ -71,7 +71,7 @@ We've added a brand new line symbol type for "filled lines". Much like the older
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
-## Mesh
+## Võrgustik
 ### Feature: Mesh labeling
 In 3.36 we've added labeling support for mesh layers. Labels can be applied to mesh vertices, or mesh faces, and can take advantage of all the advanced formatting options and appearance settings that you get for vector labels. Labelling settings are available through layer properties dialog and the layer styling panel. Toggling mesh labels on and off can also be conveniently done through the layer panel's context menu.
 

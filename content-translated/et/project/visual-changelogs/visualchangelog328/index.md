@@ -34,7 +34,7 @@ QGIS is free software and you are under no obligation to pay anything to use it 
 ## Breaking Changes
 ### Feature: Drop project backward compatibility for symbology with QGIS 3.16 and older
 Previous releases of QGIS would write significant amounts of compatibility objects into the XML structure of project files to maintain backward compatibility for symbologies in order to allow project files to be opened with QGIS 3.16 and older. This compatibility has been removed from future releases, providing significant optimizations to the project file structure.
-## Temporal
+## Ajaline
 ### Feature: Add temporal manager support for WMTS layers with TIME dimension
 This enhancement exposes any WMTS \"time\" dimensions for use in the temporal framework, including allowing these layers to be animated and controlled via the temporal controller.
 
@@ -129,7 +129,7 @@ Previously, the line height was always set in multiples of the text line spacing
 ![image10](images/entries/b413c593933bc197886a97919ae015880e119aa7.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-## Mesh
+## Võrgustik
 ### Feature: Add option to reload mesh layer temporal properties
 An \"Always take reference time from data source\" option has been added for mesh layers that when checked, will ensure that the reference time is reloaded from the data source, and each time the layer is reloaded or the project reopened the time properties will be updated from the file automatically.
 

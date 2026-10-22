@@ -367,8 +367,8 @@ In 3.2 the following algorithms now support dynamic parameters:
 - Lihtsusta
 - Silu
 - Snap to Grid
-- Subdivide
-- Transect
+- Alamjaota
+- Transekt
 - Tõlgi
 
 This feature was funded by [North Road](https://north-road.com)
@@ -417,7 +417,7 @@ This feature was funded by [North Road](https://north-road.com)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Swap x/y coordinate values algorithm
-This algorithm swaps the X and Y coordinate values in input geometries. It can be used to repair geometries which have accidentally had their latitude and longitude values reversed.
+See algoritm vahetab sisendruumikujude X- ja Y-koordinaatide väärtused. Sellega saab parandada ruumikujusid, mille laius ja pikkus on kogemata vahetusse läinud.
 
 This feature was funded by [North Road](https://north-road.com)
 

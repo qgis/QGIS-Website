@@ -339,7 +339,7 @@ This includes digitizing support for items such as:
 - StraightSegments
 - CircularStrings
 - Streaming
-- Shapes
+- Kujundid
 
 This results in the ability to use the add part, add ring, or any other digitizing operations with the shape tools for hybrid digitizing operations, for example using the circular string or rectangle shape tools to create rings in existing area features.
 

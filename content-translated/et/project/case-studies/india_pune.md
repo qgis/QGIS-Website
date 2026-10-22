@@ -46,7 +46,7 @@ The script works in two simple for loops first which defines the extent of map i
 </figure>
 
 The method has limitation that, changes in map at server end will not reflect in offline (downloaded map). In this case user will have to repeat the process and generate new offline map. Second limitation is the offline map created will be image format; it cannot be used for thematic mapping or image classification. With some extra efforts some landuse maps can be converted to vector with some data loss.
-## Scope
+## Ulatus (scope)
 The generated mosaic is pure image even if it is downloaded from thematic map (7-8 color). Using advance tool like reclassification, layer/band stacking this raster can be converted to polygon vector. WMS has several requests such as getcapabilities, getmap, getfeatureinfo etc. Using the getgeatureinfo attribute information for each polygon can be retrieved. The script can be converted to plugin so that anyone without scripting knowledge will be able to use the script.
 ## Järeldus
 The above experiences shows that QGIS can be used at any advanced level. With basic programming skills one can write a small script or a plug-in to improve the quality of work and save time. Within QGIS, access to a repository of plug-ins developed worldwide is the best of QGIS. The PyQGIS Developer Cookbook is a great resource to write a script and raster data processing is much easy now with help of GDAL tools.

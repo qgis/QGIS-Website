@@ -43,7 +43,7 @@ If you wish to donate time, money, or otherwise contribute towards making QGIS m
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions, large or small, to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very big thank you to all of our sponsors!
 
 QGIS is free software, and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of their financial or social status - we believe that empowering people with spatial decision-making tools will result in a better society for all of humanity.
-## Temporal
+## Ajaline
 ### Feature: Add new accumulate pixels setting to the represent temporal values mode
 A new accumulate pixels option has been added that is available when a raster layer temporal mode is set to represent temporal values. This mimics the vector layer counterpart, where features can accumulate over time when a feature's temporal state is represented by a single date/time field.<br />This is especially useful in animated temporal navigation when intertwining vector and raster layers.
 
@@ -112,7 +112,7 @@ New grouped categories shortcuts have been added to the layer tree menu's copy/p
 <img src="images/entries/86c35bb07f30070746cfeed9bd533c786bba0df4.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-## Annotations
+## Märkused
 ### Feature: Brand new annotations selection tool
 As a part of the implementation for [QEP \#344](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/344), which aims to introduce functionality to copy, move, and rotate annotation layers, the new selection tool provides interactive operations for annotation items, including:
 - selection of annotation item(s), with shift modifier to toggle selection of additional item(s)
@@ -413,7 +413,7 @@ This feature was developed by [North Road](https://north-road.com/)
 These functions are designed to make it easy to customise the display of a degree-based grid annotation, by allowing easy extraction of the individual components of the decimal degree value for individual formatting (e.g., displaying the degrees in bold)
 - extract_degrees: Extracts the integer number of degrees from a decimal degrees value. The minutes and seconds components are ignored. The extracted degrees values will be truncated towards zero (not rounded).
 - extract_minutes: Extracts the integer number of minutes from a decimal degrees value. The degrees and seconds components are ignored. The extracted minutes values will be truncated towards zero (not rounded), and will always be a positive value.
-- Extracts the decimal number of seconds from a decimal degrees value. The degrees and minutes components are ignored. The extracted seconds value will always be a positive value.
+- Eraldab kümnendkraadide väärtusest sekundite kümnendarvu. Kraade ja minuteid eiratakse. Eraldatud sekundid on alati positiivsed.
 
 <img src="images/entries/afca4fe52738eae1b242ae2720e0bbbb97f119fe.png" class="img-responsive img-rounded" />
 
@@ -569,7 +569,7 @@ This feature was funded by [City of Canning](https://www.canning.wa.gov.au/)
 This feature was developed by [North Road](https://north-road.com/)
 ### Feature: Add network analysis validation algorithms
 Two new algorithms useful for validating networks have been added:
-- Validate network
+- Valideeri võrk
 - Extract network endpoints
 
 **Validate network**<br />This algorithm analyzes a network vector layer to identify data and topology errors that may affect network analysis tools (like shortest path). Optional checks include:
@@ -1098,7 +1098,7 @@ This feature was developed by [Till Frankenbach (OPENGIS)](https://opengis.ch/)
 | Update pdal_wrench to 1.2.2 from upstream |  | [PR \#63544](https://github.com/qgis/QGIS/pull/63544) |  |
 | Update MDAL to 1.3.2 from upstream |  | [PR \#63546](https://github.com/qgis/QGIS/pull/63546) |  |
 | \[3D\] Avoid clamping vertices to actual nodata value | Unreported | [PR \#64845](https://github.com/qgis/QGIS/pull/64845) |  |
-| Data corruption using "Split Features" on a LineStringZ in GeoJSON | [\#63581](https://github.com/qgis/QGIS/issues/63581) | [PR \#64986](https://github.com/qgis/QGIS/pull/64986) | Pending |
+| Data corruption using "Split Features" on a LineStringZ in GeoJSON | [\#63581](https://github.com/qgis/QGIS/issues/63581) | [PR \#64986](https://github.com/qgis/QGIS/pull/64986) | Ootel |
 | Changing styling of a VPC layer resets the previous styling | [\#59419](https://github.com/qgis/QGIS/issues/59419) | [PR \#64988](https://github.com/qgis/QGIS/pull/64988) | [PR \#65020](https://github.com/qgis/QGIS/pull/65020) |
 | Fix sip_include.sh after pyqt5 removal | Unreported | [PR \#64974](https://github.com/qgis/QGIS/pull/64974) | ei kohaldu |
 | Make the extent widget hold the full precision of the chosen extent | Unreported | [PR \#64919](https://github.com/qgis/QGIS/pull/64919) |  |

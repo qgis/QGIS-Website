@@ -153,7 +153,7 @@ Useful for photographs or compressed rasters where a range of color values must 
 This feature was funded by [Middle Third Geological](https://www.linkedin.com/in/deryk-forster-44a415104/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=au)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
-## Annotations
+## Märkused
 ### Feature: Auto upgrade SVG and text annotations to annotation layer items on project load
 We improved the workflow for those projects with older annotation items. In previous QGIS versions, older annotation items (text, html, svg and form) had not been ported over to the new framework therefore impacting workflows. In 3.40, we have targeted the higher priority items, text and svg, so now the framework has been updated and the missing functionality has been added. Now, when loading old projects, any of the old SVG and text annotations will automatically be converted (silently) to the newer picture and rectangular text annotation item types.
 - Various bugs were fixed along the way and these additional functions were added:
@@ -261,7 +261,7 @@ The implementation introduces multiple new settings for stacked diagram and sub-
 This feature was funded by [Landesamt für Vermessung und Geoinformation (LVG) Vorarlberg in collaboration with the QGIS user group Switzerland.](https://vorarlberg.at/-/landesamt-fuer-vermessung-und-geoinformation-l-1)
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
-## Mesh
+## Võrgustik
 ### Feature: Add GUI for adding Quantized Mesh layers
 New GUI elements are provided for loading Quantized Mesh data sources and layers in the QGIS Browser panel as well as the data source manager.
 
@@ -474,15 +474,15 @@ New 'Favorites' functionality has been added for Processing alogrithms, allowing
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Add creation options support to some native raster Processing algorithms
 More raster creation options have been added to native Processing algorithms for more control of the output format (compression level, world file generation etc.). Affected algorithms include:
-- Cell statistics
+- Lahtrite statistika
 - Constant raster
 - Export mesh
 - Täida nodata
 - Fuzzify raster
-- Line density
-- Random raster
-- DTM filter (slope-based)
-- Equal to frequency
+- Joonte tihedus
+- Juhuslik raster
+- Maapinnamudeli filter (kaldepõhine)
+- Võrdsuse sagedus
 - Raster boolean AND/OR
 - Raster stack position
 - Reclassify

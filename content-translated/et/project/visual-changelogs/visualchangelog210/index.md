@@ -150,7 +150,7 @@ To make use of this feature you need to enable it in `Settings -> Options -> dat
 
 `QgsFeatureRequest().setFilterExpression( expression )`
 
-or
+või
 
 `QgsVectorLayer::getFeatures( expression )`
 

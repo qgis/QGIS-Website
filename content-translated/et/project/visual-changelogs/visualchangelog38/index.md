@@ -536,7 +536,7 @@ The example above will require:
 - Version 1.9 of IPyConsole
 
 When a plugin is installed, the metadata is parsed and a user will be prompted with a dialog listing the dependencies. The user can then decide what to do with the dependencies:
-- Install
+- Paigalda
 - Upgrade/downgrade
 - Do nothing
 
@@ -569,7 +569,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 | Relation reference widget wrong feature when \"on map identification\" | [#22071](https://issues.qgis.org/issues/22071) |  |  |
 | Map composer: \"href\" HTML attribute issue in PDF output | [#22075](https://issues.qgis.org/issues/22075) | won\'t fix |  |
 | Issue exporting raster layer to Geopackage | [#20848](https://issues.qgis.org/issues/20848) | [PR #10036](https://github.com/qgis/QGIS/pull/10036) | Valmis |
-| Create vector New shapefile POLYGON | [#22107](https://issues.qgis.org/issues/22107) | invalid |  |
+| Create vector New shapefile POLYGON | [#22107](https://issues.qgis.org/issues/22107) | vigane |  |
 | \"Export to PostgreSQL\" python error if rather schema has an uppercase letter in its name | [#22035](https://issues.qgis.org/issues/22035) | [PR #10063](https://github.com/qgis/QGIS/pull/10063) |  |
 | Relation reference widget wrong feature when \"on map identification\" | [#22071](https://issues.qgis.org/issues/22071) | [PR #10047](https://github.com/qgis/QGIS/pull/10047) | Valmis |
 | DB Manger imports the wrong data | [#22033](https://issues.qgis.org/issues/22033) | [PR #10077](https://github.com/qgis/QGIS/pull/10077) | Valmis |
@@ -607,7 +607,7 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 | SAGA \"saga split rgb bands\" tool is not inside any (SAGA) group of tools | [#21849](https://issues.qgis.org/issues/21849) | [PR #10062](https://github.com/qgis/QGIS/pull/10062) | Valmis |
 | r.sun cannot be executed because it calls on two incompatible options | [#21637](https://issues.qgis.org/issues/21637) | [PR #10074](https://github.com/qgis/QGIS/pull/10074) | Valmis |
 | i.segment (GRASS 7.4.2) only produces a Goodness Raster but no Segmented Raster | [#20646](https://issues.qgis.org/issues/20646) | works fine in master and 3.4 |  |
-| Majority filter (SAGA) returns erroneous results if input is .tif | [#22118](https://issues.qgis.org/issues/22118) | invalid |  |
+| Majority filter (SAGA) returns erroneous results if input is .tif | [#22118](https://issues.qgis.org/issues/22118) | vigane |  |
 | Processing batch process interface: no way to go back | [#16893](https://issues.qgis.org/issues/16893) | [PR #10080](https://github.com/qgis/QGIS/pull/10080) | Valmis |
 | DB Manager rename PostGIS column error | [#21425](https://issues.qgis.org/issues/21425) | [PR #10082](https://github.com/qgis/QGIS/pull/10082) | not needed |
 | Word wrapping not working in maptips | [#21388](https://issues.qgis.org/issues/21388) | [PR #10081](https://github.com/qgis/QGIS/pull/10081) | Valmis |
@@ -665,7 +665,7 @@ This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 | --- | --- | --- | --- |
 | Editing a GeoPackage feature with spaces in the field names can crash QGIS | [#29630](https://github.com/qgis/QGIS/issues/29630) | [PR #29997](https://github.com/qgis/QGIS/pull/29997) | TODO |
 | Crash on update pg layer | [#29814](https://github.com/qgis/QGIS/issues/29814) | duplicate | ei kohaldu |
-| XMDF file type missing from Madiera 3.4.5 | [#29381](https://github.com/qgis/QGIS/issues/29381) | invalid | ei kohaldu |
+| XMDF file type missing from Madiera 3.4.5 | [#29381](https://github.com/qgis/QGIS/issues/29381) | vigane | ei kohaldu |
 | Mesh calculator: crash when \'All Selected Dataset Times\' button clicked | [#30003](https://github.com/qgis/QGIS/issues/30003) | [PR #30005](https://github.com/qgis/QGIS/pull/30005) | ei kohaldu |
 | Crash when editing fields | [#29200](https://github.com/qgis/QGIS/issues/29200) | unable to replicate | ei kohaldu |
 | Tööriista "Vertex Edititor" sulgemine põhjustab rakenduse kokkujooksmise. | [#30028](https://github.com/qgis/QGIS/issues/30028) | [PR #30030](https://github.com/qgis/QGIS/pull/30030) | TODO |

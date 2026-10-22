@@ -728,7 +728,7 @@ QGISサーバー用のプロジェクトの設定を支援するために、プ�
 
 ![image74](images/entries/c548fc562785f400d3000e7ae1f61705c333026c.png.400x300_q85_crop.webp)
 
-This feature was funded by [Ifremer](http://wwz.ifremer.fr/institut_eng/)
+この機能は [Ifremer](http://wwz.ifremer.fr/institut_eng/) によって資金提供されました
 
 この機能は [3Liz](http://3liz.com) によって開発されました
 ### 機能: WMS INSPIRE ケーパビリティ
@@ -743,7 +743,7 @@ WMS 1.3.0の機能は、INSPIRE構成を反映しています。
 
 この機能は [3Liz](http://3liz.com) によって開発されました
 ### 機能: レイヤ、グループ、プロジェクトへの略称の追加
-多くの要素に** Name **と** Title **の両方があります。Nameは、マシンツーマシン通信に使用されるテキスト文字列であり、Titleは人間の利益のためのものです。たとえば、データセットにTitle * Maximum Atmospheric Temperature *という記述があり、省略名* ATMAX *を使用して要求することができます。
+多くの要素に **Name** と **Title** の両方があります。Nameは、マシンツーマシン通信に使用されるテキスト文字列であり、Titleは人間の利益のためのものです。たとえば、データセットにTitle *Maximum Atmospheric Temperature* という記述があり、省略名 *ATMAX* を使用して要求することができます。
 
 ユーザーはすでにレイヤーとプロジェクトのタイトルを設定できます。OpenGeospatial Web Services、OWS（WMS、WFS、WCS）の名前は、レイヤーツリーで使用される名前に基づいています。この名前は、機械対機械通信の名前よりも人間のためのラベルです。
 
@@ -751,7 +751,7 @@ WMS 1.3.0の機能は、INSPIRE構成を反映しています。
 - 短い名前の行でレイヤのプロパティを編集する
 - レイヤーツリーグループへのWMSデータダイアログ（短い名前、タイトル、要約）
 - プロジェクトのプロパティへの短い名前行の編集
-- add a regexp validator \"\^\[A-Za-z\]\[A-Za-z0-9.\_-\]\*\" to short name line edit accessible through a static method
+- 静的メソッドを使ってアクセス可能な短い名前の行編集に正規表現バリデータ \"\^\[A-Za-z\]\[A-Za-z0-9.\_-\]\*\" を追加する
 - fullProjectSettingsにTreeName要素を追加する
 
 レイヤー、グループ、およびプロジェクトに短い名前が設定されている場合は、レイヤー名としてQGISサーバーで使用されます。
@@ -775,7 +775,7 @@ and
 
 この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: シンボルレイヤのコピーの簡略化
-A new \"duplicate\" button has been added to the symbol properties dialog, which allows symbol layers to be easily duplicated.
+シンボルのプロパティダイアログに新しい「複製」ボタンが追加され、シンボルレイヤを簡単に複製することができます。
 
 ![image78](images/entries/a6e2ad682852a2fb8b635395ec75f83ef584621d.png.400x300_q85_crop.webp)
 
@@ -785,7 +785,7 @@ A new \"duplicate\" button has been added to the symbol properties dialog, which
 
 それはスタイリングのいくつかを構成することを可能にし、使いやすいセットアップを作成するためのものです。
 
-Since every part of the system is built around QGIS\' internal rendering and symbology engine, there is much to fine tune. To get all the possibilities, just change the renderer to a graduated, categorized or single symbol renderer upon creation and you will find full access to improve the style to your needs.
+システムのすべての部分はQGISの内部レンダリングとシンボルエンジンの周りに構築されているので、細かい調整が必要です。すべての可能性を得るには、作成時にレンダラーを段階的、分類済み、または単一のシンボルレンダラーに変更するだけで、必要に応じてスタイルを改善するための完全なアクセス権が得られます。
 
 **この機能は次の方によって開発されました**:
 - Matthias Kuhn at [OPENGIS.ch](https://opengis.ch)
@@ -800,13 +800,13 @@ Since every part of the system is built around QGIS\' internal rendering and sym
 ### 機能: 地物の描画順序が定義可能に
 地物を特定の順序でレンダリングする必要がある場合、これは任意の式を使用して指定できます。
 
-This can be configured in the layer\'s symbology configuration dialog and can be a simple field or a complex expression.
+これはレイヤのシンボル設定ダイアログで設定することができ、単純なフィールドまたは複雑な式にすることができます。
 
 昇順または降順の制御、NULLが最初か最後かを制御します。
 
 可能であれば、要求はデータベースに送信されます（これは式の複雑さとレイヤーのプロバイダーによって異なります）。要求をデータベースに送信できない場合、注文はローカル・マシン上で実行されます。
 
-This is used by the 2.5D renderer to render features based on their distance from the \"camera\".
+これは、2.5Dレンダラが「カメラ」からの距離に基づいて地物をレンダリングするために使用されます。
 
 これはプラグインでも利用できます：
 
@@ -851,13 +851,13 @@ This is used by the 2.5D renderer to render features based on their distance fro
 
 この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: レイヤツリーから直接凡例シンボルの編集が可能に
-This adds a new \"edit symbol\" item to the right-click menu for a renderer child legend item (eg categories for the categorised renderer). Selecting it opens a symbol editor dialog which allows for directly editing the class\'s symbol. It\'s much faster than opening the layer properties and going through the style tab. You can also double-click on a child item to open the symbol editor immediately.
+これにより、右クリックメニューにレンダラーの子凡例項目（カテゴリ別レンダラーのカテゴリなど）の新しい「編集記号」項目が追加されます。それを選択すると、クラスのシンボルを直接編集できるシンボルエディタダイアログが開きます。レイヤプロパティを開いてスタイルタブを開くよりもはるかに高速です。子アイテムをダブルクリックしてシンボルエディタをすぐに開くこともできます。
 
 ![image84](images/entries/e7b2447e329507f0b27e855111ffa038b1ccc353.png.400x300_q85_crop.webp)
 
 この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能：コンテキストメニューからすべての凡例を表示/非表示
-Allows toggling on/off all the symbol items for categorized/graduated/rule-based layers via the right click menu on an item. Previously you\'d have to toggle each item manually one-by-one.
+項目の右クリックメニューから分類/段階/ルールベースのレイヤーのすべてのシンボルアイテムのオン/オフを切り替えることができます。以前は、各アイテムを手動で1つずつ切り替える必要がありました。
 
 ![image85](images/entries/c526cf9c28c92dde193490a2707c1fe2e0a58ea6.png.400x300_q85_crop.webp)
 

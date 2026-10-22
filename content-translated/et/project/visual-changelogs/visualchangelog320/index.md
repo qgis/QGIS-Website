@@ -56,7 +56,7 @@ This greatly eases sharing of various authentication configurations across multi
 This feature was funded by Ville d\'Yverdon-les-Bains
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
-## Temporal
+## Ajaline
 ### Feature: Temporal navigation steps
 A temporal navigation step option for \"source timestamps\" has been added to the temporal controller. When selected, this causes the temporal navigation to step between all available time ranges from layers in the project. It\'s useful when a project contains layers with non-contiguous available times, such as a WMS-T service which provides images that are available at irregular dates. This option will allow users to only step between time ranges where the next available image is shown.
 

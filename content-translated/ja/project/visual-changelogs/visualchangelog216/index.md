@@ -14,21 +14,21 @@ type: visual-changelog
 
 リリース日: 2016-07-08
 
-This is the log for the next release of QGIS - version 2.16.0 \'Nødebo\'. The Department of Geoscience and Natural Resource Management Forest and Landscape College in Nødebo were hosts to the First International QGIS conference and developer meeting in May 2015.
+これは、QGISの次のリリース、バージョン2.16.0 \'Nødebo\' のログです。Nødebo大学の地学と自然資源管理森林景観学科は、2015年5月の第1回国際QGIS会議と開発者会議の主催者でした。
 
 **これは長期サポートのリリースではありません**
 
 このリリースは、長期リリース（LTR）として指定されていません。少なくとも1年間は変更されずにバグ修正を受けるQGISのバージョンを希望するユーザーは、現在のLTRリリース2.14（QGIS 2.16のリリースでは公式のLTRになりました）を使用するように招待されます。
 
-**New Features in QGIS 2.16 \'Nødebo\'**
+**QGIS 2.16 \'Nødbo\' の新機能**
 
 If you are upgrading from QGIS 2.14 you will find a great many new features in this release. We encourage you to peruse the changelogs for [previous releases](https://www.qgis.org/en/site/forusers/visualchangelogs.html) as this QGIS 2.16 release includes all features published in those releases too.
 
 新しい機能がソフトウェアに追加されるたびに、新しいバグが発生する可能性があります。このリリースで何か問題が発生した場合は、 [QGISバグトラッカー](http://hub.qgis.org) にチケットを提出してください。
 
-[![Introducing Nødebo](images/pronouncingnodebo.png)](http://www.youtube.com/watch?v=GKg2SHmBExs)
+[![Nødeboの紹介](images/pronouncingnodebo.png)](http://www.youtube.com/watch?v=GKg2SHmBExs)
 
-Pronouncing Nødebo\...
+Nødboを発音する\...
 
 **謝辞**
 
@@ -36,7 +36,7 @@ We would like to thank the developers, documenters, testers and all the many fol
 
 QGISは、寄付者やスポンサーによって支えられています。プロジェクトに大小問わず財政的な貢献をしてくださった寄付者の最新リストは、 [寄付者一覧](https://qgis.org/ja/site/about/sponsorship.html#list-of-donors) でご覧いただけます。公式のプロジェクトスポンサーになることをご希望の方は、詳細について [スポンサーシップページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISへのご支援は、半年ごとの開発者ミーティングの開催、プロジェクトインフラの維持、バグ修正活動の資金として活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
-QGIS is Free software and you are under no obligation to pay anything to use it -in fact we want to encourage people far and wide to use it regardless of what your financial or social status is - we believe empowering people with spatial decision making tools will result in a better society for all of humanity. If you are able to support QGIS, you can [![donate here](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://qgis.org/en/site/getinvolved/donations.html).
+QGISはフリーソフトウェアであり、使用するために何かを支払う義務はありません。実際、財務的または社会的地位にかかわらず、遠くから広く人々にそれを使用するよう奨励したいと考えています。すべての人類にとってより良い社会をもたらします。あなたがQGISをサポートできるなら、あなたは [![ここに寄付することができます](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://qgis.org/en/site/getinvolved/donations.html) 。
 
 {{<table-of-contents >}}
 ## QGISバージョン2.16.0のスポンサー

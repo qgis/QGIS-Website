@@ -34,7 +34,7 @@ Type the words \"user groups\" into the current coordinates window and watch the
 ![image2](images/entries/079434bceb5004b0ee2c4ad5d62edd1290c28575.webp)
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
-## Temporal
+## Ajaline
 ### Ability to export temporal animation frames
 Allows exporting of temporal animation frames to successive images, for later stitching together in an external application. Users have precise control over the image size and map extent.
 
@@ -154,7 +154,7 @@ Addresses [Issue 34915](https://github.com/qgis/QGIS/issues/34915)
 ![image12](images/entries/09739c5bed021a99baec41c98b87f5335a4bf8ec.webp)
 
 This feature was developed by [Dan Minor](https://api.github.com/users/dminor)
-## Mesh
+## Võrgustik
 ### In-memory mesh datasets with persistence
 This feature introduces the ability to create in-memory dataset groups for mesh layers. These dataset groups are temporary and are not kept once the project is closed.
 
@@ -345,7 +345,7 @@ For non-vector layers, the clipping is applied through a QPainter clipping path.
 1. As an \"intersects\" style test only: All vector features which intersect the path are rendered, without actually clipping the feature\'s geometry
 2. By modifying the feature\'s geometry and clipping the geometry to the region: Any stroke or outline settings for the symbol will be rendered along the boundary of the clipping region, even if the feature actually partially falls outside this region.
 
-or
+või
 1. Using a painter clip path: Features are clipped to the region, but only at painter time. Boundaries of the feature which fall outside the clip region will not be visible.
 
 This feature was funded by City of Canning
@@ -575,7 +575,7 @@ We added a **Cell statistics** raster analysis algorithm. It performs cell-wise 
 - Keskmine
 - Mediaan
 - Standarddeviatsioon
-- Variance
+- Dispersioon
 - Maksimum
 - Miinimum
 - Majority (most frequent value)

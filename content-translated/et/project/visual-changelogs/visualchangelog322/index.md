@@ -31,7 +31,7 @@ QGIS is supported by donors and sustaining members. A current list of donors who
 QGIS is free software and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of what your financial or social status is - we believe empowering people with spatial decision-making tools will result in a better society for all of humanity.
 
 {{<table-of-contents >}}
-## Annotations
+## Märkused
 ### Feature: Annotation layer properties and effects
 Additional properties for annotation layers now include the following:
 - An annotation layer properties window, containing some basic information about the layer and options to set scale ranges, opacity, blend mode and draw effects for the layer
@@ -117,9 +117,9 @@ Geometry generators now expose an option for users to select which units should 
 
 The update provides the following unit choices:
 - Map units (the default, previous behavior)
-- Millimeters
+- Millimeetrid
 - Pikslid
-- Inches
+- Tollid
 - Punktid
 
 When millimeters, pixels, inches or points are selected, then the \@map_geometry variable will be available for use within the expression, containing the feature geometry in the specified units (relative to the map frame), whilst the \$geometry variable remains available within the expression in the layer CRS map units.
@@ -152,7 +152,7 @@ Specify the angle unit for data defined label rotation
 ![Peek 2021-08-29 14-38](images/entries/131250678-52360214-31a9-4cf9-ad84-b10a4f78c431.gif)
 
 This feature was developed by [Damiano Lombardi](https://github.com/domi4484)
-## Mesh
+## Võrgustik
 ### Feature: Create new mesh layer
 QGIS now supports the creation of new mesh layers.
 
@@ -322,8 +322,8 @@ Layout map items gained support for the predefined scale mode when controlled by
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: Indentation of legend groups and subgroups
 Two new entries have been added to the \"Spacing\" section of the Legend properties:
-- Indent of group items
-- Indent of subgroup items
+- Rühma kirjete taane
+- Alamrühma kirjete taane
 
 Items belonging to groups or subgroups will be shifted right by the specified amount. When legend patches are added to the left of entries they will be indented as well.
 
@@ -511,9 +511,9 @@ A new point cloud parameter has been added to the QGIS Processing. Framework. th
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Remove the GPS importer plugin
 The last of the GPS tools functionality has been ported to three new processing algorithms, namely:
-- Convert GPS data
-- Upload GPS data to device
-- Download GPS data from device
+- Teisenda GPS-andmed
+- Laadi GPS-andmed seadmesse üles
+- Laadi GPS-andmed seadmest alla
 
 As a result, the GPS importer plugin has been made redundant and has been completely removed from QGIS.
 
