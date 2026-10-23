@@ -3,32 +3,32 @@
   "prefix": "",
   "distribution": "ubuntugis_nightly_ltr",
   "source_folder": "ubuntugis-nightly-ltr",
-  "generated_at": "2026-10-23T04:06:38.635685+00:00",
+  "generated_at": "2026-10-23T07:11:43.097134+00:00",
   "statistics": {
-    "total_files": 5121,
-    "total_size": 135758666219,
-    "total_size_formatted": "126.44 GB",
+    "total_files": 5154,
+    "total_size": 136771061249,
+    "total_size_formatted": "127.38 GB",
     "by_category": {
       "other": {
-        "count": 183,
-        "size": 23346791,
+        "count": 184,
+        "size": 23356105,
         "size_formatted": "22.27 MB"
       },
       "archive": {
-        "count": 145,
-        "size": 29971707000,
-        "size_formatted": "27.91 GB"
+        "count": 146,
+        "size": 30242160538,
+        "size_formatted": "28.17 GB"
       },
       "installer": {
-        "count": 4793,
-        "size": 105763612428,
-        "size_formatted": "98.50 GB"
+        "count": 4824,
+        "size": 106505544606,
+        "size_formatted": "99.19 GB"
       }
     },
     "by_extension": {
-      ".deb": 4793,
-      ".gz": 134,
-      ".dsc": 116,
+      ".deb": 4824,
+      ".gz": 135,
+      ".dsc": 117,
       "no extension": 45,
       ".bz2": 11,
       ".db": 7,
@@ -37,7 +37,7 @@
       ".sh": 1,
       ".d71472c4": 1
     },
-    "last_updated": "2026-10-23T04:06:38.634209+00:00"
+    "last_updated": "2026-10-23T07:11:43.095511+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -161,7 +161,7 @@
             "key": "ubuntugis-nightly-ltr/db/packages.db",
             "name": "packages.db",
             "path": "db",
-            "size": 9768960,
+            "size": 9773056,
             "size_formatted": "9.32 MB",
             "last_modified": "2026-04-23T14:16:14+00:00",
             "last_modified_timestamp": 1776953774,
@@ -720,8 +720,8 @@
                         "key": "ubuntugis-nightly-ltr/dists/noble/main/binary-amd64/Packages.bz2",
                         "name": "Packages.bz2",
                         "path": "dists/noble/main/binary-amd64",
-                        "size": 187846,
-                        "size_formatted": "183.44 KB",
+                        "size": 188536,
+                        "size_formatted": "184.12 KB",
                         "last_modified": "2026-04-23T14:16:16+00:00",
                         "last_modified_timestamp": 1776953776,
                         "extension": ".bz2",
@@ -731,8 +731,8 @@
                         "key": "ubuntugis-nightly-ltr/dists/noble/main/binary-amd64/Packages.gz",
                         "name": "Packages.gz",
                         "path": "dists/noble/main/binary-amd64",
-                        "size": 228940,
-                        "size_formatted": "223.57 KB",
+                        "size": 229026,
+                        "size_formatted": "223.66 KB",
                         "last_modified": "2026-04-23T14:16:16+00:00",
                         "last_modified_timestamp": 1776953776,
                         "extension": ".gz",
@@ -772,8 +772,8 @@
                         "key": "ubuntugis-nightly-ltr/dists/noble/main/source/Sources.gz",
                         "name": "Sources.gz",
                         "path": "dists/noble/main/source",
-                        "size": 2548,
-                        "size_formatted": "2.49 KB",
+                        "size": 2558,
+                        "size_formatted": "2.50 KB",
                         "last_modified": "2026-04-23T14:16:16+00:00",
                         "last_modified_timestamp": 1776953776,
                         "extension": ".gz",
@@ -3851,6 +3851,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-3d3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgis-3d3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 21628294,
+                        "size_formatted": "20.63 MB",
+                        "last_modified": "2026-10-23T06:08:57.951000+00:00",
+                        "last_modified_timestamp": 1792735737,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-3d3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-3d3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -6564,6 +6575,17 @@
                         "size_formatted": "66.78 MB",
                         "last_modified": "2026-10-23T03:09:17.534000+00:00",
                         "last_modified_timestamp": 1792724957,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-analysis3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgis-analysis3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 72436696,
+                        "size_formatted": "69.08 MB",
+                        "last_modified": "2026-10-23T06:09:16.964000+00:00",
+                        "last_modified_timestamp": 1792735756,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -9285,6 +9307,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-app3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgis-app3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 66574214,
+                        "size_formatted": "63.49 MB",
+                        "last_modified": "2026-10-23T06:09:14.715000+00:00",
+                        "last_modified_timestamp": 1792735754,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-app3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-app3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -12002,6 +12035,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-core3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgis-core3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 164230124,
+                        "size_formatted": "156.62 MB",
+                        "last_modified": "2026-10-23T06:09:50.701000+00:00",
+                        "last_modified_timestamp": 1792735790,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-core3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-core3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -13322,6 +13366,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-customwidgets_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgis-customwidgets_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5843878,
+                        "size_formatted": "5.57 MB",
+                        "last_modified": "2026-10-23T06:08:51.615000+00:00",
+                        "last_modified_timestamp": 1792735731,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-customwidgets_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-customwidgets_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -14638,6 +14693,17 @@
                         "size_formatted": "6.96 MB",
                         "last_modified": "2026-10-23T03:08:54.034000+00:00",
                         "last_modified_timestamp": 1792724934,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-dev_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgis-dev_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7286426,
+                        "size_formatted": "6.95 MB",
+                        "last_modified": "2026-10-23T06:08:52.277000+00:00",
+                        "last_modified_timestamp": 1792735732,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -17359,6 +17425,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-gui3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgis-gui3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 127702326,
+                        "size_formatted": "121.79 MB",
+                        "last_modified": "2026-10-23T06:09:37.280000+00:00",
+                        "last_modified_timestamp": 1792735777,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-gui3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-gui3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -20028,6 +20105,17 @@
                         "size_formatted": "4.08 MB",
                         "last_modified": "2026-10-23T03:08:52.953000+00:00",
                         "last_modified_timestamp": 1792724932,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-native3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgis-native3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4263148,
+                        "size_formatted": "4.07 MB",
+                        "last_modified": "2026-10-23T06:08:50.988000+00:00",
+                        "last_modified_timestamp": 1792735730,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -22793,6 +22881,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-server3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgis-server3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 10149060,
+                        "size_formatted": "9.68 MB",
+                        "last_modified": "2026-10-23T06:08:54.116000+00:00",
+                        "last_modified_timestamp": 1792735734,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgis-server3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-server3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -25521,6 +25620,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgisgrass8-3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgisgrass8-3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6507542,
+                        "size_formatted": "6.21 MB",
+                        "last_modified": "2026-10-23T06:08:52.490000+00:00",
+                        "last_modified_timestamp": 1792735732,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgisgrass8-3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgisgrass8-3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -28238,6 +28348,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgispython3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "libqgispython3.44.15_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4214338,
+                        "size_formatted": "4.02 MB",
+                        "last_modified": "2026-10-23T06:08:56.877000+00:00",
+                        "last_modified_timestamp": 1792735736,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/libqgispython3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgispython3.44.8_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -29510,6 +29631,17 @@
                         "size_formatted": "3.73 MB",
                         "last_modified": "2026-10-23T03:08:53.326000+00:00",
                         "last_modified_timestamp": 1792724933,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/python-qgis-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "name": "python-qgis-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3908646,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-10-23T06:08:50.937000+00:00",
+                        "last_modified_timestamp": 1792735730,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -30812,6 +30944,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/python-qgis_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "name": "python-qgis_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3908624,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-10-23T06:08:51.015000+00:00",
+                        "last_modified_timestamp": 1792735731,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/python-qgis_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_all.deb",
                         "name": "python-qgis_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_all.deb",
                         "path": "pool/main/q/qgis",
@@ -32062,6 +32205,17 @@
                         "size_formatted": "6.84 MB",
                         "last_modified": "2026-10-23T03:08:54.104000+00:00",
                         "last_modified_timestamp": 1792724934,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/python3-qgis-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "name": "python3-qgis-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7168278,
+                        "size_formatted": "6.84 MB",
+                        "last_modified": "2026-10-23T06:08:52.521000+00:00",
+                        "last_modified_timestamp": 1792735732,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -33342,6 +33496,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/python3-qgis_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "python3-qgis_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 63884246,
+                        "size_formatted": "60.92 MB",
+                        "last_modified": "2026-10-23T06:09:14.947000+00:00",
+                        "last_modified_timestamp": 1792735754,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/python3-qgis_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "python3-qgis_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -34618,6 +34783,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "name": "qgis-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 27621748,
+                        "size_formatted": "26.34 MB",
+                        "last_modified": "2026-10-23T06:09:02.270000+00:00",
+                        "last_modified_timestamp": 1792735742,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-common_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_all.deb",
                         "name": "qgis-common_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_all.deb",
                         "path": "pool/main/q/qgis",
@@ -35835,6 +36011,17 @@
                         "size_formatted": "3.74 MB",
                         "last_modified": "2026-10-23T03:09:01.126000+00:00",
                         "last_modified_timestamp": 1792724941,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-dbg_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-dbg_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3908768,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-10-23T06:08:52.856000+00:00",
+                        "last_modified_timestamp": 1792735732,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -37144,6 +37331,17 @@
                         "size_formatted": "4.15 MB",
                         "last_modified": "2026-10-23T03:09:01.811000+00:00",
                         "last_modified_timestamp": 1792724941,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-plugin-grass-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "name": "qgis-plugin-grass-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4347480,
+                        "size_formatted": "4.15 MB",
+                        "last_modified": "2026-10-23T06:08:53.395000+00:00",
+                        "last_modified_timestamp": 1792735733,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -38468,6 +38666,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-plugin-grass_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-plugin-grass_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7378628,
+                        "size_formatted": "7.04 MB",
+                        "last_modified": "2026-10-23T06:08:55.017000+00:00",
+                        "last_modified_timestamp": 1792735735,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-plugin-grass_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-plugin-grass_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -39788,6 +39997,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-provider-grass_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-provider-grass_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5199364,
+                        "size_formatted": "4.96 MB",
+                        "last_modified": "2026-10-23T06:08:55.155000+00:00",
+                        "last_modified_timestamp": 1792735735,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-provider-grass_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-provider-grass_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -41060,6 +41280,17 @@
                         "size_formatted": "5.35 MB",
                         "last_modified": "2026-10-23T03:09:02.584000+00:00",
                         "last_modified_timestamp": 1792724942,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-providers-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "name": "qgis-providers-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5619456,
+                        "size_formatted": "5.36 MB",
+                        "last_modified": "2026-10-23T06:08:55.358000+00:00",
+                        "last_modified_timestamp": 1792735735,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -42384,6 +42615,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-providers_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-providers_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 58447412,
+                        "size_formatted": "55.74 MB",
+                        "last_modified": "2026-10-23T06:09:15.301000+00:00",
+                        "last_modified_timestamp": 1792735755,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-providers_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-providers_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -43634,6 +43876,17 @@
                         "size_formatted": "4.60 MB",
                         "last_modified": "2026-10-23T03:09:02.334000+00:00",
                         "last_modified_timestamp": 1792724942,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-server-common_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4814138,
+                        "size_formatted": "4.59 MB",
+                        "last_modified": "2026-10-23T06:08:55.278000+00:00",
+                        "last_modified_timestamp": 1792735735,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -45013,6 +45266,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server-landingpage_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-server-landingpage_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5084052,
+                        "size_formatted": "4.85 MB",
+                        "last_modified": "2026-10-23T06:08:55.546000+00:00",
+                        "last_modified_timestamp": 1792735735,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server-landingpage_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-server-landingpage_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -46263,6 +46527,17 @@
                         "size_formatted": "4.65 MB",
                         "last_modified": "2026-10-23T03:09:03.055000+00:00",
                         "last_modified_timestamp": 1792724943,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server-wcs_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-server-wcs_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4851704,
+                        "size_formatted": "4.63 MB",
+                        "last_modified": "2026-10-23T06:08:55.672000+00:00",
+                        "last_modified_timestamp": 1792735735,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -47521,6 +47796,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server-wfs3_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-server-wfs3_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5339596,
+                        "size_formatted": "5.09 MB",
+                        "last_modified": "2026-10-23T06:08:56.636000+00:00",
+                        "last_modified_timestamp": 1792735736,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server-wfs3_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-server-wfs3_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -48771,6 +49057,17 @@
                         "size_formatted": "5.87 MB",
                         "last_modified": "2026-10-23T03:09:04.594000+00:00",
                         "last_modified_timestamp": 1792724944,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server-wfs_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-server-wfs_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6234288,
+                        "size_formatted": "5.95 MB",
+                        "last_modified": "2026-10-23T06:08:57.950000+00:00",
+                        "last_modified_timestamp": 1792735737,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -50029,6 +50326,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server-wms_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-server-wms_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 9025118,
+                        "size_formatted": "8.61 MB",
+                        "last_modified": "2026-10-23T06:08:58.998000+00:00",
+                        "last_modified_timestamp": 1792735738,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server-wms_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-server-wms_3.44.8+git20260309+41eafdbaa25+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -51279,6 +51587,17 @@
                         "size_formatted": "4.84 MB",
                         "last_modified": "2026-10-23T03:09:04.573000+00:00",
                         "last_modified_timestamp": 1792724944,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server-wmts_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-server-wmts_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5054846,
+                        "size_formatted": "4.82 MB",
+                        "last_modified": "2026-10-23T06:08:57.590000+00:00",
+                        "last_modified_timestamp": 1792735737,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -52599,6 +52918,17 @@
                         "size_formatted": "3.74 MB",
                         "last_modified": "2026-10-23T03:09:04.138000+00:00",
                         "last_modified_timestamp": 1792724944,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis-server_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis-server_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3908770,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-10-23T06:08:57.266000+00:00",
+                        "last_modified_timestamp": 1792735737,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -56075,6 +56405,39 @@
                         "size_formatted": "14.71 MB",
                         "last_modified": "2026-10-23T03:09:09.112000+00:00",
                         "last_modified_timestamp": 1792724949,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis.dsc",
+                        "name": "qgis_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis.dsc",
+                        "path": "pool/main/q/qgis",
+                        "size": 5218,
+                        "size_formatted": "5.10 KB",
+                        "last_modified": "2026-10-23T06:08:55.816000+00:00",
+                        "last_modified_timestamp": 1792735735,
+                        "extension": ".dsc",
+                        "category": "other"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis.tar.gz",
+                        "name": "qgis_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis.tar.gz",
+                        "path": "pool/main/q/qgis",
+                        "size": 270452752,
+                        "size_formatted": "257.92 MB",
+                        "last_modified": "2026-10-23T06:09:31.701000+00:00",
+                        "last_modified_timestamp": 1792735771,
+                        "extension": ".gz",
+                        "category": "archive"
+                      },
+                      {
+                        "key": "ubuntugis-nightly-ltr/pool/main/q/qgis/qgis_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "name": "qgis_3.44.15+git20261023+88d611eb8a8+40noble-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 15390970,
+                        "size_formatted": "14.68 MB",
+                        "last_modified": "2026-10-23T06:09:02.105000+00:00",
+                        "last_modified_timestamp": 1792735742,
                         "extension": ".deb",
                         "category": "installer"
                       },
