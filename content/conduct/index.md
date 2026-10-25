@@ -9,53 +9,43 @@ draft: false
 
 # Code of Conduct
 
-Like the technical community as a whole, the QGIS team and community is made up of a mixture of professionals and volunteers from all over the world, working on every aspect of the mission - including mentorship, teaching, and connecting people.
+As part of the open source community, QGIS has a mission to co-create geospatial tools accessible to all.
 
-Diversity is one of our huge strengths, but it can also lead to communication issues and unhappiness. To that end, we have a few ground rules that we ask people to adhere to when they're participating within this community and project. These rules apply equally to founders, mentors and those seeking help and guidance.
+Diverse collaboration is a strength of the project that we actively wish to uphold and encourage. QGIS is committed to inclusivity and safety for everyone, regardless of gender, gender identity/expression, sexual orientation, disability, physical appearance, age, language, race, ethnicity, nationality, religion, socioeconomic standing or otherwise.
 
-This isn't an exhaustive list of things that you can't do. Rather, take it in the spirit in which it's intended - a guide to make it easier to enrich all of us and the technical communities in which we participate.
+This code of conduct applies to all spaces managed by the QGIS project, both digital and non-digital. This includes the user-conferences, the contributor meetings, monthly meetings, IRC, the mailing lists, the issue tracker, DSF events, and any other forums created by the project team which the community uses for communication.
 
-This code of conduct applies to all spaces managed by the QGIS project. This includes IRC, the mailing lists, the issue tracker, DSF events, and any other forums created by the project team which the community uses for communication.
+## QGIS towards a Safe(r) Space
 
-If you believe someone is violating the code of conduct, we ask that you report it by emailing [psc@qgis.org](mailto:psc%40qgis.org).
-
-## Be welcoming, friendly, and patient
+*A safe(r) space is a supportive, non-threatening environment that is open, respectful, stimulates willingness to learn from others, and fosters physical and mental safety. It is a space that acknowledges the power structures that impact our daily lives and strives to respect the needs of everyone. Everyone who enters the safe(r) space has a responsibility to understand the values of maintaining it.*
 
 
-## Be considerate
-Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account when making decisions. Remember that we're a world-wide community, so you might not be communicating in someone else's primary language.
+## Guiding Principles
+
+We must all: 
+
+-   Foster a safe environment that is free from physical, written, verbal or sexual harassment violence, bullying or discrimination.
+
+-   Be active and inclusive. Do not tolerate racism, sexism, zionism, transphobia, homophobia, ableism, or ageism in any form, and actively challenge discriminatory behaviors and opinions.
+
+-   Respect boundaries. Be aware that everyone has different personal and cultural boundaries, pay attention to both verbal and non-verbal signals.
+
+-   Be aware of and challenge prejudices and privileges. Consider the influence of words, opinions, and feelings and who they might exclude or harm.
+
+-   Respect how people choose to identify.
+
+-   Listen if someone challenges behavior, reflect and learn.
+
+-   Take care of your own health and safety and do not put others at risk. 
+
+-   Respect the privacy of others. Ask permission before taking and sharing photos/videos of others.
+
+Report damaging behaviors. If you are being harassed, witness harassment of someone else, or have concerns about another person's conduct, please contact us: [psc@qgis.org](mailto:psc%40qgis.org)
+
+## What can you expect from us:
+We will follow and uphold our Code of Conduct and communicate the policy to all members, contributors, and participants. 
 
 
-## Be respectful
-Not all of us will agree all the time, but disagreement is no excuse for poor behavior and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It's important to remember that a community where people feel uncomfortable or threatened is not a productive one. Members of the QGIS community should be respectful when dealing with other members as well as with people outside the QGIS community.
-
-
-## Be careful in the words that you choose
-We are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behavior aren't acceptable. This includes, but is not limited to:
-
--   Violent threats or language directed against another person.
-
--   Sexist, racist, or otherwise discriminatory jokes and language.
-
--   Posting sexually explicit or violent material.
-
--   Posting (or threatening to post) other people's personally identifying information ("doxing").
-
--   Personal insults, especially those using racist or sexist terms.
-
--   Unwelcome sexual attention.
-
--   Advocating for, or encouraging, any of the above behavior.
-
--   Repeated harassment of others. In general, if someone asks you to stop, then stop.
-
-
-## When we disagree, try to understand why
-Disagreements, both social and technical, happen all the time and QGIS is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we're different. The strength of QGIS comes from its varied community, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn't mean that they're wrong. Don't forget that it is human to err and blaming each other doesn't get us anywhere, rather offer to help resolving issues and to help learn from mistakes.
-
-
-Original text courtesy of the Speak Up! project, and Django Code of conduct
-
-If you have questions, feel free to contact us: [psc@qgis.org](mailto:psc%40qgis.org)
+We are all part of a collective learning process. If you have any questions or suggestions on the creation of a safer space, please email [psc@qgis.org](mailto:psc%40qgis.org).
 
 {{< content-end >}}
