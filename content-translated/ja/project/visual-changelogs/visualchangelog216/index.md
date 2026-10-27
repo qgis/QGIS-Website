@@ -45,7 +45,7 @@ QGISはフリーソフトウェアであり、使用するために何かを支�
 {{<fund type="changelog" >}}
 ## 一般情報
 ### 機能：GeoJSON形式での地物のコピー
-The previous setting for include WKT when copying features has been replaced with a choice of copying features as \"Plain text, attributes only\", \"Plain text, WKT geometry\" and a new \"GeoJSON\" option. When set to \"GeoJSON\", copying features in QGIS will place a GeoJSON text representation of the features on the clipboard for easy pasting into other applications/JavaScript code. These settings can be found in the `Settings -> Options -> Data Sources -> Copy features as`.
+以前の地物をコピーするときにWKTを含める設定は、地物をコピーの選択肢「プレーンテキスト、属性のみ」、「プレーンテキスト、WKTジオメトリ」、および新しい「GeoJSON」オプションに置き換えられました。「GeoJSON」に設定してQGISで地物をコピーすると、その地物のGeoJSONテキスト表現がクリップボードに配置され、他のアプリケーション/ JavaScriptコードに簡単に貼り付けることができます。これらの設定は、 `設定 -> オプション -> データソース -> 形式を選択して地物をコピー` にあります。
 
 ![image95](images/entries/826068a22b7e7d472720f2404e293fc81de32850.gif)
 
@@ -57,7 +57,7 @@ The previous setting for include WKT when copying features has been replaced wit
 
 この機能は [Stéphane Brunner](http://www.camptocamp.com/) によって開発されました
 ### 機能：GNSS GNRMCメッセージのサポート
-QGIS can now handle GLONASS satellite data (\$GN\* lines) to get a more precise Position from external GPS/GNSS Receivers.
+QGISはGLONASS衛星データ（\$GN\* ライン）を処理し、外部GPS / GNSSレシーバからより正確な位置を取得できるようになりました。
 
 ![image97](images/entries/9d13c0c632da1e70199f035ce5a186c018da2cef.png.400x300_q85_crop.webp)
 
@@ -74,11 +74,11 @@ QGISクリップボードハンドラは、GeoJSON地物コレクションのネ
 
 ![image99](images/entries/96467c2c86ede6392190f021d266ee0e7ed6cbb5.png.400x300_q85_crop.webp)
 
-This feature was funded by [OPENGIS.ch GmbH](http://www.opengis.ch)
+この機能は [OpenGIS.ch GmbH](http://www.opengis.ch) によって資金提供されました
 
 この機能は [Marco Bernasocchi (OpenGIS.ch)](http://www.opengis.ch) によって開発されました
 ### 機能：QGISファイルタイプのデスクトップMIMEアイコン
-It\'s now easier to recognise and differentiate QGIS\'s file types on your operating system files manager. There are now desktop MIME Icons for the following file types:
+オペレーティングシステムのファイルマネージャで、QGISのファイルタイプを認識して区別することが簡単になりました。次のファイルタイプのデスクトップMIMEアイコンが追加されました:
 - \*.qgs - QGISプロジェクトファイル
 - \*.qml - レイヤー設定ファイル
 - \*.qlr - レイヤー定義ファイル
@@ -93,13 +93,13 @@ It\'s now easier to recognise and differentiate QGIS\'s file types on your opera
 
 ![image41](images/entries/4991ffccebf8da94cd01acc1139f52d389731549.gif)
 
-This feature was funded by [the QWAT project](https://github.com/qwat)
+この機能は [QWATプロジェクト](https://github.com/qwat) によって資金提供されました
 
 この機能は [Paul Blottiere（Oslandia）](http://oslandia.com/) によって開発されました
 ### 機能：地図のズーム機能の改善
 QGIS 2.16では、マップキャンバスをズームイン/ズームアウトする方法が改善されました。
-- Holding down `Ctrl` while using the mouse wheel to zoom in or out now results in a finer zoom. This behavior brings canvas into line with composer.
-- Pressing `Ctrl++` or `Ctrl+-` performs an immediate zoom in/out on the map canvas
+- マウスホイールを使用してズームインまたはズームアウトするときに `Ctrl` を押し続けると、ズームが細かくなります。この動作はキャンバスをコンポーザーに一致させます。
+- `Ctrl++` や `Ctrl+-` を押すとマップキャンバス上で即座にズームイン/ズームアウトします
 - When certain map tools are active, you can perform a web-map style zoom by holding down `Shift` and dragging a rectangle on the map to zoom to that area. This is enabled for the map tools which are not selection tools (since they use shift for adding to selection), and edit tools.
 
 ![image42](images/entries/5817785cf3d18db78669c2eb2c2be0cf606c3783.gif)
@@ -123,7 +123,7 @@ QGIS 2.16では、マップキャンバスをズームイン/ズームアウト�
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：カレンダーポップアップの改善
-Today\'s date is now highlighted in calendar popup widgets, making it easier to select a date relative to the current day.
+カレンダーポップアップウィジェットで今日の日付が強調表示され、現在の日付に関連する日付を簡単に選択できます。
 
 ![image45](images/entries/83b0414698c309c7afacb9da1b01370cff94497d.gif)
 
@@ -135,7 +135,7 @@ Today\'s date is now highlighted in calendar popup widgets, making it easier to 
 
 この機能は [Nathan Woodrow](http://nathanw.net) によって開発されました
 ### 機能：セルの内容を属性テーブルからコピーする
-A new context menu item called `Copy cell content` is now available in the menu opened by a right click on a cell within the attribute table. When this button is clicked, the content of the cell is copied in the clipboard, whatever the kind of widget.
+属性テーブル内のセルを右クリックして開くメニューで、「セル内容のコピー」という新しいコンテキストメニュー項目を使用できるようになりました。このボタンをクリックすると、ウィジェットの種類にかかわらず、セルの内容がクリップボードにコピーされます。
 
 ![image47](images/entries/968170742ce1d075c6ab1c462e682ea4fd8c5225.png.400x300_q85_crop.webp)
 
@@ -146,13 +146,13 @@ HiDPI画面のユーザーは、SVG画像に依存するようにアイコンを
 ![image48](images/entries/e60e55de87e8d2558134f9c9552ef41295642217.png.400x300_q85_crop.webp)
 
 この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
-### 特長：マップ選択ツールの動作を改善
+### 機能：マップ選択ツールの動作を改善
 マップベースの選択ツールの動作は洗練され、以下の変更が加えられました。
 
 クリックアンドドラッグの選択肢：
-- holding `Shift` = add to selection
-- holding `Ctrl` = subtract from selection
-- holding `Ctrl+Shift` = intersect with current selection
+- `Shift` を押したまま = 選択に加える
+- `Ctrl` を押したまま = 選択から除く
+- `Ctrl+Shift` を押したまま = 現在の選択と交差する
 - holding `Alt` (can be used with `Shift`/`Ctrl` too) = change from \"intersects\" to \"fully contains\" selection mode
 
 シングルクリックの選択：
