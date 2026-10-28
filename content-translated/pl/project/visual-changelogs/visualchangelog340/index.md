@@ -480,7 +480,7 @@ More raster creation options have been added to native Processing algorithms for
 - Wypełnij brak danych
 - Fuzzify raster
 - Gęstość linii
-- Random raster
+- Losowy raster
 - Filtr NMT (oparty na nachyleniu)
 - Równe częstotliwości
 - Raster boolean AND/OR
