@@ -5,7 +5,7 @@
     "how_to_update": "Run 'python scripts/update_individual_contributors.py --geojson-only' or with --token to update both files",
     "documentation": "See CONTRIBUTING.md section: Automated Content and Manual Edit Guidelines"
   },
-  "generated_at": "2026-10-29T03:41:57.928418+00:00",
+  "generated_at": "2026-10-29T09:41:52.969919+00:00",
   "type": "FeatureCollection",
   "features": [
     {
@@ -102,9 +102,9 @@
       "properties": {
         "login": "timlinux",
         "avatar_url": "https://avatars.githubusercontent.com/u/178003?u=7de7d52900af83c43539409c46e147411d59042a&v=4",
-        "total_contributions": 4167,
+        "total_contributions": 4152,
         "has_github_account": true,
-        "qgis_core": 2890,
+        "qgis_core": 2875,
         "documentation": 79,
         "web_sites": 1198,
         "is_honorary": true,
@@ -164,9 +164,9 @@
       "properties": {
         "login": "mhugent",
         "avatar_url": "https://avatars.githubusercontent.com/u/278939?v=4",
-        "total_contributions": 3341,
+        "total_contributions": 3337,
         "has_github_account": true,
-        "qgis_core": 3340,
+        "qgis_core": 3336,
         "documentation": 1,
         "web_sites": 0
       },
@@ -215,9 +215,9 @@
       "properties": {
         "login": "nirvn",
         "avatar_url": "https://avatars.githubusercontent.com/u/1728657?u=7dc42c330cd002459a97d8213e26728bb6ccb594&v=4",
-        "total_contributions": 2720,
+        "total_contributions": 2735,
         "has_github_account": true,
-        "qgis_core": 2716,
+        "qgis_core": 2731,
         "documentation": 3,
         "web_sites": 1
       },
@@ -310,9 +310,9 @@
       "properties": {
         "login": "troopa81",
         "avatar_url": "https://avatars.githubusercontent.com/u/14358135?u=ab3c9ba66ddabd5b79cd16b5294b50f0a056e9ef&v=4",
-        "total_contributions": 1279,
+        "total_contributions": 1286,
         "has_github_account": true,
-        "qgis_core": 1247,
+        "qgis_core": 1254,
         "documentation": 32,
         "web_sites": 0
       },
@@ -397,11 +397,30 @@
     {
       "type": "Feature",
       "properties": {
+        "login": "uclaros",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11358178?v=4",
+        "total_contributions": 866,
+        "has_github_account": true,
+        "qgis_core": 866,
+        "web_sites": 0,
+        "documentation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.74146,
+          38.00278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "login": "g-sherman",
         "avatar_url": "https://avatars.githubusercontent.com/u/494282?u=83d8f2c771f9a41efcb50143b69993d38d7cc2f7&v=4",
-        "total_contributions": 872,
+        "total_contributions": 854,
         "has_github_account": true,
-        "qgis_core": 858,
+        "qgis_core": 840,
         "web_sites": 12,
         "documentation": 2,
         "is_honorary": true,
@@ -415,25 +434,6 @@
         "coordinates": [
           -149.908447265625,
           61.22266872659718
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "login": "uclaros",
-        "avatar_url": "https://avatars.githubusercontent.com/u/11358178?v=4",
-        "total_contributions": 865,
-        "has_github_account": true,
-        "qgis_core": 865,
-        "web_sites": 0,
-        "documentation": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.74146,
-          38.00278
         ]
       }
     },
@@ -812,9 +812,9 @@
       "properties": {
         "login": "JanCaha",
         "avatar_url": "https://avatars.githubusercontent.com/u/7641902?u=a6a0503867918f60fdede15b290a455550beb76f&v=4",
-        "total_contributions": 378,
+        "total_contributions": 386,
         "has_github_account": true,
-        "qgis_core": 373,
+        "qgis_core": 381,
         "web_sites": 5,
         "documentation": 0
       },
@@ -1363,9 +1363,9 @@
       "properties": {
         "login": "mcoletti",
         "avatar_url": "https://avatars.githubusercontent.com/u/1413470?u=2d662905943197b2225dadbd51d920c665f02c39&v=4",
-        "total_contributions": 155,
+        "total_contributions": 153,
         "has_github_account": true,
-        "qgis_core": 155,
+        "qgis_core": 153,
         "documentation": 0,
         "web_sites": 0
       },
@@ -1676,6 +1676,19 @@
     {
       "type": "Feature",
       "properties": {
+        "login": "merydian",
+        "avatar_url": "https://avatars.githubusercontent.com/u/81414045?u=03c1ff4b7687082c4410d91690e1a33b4a3e870a&v=4",
+        "total_contributions": 73,
+        "has_github_account": true,
+        "qgis_core": 71,
+        "documentation": 1,
+        "web_sites": 1
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "login": "espinafre",
         "avatar_url": "https://avatars.githubusercontent.com/u/25933044?u=0ef99c8700774cee922e4185bcf29848684faefa&v=4",
         "total_contributions": 68,
@@ -1729,19 +1742,6 @@
           45.115
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "login": "merydian",
-        "avatar_url": "https://avatars.githubusercontent.com/u/81414045?u=03c1ff4b7687082c4410d91690e1a33b4a3e870a&v=4",
-        "total_contributions": 65,
-        "has_github_account": true,
-        "qgis_core": 63,
-        "documentation": 1,
-        "web_sites": 1
-      },
-      "geometry": null
     },
     {
       "type": "Feature",
@@ -2062,19 +2062,6 @@
     {
       "type": "Feature",
       "properties": {
-        "login": "stevehalasz",
-        "avatar_url": "https://avatars.githubusercontent.com/u/11359874?v=4",
-        "total_contributions": 42,
-        "has_github_account": true,
-        "qgis_core": 42,
-        "documentation": 0,
-        "web_sites": 0
-      },
-      "geometry": null
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "login": "jdugge",
         "avatar_url": "https://avatars.githubusercontent.com/u/2399255?u=1e59ce8cd4b9abbae04b4daa6f9690e2944e7eb0&v=4",
         "total_contributions": 41,
@@ -2114,6 +2101,19 @@
         "qgis_core": 40,
         "web_sites": 0,
         "documentation": 0
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "login": "stevehalasz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11359874?v=4",
+        "total_contributions": 39,
+        "has_github_account": true,
+        "qgis_core": 39,
+        "documentation": 0,
+        "web_sites": 0
       },
       "geometry": null
     },
