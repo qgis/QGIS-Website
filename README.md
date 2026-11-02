@@ -199,4 +199,5 @@ Have questions or feedback? Feel free to open an issue or submit a Pull Request!
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
+
 Made with ❤️ by Tim Sutton (@timlinux), Lova Andriarimalala (@Xpirix) and QGIS Contributors.
