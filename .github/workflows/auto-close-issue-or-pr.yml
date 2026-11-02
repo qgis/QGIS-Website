@@ -1,0 +1,54 @@
+name: Close Issues or PR that doesn't follow the guidelines
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  close-not-related-issue:
+    if: github.event.label.name == 'not-related'
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Close issue with comment
+        run: gh issue close --comment "This issue has been marked as not related to the QGIS Website and is being closed. It's possible that the issue is related to QGIS Desktop or functionality outside the QGIS Website. If you think this is a mistake, please comment to explain why." ${{ github.event.issue.number }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  close-ai-generated-issue:
+    if: github.event.label.name == 'ai-generated-text'
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Close issue with comment
+        run: gh issue close --comment "This issue has been marked as AI-generated and is being closed. Please ensure that all issues are created by humans and follow the contribution guidelines. If you think this is a mistake, please comment to explain why." ${{ github.event.issue.number }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+
+  close-ai-generated-pr-description:
+    if: github.event.label.name == 'ai-generated-text'
+    runs-on: ubuntu-latest
+
+    permissions:
+      pull-requests: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Close PR with comment
+        run: gh pr close --comment "The description of this pull request has been marked as AI-generated and is being closed. Please ensure that all text content are created by humans and follow the contribution guidelines. If you think this is a mistake, please comment to explain why." ${{ github.event.pull_request.number }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
