@@ -11,7 +11,7 @@ Fixes #
 
 ### AI tool usage
 
-- [ ] AI tool(s) (Copilot, Claude, or something similar) supported my development of this PR. See our [policy about AI tool use](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-408-ai-tool-policy.md). Use of AI tools *must* be indicated. Failure to be honest might result in banning.
+- [ ] AI tool(s) (Copilot, Claude, or something similar) supported my development of this PR.
 
 - [ ] I certify that no AI tool(s) were used in writing this PR title and description. See our [policy about AI tool use for text content](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/389).
 
