@@ -3,8 +3,11 @@
 
 Exercises name formatting, add/remove/sort behavior, the donors.json write
 format, timestamp persistence, and the Stripe opt-in routing in
-``get_donors`` — with the Stripe API and the filesystem fully mocked, so a
-``stripe``/stdlib upgrade that changes behavior is caught.
+``get_donors``, with the Stripe API and the filesystem fully mocked.
+
+The routing is covered twice over: once with plain dicts, and once with real
+``stripe`` response objects, which is what catches a major ``stripe`` bump
+that changes how those objects behave.
 
 ``scripts/`` is placed on ``sys.path`` by ``test/conftest.py``.
 """
@@ -100,3 +103,76 @@ def test_get_donors_routes_opt_in_and_opt_out(monkeypatch):
     assert ("remove", "Bob") in calls
     # Latest timestamp advances to the newest donation.
     assert saved["ts"] == 200
+
+
+def _stripe_list(data):
+    """Wrap ``data`` the way the Stripe client actually returns it.
+
+    The test above mocks Stripe with plain dicts, which hides version
+    differences: Stripe 15 removed the dict methods from its response
+    objects, so ``.get()`` on a real one raises ``AttributeError``. Building
+    genuine response objects here means the next major bump is caught.
+    """
+    payload = {"object": "list", "has_more": False, "data": data}
+    return ud.stripe.ListObject.construct_from(payload, "sk_test_dummy")
+
+
+def test_as_plain_dict_accepts_dicts_and_stripe_objects():
+    assert ud.as_plain_dict({"name": "Ada"}).get("name") == "Ada"
+
+    customer = _stripe_list([{"id": "c1", "object": "customer", "name": "Ada"}])["data"][0]
+    assert ud.as_plain_dict(customer).get("name") == "Ada"
+
+
+def test_get_donors_routes_opt_in_and_opt_out_with_real_stripe_objects(monkeypatch):
+    customers = _stripe_list([
+        {"id": "c1", "object": "customer", "name": "Alice", "created": 100,
+         "metadata": {}},
+        {"id": "c2", "object": "customer", "name": "Bob", "created": 200,
+         "metadata": {"list_as_donor": "false"}},
+    ])
+    sessions = _stripe_list([])
+
+    monkeypatch.setattr(ud.stripe.Customer, "list", lambda **kw: customers)
+    monkeypatch.setattr(ud.stripe.checkout.Session, "list", lambda **kw: sessions)
+    monkeypatch.setattr(ud, "get_latest_timestamp", lambda: 0)
+    saved = {}
+    monkeypatch.setattr(ud, "save_latest_timestamp", lambda ts: saved.update(ts=ts))
+
+    calls = []
+    monkeypatch.setattr(ud, "update_donors", lambda name, f: calls.append(("add", name)))
+    monkeypatch.setattr(ud, "remove_donor", lambda name, f: calls.append(("remove", name)))
+
+    ud.get_donors("data/donors.json", "List me as a donor")
+
+    assert ("add", "Alice") in calls
+    assert ("remove", "Bob") in calls
+    assert saved["ts"] == 200
+
+
+def test_get_donors_reads_the_custom_field_opt_out_from_a_stripe_object(monkeypatch):
+    """The custom field path is nested two levels deep, so convert there too."""
+    customers = _stripe_list([
+        {"id": "c1", "object": "customer", "name": "Carol", "created": 300,
+         "metadata": {}},
+    ])
+    sessions = _stripe_list([
+        {"id": "cs_1", "object": "checkout.session", "custom_fields": [
+            {"label": {"custom": "List me as a donor", "type": "custom"},
+             "dropdown": {"value": "no"}},
+        ]},
+    ])
+
+    monkeypatch.setattr(ud.stripe.Customer, "list", lambda **kw: customers)
+    monkeypatch.setattr(ud.stripe.checkout.Session, "list", lambda **kw: sessions)
+    monkeypatch.setattr(ud, "get_latest_timestamp", lambda: 0)
+    monkeypatch.setattr(ud, "save_latest_timestamp", lambda ts: None)
+
+    calls = []
+    monkeypatch.setattr(ud, "update_donors", lambda name, f: calls.append(("add", name)))
+    monkeypatch.setattr(ud, "remove_donor", lambda name, f: calls.append(("remove", name)))
+
+    ud.get_donors("data/donors.json", "List me as a donor")
+
+    # The dropdown says no, so the metadata default of true must be overridden.
+    assert calls == [("remove", "Carol")]

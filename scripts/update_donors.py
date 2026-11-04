@@ -108,6 +108,19 @@ def get_latest_timestamp():
             return int(file.read().strip())
     return 0  # Return 0 if the file does not exist (fetch all donations initially)
 
+def as_plain_dict(value):
+    """Return a Stripe response object as a plain dict.
+
+    Stripe 15 removed the dict methods from its response objects, so calling
+    ``.get()`` on one raises ``AttributeError``. Every version we support
+    offers ``to_dict()``, which is deep enough for the fields read below.
+    Plain dicts, including the ones the tests supply, pass straight through.
+    """
+    if isinstance(value, dict):
+        return value
+    to_dict = getattr(value, "to_dict", None)
+    return to_dict() if callable(to_dict) else value
+
 def get_donors(donors_json_file, custom_field_label):
     """
         Retrieve donations created after the latest timestamp.
@@ -137,6 +150,7 @@ def get_donors(donors_json_file, custom_field_label):
     new_latest_timestamp = latest_timestamp
     while True:
         for customer in customers['data']:
+            customer = as_plain_dict(customer)
             donor = {
             "name": customer.get('name'),
             "date": customer['created'],
@@ -145,10 +159,11 @@ def get_donors(donors_json_file, custom_field_label):
             sessions = stripe.checkout.Session.list(customer=customer['id'])
             list_me_as_donor = customer.get('metadata', {}).get('list_as_donor', 'true').lower() == 'true'
             if sessions['data']:
-                last_session = sessions['data'][-1]
+                last_session = as_plain_dict(sessions['data'][-1])
                 custom_fields = last_session.get('custom_fields', [])
                 # Check if the customer has opted to be listed as a donor
                 for field in custom_fields:
+                    field = as_plain_dict(field)
                     if field.get('label', {}).get('custom', '').strip().lower() == custom_field_label.lower():
                         list_me_as_donor = field.get('dropdown', {}).get('value', '').strip().lower() == 'yes'                    
             new_donor_name = donor['name']
