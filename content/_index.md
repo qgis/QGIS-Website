@@ -22,6 +22,7 @@ AnnouncementLinkText: "Explore the changelog"
 
 {{< feature
 title = "Create maps"
+link = "project/overview/maps/"
 text = "Explore QGIS's exceptional cartographic design features to craft outstanding maps for desktop, mobile, cloud, and print media."
 col-title-1 = "Class-leading cartography"
 col-text-1 = "Experience QGIS's extensive set of design options to bring your maps to life."
