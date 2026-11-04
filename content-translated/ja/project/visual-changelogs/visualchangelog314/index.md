@@ -1011,21 +1011,21 @@ Refs NRCan Contract#3000707093
 
 この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: デザイナーでモデルをグリッドにスナップできる
-This update implements two \"snapping\" features in the Processing model designer:
-1. Users can enable a new \"Enable Snapping\" option from the view menu, which will cause all component moving or resizing operations to automatically snap to grids
-2. After selecting some components, users can select Edit -\> Snap Selected Components to Grid to manually snap just those selected components.
+この更新はプロセシングモデルデザイナーに二つの「スナップ」機能を実装します:
+1. ユーザーは、ビューメニューから新しく「スナップを有効にする」オプションを有効にでき、移動やリサイズ操作されている全ての要素が自動でグリッドにスナップするようになります。
+2. いくつかの要素を選択した後、ユーザーは 編集 -\> 選択された要素をスナップする を選択して、選択された要素だけを手動でスナップすることができます。
 
-Additionally, I\'ve added a helpful \"select all\" action for quickly selecting all components in a model.
+さらに、モデルの全要素を素早く選択する、便利な「全てを選択」アクションを追加しました。
 
 Refs NRCan Contract#3000707093
 
 この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: プロセシングに「ジオメトリ型でフィルタ」および「レイヤ型でフィルタ」アルゴリズムを追加
-This update adds two new algorithms to processing:
-- \"Filter by geometry type\": This algorithm filters features by their geometry type. Incoming features will be directed to different outputs based on whether they have a point, line or polygon geometry. It allows for model creation which responds to different input layer geometry types by applying different logic depending on the input geometry type.
-- \"Filter by layer type\": This algorithm allows conditional model branching based on an input layer type. For instance, it allows a model to adapt to the actual layer type of a generic \"map layer\" parameter input, and decide which branch of the model to run as a result.
+この更新はプロセシングに二つの新しいアルゴリズムを追加します:
+- 「ジオメトリ型でフィルタする」: このアルゴリズムは地物をそのジオメトリ型でフィルタします。入力される地物は、ポイント、ライン、ポリゴンジオメトリかどうかによって別々の出力に仕分けられます。これにより、入力ジオメトリ型に依存している別々のロジックを入力レイヤジオメトリの違いに応じて適用するモデルの作成ができます。
+- 「レイヤ型によってフィルタする」: このアルゴリズムは、入力レイヤ型を基にして条件的なモデルブランチを可能にします。たとえば、モデルが「地図レイヤ」パラメータ入力の実際のレイヤ型に応じて、実行するモデルの分岐を決めることを可能にします。
 
-It also adds in the required API to allow algorithms to \"prune\" model branches based on their calculated results. For example, a model which returns the new *FlagPruneModelBranchesBasedOnAlgorithmResults* flag will cause any remaining parts of the model which are dependent on the outputs of that algorithm to be entirely skipped IF the algorithm does not return that particular output. (This is a prerequisite component for a future generic \"conditional branching by expression\" algorithm, and also used by \"filter by layer type\" to control the model flow based on the input layer type)
+また、必要なAPIを追加して、アルゴリズムが計算結果に基づいてモデルブランチを「枝刈り」できるようにします。たとえば、新しい *FlagPruneModelBranchesBasedOnAlgorithmResults* フラグを返すモデルでは、アルゴリズムがその特定の出力を返さない場合、そのアルゴリズムの出力に依存するモデルの残りの部分は完全にスキップされます。 （これは、将来の一般的な「式による条件付き分岐」アルゴリズムの前提条件コンポーネントであり、「レイヤータイプによるフィルタ」によって使用され、入力レイヤータイプに基づいてモデルフローを制御します）
 
 Refs NRCan Contract#3000707093
 
@@ -1058,7 +1058,7 @@ QGISを利用者にもっと寛大にします！
 
 Refs NRCan Contract#3000707093
 
-Works just like you\'d expect:
+期待したように動作します:
 
 ![image103](images/entries/76176510-c8fe8e00-61fc-11ea-90e1-91cbeadcbd4f.gif)
 
@@ -1068,13 +1068,13 @@ Works just like you\'d expect:
 ### 機能: モデルデザイナーの実行の後でもパラメータ値を保存
 モデルを設計する際、ユーザーは通常、構造を微調整しながらモデルを何度も実行する必要があります。
 
-This change causes the parameters used when running the model from the designer to be remembered and saved into the model, so that each time you run the model from the designer you don\'t have to re-set all the input parameter values to the desired test ones.
+この変更により、デザイナーからモデルを実行する際に使用されるパラメータが記憶され、モデルに保存されるため、デザイナーからモデルを実行するたびに、すべての入力パラメータの値を再設定する必要がありません。
 
 反復的なモデルの設計がとても簡単になります！
 
 Alta Ehf によって後援されました
 
-Also includes a partial port of the model designer dialog from Python to c++, because c++ \>\> Python.
+また、c++ \>\> Python なので、モデルデザイナーダイアログの一部がPythonからc++に移植されています。
 
 この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: プロセシングモデルのコメント
