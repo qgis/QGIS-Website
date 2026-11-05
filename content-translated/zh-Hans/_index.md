@@ -19,7 +19,7 @@ title: 极致空间
 type: page
 
 ---
-{{<feature title="创建地图" text="探索QGIS卓越的制图设计功能，为桌面端、移动端、云端及印刷介质制作精美的专业地图。" col-title-1="业界顶级制图软件" col-text-1="体验QGIS丰富多样的设计功能，为您的地图赋予生动质感。" col-title-2="专业地图制作" col-text-2="借助直观的布局设计器，制作高品质、大尺寸的打印地图。" col-title-3="强大的报告工具" col-text-3="可创建包含地图与表格内容的地图集及报告。" img="img/main-create.webp" order=1 >}}
+{{<feature title="创建地图" link="project/overview/maps/" text="探索QGIS卓越的制图设计功能，为桌面端、移动端、云端及印刷介质制作精美的专业地图。" col-title-1="业界顶级制图软件" col-text-1="体验QGIS丰富多样的设计功能，为您的地图赋予生动质感。" col-title-2="专业地图制作" col-text-2="借助直观的布局设计器，制作高品质、大尺寸的打印地图。" col-title-3="强大的报告工具" col-text-3="可创建包含地图与表格内容的地图集及报告。" img="img/main-create.webp" order=1 >}}
 
 {{<feature title="编辑图层" text="充分发挥数字化与构建工具无可比拟的强大功能。" col-title-1="卓越的数字化功能" col-text-1="精确绘制与编辑点、线、多边形和网孔。" col-title-2="高级构建工具" col-text-2="使用曲线、类CAD工具以及广泛的几何图形变换，快速构建几何图形。" col-title-3="高度可定制的表单" col-text-3="借助表单设计器，轻松创建简洁易用的表单。" img="img/main-edit.webp" order=2 >}}
 

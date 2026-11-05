@@ -20,7 +20,7 @@ title: Spasial untuk Semua
 type: page
 
 ---
-{{<feature title="Buat Peta" text="Ketahui fitur luar biasa QGIS untuk desain pemetaan di semua jenis perangkat dan media cetak." col-title-1="Kartografi terbaik" col-text-1="Pelajari bagaimana QGIS membuat peta menarik" col-title-2="Penggambaran peta profesional" col-text-2="Gunakan tampilan desainer yang intuitif untuk membuat peta berkualitas tinggi" col-title-3="Aplikasi pelaporan canggih" col-text-3="Buat atlas dan laporan termasuk peta dan data tabel lain." img="img/main-create.webp" order=1 >}}
+{{<feature title="Buat Peta" link="project/overview/maps/" text="Ketahui fitur luar biasa QGIS untuk desain pemetaan di semua jenis perangkat dan media cetak." col-title-1="Kartografi terbaik" col-text-1="Pelajari bagaimana QGIS membuat peta menarik" col-title-2="Penggambaran peta profesional" col-text-2="Gunakan tampilan desainer yang intuitif untuk membuat peta berkualitas tinggi" col-title-3="Aplikasi pelaporan canggih" col-text-3="Buat atlas dan laporan termasuk peta dan data tabel lain." img="img/main-create.webp" order=1 >}}
 
 {{<feature title="Ubah lapisan" text="Harness the unmatched capabilities of powerful digitizing and construction tools." col-title-1="Exceptional digitizing proficiency" col-text-1="Craft and edit points, lines, polygons, and meshes with precision." col-title-2="Advanced construction tools" col-text-2="Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations." col-title-3="Highly customizable forms" col-text-3="Create user-friendly forms using our form designer." img="img/main-edit.webp" order=2 >}}
 
