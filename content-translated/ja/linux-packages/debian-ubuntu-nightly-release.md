@@ -11,7 +11,7 @@ type: page
 ---
 {{<content-start >}}
 # Debian / Ubuntu ナイトリーリリースパッケージ
-Browse and download QGIS nightly release packages for Debian and Ubuntu distributions.
+Debian・Ubuntu向けのQGISナイトリーリリースパッケージをご覧いただき、ダウンロードできます。
 
 {{<linux-packages-explorer distribution="debian_ubuntu_nightly_release" >}}
 

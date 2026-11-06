@@ -156,7 +156,7 @@ Even experienced users will likely appreciate the improved workflow, including a
 
 ![image14](images/entries/7a0dd68c9a38f6e4b4f0177ae53978710df89ad5.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## 計算式
@@ -187,7 +187,7 @@ It\'s just a faster shorthand version!
 
 ![image16](images/entries/13f09f754dea12a13b9d9aeb8606e86582e87e3f.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: ジオメトリの終わりから頂点を取得する
@@ -285,7 +285,7 @@ QGIS loves GeoPackage, so it\'s likely no surprise that every new QGIS version b
 
 ![image26](images/entries/ebabefc4ccc4b71dcffda0508834b709fddec635.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Overlap Analysis
@@ -295,7 +295,7 @@ This is quite a common GIS task request, yet is full of traps for inexperienced 
 
 ![image27](images/entries/d265fa2b9bab9184d25244f0cd8aececb5136e66.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Allow rounding values in Extract Layer Extent
@@ -312,7 +312,7 @@ In QGIS 3.8 we moved the existing \"double click column header\" to fill values 
 
 ![image29](images/entries/e20e687223b884d70737f09130f0e9792974eed6.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Generate raster XYZ tiles
@@ -340,7 +340,7 @@ Model variables are stored within an individual Processing model itself, and are
 
 ![image32](images/entries/dfd820ccdc499878a5d7c818f03cd2d586311945.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Improved modeler UI
@@ -350,13 +350,13 @@ We\'ve added numerous usability improvements to the Processing Graphical Modeler
 - Input parameter types are now shown in the title of the parameter definition dialog
 - The data type for numeric parameters may now be specified, allowing for integer-only inputs for models
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Flagging algorithms with known issues
 By default, we now hide 3rd party algorithms with known issues from the Processing toolbox, helping you avoid frustration (or misleading results) when running these algorithms. A new setting in the Processing options screen allows these algorithms to be shown, but they will be highlighted in the toolbox with a warning icon. Use at your own risk!
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Raster Boolean logical OR/AND algorithms
@@ -388,7 +388,7 @@ Scale parameters are displayed to users using the standard QgsScaleWidget, which
 ### Feature: Improved \"point\" parameter handling
 We improved the workflow for algorithms with a \"point\" input parameter. When picking the point coordinate from a map you can now take advantage of QGIS snapping tools, allowing you to exactly match the point parameter to a feature\'s boundary.
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: New \"Print Layout Map Extent to Layer\" algorithm
@@ -418,7 +418,7 @@ By default only the single nearest feature is joined, but optionally the join ca
 
 ![image35](images/entries/f78e2f7a712f8a5cc1d5e9e20b4bb378598c1180.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Grass r.geomorphon algorithm
@@ -447,7 +447,7 @@ QGIS 3.8 brings even more power to the browser panel, and now displays all sheet
 
 ![image38](images/entries/f311137d05c73b9ba673d6b68669b7117589dacd.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## 一般情報
@@ -553,7 +553,7 @@ We\'ve enabled REGEX to be used with the spatialite provider. (This comes in han
 ### Feature: Nearest Neighbour search in QgsSpatialIndex
 We added API to allow accurate nearest neighbor search based on QgsGeometry to QgsGeometry searches via QgsSpatialIndex. In previous QGIS versions only point to geometry nearest neighbour searches were possible. But with this change, you can safely and accurately use QgsSpatialIndex to determine the nearest neighbours between any types of geometries.
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## 注目すべき修正

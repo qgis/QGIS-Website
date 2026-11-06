@@ -41,15 +41,15 @@ QGIS 2.18では、カラーピッカーダイアログ内のいずれかのス�
 
 ![image59](images/entries/ab472e2c8270ba64bee64bbbf8c9f5104edc79de.gif)
 
-This feature was funded by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：カスタムカラースキームをカラーボタンドロップダウンメニューに追加する
-QGIS 2.18 adds the ability for users to set whether a user created color scheme should show up in the color button drop-down menus. This setting is controlled through the color picker dialog, on the lists tab. Just add a new color scheme, then from the scheme menu tick the new \"show in buttons\" option. It\'s a handy shortcut if you have sets of common palettes and want them to be instantly available through the color menu.
+QGIS 2.18では、ユーザーが作成したカラースキームをカラーボタンのドロップダウンメニューに表示するかどうかをユーザーが設定できるようになりました。この設定は、リストタブのカラーピッカーダイアログで制御します。新しいカラースキームを追加して、スキームメニューから新しい \"show in buttons\" オプションを選択してください。一般的なパレットのセットを持っていて、カラーメニューから即座に使用できるようにするには便利なショートカットです。
 
 ![image60](images/entries/9453954d199c4950d7aecf153b6d5e53f820ff19.PNG.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## シンボロジ
@@ -58,7 +58,7 @@ QGIS 2.18では、レイヤースタイルパネル内のカラーボタンを�
 
 ![image42](images/entries/3af7533f5148810d0c26a221d7acdccaf1d7a835.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## ラベリング
@@ -69,7 +69,7 @@ This feature was funded by [North Road](http://north-road.com)
 
 ![image43](images/entries/a73aec5fad4c5e39800e462bbac6dd2597f98cba.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：改良されたラインラベル配置アルゴリズム
@@ -85,7 +85,7 @@ This feature was funded by [North Road](http://north-road.com)
 
 ![image45](images/entries/c7a28cf09a0f1646210faaae85a56c2209ee15e9.PNG.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## レンダリング
@@ -94,13 +94,13 @@ QGISの以前のバージョンでは、結果の地図を表示するために�
 
 ![image46](images/entries/007bf6d09a1f67e0c0c4ee71d48081185c0c5c84.gif)
 
-This feature was funded by [Land Information New Zealand](http://www.linz.govt.nz/)
+この機能は、 [土地情報ニュージーランド](http://www.linz.govt.nz/) によって資金提供されました
 
 この機能は、 [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能：ラスター（WMS、WMTS、WCS、XYZレイヤー）のキャンセル可能なレンダリング
 この機能強化により、リモートサーバーからのラスターレイヤーを操作する際のユーザーエクスペリエンスが向上します。以前は、ユーザーインターフェースがその間に凍っていたので、地図を再びズームまたはパンできるように、ダウンロードが完全に完了するまで待つ必要がありました。これは、ラスターレイヤーのレンダリングがいつでもキャンセルできるという事実によって修正されています。
 
-This feature was funded by [Land Information New Zealand](http://www.linz.govt.nz/)
+この機能は、 [土地情報ニュージーランド](http://www.linz.govt.nz/) によって資金提供されました
 
 この機能は、 [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/) によって開発されました
 ## データ管理
@@ -116,11 +116,11 @@ This feature was funded by [Land Information New Zealand](http://www.linz.govt.n
 ### 機能：個々の編集ウィジェットのラベルを制御できるようにする
 フォーム内の個々の編集ウィジェットのラベルを制御できるようにする。ドラッグアンドドロップデザイナーでは、項目をダブルクリックすると、各項目ごとにラベルを個別に表示するかどうかを制御できます。
 
-In addition it is possible to configure if the link/unlink buttons are shown in relation reference widget, which is useful to hide in 1:n relations where a child can\'t exist without its parents.
+さらに、リンク/リンク解除ボタンがリレーション参照ウィジェットに表示されるかどうかを設定することができます。これは、親がないと子が存在できない 1:n 関係を隠すのに便利です。
 
 ![image48](images/entries/6d827c6b286f137ec9de1d97a15c745764494d0a.png.400x300_q85_crop.webp)
 
-This feature was funded by [Kanton Zug, GIS-Fachstelle](http://geo.zg.ch/)
+この機能は、 [Kanton Zug、GIS-Fachstelle](http://geo.zg.ch/) によって資金提供されました
 
 この機能は [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/) によって開発されました
 ### 機能：タブとグループボックスの条件付き可視性
@@ -156,7 +156,7 @@ This new algorithm is similar to the centroids algorithm, but where a centroid m
 
 ![image52](images/entries/133a854441e2ade7bec91a48e9a1f1d4b1d012ac.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：処理ディゾルブアルゴリズムは複数のフィールドを受け入れます
@@ -164,7 +164,7 @@ This feature was funded by [North Road](http://north-road.com)
 
 ![image53](images/entries/a75b372f431c98592bdaccbc0bf4e90654969fa2.PNG.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：最適化処理クリップアルゴリズム
@@ -180,7 +180,7 @@ This feature was funded by [North Road](http://north-road.com)
 
 ![image54](images/entries/f975cb641b319e952264dc1e706deafdfd2b7496.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：バウンディングボックスアルゴリズム
@@ -188,7 +188,7 @@ This feature was funded by [North Road](http://north-road.com)
 
 ![image55](images/entries/398557f0cfe897a227fea70ceef700f9ab048e2d.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：連結線アルゴリズムをマージする
@@ -196,7 +196,7 @@ This feature was funded by [North Road](http://north-road.com)
 
 ![image56](images/entries/7ebf10a71a1c3f28d48a2c19f7ad1f08ca75bf80.PNG.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：ジオメトリ境界アルゴリズム
@@ -204,7 +204,7 @@ This feature was funded by [North Road](http://north-road.com)
 
 ![image57](images/entries/907b7b5c36af36547f10f33f65e9655a5cbe5a67.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## データプロバイダ
@@ -242,7 +242,7 @@ XYZレイヤーへ接続を追加するには、ブラウザドックウィジ�
 ### 機能：GEOS線形参照関数をQgsGeometryに公開する
 新しい関数 `QgsGeometry::lineLocatePoint()` が追加され、ラインストリングに沿ったラインストリング上の最も近い位置から所定の点までの距離を取得します。
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## 機能：2.18の新しいPyQGISクラス

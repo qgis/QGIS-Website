@@ -20,13 +20,13 @@ type: showcase/case-studies
 ---
 {{<content-start classes="notification is-light" >}}
 
-Quantarctica is a collection of Antarctic geographical datasets, such as base maps, satellite imagery, glaciology and geophysics data from data centres around the world, prepared for viewing in QGIS. The package is developed by the Norwegian Polar Institute, as a tool for the research community, for classrooms and for operational use in Antarctica --\-- freely available for non-commercial purposes.
+Quantarcticaは、世界中のデータセンターから集めたベース・マップ、衛星画像、氷河学や地球物理学データのような南極地理的データセットのコレクションであり、QGISで表示するために用意されています。パッケージは、研究コミュニティのツールとして、教室のため、そして南極における運用のために、ノルウェー極地研究所によって開発されており、非商用目的で自由に利用できます。
 ## プロジェクトについて
-![Screenshot from Quantarctica, showing one of the subglacial lakes datasets.](quantarctica.jpg)
+![Quantarcticaからのスクリーンショット、氷底湖データセットのひとつを示しています。](quantarctica.jpg)
 
 Quantarctica (QGIS + Antarctica) was first developed for in-house use at the Norwegian Polar Institute, as a tool for our glaciologists. There was a need for a low or no cost complete GIS with essential datasets ready-to-use, easy-to-use, functionality rich and with offline capabilities. QGIS seemed to be a perfect choice of GIS for the collected datasets.
 
-Quantarcticaは、ベースマップの上に、または他の科学的データセットを科学的なプロジェクトデータを表示するために、大陸からローカルスケールの地理データを検査するために使用されており、出版物や提案のための地図を準備します。Quantarcticaは、研究者によって使用される他のソフトウェアに最適なツール、および非常に良い代替とサプリメントであることが、これまでに判ってきました。これは、日常業務において当社の研究者のために新たな機会を提供してきました。 
+Quantarcticaは、科学的なプロジェクトデータをベースマップに重ねたり、他の科学的データセットと共に表示して、大陸から局地スケールの地理データを検分したり、出版物や提案のための地図を準備するために使われてきました。Quantarcticaはこれまでのところ素晴らしいツールであり、そして研究者によって使用される他のソフトウェアをとてもよく代替したり補完するものであることを証明してきました。それは研究者たちの日常業務において新たな可能性をもたらしています。 
 
 ![Quantarctica is also useful when navigating on the Antarctic ice shelves thanks to the GPS tracking capabilities within QGIS.](quantarctica2.jpg)
 

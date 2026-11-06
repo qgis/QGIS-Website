@@ -33,7 +33,7 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 ![image2](images/entries/b1aba6e9334ee1d862bde8f66f9ae4d30d945703.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## シンボロジ
@@ -56,7 +56,7 @@ We\'ve added a brand new \"Center of segment\" mode for placement of marker line
 
 ![image5](images/entries/c1f50067d50b909e38b7333ad5d8d415e763801d.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: より柔軟なデータ定義オフセット式
@@ -64,7 +64,7 @@ In previous QGIS releases, only string values of the format \'x,y\' would be per
 
 ![image6](images/entries/1ccab8f4328238f5275e41c3d466bf27a5d097a2.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## ラベリング
@@ -77,7 +77,7 @@ Text Formats and Label Settings offer all the same functionality as you\'re used
 
 ![image7](images/entries/bf657c21ba6deaff10ff80611a77b435e12155e5.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [North Road](http://north-road.com) によって開発されました
 ### 機能: ラベルの背景としてのマーカシンボル
@@ -85,7 +85,7 @@ Alongside all the other exciting labeling improvements which we\'ve landed in 3.
 
 ![image8](images/entries/3a9fd11192cdbdaa2f139a28d63cc33e1d10c3bc.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [North Road](http://north-road.com) によって開発されました
 ### 機能： ラベルの吹き出し！
@@ -113,7 +113,7 @@ This new setting (which is accessed through the Labeling toolbar) will render th
 
 ![image11](images/entries/4e53a6482dacb6e2d6d1ff2a8c4592d98f82430a.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: ラインラベルのはみ出し距離
@@ -121,7 +121,7 @@ We understand that making a cartographic masterpiece is a demanding task, so in 
 
 ![image12](images/entries/0b830e5ea769aacfd9c5bf9d8028ed278590d803.gif)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Data defined control for \"label every part of multipart features\" setting
@@ -129,7 +129,7 @@ The \"label every part\" option was one of the very few settings which couldn\'t
 
 ![image13](images/entries/9db2c54c0d65bc61da8c0c46cfefcbab96c833df.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Control \"label all parts\" via the label properties tool
@@ -137,7 +137,7 @@ We aren\'t lying when we say that QGIS 3.10 is a love-letter to map labelling! A
 
 ![image14](images/entries/737cd2f8bc569ee9ad7df9aee02eec83b4e6facd.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: テキストの縦書き
@@ -153,7 +153,7 @@ Another option we\'ve added for improving the conversion of ArcMap symbology to 
 
 ![image16](images/entries/b2a650a874e263173a56d93b046df7f031eb8d6e.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## レンダリング
@@ -218,7 +218,7 @@ If you\'re after pixel-perfect control over your legend appearance \-- this one\
 
 ![image22](images/entries/78263d3350afd05147928378f81dddba13961acc.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: テキストフォーマットのデータで定義された設定
@@ -226,7 +226,7 @@ Since so much of QGIS\' cartographic power comes from the flexibility of data-de
 
 ![image23](images/entries/69961f6faa732b683ccfb1ab539250b21ea5bd26.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: \@scale_value variable
@@ -234,7 +234,7 @@ To complement the new support for data-defined settings within text formats, we 
 
 ![image24](images/entries/ec2940b4222b8172403b20b0f70af0588c38f0cc.gif)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: スケールバーラベルの配置オプション
@@ -268,7 +268,7 @@ In earlier QGIS releases, there was no way to tell whether a map refresh had fin
 
 ![image28](images/entries/8c6426a723b9fdc1cead1949f3304db4763ecb9c.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: GeoPDFのエクスポート
@@ -317,7 +317,7 @@ Another long-requested feature we\'ve implemented for QGIS 3.10 is a new button 
 
 ![image32](images/entries/4b8ed681a38435a2f0bf299fd28f299e2873848c.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## 計算式
@@ -415,7 +415,7 @@ QGIS 3.10では、プロセシングモデルやスクリプトで使う新し�
 
 ![image43](images/entries/87cae0401b93aa308c156a615e63a71e98d25980.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: New algorithm \"Create style database from project\"
@@ -431,7 +431,7 @@ For file or folder inputs in Processing models we\'ve added a new file filter se
 
 ![image45](images/entries/94fe90f54308a81c5f031066c132e1ad5e8e6ac2.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: New algorithm \"Combine style databases\"
@@ -455,7 +455,7 @@ To complement the spatial bookmark overhaul in QGIS 3.10, we\'ve added new Proce
 
 ![image48](images/entries/d0471bc7ea65e476537c8828a7850a64ca9120ef.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: New algorithm \"Split features by character\"
@@ -492,7 +492,7 @@ QGIS\' Browser panel just keeps getting more and more powerful! In 3.10, we\'ve 
 
 ![image52](images/entries/4c9dd54203cbce44f91e85ed1ff01f1cbb4a40c5.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## 一般情報
@@ -509,7 +509,7 @@ QGIS 3.10 では、二つの新たな単位、ミリラジアン（SI定義）�
 
 ![image54](images/entries/f208b7c32bfe608a448dc2e9359de20e3e4397dd.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: インタフェースのカスタマイズ・ダイアログ・フィルタリング
@@ -523,7 +523,7 @@ We\'ve added a new \"search\" box to the Interface Customization dialog, which a
 
 ![image56](images/entries/0119e6f0b3d950d613d224d7bbd53a38575b3579.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: 空間ブックマークのスーパーチャージ！
@@ -541,7 +541,7 @@ Ever spend 10 minutes painstakingly creating an interactive selection of feature
 
 ![image58](images/entries/e1234a3ca30866b91f64f97b83fdf0fb90838cb6.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: スナップインデックス構築の並列化
@@ -616,7 +616,7 @@ QGIS 3.10 Serverは、新しい [OGC API - Features - Part 1: Core](http://docs.
 ### 機能: 新しいクラス QgsBookmarkManager
 QgsProjectとQgsApplicationに添付されたこの新しいクラスは、プロジェクトとグローバルなブックマークを管理するための安定した、サポートされた方法を提供します（旧バージョンの未公開で安定していない方法でプロジェクトキーまたはSQLiteデータベースを直接操作する方法とは異なります）。今では、プラグインやスクリプトで空間ブックマークを読み取り、変更、管理することができます！
 
-This feature was funded by [North Road](http://north-road.com)
+この機能は [North Road](http://north-road.com) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: プロバイダデータベース接続のための新しいAPI

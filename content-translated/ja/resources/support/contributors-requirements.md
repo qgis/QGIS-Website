@@ -18,7 +18,7 @@ type: page
 - これらの要件は、コミット権限を望む開発者とパッチを提出する開発者の両方に適用されます。
 - [行動規範]({{< relref "conduct" >}}) を読んで同意してください。
 - [コーディング標準](https://docs.qgis.org/testing/en/docs/developers_guide/codingstandards.html) を読んで同意してください。
-- Read and agree to the [Diversity statement]({{< relref "diversity" >}}).
+- [多様性宣言]({{< relref "diversity" >}}) を読んで同意してください。
 - Agree to these requirements by sending an email to the [qgis-developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) stating agreement.
 
 ## 社会契約

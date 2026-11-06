@@ -11,7 +11,7 @@ type: page
 ---
 {{<content-start >}}
 # Debian / Ubuntu ナイトリーLTRパッケージ
-Browse and download QGIS nightly Long Term Release (LTR) packages for Debian and Ubuntu distributions.
+Debian・Ubuntu向けのQGISナイトリー長期サポートリリース（LTR）パッケージをご覧いただき、ダウンロードできます。
 
 {{<linux-packages-explorer distribution="debian_ubuntu_nightly_ltr" >}}
 
