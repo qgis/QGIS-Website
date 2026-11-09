@@ -17,19 +17,19 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>April 1, 2015</span>
+  <span>2015年4月1日</span>
 </p>
 
-The Danish Demining Group (DDG), the specialised mine action unit of the Danish Refugee Council, has been working in Afghanistan since 1999, undertaking humanitarian mineclearance, unexploded ordnance (UXO) disposal and mine risk education. DDG Afghanistan delivers humanitarian mine action to save life, strengthen the sense of safety through risk education and help remove obstacles to the productive use of resources, helping to realise Afghanistan's development potential. Since the start of operations in Afghanistan, DDG has removed over 24,000 landmines and over 940,000 pieces of UXO. Currently, DDG is working in the northern provinces of Balkh and Samangan, and the central provinces of Kabul, Parwan and Panjshir.
+デンマーク難民評議会の専門地雷対策ユニットであるデンマーク地雷除去グループ（DDG）は、1999年以来アフガニスタンで活動しており、人道的地雷除去、不発弾（UXO）処分、地雷回避教育を担当しています。DDGアフガニスタンは人道的地雷対策を実施することにより、人命を救い、リスク教育を通じて安全の感覚を強化し、資源の生産的な活用を妨げる障害の除去を支援しており、アフガニスタン開発の潜在能力の実現に役立っています。DDGは、アフガニスタンでの活動開始以来24,000個以上の地雷と94万発以上の不発弾を除去してきました。現在、DDGは北部地方のバルフとサマンガーン、中央地方のカブール、パルヴァーン、パンジシールで活動しています。
 
-In Afghanistan, mineclearance activities are coordinated through the Mine Action Coordination Centre for Afghanistan (MACCA), who collect and disseminate geospatial information on known hazards (minefields, battlefields, 'spot' UXO tasks), and update this information as clearance progresses. New shapefiles of these 'hazard polygons' are issued by the MACCA on a regular basis, and mineclearance organisations can use these to assess the situation of mineclearance in their areas of operation. DDG is trialling the use of QGIS within the organization to replace the expensive commercial softwares it has used in the past.
+アフガニスタンでは、地雷除去活動はアフガニスタン地雷対策調整センター（MACCA）を通して調整されています。この団体では既知の危険（地雷原、戦場、「スポット」UXOタスク）の地理空間情報を収集、配布し、除去の進捗に応じてこの情報を更新しています。これらの「ハザードポリゴン」の新しいシェープファイルは定期的にMACCAによって発行され、地雷除去団体は活動領域における地雷除去の状況を評価するためにこれを使用することができます。DDGでは、過去に使用してきた高価な商用ソフトウェアを置き換えるために、組織内でのQGISの使用を試しています。
 
 <figure>
 <img src="../images/afghanistan1.png" class="align-right" alt="afghanistan1.png" />
-<figcaption>Digital elevation models allow DDG to get an idea of the location of a minefield</figcaption>
+<figcaption>数値標高モデルは、DDGが地雷原の場所に関して当たりを付けることに役立っています</figcaption>
 </figure>
 
-The use of geospatial data is most useful in the planning and survey phases. In Afghanistan, security problems and rugged terrain mean that physical re-survey of known sites is not always easy. Instead, the use of a mixture of data — satellite or aerial photography underlays, digitized Soviet-era topographic maps, hazard shapefiles and digital elevation models — allow DDG to get an idea of the location of a minefield in relation to the terrain and surrounding natural and physical features before sending in a survey team. QGIS plugins add useful capabilities, like the ability to visualise terrain in 3D. The attached screenshot above — made using the plugin Qgis2threejs —— shows an area just south of the Darulaman Palace in Kabul, with active minefields (along the ridgelines on the left) shown in red over a Soviet topographic raster layer combined with SRTM data. Minefields already cleared show as light green.
+地理空間データの使用は計画や調査段階で最も有用です。アフガニスタンでは、セキュリティ上の問題や険しい地形が知られているサイトの物理的な再調査は必ずしも容易ではないことを意味します。代わりに、データの混合物（衛星や航空写真の下敷き、デジタイズされたソ連時代の地形図、ハザードシェープファイルと数値標高モデル）を使用することで、DDGでは、測量チームを送りこむ前に、地形と周辺の自然および物理的地物との関係で地雷原の場所の当りを付けることができます。QGISのプラグインは3Dで地形を可視化する機能など、便利な機能を追加します。上記添付のスクリーンショットは、プラグインQgis2threejsを用いて作製したものですが、カブールのダルラマン宮殿のすぐ南の領域を示していて、SRTMデータと組み合わせたソビエト地形ラスタレイヤ上にアクティブ地雷原が（左の稜線に沿って）赤色で表示されています。すでに除去された地雷原は明緑色で表示されています。
 
 <figure>
 <img src="../images/afghanistan2.jpg" class="align-right" alt="afghanistan2.jpg" />
