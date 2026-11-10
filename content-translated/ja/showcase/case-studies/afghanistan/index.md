@@ -41,6 +41,6 @@ The use of QGIS, along with a renewed interest in data analysis, has spurred new
 ## 著者
 ![Edward Crowther](afghanistan3.jpg)
 
-Edward Crowther is Deputy Country Director at Danish Demining Group Afghanistan. Prior to joining DDG in Afghanistan, Edward worked with the humanitarian mineclearance agency The HALO Trust in Angola and Sri Lanka. He holds an MSc in Development Studies from the University of London's School of Oriental and African Studies.
+エドワード・クラウザーはデンマーク地雷除去グループ・アフガニスタンの副カントリーディレクターです。エドワードはアフガニスタンでDDGに入社する前、アンゴラとスリランカで人道的地雷除去機関HALOトラストと働きました。彼はロンドン大学東洋アフリカ研究学院で開発研究の理学修士を取得しました。
 
 {{<content-end >}}

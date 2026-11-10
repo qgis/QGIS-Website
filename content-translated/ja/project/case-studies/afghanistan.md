@@ -33,7 +33,7 @@ type: case-study
 
 <figure>
 <img src="../images/afghanistan2.jpg" class="align-right" alt="afghanistan2.jpg" />
-<figcaption>Active hazardous areas shown in red. Hazardous areas already cleared show as light green.</figcaption>
+<figcaption>未除去の危険区域は赤で示されており、すでに除去された危険区域は明るい緑色で示されています。</figcaption>
 </figure>
 
 Kabul University's campus is still contaminated with suspected hazardous areas — thought to comprise of air-dropped bombs or similar ordnance. While not posing any immediate threat to students or staff, these hazards will require eventual clearance to allow future construction within an educational institution vital to Afghanistan's future development. The hazards are also notable as among the last significant remaining hazardous areas in the Kabul metropolitan area. By using QGIS to combine the hazard polygons from earlier surveys with highly accurate aerial photography provided by the USGS, discrepancies can be noted — e.g. where the polygons do not match the shape of the buildings, as evident in the northwest part of the campus —— which can direct survey teams to places to first conduct a more accurate re-survey.
@@ -50,6 +50,6 @@ The use of QGIS, along with a renewed interest in data analysis, has spurred new
 <figcaption>Edward Crowther</figcaption>
 </figure>
 
-Edward Crowther is Deputy Country Director at Danish Demining Group Afghanistan. Prior to joining DDG in Afghanistan, Edward worked with the humanitarian mineclearance agency The HALO Trust in Angola and Sri Lanka. He holds an MSc in Development Studies from the University of London's School of Oriental and African Studies.
+エドワード・クラウザーはデンマーク地雷除去グループ・アフガニスタンの副カントリーディレクターです。エドワードはアフガニスタンでDDGに入社する前、アンゴラとスリランカで人道的地雷除去機関HALOトラストと働きました。彼はロンドン大学東洋アフリカ研究学院で開発研究の理学修士を取得しました。
 
 {{<content-end >}}
