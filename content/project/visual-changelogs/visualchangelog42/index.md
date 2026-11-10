@@ -108,8 +108,6 @@ another interface or menu.
 src="images/entries/3649f31a4a1358779fd933bddce5e20161257fd9.png"
 class="img-responsive img-rounded" />
 
-This feature was funded by Ocean Winds
-
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 
 ### Feature: Edit legend labels directly from the Layers panel
