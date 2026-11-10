@@ -108,6 +108,22 @@ another interface or menu.
 src="images/entries/3649f31a4a1358779fd933bddce5e20161257fd9.png"
 class="img-responsive img-rounded" />
 
+This feature was funded by Ocean Winds
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
+
+### Feature: Edit legend labels directly from the Layers panel
+
+Legend item labels (e.g. for categorized, graduated and rule-based
+renderers) can now be renamed directly in the **Layers** panel.
+Pressing **F2** on a legend item starts editing its label.
+
+<img
+src="images/entries/35e66a67e68cb36039b4407ed01f1efe75c5445d.gif"
+class="img-responsive img-rounded" />
+
+This feature was funded by Ocean Winds
+
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 
 ## Symbology
@@ -622,6 +638,22 @@ This feature was funded by the city of Bern
 
 This feature was developed by [Germap](https://github.com/gacarrillor)
 
+### Feature: Change behavior of layout guide position editing
+
+Previously, the list of guides in the layout **Guides** panel was
+re-sorted every time a guide position value changed, making editing
+cumbersome. The list is now only sorted once editing of the value is
+finished. Guides on the layout canvas still move live as the value
+changes.
+
+<img
+src="images/entries/094356e9888560e7c8219f78961d49b95c317543.gif"
+class="img-responsive img-rounded" />
+
+This feature was funded by Ocean Winds
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
+
 ## Expressions
 
 ### Feature: Add scale_cubic_bezier expression function, handle bezier-cubic interpolation when converting MapBox styles
@@ -660,6 +692,21 @@ class="img-responsive img-rounded" />
 
 This feature was developed by [Patrice
 Pineault](https://github.com/TurboGraphxBeige)
+
+### Feature: Add domain column to Fields in vector layer properties
+
+A new **Domain** column was added to the **Fields** tab of the vector
+**Layer Properties**, showing the name of the field domain associated
+with each field. The column is hidden if the data provider does not
+support field domains.
+
+<img
+src="images/entries/1c3f00498dcdc50cfe69639e956828fbc74f0195.png"
+class="img-responsive img-rounded" />
+
+This feature was funded by Ocean Winds
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
 
 ## Processing
 
@@ -818,6 +865,16 @@ This feature was funded by République et canton de Genève
 
 This feature was developed by [Nyall
 Dawson](https://github.com/nyalldawson)
+
+### Feature: Add Refresh to Cloud Browser item
+
+A **Refresh** menu item was added to the context menu of the **Cloud**
+item in the Browser, allowing users to refresh the item and all its
+sub-items.
+
+This feature was funded by Ocean Winds
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
 
 ## Data Providers
 
