@@ -16,7 +16,7 @@ Are you looking for courses with the official QGIS certificate? At the [QGIS Cer
 
 ![Students with certificate](../students_with_certificate.webp "Students with certificate")
 ## Torne-se uma organização de treinamento certificada em QGIS
-Does your organisation participate actively in the QGIS community and offer high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and training. Each certificate contributes €20 to QGIS.
+Sua organização participa ativamente da comunidade QGIS e oferece cursos de treinamento de alta qualidade com o QGIS? Então considere se inscrever no **Programa de Certificação QGIS**. Como membro, você poderá emitir o certificado oficial do QGIS para os participantes de seus cursos, workshops e treinamentos. Cada certificado contribui com €20 para o QGIS.
 ### Processo de Certificação
 #### Requerimentos
 O Programa de Certificação QGIS foi concebido para promover tanto o envolvimento da comunidade no projeto QGIS quanto a educação de qualidade no software QGIS. O processo de aplicação exige que os candidatos detalhem suas contribuições para o projeto QGIS e disponibilizem seus materiais de treinamento para avaliação. As contribuições para o projeto QGIS incluem atividades como:
@@ -38,7 +38,7 @@ Following an initial review, the application will be sent to local [QGIS User Gr
 
 The PSC will make the final determination. If accepted as a QGIS Certified Organization, your contributions to the project will be published for transparency.
 
-If approved, you are required to pay a **€20 certification fee** to the QGIS project for each certificate you issue. This creates a mechanism for financial support of the project. Payments for certificates are made either using online credit card transactions or on request by regular invoice and SEPA wire transfer. Payments can be handled in batches for many certificates at once.
+Se aprovado, você deverá pagar uma **taxa de certificação de €20** ao projeto QGIS para cada certificado emitido. Isso cria um mecanismo de apoio financeiro ao projeto. Os pagamentos dos certificados são feitos por meio de transações online com cartão de crédito ou, mediante solicitação, por fatura e transferência bancária SEPA. Os pagamentos podem ser processados ​​em lotes para vários certificados simultaneamente.
 
 You can apply through the [QGIS Certification Programme website](https://certification.qgis.org/).
 

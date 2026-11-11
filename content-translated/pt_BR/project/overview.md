@@ -32,7 +32,7 @@ type: page
 Experience QGIS' extensive set of design options to bring your cartographic ideas to life.
 ###### Produção profissional de mapa
 Use the intuitive layout design tool to produce high-quality, large-format print maps.
-###### Powerful reporting tools
+###### Ferramentas poderosas de relatórios
 Create atlases and reports with maps, media and tabular content.
 
 {{<column-end >}}
@@ -52,8 +52,8 @@ Create atlases and reports with maps, media and tabular content.
 Create and edit points, lines, polygons, and meshes with precision.
 ###### Ferramentas avançadas de construção
 Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations.
-###### Highly customizable forms
-Create user-friendly forms using our form designer.
+###### Formulários altamente personalizáveis
+Criar formulários fáceis de usar utilizando nosso designer de formulários.
 
 {{<column-end >}}
 
@@ -88,7 +88,7 @@ Explore our diverse plugin ecosystem of third-party analysis tools for expanded 
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Industry-leading format support
+###### Suporte a formatos líderes do setor
 Conquer data integration challenges with support for a multitude of data sources and formats.
 ###### Padrões e interoperabilidade
 Amplie seu impacto explorando, utilizando e criando serviços web baseados em padrões da indústria.
