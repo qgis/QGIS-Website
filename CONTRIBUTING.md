@@ -5,6 +5,41 @@ We welcome contributions of all kinds, including bug fixes, feature requests,
 documentation improvements, and more. Please follow the guidelines below to
 ensure a smooth contribution process.
 
+## Contributions guidelines
+
+### Reporting issues
+
+- We do not accept text in issues/comments that are LLM (AI) generated as part of our policy (please see the [Using AI](#-using-ai-large-language-models) section for more details).
+- **This repository is only for the main QGIS website (qgis.org)** and we would appreciate if you could only report issues that are related to this website here.
+Any issue related to other websites (e.g plugins.qgis.org) or the QGIS Desktop should be reported to their respective repository.
+- If you are considering to submit a PR directly, **we recommend opening an issue first** explaining the bug or the request. That way, it can be discussed before you spend the effort addressing it.
+- We recommend reporting each issue under its respective category. When pressing the **New issue** button, please choose one of  `Show Errors`, `Website Bug Report`, `Development`, `Feature Request` category. Never use the `Blank issue` for any issue that is under these existing categories.
+- We also recommend attaching any relevant details like screenshots, error logs, wireframe... that could help us have more context about the issue.
+- When submitting an issue, you should be always responsive to any questions and concerns. If we do not get a timely response, we reserve the right to close the issue so that we can keep the list of in-play issues we have to deal with small.
+
+### Submitting a pull request 
+
+When submitting a PR, we are expecting you take into consideration the following guidelines:
+
+- We do not accept text in PR title/descriptions/comments that are LLM (AI) generated as part of our policy (please see the [Using AI](#-using-ai-large-language-models) section for more details).
+- The PR should always include an open issue reference (e.g Fixes #1234) unless the changes have been already discussed and the full context is provided.
+- Make small, atomic changes. Your changeset size should not exceed more than 300 lines of code.
+- Any content, UI/UX changes must always have screenshots attached (desktop/mobile version). Screenshots are also very welcome on any other changes whenever possible.
+- When submitting PR, you should be always responsive to any questions, comments and changes requests. As with open issues, we reserve the right to close PR's if we do not get needed feedback in a timely manner. We do this to keep the number of in-consideration PR's short and manageable.
+
+
+### CLA Signature is required
+
+All contributors are expected to sign a contributor license agreement (CLA) which you can see [here](https://gist.github.com/timlinux/cc20c0b8860648da977a261d46b170d4). This process is automatically enabled when you create your first pull request via https://cla-assistant.io/.
+
+[![CLA assistant](https://cla-assistant.io/readme/badge/qgis/QGIS-Website)](https://cla-assistant.io/qgis/QGIS-Website)
+
+
+### 🤖 Using 'AI' (Large Language Models)
+
+If you follow the QGIS discussion lists, QEP's etc. you will see that the use of LLM's and QGIS' acceptance of this is still under discussion. We are not the LLM police and do not have any systematic way to check if you are using an LLM or not - we expect you to self declare your LLM usage in your PR comment. That said, we are not super enthusiastic about receiving LLM generated patches if we do not know and trust you, and suggest that if you are making your first contributions, do it the old fashioned way (using brains and brawn, not an LLM). If you are a regular contributor and we trust that that submissions you make are of a good quality, we will likely be more accepting of LLM based contributions.
+
+**Code changes only:** As stated in our project policy in [QEP 430](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/389), AI/LLM generated text content are not allowed in all QGIS GitHub repositories. This includes issues and PR titles, descriptions, comments... Only the source code changes is allowed to be generated with the help of AI/LLM.
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
@@ -342,15 +377,6 @@ Also some bulma theme overrides are placed in themes/qgis-website-theme/assets/c
 * Avoid abbreviations in the words of your files
 * Write file names in lower case only
 * No spaces in file names
-
-
-![-----------------------------------------------------](./img/green-gradient.png)
-
-## 🤝 Contributing to this project
-
-We welcome your contributions! All contributors are expected to sign a contributor license agreement (CLA) which you can see [here](https://gist.github.com/timlinux/cc20c0b8860648da977a261d46b170d4). This process is automatically enabled when you create your first pull request via https://cla-assistant.io/.
-
-[![CLA assistant](https://cla-assistant.io/readme/badge/qgis/QGIS-Website)](https://cla-assistant.io/qgis/QGIS-Website)
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
