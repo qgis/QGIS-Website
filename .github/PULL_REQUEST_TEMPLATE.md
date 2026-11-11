@@ -13,7 +13,7 @@ Fixes #
 
 - [ ] AI tool(s) (Copilot, Claude, or something similar) supported my development of this PR.
 
-- [ ] I certify that no AI tool(s) were used in writing this PR title and description. See our [policy about AI tool use for text content](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/389).
+- [ ] I certify that no AI tool(s) were used in writing this PR title and description. See our [policy about AI tool use for text content](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-408-ai-tool-policy.md).
 
 <!--
   BEFORE HITTING SUBMIT -- Please BUILD AND TEST your changes thoroughly. This is YOUR responsibility! Do NOT rely on the QGIS-Website code maintainers to do this for you!!
