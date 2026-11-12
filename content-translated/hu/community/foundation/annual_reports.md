@@ -15,6 +15,8 @@ type: page
 
 Vegye figyelembe, hogy a jelentés pénzügyi információt, tartalmaz amely külön jelentésként is elérhető a weboldal pénzügyek részében.
 
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2025.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2025" listSubtitle="PDF letöltése" >}}
+
 {{<rich-list listLink="../annual-project-reports/QGISAnnualReport2024.pdf" linkAttr="download" layoutClass="half" listTitle="2024-es éves jelentés" listSubtitle="PDF letöltése" >}}
 
 {{<rich-list listLink="../annual-project-reports/QGISAnnualReport2023.pdf" linkAttr="download" layoutClass="half" listTitle="2023-as éves jelentés" listSubtitle="PDF letöltése" >}}

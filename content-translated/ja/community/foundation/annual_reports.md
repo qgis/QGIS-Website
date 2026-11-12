@@ -15,6 +15,8 @@ type: page
 
 レポートには、このWebサイトの財務セクションで別途レポートとして入手できる財務情報が含まれることに注意してください。
 
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2025.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2025" listSubtitle="Download PDF" >}}
+
 {{<rich-list listLink="../annual-project-reports/QGISAnnualReport2024.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2024" listSubtitle="Download PDF" >}}
 
 {{<rich-list listLink="../annual-project-reports/QGISAnnualReport2023.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2023" listSubtitle="Download PDF" >}}

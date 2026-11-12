@@ -34,9 +34,9 @@ type: showcase/case-studies
 
 またQGISは、携帯式のGarmin GPSを使った野外活動にて収集されたデータと同期し、発見・破壊された地雷の場所で除去地図を作ることを可能にします。
 
-The use of QGIS, along with a renewed interest in data analysis, has spurred new ways of looking at the data available, and combining it with other data sources to better target mineclearance activities. It is also driving improved mapping capabilities within the organisation, and an ability to better communicate the impact of its work to international donors. In a part of the world where 'formal' GIS training is difficult to acquire, the collaborative nature of the QGIS user community is greatly appreciated, as technical problems can often be solved by consulting online forums. In short, QGIS is playing a role in working towards ridding Afghanistan of landmines and UXO.
+QGISの活用と、データ分析への関心の再燃により、入手可能なデータを新たな視点で捉え、他のデータソースと組み合わせることで、地雷除去活動をより的確に実施できるようになりました。また、これにより組織内の地図作成能力が向上し、その活動がもたらす影響を国際的な支援団体に対してより効果的に伝えることができるようになっています。「正式な」GIS研修を受けることが困難なこの地域において、QGISユーザーコミュニティの協力的な姿勢は高く評価されています。技術的な問題も、多くの場合、オンラインフォーラムを参照することで解決できるからです。要するに、QGISはアフガニスタンから地雷や不発弾を排除するための取り組みにおいて重要な役割を果たしているのです。
 ## リンク
-- Danish Demining Group <http://www.danishdemininggroup.dk/>
+- デンマーク地雷除去グループ <http://www.danishdemininggroup.dk/>
 
 ## 著者
 ![Edward Crowther](afghanistan3.jpg)

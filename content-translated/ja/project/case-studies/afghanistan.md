@@ -36,18 +36,18 @@ type: case-study
 <figcaption>未除去の危険区域は赤で示されており、すでに除去された危険区域は明るい緑色で示されています。</figcaption>
 </figure>
 
-Kabul University's campus is still contaminated with suspected hazardous areas — thought to comprise of air-dropped bombs or similar ordnance. While not posing any immediate threat to students or staff, these hazards will require eventual clearance to allow future construction within an educational institution vital to Afghanistan's future development. The hazards are also notable as among the last significant remaining hazardous areas in the Kabul metropolitan area. By using QGIS to combine the hazard polygons from earlier surveys with highly accurate aerial photography provided by the USGS, discrepancies can be noted — e.g. where the polygons do not match the shape of the buildings, as evident in the northwest part of the campus —— which can direct survey teams to places to first conduct a more accurate re-survey.
+カブール大学のキャンパスには、空から投下された爆弾やそれに類する兵器で構成されていると考えられる危険区域がまだ存在しています。これらの危険は直ちに学生や職員への脅威とはなりませんが、アフガニスタンの将来の発展に不可欠な教育機関での将来の工事を可能にするために、最終的には除去する必要があります。また、これらの危険は、カブール首都圏に残る最後の重要な危険区域の一つとしても注目されます。以前の調査から得たハザードポリゴンとUSGSから提供された高い正確度の航空写真をQGISを使って組み合わせることにより、矛盾に着目することができます。例えばキャンパスの北西部分で明らかなように、ポリゴンが建物の形状と一致していないところからより正確な再調査を実施するよう、調査チームを送ることができます。
 
 またQGISは、携帯式のGarmin GPSを使った野外活動にて収集されたデータと同期し、発見・破壊された地雷の場所で除去地図を作ることを可能にします。
 
-The use of QGIS, along with a renewed interest in data analysis, has spurred new ways of looking at the data available, and combining it with other data sources to better target mineclearance activities. It is also driving improved mapping capabilities within the organisation, and an ability to better communicate the impact of its work to international donors. In a part of the world where 'formal' GIS training is difficult to acquire, the collaborative nature of the QGIS user community is greatly appreciated, as technical problems can often be solved by consulting online forums. In short, QGIS is playing a role in working towards ridding Afghanistan of landmines and UXO.
+QGISの活用と、データ分析への関心の再燃により、入手可能なデータを新たな視点で捉え、他のデータソースと組み合わせることで、地雷除去活動をより的確に実施できるようになりました。また、これにより組織内の地図作成能力が向上し、その活動がもたらす影響を国際的な支援団体に対してより効果的に伝えることができるようになっています。「正式な」GIS研修を受けることが困難なこの地域において、QGISユーザーコミュニティの協力的な姿勢は高く評価されています。技術的な問題も、多くの場合、オンラインフォーラムを参照することで解決できるからです。要するに、QGISはアフガニスタンから地雷や不発弾を排除するための取り組みにおいて重要な役割を果たしているのです。
 ## リンク
-- Danish Demining Group <http://www.danishdemininggroup.dk/>
+- デンマーク地雷除去グループ <http://www.danishdemininggroup.dk/>
 
 ## 著者
 <figure>
 <img src="../images/afghanistan3.jpg" class="align-left" height="220" alt="afghanistan3.jpg" />
-<figcaption>Edward Crowther</figcaption>
+<figcaption>エドワード・クラウザー</figcaption>
 </figure>
 
 エドワード・クラウザーはデンマーク地雷除去グループ・アフガニスタンの副カントリーディレクターです。エドワードはアフガニスタンでDDGに入社する前、アンゴラとスリランカで人道的地雷除去機関HALOトラストと働きました。彼はロンドン大学東洋アフリカ研究学院で開発研究の理学修士を取得しました。

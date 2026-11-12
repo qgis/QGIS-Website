@@ -15,6 +15,8 @@ Beginnend in 2016, gelijktijdig met het vestigen van een formele legale entiteit
 
 Als opmerking zij vermeld dat het rapport enige financiële informatie zal bevatten die ook beschikbaar is als afzonderlijk rapport in het financiële gedeelte van deze website.
 
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2025.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2025" listSubtitle=" PDF downloaden" >}}
+
 {{<rich-list listLink="../annual-project-reports/QGISAnnualReport2024.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2024" listSubtitle=" PDF downloaden" >}}
 
 {{<rich-list listLink="../annual-project-reports/QGISAnnualReport2023.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2023" listSubtitle=" PDF downloaden" >}}

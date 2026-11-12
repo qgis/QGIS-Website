@@ -15,6 +15,8 @@ A partire dal 2016, in concomitanza con la costituzione di un'entità giuridica 
 
 Si noti che il rapporto conterrà alcune informazioni finanziarie che sono disponibili anche come rapporto separato nella sezione delle finanze di questo sito web.
 
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2025.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2025" listSubtitle="Scarica PDF" >}}
+
 {{<rich-list listLink="../annual-project-reports/QGISAnnualReport2024.pdf" linkAttr="download" layoutClass="half" listTitle="Rapporto annuale QGIS 2024" listSubtitle="Scarica PDF" >}}
 
 {{<rich-list listLink="../annual-project-reports/QGISAnnualReport2023.pdf" linkAttr="download" layoutClass="half" listTitle="Rapporto annuale QGIS 2023" listSubtitle="Scarica PDF" >}}

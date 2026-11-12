@@ -15,6 +15,8 @@ Starting in 2016, coincident with the establishment of a formal legal entity (Sw
 
 Observe que o relatório conterá algumas informações financeiras que também estão disponíveis como um relatório separado na seção de finanças deste site.
 
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2025.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2025" listSubtitle="Download PDF" >}}
+
 {{<rich-list listLink="../annual-project-reports/QGISAnnualReport2024.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2024" listSubtitle="Download PDF" >}}
 
 {{<rich-list listLink="../annual-project-reports/QGISAnnualReport2023.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2023" listSubtitle="Download PDF" >}}
