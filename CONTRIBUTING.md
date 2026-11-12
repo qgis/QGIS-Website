@@ -39,7 +39,7 @@ All contributors are expected to sign a contributor license agreement (CLA) whic
 
 If you follow the QGIS discussion lists, QEP's etc. you will see that the use of LLM's and QGIS' acceptance of this is still under discussion. We are not the LLM police and do not have any systematic way to check if you are using an LLM or not - we expect you to self declare your LLM usage in your PR comment. That said, we are not super enthusiastic about receiving LLM generated patches if we do not know and trust you, and suggest that if you are making your first contributions, do it the old fashioned way (using brains and brawn, not an LLM). If you are a regular contributor and we trust that that submissions you make are of a good quality, we will likely be more accepting of LLM based contributions.
 
-**Code changes only:** As stated in our project policy in [QEP 430](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/389), AI/LLM generated text content are not allowed in all QGIS GitHub repositories. This includes issues and PR titles, descriptions, comments... Only the source code changes is allowed to be generated with the help of AI/LLM.
+**Code changes only:** As stated in our project policy in [QEP 408](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-408-ai-tool-policy.md), AI/LLM generated text content are not allowed in all QGIS GitHub repositories. This includes issues and PR titles, descriptions, comments... Only the source code changes is allowed to be generated with the help of AI/LLM.
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
