@@ -458,17 +458,17 @@ Todos los ejercicios han sido actualizados para ser compatibles con QGIS 3.26. L
     
 - Date: June 2025
 
-### QGIS Exercise Guide: beginner, intermediate, and advanced Levels
+### Guía de ejercicios QGIS: niveles principiante, intermedio y avanzado
 
-Three practical exercise guides in QGIS (beginner, intermediate, and advanced) designed for the management and analysis of geospatial data from the Servicio Geológico Colombiano using free and open-source software solutions.
+Tres guías prácticas de ejercicios en QGIS (niveles principiante, intermedio y avanzado) diseñadas para la gestión y el análisis de datos geoespaciales del Servicio Geológico Colombiano mediante soluciones de software libre y de código abierto.
 
-- [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx)
+- [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias.aspx)
     
 - Author(s): Samuel Mesa, Jaime Garzón, Luis Salas 
 
 - Organization: Servicio Geológico Colombiano
     
-- Date: December 2024
+- Date: Enero 2026
 
 
 ## Turkish
