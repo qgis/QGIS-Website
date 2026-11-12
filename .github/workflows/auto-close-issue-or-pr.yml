@@ -3,6 +3,8 @@ name: Close Issues or PR that doesn't follow the guidelines
 on:
   issues:
     types: [labeled]
+  pull_request_target:
+    types: [labeled]
 
 jobs:
   close-not-related-issue:
