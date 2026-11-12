@@ -28,19 +28,21 @@ See [Unit testing](https://docs.qgis.org/testing/en/docs/developers_guide/unitte
 
 See the [OGC conformance testing documentation](https://docs.qgis.org/testing/en/docs/developers_guide/ogcconformancetesting.html) for more information and notes on how to run these tests yourself.
 
-{{< button
-class = "is-primary1 is-small"
-link = "http://test.qgis.org/ogc_cite"
-text = "OGC Cite tests" >}}
+The public OGC Cite test servers are currently being migrated and are temporarily unavailable.
 
 {{< button
-class = "is-primary1 is-small"
-link = "http://test.qgis.org/ogc_cite/wms_130/latest/report.html"
-text = "WMS 1.3.0 Tests" >}}
+class = "is-light is-small"
+link = "#"
+text = "OGC Cite tests (migrating)" >}}
 
 {{< button
-class = "is-primary1 is-small"
-link = "http://test.qgis.org/ogc_cite/wfs_110/latest/report.html"
-text = "WFS 1.1.0 Tests" >}}
+class = "is-light is-small"
+link = "#"
+text = "WMS 1.3.0 Tests (migrating)" >}}
+
+{{< button
+class = "is-light is-small"
+link = "#"
+text = "WFS 1.1.0 Tests (migrating)" >}}
 
 {{< content-end >}}
