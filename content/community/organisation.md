@@ -9,6 +9,7 @@ sidebar: true
 {{< content-start >}}
 
 # Who's Who
+
 QGIS as a Project is currently organised as an association legally based in Switzerland with the following structure:
 
 ![QGIS Organizational Structure](./QGIS-ORG_Organizational_structure.png)
@@ -20,54 +21,50 @@ The QGIS project is managed by the Board (3 members, legal representation) and t
 Board
 ---------------------------------------
 
-*   Marco Bernasocchi (Chair) \[since 5.2020\]
-    
-*   Anita Graser (Vice chair) \[since 9.2022\]
-    
-*   Andreas Neumann (Treasurer; Contact for Sustaining Members) \[since 11.2015\]
-    
+* Marco Bernasocchi (Chair) \[since 5.2020\]
+
+* Anita Graser (Vice chair) \[since 9.2022\]
+
+* Andreas Neumann (Treasurer; Contact for Sustaining Members) \[since 11.2015\]
 
 To contact the board, please write to [board@qgis.org](mailto:board@qgis.org).
 
 Project Steering Committee
 ---------------------------------------------------------------------------------
 
-*   Marco Bernasocchi (Chair) \[Chair since 5.2020; Vice chair 4.2018 - 4.2020\]
-    
-*   Anita Graser (Vice chair) \[since 9.2013; Vice chair since 9.2022\]
-    
-*   Andreas Neumann (Treasurer; Contact for Sustaining Members) \[since 11.2015\]
-    
-*   Jürgen Fischer (Release Manager) \[since 9.2013\]
-    
-*   Alessandro Pasotti (PSC Member) \[Vice chair 5.2020 - 9.2022\]
-    
-*   Régis Haubourg (PSC Member) \[since 10.2022\]
-    
+* Marco Bernasocchi (Chair) \[Chair since 5.2020; Vice chair 4.2018 - 4.2020\]
+
+* Anita Graser (Vice chair) \[since 9.2013; Vice chair since 9.2022\]
+
+* Andreas Neumann (Treasurer; Contact for Sustaining Members) \[since 11.2015\]
+
+* Jürgen Fischer (Release Manager) \[since 9.2013\]
+
+* Alessandro Pasotti (PSC Member) \[Vice chair 5.2020 - 9.2022\]
+
+* Régis Haubourg (PSC Member) \[since 10.2022\]
 
 To contact the PSC, please write to [psc@qgis.org](mailto:psc@qgis.org).
 
 ### Honorary PSC Members
 
-*   Gary Sherman (Founder and lifetime Honorary PSC Member)
-    
-*   Tim Sutton (awarded Honorary PSC member in 9.2018 at the FOSS4G in Tanzania)
-    
+* Gary Sherman (Founder and lifetime Honorary PSC Member)
+
+* Tim Sutton (awarded Honorary PSC member in 9.2018 at the FOSS4G in Tanzania)
 
 ### Former PSC Members
 
-*   Tim Sutton (Chair; Testing/QA Manager) (until 2018)
-    
-*   Paolo Cavallini \[Member 4.2020 - 9.2022; Chair 4.2018 - 4.2020; Vice chair 1.2008 - 3.2018\]
-    
-*   Marco Hugentobler \[until 2016\]
-    
-*   Otto Dassau (Community Advisor) \[2007 - 2016\]
-    
-*   Richard Duivenvoorde (Infrastructure Manager) \[2013 - 2019\]
-    
+* Tim Sutton (Chair; Testing/QA Manager) (until 2018)
 
-Read more about the responsibilities of the PSC [here]({{< ref "/community/foundation/charter.md" >}}) 
+* Paolo Cavallini \[Member 4.2020 - 9.2022; Chair 4.2018 - 4.2020; Vice chair 1.2008 - 3.2018\]
+
+* Marco Hugentobler \[until 2016\]
+
+* Otto Dassau (Community Advisor) \[2007 - 2016\]
+
+* Richard Duivenvoorde (Infrastructure Manager) \[2013 - 2019\]
+
+Read more about the responsibilities of the PSC [here]({{< ref "/community/foundation/charter.md" >}})
 
 Address of the Organization
 
@@ -77,10 +74,9 @@ QGIS.ORG Via Geinas 2, CH-7031 Laax
 
 ### Honorable Voting Members
 
-*   Harrissou Sant-anna \[since 5.2020\]
-    
-*   Nyall Dawson \[since 5.2020\]
-    
+* Harrissou Sant-anna \[since 5.2020\]
+
+* Nyall Dawson \[since 5.2020\]
 
 ### Voting Members
 
@@ -90,91 +86,84 @@ According to our statutes, for each user group that is formed, that group will s
 
 According to our statutes, one member from the broader community can be elected for each voting member. The following list includes the current community voting members:
 
-*   Martin Dobias, Slovakia
-    
-*   Nathan Woodrow, Australia
-    
-*   Matthias Kuhn, Switzerland
-    
-*   Larry Shaffer, United States
-    
-*   ~~Nyall Dawson, Australia~~ (moved to Honorable Voting Member status in 2020)
-    
-*   Giovanni Manghi, Portugal
-    
-*   Denis Rouzaud, Switzerland
-    
-*   Alexander Bruy, Ukraine
-    
-*   Regis Haubourg, France
-    
-*   Even Rouault, France
-    
-*   Werner Macho, Austria
-    
-*   Vincent Picavet, France
-    
-*   Yves Jacolin, France
-    
+* Martin Dobias, Slovakia
+
+* Nathan Woodrow, Australia
+
+* Matthias Kuhn, Switzerland
+
+* Larry Shaffer, United States
+
+* ~~Nyall Dawson, Australia~~ (moved to Honorable Voting Member status in 2020)
+
+* Giovanni Manghi, Portugal
+
+* Denis Rouzaud, Switzerland
+
+* Alexander Bruy, Ukraine
+
+* Regis Haubourg, France (_suspended while serving as a PSC member_)
+
+* Even Rouault, France
+
+* Werner Macho, Austria
+
+* Vincent Picavet, France
+
+* Yves Jacolin, France
 
 Added 2017
 
-*   Alessandro Pasotti, Italy
-    
-*   Victor Olaya, France/Spain
-    
-*   Lene Fischer, Denmark
-    
-*   Paul Blottiere, France
-    
-*   Mathieu Pellerin, Indonesia
-    
-*   Luigi Pirelli, Spain
-    
-*   Alexandre Neto, Portugal
-    
-*   Tom Chadwin, United Kingdom
-    
-*   Marco Hugentobler, Switzerland
-    
+* Alessandro Pasotti, Italy (_suspended while serving as a PSC member_)
+
+* Victor Olaya, France/Spain
+
+* Lene Fischer, Denmark
+
+* Paul Blottiere, France
+
+* Mathieu Pellerin, Indonesia
+
+* Luigi Pirelli, Spain
+
+* Alexandre Neto, Portugal
+
+* Tom Chadwin, United Kingdom
+
+* Marco Hugentobler, Switzerland
 
 Added 2018
 
-*   Hugo Mercier, France
-    
+* Hugo Mercier, France
 
 Added 2019
 
-*   None (No new user groups created)
-    
+* None (No new user groups created)
 
 Added 2020
 
-*   David Signer, Switzerland
-    
-*   Enrico Ferreguti, Italy
-    
-*   Etienne Trimaille, France
-    
-*   Pedro Venâncio, Portugal
-    
-*   Peter Petrik, Czech Republic
-    
-*   Richard Duivenvoorde, Netherlands
+* David Signer, Switzerland
 
+* Enrico Ferreguti, Italy
+
+* Etienne Trimaille, France
+
+* Pedro Venâncio, Portugal
+
+* Peter Petrik, Czech Republic
+
+* Richard Duivenvoorde, Netherlands
 
 Added 2021
 
-*   Andrea Giudiceandrea, Italy
-
+* Andrea Giudiceandrea, Italy
 
 Added 2022
 
-*  Adelcides Varela, Cabo Verde
+* Adelcides Varela, Cabo Verde
 
-*  Germán Carrillo, Colombia
+* Germán Carrillo, Colombia
   
-
 Added 2024
 
 * Stefanos Natsis, Greece
@@ -183,16 +172,13 @@ Added 2024
 
 * Damiano Lombardi, Switzerland
 
-
 Added 2026
 
 * Lova Andriarimalala, Madagascar
 
-
 ### OSGEO Voting Member
   
-*  Michael Smith [since 2015/16]
-  
+* Michael Smith [since 2015/16]
   
 ## Release Management
 
@@ -204,29 +190,27 @@ QGIS Releases are managed by the Release Team (Release Manager and Release Assis
 
 QGIS is being packaged for different types of operating systems. The people responsible for these packages are as follows:
 
-*   Windows Team: Jürgen E. Fischer
-    
-*   MacOS Team: Matthias Kuhn, OPENGIS.ch
-    
-*   Linux Team:
-    
-    *   OpenSuSE RPM Maintainer: Angelos Tzotsos
-        
-    *   Fedora RPM Maintainer: Daniel Viganò
-        
-    *   Debian / Ubuntu Deb Maintainer: Jürgen E. Fischer, Bas Couwenberg
-        
+* Windows Team: Jürgen E. Fischer
+
+* MacOS Team: Matthias Kuhn, OPENGIS.ch
+
+* Linux Team:
+
+  * OpenSuSE RPM Maintainer: Angelos Tzotsos
+
+  * Fedora RPM Maintainer: Daniel Viganò
+
+  * Debian / Ubuntu Deb Maintainer: Jürgen E. Fischer, Bas Couwenberg
 
 ### Testing Team
 
-*   Ubuntu Linux: Ricardo Soares Garcia, Giovanni Manghi, Luís de Sousa
-    
-*   Debian Linux: Paolo Cavallini, Pedro Venâncio, Ivan Mincik
-    
-*   Windows: Giovanni Manghi, Pedro Venâncio, Duarte Carreira, Andre Mano, Rui Pedro Henriques
-    
-*   macOS: Denis Rouzaud, Matthias Kuhn, Isabel Kiefer
-    
+* Ubuntu Linux: Ricardo Soares Garcia, Giovanni Manghi, Luís de Sousa
+
+* Debian Linux: Paolo Cavallini, Pedro Venâncio, Ivan Mincik
+
+* Windows: Giovanni Manghi, Pedro Venâncio, Duarte Carreira, Andre Mano, Rui Pedro Henriques
+
+* macOS: Denis Rouzaud, Matthias Kuhn, Isabel Kiefer
 
 ### Security Team
 
@@ -239,10 +223,9 @@ The QGIS community resources are managed by the Community Team (Community Manage
 
 Current Community Team Leaders:
 
-*   Lene Fischer (community tasks)
-    
-*   Matteo Ghetta (documentation)
-    
+* Lene Fischer (community tasks)
+
+* Matteo Ghetta (documentation)
 
 Find the list of documentation and website translators at: [https://github.com/qgis/QGIS-Documentation](https://github.com/qgis/QGIS-Documentation)
 
