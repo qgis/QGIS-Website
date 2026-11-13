@@ -6,29 +6,36 @@
 # Existing files are overwritten on each run to reflect the latest source content.
 
 import os
+import re
 import requests
 import defusedxml.ElementTree as ET
 from dateutil.parser import parse as date_parse
 from bs4 import BeautifulSoup
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
-FEED_URL = "http://blog.qgis.org/category/qgis-grant-programme/feed"
+FEED_URL = "https://blog.qgis.org/category/grant-programme/index.xml"
 GRANTS_FOLDER = "content/community/organisation/grants"
+EXCERPT_WORDS = 20
 
 
 
 def slug_from_url(url):
-    """Derive a filesystem-safe slug from a blog post URL."""
-    path = urlparse(url).path.rstrip("/")
-    return os.path.basename(path)
+    """Derive a filesystem-safe slug from a blog post URL.
+
+    The blog keeps "#" and "." in its slugs, so ".../qgis-grants-%2311-call/"
+    becomes "qgis-grants-11-call".
+    """
+    path = unquote(urlparse(url).path.rstrip("/"))
+    slug = re.sub(r"[^a-z0-9-]+", "-", os.path.basename(path).lower())
+    return re.sub(r"-{2,}", "-", slug).strip("-")
 
 
 def extract_description(raw_html):
-    """Strip HTML and remove trailing 'Read more' from the RSS description."""
-    soup = BeautifulSoup(raw_html, "html.parser")
-    for a in soup.find_all("a", class_="read-more"):
-        a.decompose()
-    return " ".join(soup.get_text(separator=" ").split())
+    """Turn the HTML summary into a short plain text excerpt for the list page."""
+    words = BeautifulSoup(raw_html, "html.parser").get_text().split()
+    if len(words) <= EXCERPT_WORDS:
+        return " ".join(words)
+    return " ".join(words[:EXCERPT_WORDS]) + "…"
 
 
 def fetch_grants():
@@ -44,11 +51,10 @@ def fetch_grants():
         title = (item.findtext("title") or "").strip()
         link = (item.findtext("link") or "").strip()
         pub_date_str = (item.findtext("pubDate") or "").strip()
-        creator = (item.findtext("{*}creator") or "").strip()
-        description_html = (item.findtext("description") or "").strip()
-        content_encoded = (item.findtext("{*}encoded") or "").strip()
+        summary_html = (item.findtext("description") or "").strip()
 
-        if not title or not link:
+        slug = slug_from_url(link)
+        if not title or not slug:
             continue
 
         try:
@@ -56,10 +62,9 @@ def fetch_grants():
         except Exception:
             pub_date = pub_date_str
 
-        slug = slug_from_url(link)
         markdown_filename = os.path.join(GRANTS_FOLDER, f"{slug}.md")
 
-        description = extract_description(description_html)
+        description = extract_description(summary_html)
         escaped_title = title.replace('"', '\\"')
         escaped_description = description.replace('"', '\\"')
 
@@ -75,7 +80,6 @@ def fetch_grants():
             f'date: "{pub_date}"\n'
             f'description: "{escaped_description}"\n'
             f'link: "{link}"\n'
-            f'author: "{creator}"\n'
             "draft: false\n"
             "HasBanner: false\n"
             "sidebar: true\n"
@@ -83,7 +87,7 @@ def fetch_grants():
             "\n"
             "{{< content-start >}}\n"
             "\n"
-            f"{content_encoded}\n"
+            f"{summary_html}\n"
             "\n"
             f'<p><a href="{link}" target="_blank" rel="noopener noreferrer">'
             "View original post on blog.qgis.org \u2197</a></p>\n"
