@@ -155,7 +155,7 @@ The `scripts/` folder contains utility scripts to assist with data loading, and 
 | **GitHub Actions (Automated)** | **Scheduled workflows for content updates** | **Multiple areas** |
 | `.github/workflows/update-gh-sponsors.yml` | Updates GitHub Sponsors list twice daily | 💖 GitHub Sponsors page (`content/funding/donate/github-sponsors.md`) |
 | `.github/workflows/update-donors.yml` | Updates Stripe donors list twice daily | 💰 Donors page (`data/donors.json`) |
-| `.github/workflows/update-feeds.yml` | Updates feeds, hub maps, grant posts and contributor stats twice daily. Each script runs in its own job, so one failure does not block the others | 🏢 Funders, 📰 News feeds, 🗺️ Hub maps, 📰 Grant Programme pages |
+| `.github/workflows/update-feeds.yml` | Updates feeds, hub maps, grant posts and contributor stats twice daily. Each script runs in its own job and commits its own changes, so a failing or slow script never holds back the others | 🏢 Funders, 📰 News feeds, 🗺️ Hub maps, 📰 Grant Programme pages |
 | `.github/workflows/check-commercial-support-links.yml` | Sanitizes commercial support links weekly | 🏪 Commercial Support page |
 | `.github/workflows/update-contributors.yml` | Runs the contributor, organization, and commercial-support-matching scripts twice daily | 👥 Contributors, 🏢 Organizations, 🏪 Commercial Support badges (`data/contributors/*.json`, `data/commercial_support/contributor_matches.json`) |
 | `.github/workflows/update-user-groups.yml` | Builds the user groups data and logos after a change to `data/user_groups/groups.json` reaches `main`, commits it and redeploys | 🌍 Local User Groups (`static/data/user_groups/user_groups.json`, `data/user_groups/countries.json`, `static/img/user-groups/`) |

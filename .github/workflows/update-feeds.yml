@@ -1,5 +1,5 @@
 # This workflow updates the feeds, members list, and contributors stats.
-# Each script runs in its own job, so one failing source does not hold back the others.
+# Each script runs in its own job and commits its own changes as soon as it finishes.
 
 name: ⚒️ Scrape and commit
 on:
@@ -17,25 +17,25 @@ jobs:
       matrix:
         include:
           - name: '🗞️ Fetch Feed Content'
-            id: feeds
             script: ./fetch_feeds.py
             paths: content/funders data/feed.json
+            message: 'Funders and news feed scraped via a GitHub Action.'
           - name: '⚙️ Update Hub Maps'
-            id: hub-images
             script: ./scripts/hub_images_harvest.py
             paths: content/hub-maps content/hub-screenshots
+            message: 'Hub maps and screenshots harvested via a GitHub Action.'
           - name: '📰 Fetch Grant Programme Posts'
-            id: grants
             script: ./scripts/fetch_grants.py
             paths: content/community/organisation/grants
+            message: 'Grant programme posts fetched via a GitHub Action.'
           - name: '🏢 Update Contributing Organizations'
-            id: contributing-orgs
             script: ./scripts/update_contributing_orgs.py
             paths: data/contributors/organizations.json
+            message: 'Contributing organizations updated via a GitHub Action.'
           - name: '🧑‍💻 Update GitHub Contributors'
-            id: individual-contributors
             script: ./scripts/update_individual_contributors.py
             paths: data/contributors/contributors.json static/data/contributors/contributors_map.json
+            message: 'GitHub contributors updated via a GitHub Action.'
     steps:
     - name: '🛒 Checkout QGIS Website'
       uses: actions/checkout@v7
@@ -64,66 +64,17 @@ jobs:
         cd ./qgis-website
         pipenv run "$SCRIPT"
 
-    - name: '📦 Save the changes as a patch'
-      env:
-        PATCH: ${{ matrix.id }}.patch
-        OUTPUT_PATHS: ${{ matrix.paths }}
-      run: |
-        cd ./qgis-website
-        git add -A -- $OUTPUT_PATHS
-        if git diff --cached --quiet; then
-          echo "No changes to commit."
-        else
-          git diff --cached --binary > "../$PATCH"
-        fi
-
-    - name: '⬆️ Upload the patch'
-      uses: actions/upload-artifact@v7
+    - name: '✉️ Commit and push'
+      uses: EndBug/add-and-commit@v11
       with:
-        name: patch-${{ matrix.id }}
-        path: ${{ matrix.id }}.patch
-        if-no-files-found: ignore
-        retention-days: 3
-
-  commit:
-    name: '✉️ Commit'
-    needs: scrape
-    runs-on: ubuntu-latest
-    # Run even when some scrapers failed, so the ones that succeeded still land.
-    if: ${{ !cancelled() && github.repository_owner == 'qgis' }}
-    steps:
-    - name: '🛒 Checkout QGIS Website'
-      uses: actions/checkout@v7
-      with:
-        ref: main
-        path: ./qgis-website
-
-    - name: '⬇️ Download the patches'
-      uses: actions/download-artifact@v8
-      with:
-        pattern: patch-*
-        path: ./patches
-        merge-multiple: true
-
-    - name: '🩹 Apply the patches'
-      run: |
-        cd ./qgis-website
-        shopt -s nullglob
-        for patch in ../patches/*.patch; do
-          echo "Applying $patch"
-          git apply "$patch"
-        done
-
-    - name: '⬇️ Pull latest changes before commit'
-      run: |
-        cd ./qgis-website
-        # Another scheduled job may have pushed to main while this one ran.
-        # Rebase on top of it first (autostash tucks the generated files
-        # aside) so the commit below is a fast forward.
-        git pull --rebase --autostash --no-recurse-submodules origin main
-
-    - name: '✉️ Commit'
-      uses: stefanzweifel/git-auto-commit-action@v7
-      with:
-        commit_message: 'Funders scraped and committed via a GitHub Action.'
-        repository: ./qgis-website
+        cwd: ./qgis-website
+        add: ${{ matrix.paths }}
+        message: ${{ matrix.message }}
+        author_name: ${{ github.actor }}
+        author_email: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
+        committer_name: github-actions[bot]
+        committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+        fetch: false
+        # The other jobs push to main too, so rebase onto their commits and try again.
+        pull: '--rebase --autostash --no-recurse-submodules'
+        push_attempts: 5
