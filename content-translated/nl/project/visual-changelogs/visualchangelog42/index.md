@@ -44,6 +44,14 @@ Dit voegt de opties **Stijl laden…** en **Stijl opslaan…** direct toe aan he
 <img src="images/entries/3649f31a4a1358779fd933bddce5e20161257fd9.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
+### Feature: Edit legend labels directly from the Layers panel
+Legend item labels (e.g. for categorized, graduated and rule-based renderers) can now be renamed directly in the **Layers** panel. Pressing **F2** on a legend item starts editing its label.
+
+<img src="images/entries/35e66a67e68cb36039b4407ed01f1efe75c5445d.gif" class="img-responsive img-rounded" />
+
+Dit werd mogelijk gemaakt door Ocean Winds
+
+Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Symbologie
 ### Mogelijkheid: Renderer Categorieën voor 3D-symbolen toegevoegd
 Renderers Categorieën en Op regel-gebaseerd zijn nu beschikbaar voor QGIS 3D-symbologie.<br />Beide implementaties zijn soortgelijk aan de bestaande vectorrenderers voor 2D-stijlen, zodat gebruikers bekende besturingselementen hebben voor 3D-scenes, terwijl meerdere verbeteringen in de API zijn doorgevoerd om deze set krachtige functionaliteiten te ondersteunen.
@@ -272,6 +280,14 @@ Nieuwe opties zijn toegevoegd om ervoor te zorgen dat exporteren naar georuimtel
 Dit werd mogelijk gemaakt door de stad Bern
 
 Deze mogelijkheid werd ontwikkeld door [Germap](https://github.com/gacarrillor)
+### Feature: Change behavior of layout guide position editing
+Previously, the list of guides in the layout **Guides** panel was re-sorted every time a guide position value changed, making editing cumbersome. The list is now only sorted once editing of the value is finished. Guides on the layout canvas still move live as the value changes.
+
+<img src="images/entries/094356e9888560e7c8219f78961d49b95c317543.gif" class="img-responsive img-rounded" />
+
+Dit werd mogelijk gemaakt door Ocean Winds
+
+Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Expressies
 ### Mogelijkheid: Toegevoegde expressiefunctie scale_cubic_bezier, afhandelen interpolatie bezier-cubic bij het converteren van stijlen van MapBox
 Complementeert de bestaande functies scale_linear, scale_exponential en voegt een nieuwe methode voor op bezier-cubic gebaseerde interpolatie toe. Dat wordt dan gebruikt bij het converteren van stijlen van MapBox met het interpolatietype "cubic-bezier".
@@ -288,6 +304,14 @@ Een nieuw menu-item "Veldberekening openen" wordt verschaft in het contextmenu v
 <img src="images/entries/8ade61ae18cd9ec8014958f35d175ed4e5d0ed4f.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Patrice Pineault](https://github.com/TurboGraphxBeige)
+### Feature: Add domain column to Fields in vector layer properties
+A new **Domain** column was added to the **Fields** tab of the vector **Layer Properties**, showing the name of the field domain associated with each field. The column is hidden if the data provider does not support field domains.
+
+<img src="images/entries/1c3f00498dcdc50cfe69639e956828fbc74f0195.png" class="img-responsive img-rounded" />
+
+Dit werd mogelijk gemaakt door Ocean Winds
+
+Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Processing
 ### Mogelijkheid: Dynamische objecttellingen van kindstap weergeven als het model voortgaat
 Als het model wordt uitgevoerd met het dialoogvenster Modelontwerper, zal QGIS nu een bijgewerkte telling weergeven van objecten die door de links van het model stromen. Een nieuw flexibel item "badge" dat is verbonden aan pijlen werd geïntroduceerd om dit te bereiken.<br />Opmerking:
@@ -353,6 +377,12 @@ Wijzigingen zijn gemaakt om de inhoud van de service ESRI REST minder rommelig t
 Dit werd mogelijk gemaakt door Republiek en Kanton Genève
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Feature: Add Refresh to Cloud Browser item
+A **Refresh** menu item was added to the context menu of the **Cloud** item in the Browser, allowing users to refresh the item and all its sub-items.
+
+Dit werd mogelijk gemaakt door Ocean Winds
+
+Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Gegevensproviders
 ### Mogelijkheid: Enorme versnelling voor de provider FeatureServer voor het bekijken van kaarten
 QGIS heeft een significant krachtiger opnieuw uitgewerkte benadering gebruikt voor het ophalen van gegevens voor de provider FeatureServer, wat het aantal vereiste verzoeken terugdringt om een subset op te halen van de objecten in een bepaald kaartbereik.<br />Onthoud dat het feitelijke TOTALE aantal verzoeken om ELK object uit de service op te halen niet wijzigt, dus, bijvoorbeeld, openen van de attributentabel zou resulteren in hetzelfde totale aantal verzoeken.

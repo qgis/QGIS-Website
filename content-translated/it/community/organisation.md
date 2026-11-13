@@ -67,14 +67,14 @@ In base ai nostri statuti, per ogni membro votante può essere eletto un membro 
 * Giovanni Manghi, Portogallo
 * Denis Rouzaud, Svizzera
 * Alexander Bruy, Ucraina
-* Regis Haubourg, Francia
+* Regis Haubourg, France (_suspended while serving as a PSC member_)
 * Even Rouault, Francia
 * Werner Macho, Austria
 * Vincent Picavet, Francia
 * Yves Jacolin, Francia
 
 Aggiunti nel 2017
-* Alessandro Pasotti, Italia
+* Alessandro Pasotti, Italy (_suspended while serving as a PSC member_)
 * Victor Olaya, Francia/Spagna
 * Lene Fischer, Danimarca
 * Paul Blottiere, Francia

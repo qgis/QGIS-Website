@@ -44,6 +44,14 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 <img src="images/entries/3649f31a4a1358779fd933bddce5e20161257fd9.png" class="img-responsive img-rounded" />
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
+### Feature: Edit legend labels directly from the Layers panel
+Legend item labels (e.g. for categorized, graduated and rule-based renderers) can now be renamed directly in the **Layers** panel. Pressing **F2** on a legend item starts editing its label.
+
+<img src="images/entries/35e66a67e68cb36039b4407ed01f1efe75c5445d.gif" class="img-responsive img-rounded" />
+
+この機能開発には Ocean Winds の資金提供を受けました
+
+この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ## シンボロジ
 ### 機能:3Dシンボルのカテゴリ分類レンダラーの追加
 カテゴリ分類とルールベースのレンダリングがQGIS 3Dシンボロジーで利用可能になりました。<br />両方の実装は2Dスタイリング用の既存のベクターレンダラーと同様であるため、ユーザーは3Dシーンで使い慣れたコントロールを持ちながら、この強力な機能セットをサポートするための複数のAPI拡張が適用されています。
@@ -278,6 +286,14 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 この機能は city of Bern の資金提供で開発されました
 
 This feature was developed by [Germap](https://github.com/gacarrillor)
+### Feature: Change behavior of layout guide position editing
+Previously, the list of guides in the layout **Guides** panel was re-sorted every time a guide position value changed, making editing cumbersome. The list is now only sorted once editing of the value is finished. Guides on the layout canvas still move live as the value changes.
+
+<img src="images/entries/094356e9888560e7c8219f78961d49b95c317543.gif" class="img-responsive img-rounded" />
+
+この機能開発には Ocean Winds の資金提供を受けました
+
+この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ## 計算式
 ### 機能:scale_cubic_bezier式関数の追加とMapBoxスタイル変換時のベジェ三次補間の処理
 既存の scale_linear、scale_exponential 関数を補完し、新しいベジェ三次ベースの補間メソッドを追加します。これはその後、"cubic-bezier" 補間タイプを使用してMapBoxスタイルを変換する際に使用されます。
@@ -294,6 +310,14 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 <img src="images/entries/8ade61ae18cd9ec8014958f35d175ed4e5d0ed4f.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Patrice Pineault](https://github.com/TurboGraphxBeige)
+### Feature: Add domain column to Fields in vector layer properties
+A new **Domain** column was added to the **Fields** tab of the vector **Layer Properties**, showing the name of the field domain associated with each field. The column is hidden if the data provider does not support field domains.
+
+<img src="images/entries/1c3f00498dcdc50cfe69639e956828fbc74f0195.png" class="img-responsive img-rounded" />
+
+この機能開発には Ocean Winds の資金提供を受けました
+
+この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ## プロセシング
 ### 機能:モデルの進行に応じて子ステップの地物数を動的に表示します
 デザイナーダイアログからモデルが実行されると、QGISはモデルのリンクを流れる地物の更新されたカウントを表示するようになりました。これを実現するために、矢印に添付される新しい柔軟な　"バッジ" アイテムが導入されました。<br />注意:
@@ -368,6 +392,12 @@ QGISがプロファイルプロット設定メニューに "3Dビューでプロ
 この機能は République et canton de Genève の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+### Feature: Add Refresh to Cloud Browser item
+A **Refresh** menu item was added to the context menu of the **Cloud** item in the Browser, allowing users to refresh the item and all its sub-items.
+
+この機能開発には Ocean Winds の資金提供を受けました
+
+この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ## データプロバイダ
 ### 機能:マップ表示用FeatureServerプロバイダーの大幅な高速化
 QGISがFeatureServerプロバイダーを使用してデータを取得するための大幅に高性能なリファクタリングアプローチを持つようになり、指定されたマップ範囲内の地物のサブセットを取得するために必要なリクエスト数が削減されました。<br />実際にサービスからすべての地物を取得するための合計リクエスト数は変わらないことに注意してください。例えば、属性テーブルを開くと同じ合計リクエスト数になります。

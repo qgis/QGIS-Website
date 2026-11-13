@@ -67,14 +67,14 @@ Overeenkomstig onze statuten mag één lid uit de bredere gemeenschap worden gek
 * Giovanni Manghi, Portugal
 * Denis Rouzaud, Zwitserland
 * Alexander Bruy, Oekraïne
-* Regis Haubourg, Frankrijk
+* Regis Haubourg, France (_suspended while serving as a PSC member_)
 * Even Rouault, Frankrijk
 * Werner Macho, Oostenrijk
 * Vincent Picavet, Frankrijk
 * Yves Jacolin, Frankrijk
 
 Toegevoegd in 2017
-* Alessandro Pasotti, Italië
+* Alessandro Pasotti, Italy (_suspended while serving as a PSC member_)
 * Victor Olaya, Frankrijk/Spanje
 * Lene Fischer, Denemarken
 * Paul Blottiere, Frankrijk

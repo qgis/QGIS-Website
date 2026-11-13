@@ -67,14 +67,14 @@ QGIS.ORG Via Geinas 2, CH-7031 Laax
 * Giovanni Manghi, ポルトガル
 * Denis Rouzaud, スイス
 * Alexander Bruy, ウクライナ
-* Regis Haubourg, フランス
+* Regis Haubourg, France (_suspended while serving as a PSC member_)
 * Even Rouault, フランス
 * Werner Macho, オーストリア
 * Vincent Picavet, フランス
 * Yves Jacolin, フランス
 
 2017年追加
-* Alessandro Pasotti, イタリア
+* Alessandro Pasotti, Italy (_suspended while serving as a PSC member_)
 * Victor Olaya, フランス/スペイン
 * Lene Fischer, デンマーク
 * Paul Blottiere, フランス

@@ -44,6 +44,14 @@ This adds **Load Style...** and **Save Style...** options directly to the layer 
 <img src="images/entries/3649f31a4a1358779fd933bddce5e20161257fd9.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
+### Feature: Edit legend labels directly from the Layers panel
+Legend item labels (e.g. for categorized, graduated and rule-based renderers) can now be renamed directly in the **Layers** panel. Pressing **F2** on a legend item starts editing its label.
+
+<img src="images/entries/35e66a67e68cb36039b4407ed01f1efe75c5445d.gif" class="img-responsive img-rounded" />
+
+This feature was funded by Ocean Winds
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ## Σύμβολα
 ### Feature: Add categorized renderer for 3D Symbols
 Categorized and rule-based rendering is now available for QGIS 3D Symbology.<br />Both implementations are similar to the existing vector renderers for 2D styling, so that users have familiar controls for 3D scenes, whilst multiple API enhancements have been applied to support this powerful set of functionalities.
@@ -272,6 +280,14 @@ New options have been added to allow Geospatial PDF Exports to follow the QGIS l
 This feature was funded by the city of Bern
 
 This feature was developed by [Germap](https://github.com/gacarrillor)
+### Feature: Change behavior of layout guide position editing
+Previously, the list of guides in the layout **Guides** panel was re-sorted every time a guide position value changed, making editing cumbersome. The list is now only sorted once editing of the value is finished. Guides on the layout canvas still move live as the value changes.
+
+<img src="images/entries/094356e9888560e7c8219f78961d49b95c317543.gif" class="img-responsive img-rounded" />
+
+This feature was funded by Ocean Winds
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ## Expressions
 ### Feature: Add scale_cubic_bezier expression function, handle bezier-cubic interpolation when converting MapBox styles
 Complements the existing scale_linear, scale_exponential functions and adds a new bezier-cubic based interpolation method. This is then used when converting MapBox styles using the "cubic-bezier" interpolation type.
@@ -288,6 +304,14 @@ A new "Field Calculator" menu item is provided in the context menu of column hea
 <img src="images/entries/8ade61ae18cd9ec8014958f35d175ed4e5d0ed4f.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Patrice Pineault](https://github.com/TurboGraphxBeige)
+### Feature: Add domain column to Fields in vector layer properties
+A new **Domain** column was added to the **Fields** tab of the vector **Layer Properties**, showing the name of the field domain associated with each field. The column is hidden if the data provider does not support field domains.
+
+<img src="images/entries/1c3f00498dcdc50cfe69639e956828fbc74f0195.png" class="img-responsive img-rounded" />
+
+This feature was funded by Ocean Winds
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ## Επεξεργασία
 ### Feature: Dynamically show child step feature counts as model progresses
 As the model is run through the designer dialog, QGIS will now show an updated count of features flowing through the model links. To achieve this, a new flexible "badge" item that is attached to arrows was introduced.<br />Note:
@@ -353,6 +377,12 @@ Changes have been made to help de-clutter ESRI REST service content in the brows
 This feature was funded by République et canton de Genève
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+### Feature: Add Refresh to Cloud Browser item
+A **Refresh** menu item was added to the context menu of the **Cloud** item in the Browser, allowing users to refresh the item and all its sub-items.
+
+This feature was funded by Ocean Winds
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ## Data Providers
 ### Feature: Greatly speed up the FeatureServer provider for map viewing
 QGIS has a significantly more performant refactored approach to fetching data using the FeatureServer Provider, which trims down the number of requests required to fetch a subset of the features within a given map extent.<br />Note that the actual TOTAL number of requests to get EVERY feature from the service doesn't change, so, for example, opening the attribute table would result in the same total number of requests.

@@ -67,14 +67,14 @@ According to our statutes, one member from the broader community can be elected 
 * Giovanni Manghi, Portugal
 * Denis Rouzaud, Suiza
 * Alexander Bruy, Ucrania
-* Regis Haubourg, Francia
+* Regis Haubourg, France (_suspended while serving as a PSC member_)
 * Even Rouault, Francia
 * Werner Macho, Austria
 * Vincent Picavet, Francia
 * Yves Jacolin, Francia
 
 Sumados en 2017
-* Alessandro Pasotti, Italia
+* Alessandro Pasotti, Italy (_suspended while serving as a PSC member_)
 * Victor Olaya, Francia / España
 * Lene Fischer, Dinamarca
 * Paul Blottiere, Francia

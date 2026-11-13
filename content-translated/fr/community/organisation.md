@@ -67,14 +67,14 @@ Conformément à nos statuts, un membre issu de la communauté au sens large peu
 * Giovanni Manghi, Portugal
 * Denis Rouzaud, Suisse
 * Alexander Bruy, Ukraine
-* Regis Haubourg, France
+* Regis Haubourg, France (_suspended while serving as a PSC member_)
 * Even Rouault, France
 * Werner Macho, Austriche
 * Vincent Picavet, France
 * Yves Jacolin, France
 
 Ajoutés en 2017
-* Alessandro Pasotti, Italie
+* Alessandro Pasotti, Italy (_suspended while serving as a PSC member_)
 * Victor Olaya, France/Espagne
 * Lene Fischer, Danemark
 * Paul Blottiere, France
