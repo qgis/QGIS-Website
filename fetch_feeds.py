@@ -19,6 +19,8 @@ from scripts.resize_image import resize_image
 # (connect, read) timeouts in seconds so a hung host can't stall the job.
 REQUEST_TIMEOUT = (10, 300)
 
+FUNDERS_DIR = "content/funders"
+
 
 def ensure_scheme(url):
     """Prefix scheme-less URLs like "www.example.com" with https://.
@@ -34,8 +36,8 @@ def ensure_scheme(url):
 ### Funders
 def fetch_funders(url: str):
     """
-    Fetch the sustaining members from the QGIS changelog
-    and create markdown files
+    Fetch the sustaining members and write a page and logo for each one.
+    Files for members the feed no longer lists are removed afterwards.
     """
     response = requests.get(url, timeout=REQUEST_TIMEOUT)
     data = json.loads(response.text)
@@ -44,9 +46,13 @@ def fetch_funders(url: str):
     # list, so normalise to a list before iterating to avoid walking dict keys.
     if isinstance(items, dict):
         items = [items]
+    if not items:
+        print("The members feed is empty, so we keep the existing funder files.")
+        return
+    written = set()
     for item in items:
         member_slug = item["slug"]
-        markdown_filename = f"content/funders/{member_slug}.md"
+        markdown_filename = f"{FUNDERS_DIR}/{member_slug}.md"
         link = ensure_scheme(item["member_url"])
         image_url = item["image_url"]
         title = item["title"]
@@ -86,7 +92,7 @@ country: "{country}"
             print(f"Writing: {markdown_filename}")
 
         response = requests.get(image_url, stream=True, timeout=REQUEST_TIMEOUT)
-        image_filename = f"content/funders/{image_name}"
+        image_filename = f"{FUNDERS_DIR}/{image_name}"
         with open(image_filename, 'wb') as out_file:
             shutil.copyfileobj(response.raw, out_file)
             print(f"Writing: {image_filename}")
@@ -98,6 +104,23 @@ country: "{country}"
                 resize_image(image_filename)
         except Exception as e:
             print(f"Error resizing image: {e}")
+        written.update((f"{member_slug}.md", image_name))
+    prune_funders(written)
+
+
+def prune_funders(keep: set[str]) -> None:
+    """Delete every funder file the latest feed run did not write.
+
+    This clears members dropped upstream, old slugs and logos whose
+    extension changed. The bundle's index.md always stays.
+    """
+    for name in sorted(os.listdir(FUNDERS_DIR)):
+        path = os.path.join(FUNDERS_DIR, name)
+        if name == "index.md" or name in keep or not os.path.isfile(path):
+            continue
+        os.remove(path)
+        print(f"Removing: {path}")
+
 
 def fetch_first_feed_entry():
     """
