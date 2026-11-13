@@ -2,7 +2,7 @@
 # Contributor stats live in update-contributors.yml.
 # Each script runs in its own job and commits its own changes as soon as it finishes.
 
-name: ⚒️ Scrape and commit
+name: ⚒️ Update feeds and commit
 on:
   schedule:
     - cron:  '0 0,12 * * *'  # At midnight & noon UTC
