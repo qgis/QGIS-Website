@@ -8,33 +8,8 @@
 title: "Reports from the winning grant proposals 2018"
 date: "2020-01-06"
 description: "With the QGIS Grant Programme 2018, we were able to support seven proposals that were aimed to improve the QGIS…"
-link: "https://blog.qgis.org/2020/01/06/reports-from-the-winning-grant-proposals-2018/"
-draft: false
-HasBanner: false
-sidebar: true
+externalLink: "https://blog.qgis.org/2020/01/06/reports-from-the-winning-grant-proposals-2018/"
+build:
+  render: link
+  list: local
 ---
-
-{{< content-start >}}
-
-<p>With the <a href="http://blog.qgis.org/2018/06/22/qgis-grant-programme-2018-results/">QGIS Grant Programme 2018</a>, we were able to support seven proposals that were aimed to improve the QGIS project, including software, infrastructure, and documentation. These are the reports on the work that has been done within the individual projects:</p>
-<ol>
-<li><strong><strong>Increased stability for Processing GUI and External Providers (Nyall Dawson)<br />
-</strong></strong>Many bugs in 3rd party providers have been fixed and lots of new unit tests added. The GUI includes new C++ classes and a  new framework that landed in QGIS 3.4. For more details see Nyall&#8217;s <a href="https://lists.osgeo.org/pipermail/qgis-psc/2018-September/006601.html" rel="nofollow">report on the mailing list</a>.</li>
-<li><strong>OSGeo4W updates (Jürgen Fischer)<br />
-</strong>The updates performed in this project were essential to bring QGIS 3.x to Windows.</li>
-<li><strong>Resurrect Processing &#8220;R&#8221; Provider (Nyall Dawson)</strong><br />
-The R provider has been implemented as a provider plugin. The plugin&#8217;s <a href="https://lists.osgeo.org/pipermail/qgis-developer/2018-November/055329.html" rel="nofollow">beta phase was first announced in Nov 2018</a> and the <a href="https://north-road.github.io/qgis-processing-r/" rel="nofollow">plugin is now available</a> for general use.</li>
-<li><strong><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/121">OpenCL support for processing core algs</a> (Alessandro Pasotti)</strong><br />
-The following processing algorithms have been ported: slope, aspect, hillshade, and ruggedness. Even if was not in scope for this QEP, the hillshade renderer has also been optimized. For more details see <a class="issue-link js-issue-link" href="https://github.com/qgis/QGIS/pull/7451">qgis/QGIS#7451</a>.</li>
-<li><strong>QGIS server OGC compliant and certified for WFS (Régis Haubourg) </strong><br />
-This project fixed numerous issues to get closer to the goal of getting QGIS Server WFS certified. However, the project ran out of resources before the goal could be achieved. For details see the <a href="http://test.qgis.org/ogc_cite/wfs_110/latest/report.html" rel="nofollow">current WFS tests status page</a>.</li>
-<li><a href="https://gist.github.com/m-kuhn/e530f6e838dbbf608f12f2da39f8a18d#file-charts-and-drawings-attribute-form-md"><strong>Charts and drawings on attribute forms</strong></a><strong> (Matthias Kuhn)<br />
-</strong>For details read <a href="https://www.opengis.ch/2018/11/06/qml-widgets-qgis/" rel="nofollow">&#8220;The new QML widgets in QGIS&#8221;</a> and see <a class="issue-link js-issue-link" href="https://github.com/qgis/QGIS/pull/7801" aria-label="qgis/QGIS#7801, [FEATURE] QML chart and drawings widget">qgis/QGIS#7801</a>.</li>
-<li><strong>Update of QGIS Training Manual (Matteo Ghetta)</strong><br />
-This project hasn&#8217;t been completed yet.</li>
-</ol>
-<p>Thank you to everyone who participated and made this round of grants a great success and thank you to all our sponsor and donors who make this initiative possible!</p>
-
-<p><a href="https://blog.qgis.org/2020/01/06/reports-from-the-winning-grant-proposals-2018/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
-
-{{< content-end >}}

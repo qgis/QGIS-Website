@@ -12,7 +12,7 @@
 
     # Fetch the Hugo theme submodule directly as a flake input
     qgis-website-theme = {
-      url = "github:qgis/QGIS-Hugo-Website-Theme/8ddbc7a9b617543058701a75d4fb03f25ce293d0";
+      url = "github:qgis/QGIS-Hugo-Website-Theme/12ed336a4d52a702b116aa56e8aefd68e97fdec0";
       flake = false; # it's not a flake, just a source tree
     };
   };

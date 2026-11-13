@@ -306,6 +306,7 @@ See ```.github/workflows/playwright-e2e.yml```
 | Stripe Donors | Twice daily (midnight & noon UTC) | `.github/workflows/update-donors.yml` |
 | News feeds & Sustaining members | Twice daily (midnight & noon UTC) | `.github/workflows/update-feeds.yml` |
 | Hub Maps | Twice daily (midnight & noon UTC) | `.github/workflows/update-feeds.yml` |
+| Grant Programme posts | Twice daily (midnight & noon UTC) | `.github/workflows/update-feeds.yml` |
 | Commercial Support Links | Weekly (Sunday midnight UTC) | `.github/workflows/check-commercial-support-links.yml` |
 | Version info | On deployment | Build process |
 | Visual Changelogs | Manual/As needed | Local script execution (`changelog_harvest.py`) |
