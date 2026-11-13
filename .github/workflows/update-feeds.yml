@@ -1,4 +1,5 @@
 # This workflow updates the feeds, members list, and contributors stats.
+# Each script runs in its own job and commits its own changes as soon as it finishes.
 
 name: ⚒️ Scrape and commit
 on:
@@ -8,8 +9,33 @@ on:
 
 jobs:
   scrape:
+    name: ${{ matrix.name }}
     runs-on: ubuntu-latest
     if: github.repository_owner == 'qgis'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: '🗞️ Fetch Feed Content'
+            script: ./fetch_feeds.py
+            paths: content/funders data/feed.json
+            message: 'Funders and news feed scraped via a GitHub Action.'
+          - name: '⚙️ Update Hub Maps'
+            script: ./scripts/hub_images_harvest.py
+            paths: content/hub-maps content/hub-screenshots
+            message: 'Hub maps and screenshots harvested via a GitHub Action.'
+          - name: '📰 Fetch Grant Programme Posts'
+            script: ./scripts/fetch_grants.py
+            paths: content/community/organisation/grants
+            message: 'Grant programme posts fetched via a GitHub Action.'
+          - name: '🏢 Update Contributing Organizations'
+            script: ./scripts/update_contributing_orgs.py
+            paths: data/contributors/organizations.json
+            message: 'Contributing organizations updated via a GitHub Action.'
+          - name: '🧑‍💻 Update GitHub Contributors'
+            script: ./scripts/update_individual_contributors.py
+            paths: data/contributors/contributors.json static/data/contributors/contributors_map.json
+            message: 'GitHub contributors updated via a GitHub Action.'
     steps:
     - name: '🛒 Checkout QGIS Website'
       uses: actions/checkout@v7
@@ -31,42 +57,24 @@ jobs:
         pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
         pipenv run pip freeze
 
-    - name: '🗞️ Fetch Feed Content'
+    - name: '▶️ Run the script'
+      env:
+        SCRIPT: ${{ matrix.script }}
       run: |
         cd ./qgis-website
-        pipenv run pip freeze
-        pipenv run ./fetch_feeds.py
+        pipenv run "$SCRIPT"
 
-    - name: '⚙️ Update Hub Maps'
-      run: |
-        cd ./qgis-website
-        pipenv run ./scripts/hub_images_harvest.py
-
-    - name: '📰 Fetch Grant Programme Posts'
-      run: |
-        cd ./qgis-website
-        pipenv run ./scripts/fetch_grants.py
-
-    - name: '🏢 Update Contributing Organizations'
-      run: |
-        cd ./qgis-website
-        pipenv run ./scripts/update_contributing_orgs.py
-
-    - name: '🧑‍💻 Update GitHub Contributors'
-      run: |
-        cd ./qgis-website
-        pipenv run ./scripts/update_individual_contributors.py
-
-    - name: '⬇️ Pull latest changes before commit'
-      run: |
-        cd ./qgis-website
-        # Another scheduled job may have pushed to main while this one ran.
-        # Rebase on top of it first (autostash tucks the generated files
-        # aside) so the commit below is a fast forward.
-        git pull --rebase --autostash origin main
-
-    - name: '✉️ Commit'
-      uses: stefanzweifel/git-auto-commit-action@v7
+    - name: '✉️ Commit and push'
+      uses: EndBug/add-and-commit@v11
       with:
-        commit_message: 'Funders scraped and committed via a GitHub Action.'
-        repository: ./qgis-website
+        cwd: ./qgis-website
+        add: ${{ matrix.paths }}
+        message: ${{ matrix.message }}
+        author_name: ${{ github.actor }}
+        author_email: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
+        committer_name: github-actions[bot]
+        committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+        fetch: false
+        # The other jobs push to main too, so rebase onto their commits and try again.
+        pull: '--rebase --autostash --no-recurse-submodules'
+        push_attempts: 5
