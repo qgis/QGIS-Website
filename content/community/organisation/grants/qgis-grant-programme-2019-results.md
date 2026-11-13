@@ -8,17 +8,8 @@
 title: "QGIS Grant Programme 2019 Results"
 date: "2019-06-30"
 description: "We are extremely pleased to announce the winning proposals for our 2019 QGIS.ORG grant programme. Funding for the programme was…"
-link: "https://blog.qgis.org/2019/06/30/qgis-grant-programme-2019-results/"
-draft: false
-HasBanner: false
-sidebar: true
+externalLink: "https://blog.qgis.org/2019/06/30/qgis-grant-programme-2019-results/"
+build:
+  render: link
+  list: local
 ---
-
-{{< content-start >}}
-
-<p>We are extremely pleased to announce the winning proposals for our 2019 QGIS.ORG grant programme. Funding for the programme was sourced by you, our <a href="https://www.qgis.org/en/site/about/sponsorship.html">project donors and sponsors</a>! <strong>Note:</strong> For more context surrounding our grant programme, please see: <a href="http://blog.qgis.org/2019/05/06/qgis-grants-4-call-for-grant-proposals-2019/">QGIS Grants #4: Call for Grant Proposals 2019</a>.</p>
-<p>The QGIS.ORG Grant Programme aims to support work from our community that would typically not be funded by client/contractor agreements. For the first time, this year we did not accept proposals for the development of new features. Instead proposals should focus on infrastructure improvements and polishing of existing features.<span id="more-1420"></span></p>
-
-<p><a href="https://blog.qgis.org/2019/06/30/qgis-grant-programme-2019-results/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
-
-{{< content-end >}}

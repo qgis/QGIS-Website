@@ -8,19 +8,8 @@
 title: "QGIS Grant Programme 2022 Results"
 date: "2022-03-12"
 description: "We are extremely pleased to announce the four funded proposals for our 2022 QGIS.ORG grant programme. Funding for the programme…"
-link: "https://blog.qgis.org/2022/03/12/qgis-grant-programme-2022-results/"
-draft: false
-HasBanner: false
-sidebar: true
+externalLink: "https://blog.qgis.org/2022/03/12/qgis-grant-programme-2022-results/"
+build:
+  render: link
+  list: local
 ---
-
-{{< content-start >}}
-
-<p>We are extremely pleased to announce the four funded proposals for our 2022 QGIS.ORG grant programme. Funding for the programme was sourced by you, our <a href="https://www.qgis.org/en/site/about/sponsorship.html">project donors and sponsors</a>! <strong>Note:</strong> For more context surrounding our grant programme, please see: <a href="https://blog.qgis.org/2022/01/16/qgis-grants-7-call-for-grant-proposals-2022/">QGIS Grants #7: Call for Grant Proposals 2022</a></p>
-<p>These are the proposals:</p>
-<ol><li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/242">Add SQL Logging to the debugging/development panel</a></li><li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/245">QGIS setting registry enhancement</a></li><li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/247">Fix handling of provider default value clauses/Autogenerate/nextval(&#8230;) handling</a></li><li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/243">Support building QGIS application on Qt 6</a></li></ol>
-<p>Since the total requested budget is equal to the available budget, there is no need for a voting this year.</p>
-
-<p><a href="https://blog.qgis.org/2022/03/12/qgis-grant-programme-2022-results/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
-
-{{< content-end >}}
