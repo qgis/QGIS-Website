@@ -36,6 +36,7 @@ jobs:
             script: ./scripts/update_individual_contributors.py
             paths: data/contributors/contributors.json static/data/contributors/contributors_map.json
             message: 'GitHub contributors updated via a GitHub Action.'
+            needs_token: true
     steps:
     - name: '🛒 Checkout QGIS Website'
       uses: actions/checkout@v7
@@ -60,21 +61,35 @@ jobs:
     - name: '▶️ Run the script'
       env:
         SCRIPT: ${{ matrix.script }}
+        # Only the contributors script calls the GitHub API, so only it gets the token.
+        GITHUB_TOKEN: ${{ matrix.needs_token && secrets.GITHUB_TOKEN || '' }}
       run: |
         cd ./qgis-website
         pipenv run "$SCRIPT"
 
     - name: '✉️ Commit and push'
-      uses: EndBug/add-and-commit@v11
-      with:
-        cwd: ./qgis-website
-        add: ${{ matrix.paths }}
-        message: ${{ matrix.message }}
-        author_name: ${{ github.actor }}
-        author_email: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
-        committer_name: github-actions[bot]
-        committer_email: 41898282+github-actions[bot]@users.noreply.github.com
-        fetch: false
-        # The other jobs push to main too, so rebase onto their commits and try again.
-        pull: '--rebase --autostash --no-recurse-submodules'
-        push_attempts: 5
+      env:
+        OUTPUT_PATHS: ${{ matrix.paths }}
+        COMMIT_MESSAGE: ${{ matrix.message }}
+        GIT_AUTHOR_NAME: ${{ github.actor }}
+        GIT_AUTHOR_EMAIL: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
+        GIT_COMMITTER_NAME: github-actions[bot]
+        GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+      run: |
+        cd ./qgis-website
+        git add -A -- $OUTPUT_PATHS
+        if git diff --cached --quiet; then
+          echo "No changes to commit."
+          exit 0
+        fi
+        git commit -m "$COMMIT_MESSAGE"
+        # The other jobs push to main too, so rebase and try again when a push is rejected.
+        for attempt in 1 2 3 4 5; do
+          git pull --rebase --autostash --no-recurse-submodules origin main
+          if git push origin HEAD:main; then
+            exit 0
+          fi
+          sleep $((attempt * 10))
+        done
+        echo "::error::Could not push after 5 attempts."
+        exit 1
