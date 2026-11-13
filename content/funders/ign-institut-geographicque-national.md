@@ -5,11 +5,11 @@
 # To update: Run 'fetch_feeds.py' (automated nightly via GitHub Actions)
 # See CONTRIBUTING.md section: Automated Content and Manual Edit Guidelines
 
-level: "Small"
-title: "Fluvio inc."
-logo: "fluvio-inc.png"
-startDate: "2025-07-01"
-endDate: "2026-06-30"
-link: "http://fluvio.ca/"
-country: "Canada"
+level: "Large"
+title: "IGN (Institut Geographicque National)"
+logo: "ign-institut-geographicque-national.png"
+startDate: "2026-01-01"
+endDate: "2027-02-28"
+link: "https://www.ign.fr/institut/identity-card"
+country: "France"
 ---

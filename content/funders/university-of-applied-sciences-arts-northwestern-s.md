@@ -5,11 +5,11 @@
 # To update: Run 'fetch_feeds.py' (automated nightly via GitHub Actions)
 # See CONTRIBUTING.md section: Automated Content and Manual Edit Guidelines
 
-level: "Medium"
-title: "The Union of Arabian Academics (TUOAA)"
-logo: "union-of-arabian-academics-tuoaa.png"
+level: "Small"
+title: "University of Applied Sciences and Arts Northwestern Switzerland"
+logo: "university-of-applied-sciences-arts-northwestern-s.svg"
 startDate: "2026-01-01"
 endDate: "2027-02-28"
-link: "https://tuoaa.site123.me/"
-country: "Yemen"
+link: "https://www.fhnw.ch/de/architektur-bau-geomatik/ueber-uns/institute/geomatik"
+country: "Switzerland"
 ---
