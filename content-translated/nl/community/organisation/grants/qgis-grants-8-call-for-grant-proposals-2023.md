@@ -6,16 +6,16 @@ description: Beste gemeenschap van QGIS, we zijn erg blij dat de aanvragen voor 
 draft: false
 link: https://blog.qgis.org/2023/04/04/qgis-grants-%238-call-for-grant-proposals-2023/
 sidebar: true
-title: 'QGIS Grants #8: Call for Grant Proposals 2023'
+title: 'QGIS Grants #8: Oproep voor Grant Proposals 2023'
 
 ---
 {{<content-start >}}
 
-<p>Dear QGIS Community,</p>
-<p>We are very pleased to announce that this year’s round of grants is now available. The call is open to anybody who wants to make a contribution to QGIS funded by our grant fund, subject to the call conditions outlined in the application form.</p>
-<p>The deadline for this round is in four weeks, on <strong>2nd May 2023</strong>.</p>
-<p><span>There are no new procedures in 2023. Please note the following guidelines established in previous years:&nbsp;</span></p>
+<p>Beste gemeenschap van QGIS,</p>
+<p>We zijn erg blij dat de aanvragen voor de financiële ondersteuning voor dit jaar beschikbaar zijn. De aanvraag staat open voor iedereen die een bijdrage aan QGIS financieel gesteund wil hebben door ons steunfonds. Voorwaarden voor de aanvraag zijn vermeld in het aanvraagformulier.</p>
+De deadline voor de voorstellen is over vier weken, op <strong>2 mei 2023</strong>.<p>
+<p><span>Er zijn geen nieuwe procedures in 2023. Houd rekening met de volgende richtlijnen die in voorgaande jaren werden vastgesteld:&nbsp;</span></p> 
 
-<p><a href="https://blog.qgis.org/2023/04/04/qgis-grants-%238-call-for-grant-proposals-2023/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
+<p><a href="https://blog.qgis.org/2023/04/04/qgis-grants-%238-call-for-grant-proposals-2023/" target="_blank" rel="noopener noreferrer">Bekijk de originele post op blog.qgis.org ↗</a></p>
 
 {{<content-end >}}

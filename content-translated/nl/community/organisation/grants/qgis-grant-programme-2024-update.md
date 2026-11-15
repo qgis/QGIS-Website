@@ -11,11 +11,11 @@ title: QGIS Grant Programme 2024 Update
 ---
 {{<content-start >}}
 
-<p>Thanks to our generous donors and sustaining members, we are in the wonderful position to be able to further extend our 2024 Grant Programme and to fund an additional project that came in very close 6th in the voting results:</p>
+<p>Dankzij onze vrijgevige donoren en dragende leden verkeren we in de fantastische positie om ons 2024 Grant Programme verder uit te breiden en een aanvullend project te ondersteunen dat als 6e heel dichtbij kwam in de resultaten van de stemming: </p>
 <ul>
-<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/269">QEP#269 Update older annotation items to new framework</a></li>
+<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/269">QEP#269 Bijwerken oudere annotatie-items naar het nieuwe framework⁣⁣</a></li>
 </ul>
-<p>On behalf of the QGIS.ORG project, I would like to thank the Danish User Group who stepped up and increased their support to Flagship level, joining or recurring Flagship member Felt and all our wonderful <a href="https://qgis.org/en/site/about/sustaining_members.html">sustaining members and donors</a>. </p>
+<p>Namens het project QGIS.ORG wil ik de Deense gebruikersgroep bedanken die naar voren stapte en hun ondersteuning verhoogde naar het niveau Flagship, nu samen met Flagship-lid Felt en al onze fantastische donor- en <a href="https://qgis.org/en/site/about/sustaining_members.html">dragende leden en donoren</a>. </p>
 
 <p><a href="https://blog.qgis.org/2024/05/08/qgis-grant-programme-2024-update/" target="_blank" rel="noopener noreferrer">Bekijk de originele post op blog.qgis.org ↗</a></p>
 

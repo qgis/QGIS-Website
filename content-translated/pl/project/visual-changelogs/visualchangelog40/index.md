@@ -569,7 +569,7 @@ This feature was funded by [City of Canning](https://www.canning.wa.gov.au/)
 This feature was developed by [North Road](https://north-road.com/)
 ### Feature: Add network analysis validation algorithms
 Two new algorithms useful for validating networks have been added:
-- Validate network
+- Sprawdź poprawność sieci
 - Extract network endpoints
 
 **Validate network**<br />This algorithm analyzes a network vector layer to identify data and topology errors that may affect network analysis tools (like shortest path). Optional checks include:

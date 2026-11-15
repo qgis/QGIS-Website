@@ -147,7 +147,7 @@ This feature was developed by [Jan Caha](https://github.com/JanCaha)
 It is now possible to edit point cloud layers in the 3D map views. Users can pick which attribute to modify, the target value and then interactively select points that should be modified.
 
 There are several map tools to select points for editing:
-- Select by Polygon
+- Zaznacz poligonem
 - Select by Paintbrush
 - Select Above/Below Line
 

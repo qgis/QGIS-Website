@@ -6,21 +6,21 @@ description: Beste gemeenschap van QGIS, we zijn erg blij dat de aanvragen voor 
 draft: false
 link: https://blog.qgis.org/2022/01/16/qgis-grants-%237-call-for-grant-proposals-2022/
 sidebar: true
-title: 'QGIS Grants #7: Call for Grant Proposals 2022'
+title: 'QGIS Grants #7: Oproep voor Grant Proposals 2022'
 
 ---
 {{<content-start >}}
 
-<p>Dear QGIS Community,</p>
-<p>We are very pleased to announce that this year’s round of grants is now available. The call is open to anybody who wants to make a funded contribution to QGIS, subject to the call conditions outlined in the application form.</p>
-<p>The deadline for this round is in four weeks, on <strong>13th February 2022</strong>.</p>
-<p><span>As of 2022, we are changing the procedure in the following ways:</span></p>
+Beste gemeenschap van QGIS,<p>
+<p>We zijn erg blij dat de aanvragen voor de financiële ondersteuning voor dit jaar beschikbaar zijn. De aanvraag staat open voor iedereen die een bijdrage aan QGIS financieel gesteund wil hebben door ons steunfonds. Voorwaarden voor de aanvraag zijn vermeld in het aanvraagformulier.</p>
+<p>De deadline voor deze ronde is over vier weken, op <strong>13 februari 2022</strong>.</p>
+<span>Vanaf 2022 wijzigen we de procedure op de volgende manier:</span>
 <ul>
-<li><span>The project budgets should account for PR reviewing expenses to ensure timely handling of the project-related PRs and avoid delays caused by relying on reviewer volunteer time. </span></li>
-<li><span>In the week after the QEP discussion period, the proposal authors are expected to write a short summary of the discussion that is suitable for use as a basis on which voting members make their decisions. </span></li>
+<li><span>De budgetten voor het project zouden rekening moeten houden met uitgaven voor het beoordelen van PR's om tijdige afhandeling van de aan het project gerelateerde PR's te verzekeren. En ook om vertragingen te vermijden die zouden kunnen worden veroorzaakt door te vertrouwen op de vrijwillige tijd van de beoordelaar.  </span></li>
+<li><span>In de week na de periode voor het bespreken van de QEP, wordt van de auteurs van de voorstellen verwacht dat ze een korte samenvatting schrijven van de bespreking. De samenvatting moet geschikt zijn om te gebruiken als basis waarop stemmende leden hun beslissing nemen. </span></li>
 </ul>
-<p><span>Also, note the following guidelines established in previous years: </span></p>
+<p><span>Houd ook rekening met de volgende richtlijnen die in voorgaande jaren werden vastgesteld: </span></p>
 
-<p><a href="https://blog.qgis.org/2022/01/16/qgis-grants-%237-call-for-grant-proposals-2022/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
+<p><a href="https://blog.qgis.org/2022/01/16/qgis-grants-%237-call-for-grant-proposals-2022/" target="_blank" rel="noopener noreferrer">Bekijk de originele post op blog.qgis.org ↗</a></p>
 
 {{<content-end >}}

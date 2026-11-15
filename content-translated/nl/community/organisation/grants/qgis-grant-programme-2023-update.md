@@ -11,13 +11,13 @@ title: QGIS Grant Programme 2023 Update
 ---
 {{<content-start >}}
 
-<p>Thanks to our generous donors and sustaining members, we are in the wonderful position to be able to further extend our 2023 Grant Programme and to fund two additional projects that came in <a href="https://blog.qgis.org/2023/06/26/qgis-grant-programme-2023-results/">very close 5th and 6th in the voting results</a>: </p>
+<p>Dankzij onze vrijgevige donoren en dragende leden verkeren we in de fantastische positie om ons 2023 Grant Programme verder uit te breiden en twee aanvullende projecten te ondersteunen die <a href="https://blog.qgis.org/2023/06/26/qgis-grant-programme-2023-results/">heel dichtbij kwamen als 5e en 6e in de resultaten</a>: </p>
 <ul>
-<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/261">QEP#261 Cachable provider metadata API &#8212; or how to ⚡ the QGIS loading times</a></li>
-<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/236">QEP#236 Unification of all geometric and topological verification methods</a></li>
+<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/261">QEP#261 Cachabele provider metadata-API &#8212; of hoe de laadtijden voor QGIS te ⚡</a></li>
+<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/236">QEP#236 Unificatie van alle geometrische en topologische verificatiemethoden</a></li>
 </ul>
-<p>On behalf of the QGIS.ORG project, I would like to thank everyone who helped with the fund raising and everyone who stepped up and joined our donor and <a href="https://qgis.org/en/site/about/sustaining_members.html#">sustaining membership programme</a>. </p>
+<p>Namens het project QGIS.ORG wil ik iedereen bedanken die hielp met het bijeenbrengen van de fondsen en iedereen die naar voren stapte en deelneemt aan ons donor- en <a href="https://qgis.org/en/site/about/sustaining_members.html#">dragende leden programma</a>. </p>
 
-<p><a href="https://blog.qgis.org/2023/09/20/qgis-grant-programme-2023-update/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
+<p><a href="https://blog.qgis.org/2023/09/20/qgis-grant-programme-2023-update/" target="_blank" rel="noopener noreferrer">Bekijk de originele post op blog.qgis.org ↗</a></p>
 
 {{<content-end >}}

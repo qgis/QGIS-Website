@@ -11,11 +11,11 @@ title: 'QGIS Grants #9: Oproep voor Grant Proposals 2024'
 ---
 {{<content-start >}}
 
-<p>Dear QGIS Community,</p>
-<p>We are very pleased to announce that this year’s round of grants is now available. The call is open to anybody who wants to make a contribution to QGIS funded by our grant fund, subject to the call conditions outlined in the application form.</p>
-<p>The deadline for this round is in four weeks, on <strong>14 March 2024</strong>.</p>
-<p><span>There are no new procedures in 2024. Please note the following guidelines established in previous years: </span></p>
+<p>Beste gemeenschap van QGIS,</p>
+<p>We zijn erg blij dat de aanvragen voor de financiële ondersteuning voor dit jaar beschikbaar zijn. De aanvraag staat open voor iedereen die een bijdrage aan QGIS financieel gesteund wil hebben door ons steunfonds. Voorwaarden voor de aanvraag zijn vermeld in het aanvraagformulier.</p>
+De deadline voor de voorstellen is over vier weken, op <strong>14 maart 2024</strong>.<p>
+<p><span>Er zijn geen nieuwe procedures in 2024. Houd rekening met de volgende richtlijnen die in voorgaande jaren werden vastgesteld: </span></p> 
 
-<p><a href="https://blog.qgis.org/2024/02/15/qgis-grants-%239-call-for-grant-proposals-2024/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
+<p><a href="https://blog.qgis.org/2024/02/15/qgis-grants-%239-call-for-grant-proposals-2024/" target="_blank" rel="noopener noreferrer">Bekijk de originele post op blog.qgis.org ↗</a></p>
 
 {{<content-end >}}

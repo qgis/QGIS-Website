@@ -44,7 +44,7 @@ Dit voegt de opties **Stijl laden…** en **Stijl opslaan…** direct toe aan he
 <img src="images/entries/3649f31a4a1358779fd933bddce5e20161257fd9.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Edit legend labels directly from the Layers panel
+### Mogelijkheid: Labels voor de legenda direct bewerken vanuit het paneel Lagen
 Legend item labels (e.g. for categorized, graduated and rule-based renderers) can now be renamed directly in the **Layers** panel. Pressing **F2** on a legend item starts editing its label.
 
 <img src="images/entries/35e66a67e68cb36039b4407ed01f1efe75c5445d.gif" class="img-responsive img-rounded" />
