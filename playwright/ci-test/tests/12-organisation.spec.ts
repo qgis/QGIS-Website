@@ -61,6 +61,10 @@ test.describe("Project organisation", () => {
         await expect(chair.locator(".contributor-badge.has-background-primary3")).toBeVisible();
         await expect(chair.locator(".contribution-count")).toContainText("Since");
 
+        // Notes sit below the badges
+        const treasurer = cards(page, "board", "members").filter({ hasText: "Contact for sustaining members" });
+        await expect(treasurer.locator(".contribution-badges + p.is-italic")).toHaveCount(1);
+
         // Ended roles are muted
         const former = '.organisation-members[data-list="former"] .contributor-badge';
         expect(await page.locator(former).count()).toBeGreaterThan(0);

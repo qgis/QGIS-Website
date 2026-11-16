@@ -46,9 +46,6 @@
                     {{ with $member.country }}
                     <p class="mb-3"><i class="fas fa-map-marker-alt mr-1" aria-hidden="true"></i>{{ . }}</p>
                     {{ end }}
-                    {{ with $member.note }}
-                    <p class="is-size-7 mb-0">{{ . }}</p>
-                    {{ end }}
                     <div class="contribution-badges">
                         {{ with $badge }}
                         <span class="contributor-badge {{ if $section.highlight }}has-background-primary6{{ else }}contributor-badge-qgis_core{{ end }}">
@@ -74,6 +71,9 @@
                         </span>
                         {{ end }}
                     </div>
+                    {{ with $member.note }}
+                    <p class="is-size-7 is-italic has-text-weight-bold mt-3">{{ . }}</p>
+                    {{ end }}
                 </div>
             </div>
         </div>
