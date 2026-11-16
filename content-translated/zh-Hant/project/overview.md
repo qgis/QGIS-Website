@@ -17,7 +17,7 @@ type: page
 ---
 {{<content-start >}}
 ## Key features
-{{<tabs tab1="Create maps" tab2="Edit layers" tab3="Process and analyze" tab4="Share maps" >}}
+{{<tabs tab1="建立地圖" tab2="編輯圖層" tab3="處理與分析<br>" tab4="Share maps" >}}
 
 {{<columns-start id="content-tab-1" >}}
 
@@ -30,7 +30,7 @@ type: page
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Class-leading cartography
 Experience QGIS' extensive set of design options to bring your cartographic ideas to life.
-###### Professional map production
+###### 專業的地圖產品
 Use the intuitive layout design tool to produce high-quality, large-format print maps.
 ###### Powerful reporting tools
 Create atlases and reports with maps, media and tabular content.

@@ -2,6 +2,6 @@
 layout: search
 sitemap:
   priority: 0.1
-title: Search
+title: Іздеу
 
 ---

@@ -11,12 +11,12 @@ title: Winnende QGIS Grant Proposals voor 2016
 ---
 {{<content-start >}}
 
-<p>We are extremely pleased to announce the winning proposals for our 2016 QGIS.ORG grant programme. Funding for the programme was sourced by you, our p<a href="https://www.qgis.org/en/site/about/sponsorship.html">roject donors and sponsors</a>! <strong>Note:</strong> For more context surrounding our grant programme, please see:</p>
+<p>We zijn erg blij om de winnende aanvragen voor ons 2016 QGIS.ORG grant programme aan te kondigen. Fondsen voor het programma werden door u verschaft, onze <a href="https://www.qgis.org/en/site/about/sponsorship.html">projectdonoren en sponsors</a>! <strong>Opmerking:</strong> Voor meer context over ons grant programme, bekijk:</p>
 <ul>
 <li><a href="http://blog.qgis.org/2016/09/25/update-on-the-qgis-grant-programme/" target="_blank">Update on the QGIS Grant Programme</a></li>
 <li><a href="http://blog.qgis.org/2016/08/04/qgis-grants-call-for-applications/">QGIS Grants: Call for applications</a></li>
 </ul>
-<p>Our intent with the QGIS.ORG Grant Programme is to support work from community that would typically not be funded by client/contractor agreements, and that contributes to the broadest possible swathe of our community by providing cross-cutting, foundational improvements to the QGIS Project.</p>
+<p>Onze bedoeling met het QGIS.ORG Grant Programme is om werk te ondersteunen vanuit de gemeenschap, dat gewoonlijk niet zou worden betaald via overeenkomsten tussen cliënt/aanbieder, en die bijdragen aan het breedst mogelijke bereik van onze gemeenschap door, in de gehele breedte, fundamentele verbeteringen aan het project QGIS te verschaffen.</p>
 
 <p><a href="https://blog.qgis.org/2016/10/04/winning-qgis-grant-proposals-for-2016/" target="_blank" rel="noopener noreferrer">Bekijk de originele post op blog.qgis.org ↗</a></p>
 
