@@ -58,11 +58,13 @@ test.describe("Project organisation", () => {
 
     test("cards show role badges, dates and pictures", async ({ page }) => {
         const chair = cards(page, "board", "members").first();
-        await expect(chair.locator(".tag.is-primary3")).toBeVisible();
-        await expect(chair).toContainText("Since");
+        await expect(chair.locator(".contributor-badge.has-background-primary3")).toBeVisible();
+        await expect(chair.locator(".contribution-count")).toContainText("Since");
 
         // Ended roles are muted
-        await expect(page.locator('.organisation-members[data-list="former"] .tag.is-primary3')).toHaveCount(0);
+        const former = '.organisation-members[data-list="former"] .contributor-badge';
+        expect(await page.locator(former).count()).toBeGreaterThan(0);
+        await expect(page.locator(`${former}.has-background-primary3`)).toHaveCount(0);
 
         // Without a GitHub account the card shows initials
         const osgeo = cards(page, "voting_members", "osgeo").first();

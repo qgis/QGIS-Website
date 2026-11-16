@@ -30,7 +30,7 @@ The page shows each list with one line, for example `{{< organisation-members gr
 | `github` | The GitHub login. The card links to the profile and shows its picture. Leave it out if the person has no account. |
 | `avatar` | A picture under `static/`, for example `img/contributors/supporting/tim_sutton.png`. It replaces the GitHub picture. |
 | `country` | The country in English, for example `Portugal`. The community voting members use it. |
-| `roles` | One badge per role. Each role has a `role` text and can have a `since` and an `until`, for example `"since": "9.2013"`. |
+| `roles` | One badge per role. Each role has a `role` text and can have a `since` and an `until`, for example `"since": "9.2013"`. Keep the role text to two or three words so it fits on the badge, and put anything longer in `note`. |
 | `note` | One short line under the badges, for example `Suspended while serving as a PSC member`. |
 
 With no `github` and no `avatar`, the card shows the person's initials. People listed in `data/contributors/honorary_members.json` get their crown or star on every card, as on the contributors page.
