@@ -53,7 +53,7 @@ In the voting member lists, a member with a known date has one `Voting member` r
 | `avatar` | A picture under `static/`, for example `img/contributors/supporting/tim_sutton.png`. It replaces the GitHub picture. |
 | `country` | The country in English, for example `Portugal`. The community voting members use it. |
 | `roles` | One badge per role, after the section badge. Each role has a `role` text and can have a `since` and an `until`, for example `"since": "9.2013"`. Keep the role text to two or three words so it fits on the badge, and put anything longer in `note`. Add `"highlight": true` to show a current role in orange, as for the founder. |
-| `note` | One short line above the badges, for example `Suspended while serving as a PSC member`. |
+| `note` | One short line below the badges, in bold italics, for example `Suspended while serving as a PSC member`. |
 
 With no `github` and no `avatar`, the card shows the person's initials. People listed in `data/contributors/honorary_members.json` get their crown or star on every card, as on the contributors page.
 
@@ -63,10 +63,3 @@ Add `until` to the role, for example `"until": "2026"`. The badge turns grey and
 
 When someone leaves the PSC, move their entry from the `members` list to the `former` list in `psc.json`, and add `until` to each role.
 
-## Check your change
-
-1. Run `hugo server` from the project root.
-2. Open http://localhost:1313/community/organisation/ and find the card.
-3. Run the tests for this page: `cd playwright/ci-test && npx playwright test tests/12-organisation.spec.ts`.
-
-If the page asks for a list that is not in the file, or a list with no `people`, the build stops. The error names the file and the list.
