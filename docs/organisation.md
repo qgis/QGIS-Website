@@ -14,11 +14,34 @@ The page text lives in [`content/community/organisation.md`](../content/communit
 
 The page shows each list with one line, for example `{{< organisation-members group="psc" list="former" >}}`. A person with roles in several sections has an entry in each of those lists.
 
+## How the badges work
+
+Every card shows the section's badge first, in green. The person's roles follow, with one badge for each role and its dates.
+
+The voting member lists work a little differently. Their roles have dates but no `role` text, so the badge shows the list's abbreviation with the dates, for example CVM, since 2023. A voting member with no known date has no `roles`, and the card shows only the section badge.
+
+```json
+"community": {
+  "badge": "Community voting member",
+  "abbreviation": "CVM",
+  "people": [
+    { "name": "Martin Dobias", "github": "wonder-sk", "country": "Slovakia" },
+    { "name": "Lova Andriarimalala", "github": "Xpirix", "country": "Madagascar", "roles": [{ "since": "2026" }] }
+  ]
+}
+```
+
+| List field | What to write |
+|---|---|
+| `badge` | The section name, shown first on every card in the list |
+| `abbreviation` | A short form of `badge`, for example `CVM`. Roles without a `role` text show it. |
+| `people` | The people in the list, in the order of their cards |
+
 ## Add a person to a section
 
 1. Open the file for the group, for example `data/organisation/release_team.json`.
 2. Find the list for the section, for example `testing`.
-3. Add an entry at the place where you want the card to appear.
+3. Add an entry to its `people`, at the place where you want the card to appear.
 
    ```json
    { "name": "Lova Andriarimalala", "github": "Xpirix", "roles": [{ "role": "Windows", "since": "2026" }] }
@@ -30,8 +53,8 @@ The page shows each list with one line, for example `{{< organisation-members gr
 | `github` | The GitHub login. The card links to the profile and shows its picture. Leave it out if the person has no account. |
 | `avatar` | A picture under `static/`, for example `img/contributors/supporting/tim_sutton.png`. It replaces the GitHub picture. |
 | `country` | The country in English, for example `Portugal`. The community voting members use it. |
-| `roles` | One badge per role. Each role has a `role` text and can have a `since` and an `until`, for example `"since": "9.2013"`. Keep the role text to two or three words so it fits on the badge, and put anything longer in `note`. |
-| `note` | One short line under the badges, for example `Suspended while serving as a PSC member`. |
+| `roles` | One badge per role, after the section badge. Each role has a `role` text, except in the voting member lists, and can have a `since` and an `until`, for example `"since": "9.2013"`. Keep the role text to two or three words so it fits on the badge, and put anything longer in `note`. |
+| `note` | One short line above the badges, for example `Suspended while serving as a PSC member`. |
 
 With no `github` and no `avatar`, the card shows the person's initials. People listed in `data/contributors/honorary_members.json` get their crown or star on every card, as on the contributors page.
 
@@ -47,4 +70,4 @@ When someone leaves the PSC, move their entry from the `members` list to the `fo
 2. Open http://localhost:1313/community/organisation/ and find the card.
 3. Run the tests for this page: `cd playwright/ci-test && npx playwright test tests/12-organisation.spec.ts`.
 
-If the page asks for a list that is not in the file, the build stops. The error names the file and the list.
+If the page asks for a list that is not in the file, or a list with no `people`, the build stops. The error names the file and the list.

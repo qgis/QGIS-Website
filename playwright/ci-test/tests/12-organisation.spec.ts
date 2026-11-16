@@ -75,6 +75,28 @@ test.describe("Project organisation", () => {
         await expect(page.locator('.organisation-members[data-list="honorary"] .honorary-member')).toHaveCount(2);
     });
 
+    test("every card starts with its section badge", async ({ page }) => {
+        const firstBadges = await page
+            .locator('.organisation-members [role="listitem"]')
+            .evaluateAll((items) =>
+                items.map((item) => item.querySelector(".contributor-badge")?.classList.contains("contributor-badge-qgis_core")),
+            );
+        expect(firstBadges.length).toBeGreaterThan(0);
+        expect(firstBadges.every(Boolean)).toBe(true);
+        await expect(cards(page, "board", "members").first().locator(".contributor-badge").first()).toContainText("Board");
+    });
+
+    test("voting members show their seat and its abbreviation with the date", async ({ page }) => {
+        const community = cards(page, "voting_members", "community");
+        // No date: only the section badge
+        await expect(community.first().locator(".contributor-badge")).toHaveCount(1);
+
+        const dated = community.filter({ has: page.locator("abbr") }).first();
+        await expect(dated.locator("abbr")).toHaveText("CVM");
+        await expect(dated.locator("abbr")).toHaveAttribute("title", "Community voting member");
+        await expect(dated.locator(".contribution-count")).toContainText("Since");
+    });
+
     test("a person can appear in more than one section", async ({ page }) => {
         expect(await page.getByText("Marco Bernasocchi", { exact: true }).count()).toBeGreaterThan(1);
     });

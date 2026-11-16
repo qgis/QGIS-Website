@@ -1,10 +1,12 @@
 {{ $group := .Get "group" }}
 {{ $list := .Get "list" }}
-{{ $members := slice }}
-{{ with index site.Data.organisation $group }}{{ $members = index . $list }}{{ end }}
-{{ if not $members }}
-    {{ errorf "%s: data/organisation/%s.json has no %q list" .Position $group $list }}
+{{ $section := dict }}
+{{ with index site.Data.organisation $group }}{{ with index . $list }}{{ $section = . }}{{ end }}{{ end }}
+{{ if not $section.people }}
+    {{ errorf "%s: data/organisation/%s.json has no %q list with people" .Position $group $list }}
 {{ end }}
+{{ $badge := $section.badge }}
+{{ $abbreviation := $section.abbreviation }}
 {{ $contributors := site.Data.contributors.contributors.contributors }}
 {{ $honoraryMembers := site.Data.contributors.honorary_members }}
 {{ $icons := dict "board" "fa-landmark" "psc" "fa-users-cog" "voting_members" "fa-vote-yea" "release_team" "fa-box-open" "community_team" "fa-hands-helping" }}
@@ -12,7 +14,7 @@
 
 <div class="organisation-members mb-5" data-group="{{ $group }}" data-list="{{ $list }}">
     <div class="columns is-multiline" role="list">
-        {{ range $member := $members }}
+        {{ range $member := $section.people }}
         {{ $avatar := "" }}
         {{ $honorary := false }}
         {{ with $member.github }}
@@ -48,9 +50,13 @@
                     {{ with $member.note }}
                     <p class="is-size-7 mb-0">{{ . }}</p>
                     {{ end }}
-                    {{ with $member.roles }}
                     <div class="contribution-badges">
-                        {{ range . }}
+                        {{ with $badge }}
+                        <span class="contributor-badge contributor-badge-qgis_core">
+                            <span><i class="fas {{ $icon }} mr-1" aria-hidden="true"></i> {{ . }}</span>
+                        </span>
+                        {{ end }}
+                        {{ range $member.roles }}
                         {{ $dates := "" }}
                         {{ if and .since .until }}
                             {{ $dates = i18n "organisationFromTo" (dict "From" .since "To" .until) }}
@@ -60,7 +66,7 @@
                             {{ $dates = i18n "organisationUntil" (dict "Date" .until) }}
                         {{ end }}
                         <span class="contributor-badge is-flex-wrap-wrap {{ if .until }}has-background-grey-lighter has-text-grey-dark{{ else }}has-background-primary3{{ end }}">
-                            <span><i class="fas {{ $icon }} mr-1" aria-hidden="true"></i> {{ .role }}</span>
+                            <span>{{ with .role }}{{ . }}{{ else }}<abbr title="{{ $badge }}">{{ $abbreviation }}</abbr>{{ end }}</span>
                             {{ with $dates }}
                             <span class="contribution-count has-background-white has-text-grey-dark">
                                 <i class="fas fa-calendar-alt mr-1" aria-hidden="true"></i>{{ . }}
@@ -69,7 +75,6 @@
                         </span>
                         {{ end }}
                     </div>
-                    {{ end }}
                 </div>
             </div>
         </div>
