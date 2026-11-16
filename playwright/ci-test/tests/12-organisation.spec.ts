@@ -86,15 +86,17 @@ test.describe("Project organisation", () => {
         await expect(cards(page, "board", "members").first().locator(".contributor-badge").first()).toContainText("Board");
     });
 
-    test("voting members show their seat and its abbreviation with the date", async ({ page }) => {
+    test("voting members show their seat, then a dated voting member badge", async ({ page }) => {
         const community = cards(page, "voting_members", "community");
         // No date: only the section badge
         await expect(community.first().locator(".contributor-badge")).toHaveCount(1);
 
-        const dated = community.filter({ has: page.locator("abbr") }).first();
-        await expect(dated.locator("abbr")).toHaveText("CVM");
-        await expect(dated.locator("abbr")).toHaveAttribute("title", "Community voting member");
-        await expect(dated.locator(".contribution-count")).toContainText("Since");
+        const dated = community.filter({ has: page.locator(".contribution-count") }).first();
+        const badges = dated.locator(".contributor-badge");
+        await expect(badges).toHaveCount(2);
+        await expect(badges.first()).toContainText("Community voting member");
+        await expect(badges.nth(1)).toContainText("Voting member");
+        await expect(badges.nth(1).locator(".contribution-count")).toContainText("Since");
     });
 
     test("a person can appear in more than one section", async ({ page }) => {

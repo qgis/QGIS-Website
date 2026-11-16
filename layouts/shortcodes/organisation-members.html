@@ -6,7 +6,6 @@
     {{ errorf "%s: data/organisation/%s.json has no %q list with people" .Position $group $list }}
 {{ end }}
 {{ $badge := $section.badge }}
-{{ $abbreviation := $section.abbreviation }}
 {{ $contributors := site.Data.contributors.contributors.contributors }}
 {{ $honoraryMembers := site.Data.contributors.honorary_members }}
 {{ $icons := dict "board" "fa-landmark" "psc" "fa-users-cog" "voting_members" "fa-vote-yea" "release_team" "fa-box-open" "community_team" "fa-hands-helping" }}
@@ -66,7 +65,7 @@
                             {{ $dates = i18n "organisationUntil" (dict "Date" .until) }}
                         {{ end }}
                         <span class="contributor-badge is-flex-wrap-wrap {{ if .until }}has-background-grey-lighter has-text-grey-dark{{ else }}has-background-primary3{{ end }}">
-                            <span>{{ with .role }}{{ . }}{{ else }}<abbr title="{{ $badge }}">{{ $abbreviation }}</abbr>{{ end }}</span>
+                            <span>{{ .role }}</span>
                             {{ with $dates }}
                             <span class="contribution-count has-background-white has-text-grey-dark">
                                 <i class="fas fa-calendar-alt mr-1" aria-hidden="true"></i>{{ . }}
