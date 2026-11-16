@@ -1,0 +1,66 @@
+{{ $group := .Get "group" }}
+{{ $list := .Get "list" }}
+{{ $members := slice }}
+{{ with index site.Data.organisation $group }}{{ $members = index . $list }}{{ end }}
+{{ if not $members }}
+    {{ errorf "%s: data/organisation/%s.json has no %q list" .Position $group $list }}
+{{ end }}
+{{ $contributors := site.Data.contributors.contributors.contributors }}
+{{ $honoraryMembers := site.Data.contributors.honorary_members }}
+
+<div class="organisation-members mb-5" data-group="{{ $group }}" data-list="{{ $list }}">
+    <div class="columns is-multiline" role="list">
+        {{ range $member := $members }}
+        {{ $avatar := "" }}
+        {{ $honorary := false }}
+        {{ with $member.github }}
+            {{ $avatar = printf "https://github.com/%s.png?size=160" . }}
+            {{ range first 1 (where $contributors "login" .) }}{{ $avatar = .avatar_url }}{{ end }}
+            {{ $honorary = index $honoraryMembers . }}
+        {{ end }}
+        {{ with $member.avatar }}{{ $avatar = . | relURL }}{{ end }}
+        {{ $words := split $member.name " " }}
+        {{ $initials := substr (index $words 0) 0 1 }}
+        {{ if gt (len $words) 1 }}{{ $initials = printf "%s%s" $initials (substr (index (last 1 $words) 0) 0 1) }}{{ end }}
+        <div class="column is-one-third-fullhd is-half-tablet is-full-mobile" role="listitem">
+            <div class="card contributor-card{{ if $honorary }} honorary-member{{ end }}">
+                <div class="card-content has-text-centered">
+                    <div class="avatar-container">
+                        {{ with $avatar }}
+                        <img src="{{ . }}" alt="" class="avatar" width="80" height="80" loading="lazy">
+                        {{ else }}
+                        <span class="avatar is-inline-flex is-align-items-center is-justify-content-center has-background-primary3 has-text-white is-size-4 has-text-weight-bold" aria-hidden="true">{{ upper $initials }}</span>
+                        {{ end }}
+                        {{ with $honorary }}<span class="honorary-badge" aria-hidden="true">{{ .icon }}</span>{{ end }}
+                    </div>
+                    <p class="title is-5 mb-3">
+                        {{ with $member.github }}
+                        <a href="https://github.com/{{ . }}" class="external-link" target="_blank" rel="noopener">{{ $member.name }}</a>
+                        {{ else }}
+                        {{ $member.name }}
+                        {{ end }}
+                    </p>
+                    {{ with $member.country }}
+                    <p class="mb-3"><i class="fas fa-map-marker-alt mr-1" aria-hidden="true"></i>{{ . }}</p>
+                    {{ end }}
+                    {{ range $member.roles }}
+                    <div class="tags is-centered mb-0">
+                        <span class="tag {{ if .until }}is-light{{ else }}is-primary3{{ end }}">{{ .role }}</span>
+                        {{ if and .since .until }}
+                        <span class="tag is-white">{{ i18n "organisationFromTo" (dict "From" .since "To" .until) }}</span>
+                        {{ else if .since }}
+                        <span class="tag is-white">{{ i18n "organisationSince" (dict "Date" .since) }}</span>
+                        {{ else if .until }}
+                        <span class="tag is-white">{{ i18n "organisationUntil" (dict "Date" .until) }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                    {{ with $member.note }}
+                    <p class="is-size-7 mt-2">{{ . }}</p>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
