@@ -105,7 +105,7 @@ test.describe("Project organisation", () => {
         // No date: only the section badge
         await expect(community.first().locator(".contributor-badge")).toHaveCount(1);
 
-        const dated = community.filter({ has: page.locator(".contribution-count") }).first();
+        const dated = community.filter({ has: page.locator(".contribution-count", { hasText: "Since" }) }).first();
         const badges = dated.locator(".contributor-badge");
         await expect(badges).toHaveCount(2);
         await expect(badges.first()).toContainText("Community voting member");
