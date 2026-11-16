@@ -79,11 +79,21 @@ test.describe("Project organisation", () => {
         const firstBadges = await page
             .locator('.organisation-members [role="listitem"]')
             .evaluateAll((items) =>
-                items.map((item) => item.querySelector(".contributor-badge")?.classList.contains("contributor-badge-qgis_core")),
+                items.map((item) => {
+                    const classes = item.querySelector(".contributor-badge")?.classList;
+                    return classes?.contains("contributor-badge-qgis_core") || classes?.contains("has-background-primary6");
+                }),
             );
         expect(firstBadges.length).toBeGreaterThan(0);
         expect(firstBadges.every(Boolean)).toBe(true);
         await expect(cards(page, "board", "members").first().locator(".contributor-badge").first()).toContainText("Board");
+    });
+
+    test("honorary and founder badges stand out in orange", async ({ page }) => {
+        const honorary = cards(page, "psc", "honorary");
+        const orange = honorary.locator(".contributor-badge.has-background-primary6");
+        await expect(orange.filter({ hasText: "Honorary PSC member" })).toHaveCount(await honorary.count());
+        await expect(orange.filter({ hasText: "Founder" })).toHaveCount(1);
     });
 
     test("voting members show their seat, then a dated voting member badge", async ({ page }) => {

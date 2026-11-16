@@ -16,7 +16,7 @@ The page shows each list with one line, for example `{{< organisation-members gr
 
 ## How the badges work
 
-Every card shows the section's badge first, in green. The person's roles follow, with one badge for each role and its dates.
+Every card shows the section's badge first, in green, or in orange for a highlighted section. The person's roles follow, with one badge for each role and its dates.
 
 In the voting member lists, a member with a known date has one `Voting member` role with that date. A member with no known date has no `roles`, and the card shows only the section badge.
 
@@ -33,6 +33,7 @@ In the voting member lists, a member with a known date has one `Voting member` r
 | List field | What to write |
 |---|---|
 | `badge` | The section name, shown first on every card in the list |
+| `highlight` | `true` to show the section badge in orange instead of green, as for the honorary PSC members |
 | `people` | The people in the list, in the order of their cards |
 
 ## Add a person to a section
@@ -51,7 +52,7 @@ In the voting member lists, a member with a known date has one `Voting member` r
 | `github` | The GitHub login. The card links to the profile and shows its picture. Leave it out if the person has no account. |
 | `avatar` | A picture under `static/`, for example `img/contributors/supporting/tim_sutton.png`. It replaces the GitHub picture. |
 | `country` | The country in English, for example `Portugal`. The community voting members use it. |
-| `roles` | One badge per role, after the section badge. Each role has a `role` text and can have a `since` and an `until`, for example `"since": "9.2013"`. Keep the role text to two or three words so it fits on the badge, and put anything longer in `note`. |
+| `roles` | One badge per role, after the section badge. Each role has a `role` text and can have a `since` and an `until`, for example `"since": "9.2013"`. Keep the role text to two or three words so it fits on the badge, and put anything longer in `note`. Add `"highlight": true` to show a current role in orange, as for the founder. |
 | `note` | One short line above the badges, for example `Suspended while serving as a PSC member`. |
 
 With no `github` and no `avatar`, the card shows the person's initials. People listed in `data/contributors/honorary_members.json` get their crown or star on every card, as on the contributors page.

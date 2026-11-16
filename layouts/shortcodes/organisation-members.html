@@ -51,7 +51,7 @@
                     {{ end }}
                     <div class="contribution-badges">
                         {{ with $badge }}
-                        <span class="contributor-badge contributor-badge-qgis_core">
+                        <span class="contributor-badge {{ if $section.highlight }}has-background-primary6{{ else }}contributor-badge-qgis_core{{ end }}">
                             <span><i class="fas {{ $icon }} mr-1" aria-hidden="true"></i> {{ . }}</span>
                         </span>
                         {{ end }}
@@ -64,7 +64,7 @@
                         {{ else if .until }}
                             {{ $dates = i18n "organisationUntil" (dict "Date" .until) }}
                         {{ end }}
-                        <span class="contributor-badge is-flex-wrap-wrap {{ if .until }}has-background-grey-lighter has-text-grey-dark{{ else }}has-background-primary3{{ end }}">
+                        <span class="contributor-badge is-flex-wrap-wrap {{ if .until }}has-background-grey-lighter has-text-grey-dark{{ else if .highlight }}has-background-primary6{{ else }}has-background-primary3{{ end }}">
                             <span>{{ .role }}</span>
                             {{ with $dates }}
                             <span class="contribution-count has-background-white has-text-grey-dark">
