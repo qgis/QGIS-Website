@@ -72,6 +72,10 @@ meetings, maintain project infrastructure, and fund bug-fixing efforts.
 A complete list of current sponsors is provided below - our very big
 thank you to all of our sponsors!
 
+{{< fund type="active" level="flagship" >}}
+
+[Click here to see all of our sustaining members]({{< ref "/funding/membership/members.md" >}})
+
 QGIS is free software and you are under no obligation to pay anything to
 use it - in fact, we want to encourage people far and wide to use it
 regardless of their financial or social status - we believe that
