@@ -28,6 +28,15 @@ from zipfile import ZipFile
 from datetime import datetime
 from resize_image import resize_image, convert_to_webp, is_valid_image
 
+SUSTAINING_MEMBERS_BLOCK = (
+    '{{< fund type="active" level="flagship" >}}\n'
+    '\n'
+    '[Click here to see all of our sustaining members]'
+    '({{< ref "/funding/membership/members.md" >}})\n'
+    '\n'
+)
+SPONSORS_PARAGRAPH = re.compile(r'sponsors\s+is\s+provided\s+below.*?\n\s*\n', re.DOTALL)
+
 class ChangelogHarvester:
     def __init__(self, version=None, release_date=None):
         """
@@ -94,11 +103,28 @@ type: "visual-changelog"
         if match:
             insert_pos = match.end()
             content = content[:insert_pos] + f"\n\nRelease date: {self.release_date}\n" + content[insert_pos:]
+        content = self.insert_sustaining_members(content)
         content += '\n\n{{< content-end >}}'
 
         with open(index_file_path, 'w') as file:
             file.write(content)
         print(f'Modified {index_file_path}')
+
+    @staticmethod
+    def insert_sustaining_members(content: str) -> str:
+        """Insert the flagship members list after the sponsors paragraph.
+
+        :param content: The changelog Markdown.
+        :returns: The Markdown with the block inserted, or unchanged when it
+            already has one or has no sponsors paragraph.
+        """
+        if 'fund type="active"' in content:
+            return content
+        match = SPONSORS_PARAGRAPH.search(content)
+        if not match:
+            print('Warning: no sponsors paragraph found, add the members block by hand')
+            return content
+        return content[:match.end()] + SUSTAINING_MEMBERS_BLOCK + content[match.end():]
 
     # Resize and Convert images in the index.md to webp format
     def resize_and_convert_images(self):
