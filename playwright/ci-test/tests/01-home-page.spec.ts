@@ -106,6 +106,27 @@ test.describe("Home page", () => {
         }
     });
 
+    test("Release announcement", async ({ homePage }) => {
+        test.skip(
+            (await homePage.announcementSection.count()) === 0,
+            "The release announcement is switched off in content/_index.md",
+        );
+
+        await expect(homePage.announcementHeading).toBeVisible();
+
+        if ((await homePage.announcementMembersLink.count()) > 0) {
+            await expect(homePage.announcementMembersLink).toHaveAttribute(
+                "href",
+                /\/funding\/membership\/members\/$/,
+            );
+        }
+
+        if ((await homePage.announcementVideo.count()) > 0) {
+            await expect(homePage.announcementVideo).toBeVisible();
+            await expect(homePage.announcementVideo).toHaveAttribute("data-video-id", /.+/);
+        }
+    });
+
     test("Footer", async ({ footer }) => {
         await expect(footer.banner).toBeVisible();
         await expect(footer.projectList).toBeVisible();
