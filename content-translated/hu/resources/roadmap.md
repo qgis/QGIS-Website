@@ -52,7 +52,7 @@ A főverziók és alverziók megjelenése napján létrehoznak egy új fejleszt�
 
 Amint néhány csomag elérhetővé válik, a kiadást be lehet jelenteni, és ennek megfelelően frissül a webhely.
 ## Kiadási ütemterv
-Az ütemtervet úgy alakítottuk ki, hogy a rendszeres, négy hónaponkénti kiadásokat követően az LTR-ek minden évben közel azonos időpontban, február végén kerüljenek LTR fázisba.
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 A 2.12-es verzió óta a fejlesztési fázisok mindig 12 hetesek és a befagyasztási fázisok legalább 5 hetesek. A fennmaradó időt az LTR kiadások befagyasztási idejének kiterjesztésére használjuk.
 

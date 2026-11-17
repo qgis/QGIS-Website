@@ -52,7 +52,7 @@ Les compilateurs de logiciels sont notifiés que la compilation peut commencer.
 
 Lorsque des packages sont disponibles la sortie peur être annoncée et le site web est mis à jour.
 ## Calendrier de sortie
-Le calendrier de sortie des versions est organisé de manière à ce qu'elles aient lieu aux mêmes dates chaque année suivant le rythme d'une version tous les quatre mois et une version à long terme LTR à la fin du mois de février.
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 À partir de la version 2.12, la phase de développement dure toujours 12 semaines et la phase de gel au moins 5 semaines. Le temps restant est utilisé pour prolonger la phase de gel des versions LTR.
 

@@ -52,7 +52,7 @@ Pakuotojams pranešama, kad galima pradėti pakavimą.
 
 Kai paketai paruošiami, galima pranešti apie laidą, atitinkamai atnaujinama ir svetainė.
 ## Laidų planas
-Planas derinamas taip, kad kiekvienais metais tuo pačiu metu būtų kuriamos mūsų keturios mėnesinės laidos, o vėlai vasarį - LTR - ilgalaikė laida.
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 Beginning after 2.12 the development phase is always 12 weeks and the freeze phase is at least 5 weeks. Remainders are used to extend the freeze phase of LTR releases.
 

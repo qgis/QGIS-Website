@@ -52,7 +52,7 @@ QGISのリリースと開発は時系列式のスケジュール（ロードマ�
 
 いくつかのパッケージが利用可能になると、リリースが発表され、それに応じてWebサイトが更新されます。
 ## リリースのスケジュール
-2月下旬にLTRがLTRレポに入るため、月4回のリリースを考えると、毎年ほぼ同じ日程になるようにスケジュールが組まれています。
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 2.12以降、開発フェーズは常に12週間、フリーズフェーズは少なくとも5週間とされています。端数は、LTR（長期リリース）版のフリーズフェーズを延長するために使用されます。
 

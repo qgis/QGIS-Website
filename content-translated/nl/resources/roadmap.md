@@ -52,7 +52,7 @@ De inpakkers wordt bericht dat zij kunnen beginnen met inpakken.
 
 Als enkele paketten beschikbaar zijn kan de uitgave worden aangekondigd en wordt de website overeenkomstig bijgewerkt.
 ## Uitgaveschema
-Het schema is dusdanig ontworpen dat ruwweg op dezelfde datums in elk jaar onze viermaandelijkse uitgaven met LTR's worden geproduceerd waarbij eind februari de opslagplaats voor LTR wordt ingevoerd.
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 Beginnend na 2.12 is de ontwikkelfase altijd 12 weken en de vriesfase 5 weken. Herinneringen worden gebruikt om de vriesfase voor LTR-uitgaven te verlengen.
 

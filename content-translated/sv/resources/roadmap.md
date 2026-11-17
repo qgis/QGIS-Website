@@ -52,7 +52,7 @@ Packarna meddelas att packningen kan påbörjas.
 
 När vissa paket är tillgängliga kan lanseringen meddelas och webbplatsen uppdateras i enlighet med detta.
 ## Släppschema
-Schemat är anpassat för att ge ungefär samma datum för varje år med tanke på våra fyra månatliga utgåvor med LTR som kommer in i LTR-repån i slutet av februari.
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 Från och med 2.12 är utvecklingsfasen alltid 12 veckor och frysningsfasen är minst 5 veckor. Remainders används för att förlänga frysningsfasen för LTR-utgåvor.
 

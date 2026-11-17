@@ -52,7 +52,7 @@ Se notifica a los empaquetadores que pueden comenzar con el empaquetamiento.
 
 Una vez que los paquetes están disponibles el lanzamiento puede ser anunciado y el sitio Web se actualiza como corresponde.
 ## Cronograma de lanzamiento
-El calendario está alineado para producir aproximadamente las mismas fechas para cada año, dadas nuestras cuatro publicaciones mensuales con LTR que entran en el repo de LTR a finales de febrero.
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 Beginning after 2.12 the development phase is always 12 weeks and the freeze phase is at least 5 weeks. Remainders are used to extend the freeze phase of LTR releases.
 

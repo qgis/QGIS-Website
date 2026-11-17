@@ -52,7 +52,7 @@ Constructorii noilor versiuni sunt informați că poate începe împachetarea.
 
 O dată ce pachetele sunt disponibile, lansarea poate fi anunțată și site-ul web este actualizat în consecință.
 ## Planificarea versiunilor
-Lansările au loc o dată la patru luni, aproximativ în aceleași date ale fiecărui an, o nouă versiune cu suport pe termen lung intrând în depozitul LTR la sfârșitul lunii februarie.
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 Începând cu versiunea 2.12, faza de dezvoltare este de 12 săptămâni, iar faza de înghețare este de cel puțin 5 săptămâni. Pentru a extinde faza de înghețare a versiunilor LTR se folosesc notificări.
 

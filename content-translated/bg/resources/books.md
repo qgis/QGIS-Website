@@ -257,12 +257,12 @@ Concepts, software and applications for quantitative land-surface analysis, incl
 - Организация: Locate Press
 - Дата: юни 2025 г.
 
-### Ръководство за упражнения на QGIS: нива за начинаещи, средно напреднали и напреднали
-Три практически ръководства за упражнения в QGIS (за начинаещи, средно напреднали и напреднали), предназначени за управление и анализ на геопространствени данни от Servicio Geológico Colombiano, използващи безплатни софтуерни решения с отворен код.
-- [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx)
+### Guía de ejercicios QGIS: niveles principiante, intermedio y avanzado
+Tres guías prácticas de ejercicios en QGIS (niveles principiante, intermedio y avanzado) diseñadas para la gestión y el análisis de datos geoespaciales del Servicio Geológico Colombiano mediante soluciones de software libre y de código abierto.
+- [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias.aspx)
 - Автор(и): Самуел Меса, Хайме Гарсон, Луис Салас
 - Организация: Колумбийска геоложка служба
-- Дата: декември 2024 г.
+- Date: Enero 2026
 
 ## Turkish
 ### Геоложки приложения с географски информационни системи с отворен код
