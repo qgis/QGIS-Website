@@ -15,9 +15,11 @@ Badge: "img/badges/dpg-badge.png"
 BadgeLink: "https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/"
 
 HasAnnouncement: false
-AnnouncementTitle: "is here!"
-AnnouncementText: "Discover the new features, improvements, and everything that makes this release a landmark moment."
-AnnouncementLinkText: "Explore the changelog"
+AnnouncementTitle: "QGIS 4.4 is here!"
+AnnouncementLinkText: "Find out what's new"
+AnnouncementLink: "project/visual-changelogs/visualchangelog44/"
+AnnouncementVideo: "5X1JKx7CXZY"
+AnnouncementEndDate: "2026-12-20"
 ---
 
 {{< feature
