@@ -71,6 +71,18 @@
       # 404 handling
       check_status "/this-page-does-not-exist/" "404" "Non-existent path returns HTTP 404"
 
+      # RSS feed
+      check_status "/index.xml" "200" "RSS feed returns HTTP 200"
+      check_content "/index.xml" "<rss" "RSS feed has an rss element"
+
+      feed_size=$(curl -s "http://127.0.0.1:$PORT/index.xml" | wc -c)
+      if [ "$feed_size" -lt 1000000 ]; then
+        echo "✅ RSS feed is under 1 MB ($feed_size bytes)"
+      else
+        echo "❌ RSS feed is $feed_size bytes, expected under 1 MB"
+        FAILED=1
+      fi
+
       kill $SERVER_PID 2>/dev/null
       wait $SERVER_PID 2>/dev/null || true
 
