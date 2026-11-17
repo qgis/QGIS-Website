@@ -121,9 +121,9 @@ test.describe("Home page", () => {
             );
         }
 
-        if ((await homePage.announcementVideo.count()) > 0) {
-            await expect(homePage.announcementVideo).toBeVisible();
-            await expect(homePage.announcementVideo).toHaveAttribute("data-video-id", /.+/);
+        if ((await homePage.AnnouncementVideoId.count()) > 0) {
+            await expect(homePage.AnnouncementVideoId).toBeVisible();
+            await expect(homePage.AnnouncementVideoId).toHaveAttribute("data-video-id", /.+/);
         }
     });
 

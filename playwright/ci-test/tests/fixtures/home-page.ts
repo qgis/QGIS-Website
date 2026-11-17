@@ -31,7 +31,7 @@ export class HomePage {
     public readonly otherSupporters: Locator;
     public readonly announcementSection: Locator;
     public readonly announcementHeading: Locator;
-    public readonly announcementVideo: Locator;
+    public readonly AnnouncementVideoId: Locator;
     public readonly announcementMembersLink: Locator;
 
     public readonly textList: string[] = [
@@ -150,7 +150,7 @@ export class HomePage {
         this.announcementHeading = this.announcementSection.getByRole("heading", {
             level: 2,
         });
-        this.announcementVideo = this.announcementSection.locator(".youtube");
+        this.AnnouncementVideoId = this.announcementSection.locator(".youtube");
         this.announcementMembersLink = this.announcementSection.getByRole("link", { name: "sustaining members" });
     }
 

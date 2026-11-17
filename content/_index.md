@@ -14,11 +14,11 @@ LabelText: "Free and Open Source"
 Badge: "img/badges/dpg-badge.png"
 BadgeLink: "https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/"
 
-HasAnnouncement: false
+HasAnnouncement: true
 AnnouncementTitle: "QGIS 4.4 is here!"
 AnnouncementLinkText: "Find out what's new"
 AnnouncementLink: "project/visual-changelogs/visualchangelog44/"
-AnnouncementVideo: "5X1JKx7CXZY"
+AnnouncementVideoId: "5X1JKx7CXZY"
 AnnouncementEndDate: "2026-12-20"
 ---
 
