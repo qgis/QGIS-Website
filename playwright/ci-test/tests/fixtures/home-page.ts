@@ -33,6 +33,7 @@ export class HomePage {
     public readonly announcementHeading: Locator;
     public readonly AnnouncementVideoId: Locator;
     public readonly announcementMembersLink: Locator;
+    public readonly announcementLogos: Locator;
 
     public readonly textList: string[] = [
         "Free and Open Source",
@@ -151,7 +152,8 @@ export class HomePage {
             level: 2,
         });
         this.AnnouncementVideoId = this.announcementSection.locator(".youtube");
-        this.announcementMembersLink = this.announcementSection.getByRole("link", { name: "sustaining members" });
+        this.announcementMembersLink = this.announcementSection.getByRole("link", { name: "See all our sustaining members" });
+        this.announcementLogos = this.announcementSection.locator(".qgis-announcement-logos img");
     }
 
     async goto() {
