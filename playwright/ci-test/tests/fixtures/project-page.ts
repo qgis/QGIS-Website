@@ -15,6 +15,8 @@ export class ProjectPage {
     public readonly joinTheCommunityLink: Locator;
     public readonly mapsLink: Locator;
     public readonly screenshotsLink: Locator;
+    public readonly visualChangelogLinks: Locator;
+    public readonly visualChangelogThumbnail: Locator;
     public readonly projectTextList: string[] = [
         "Free and open source",
         "QGIS overview",
@@ -101,5 +103,11 @@ export class ProjectPage {
         this.screenshotsLink = this.page.getByRole("link", {
             name: "Screenshots",
         }).first();
+        this.visualChangelogLinks = this.page.getByRole("link", {
+            name: "Read the changelog",
+        });
+        this.visualChangelogThumbnail = this.page
+            .locator(".rich-right img")
+            .first();
     }
 }
