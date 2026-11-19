@@ -152,7 +152,7 @@ export class HomePage {
             level: 2,
         });
         this.AnnouncementVideoId = this.announcementSection.locator(".youtube");
-        this.announcementMembersLink = this.announcementSection.getByRole("link", { name: "See all our sustaining members" });
+        this.announcementMembersLink = this.announcementSection.getByRole("link", { name: "See all of our sustaining members" });
         this.announcementLogos = this.announcementSection.locator(".qgis-announcement-logos img");
     }
 
