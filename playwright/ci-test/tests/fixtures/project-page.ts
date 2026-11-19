@@ -103,9 +103,9 @@ export class ProjectPage {
         this.screenshotsLink = this.page.getByRole("link", {
             name: "Screenshots",
         }).first();
-        this.visualChangelogLinks = this.page.getByRole("link", {
-            name: "Read the changelog",
-        });
+        this.visualChangelogLinks = this.page
+            .locator(".rich")
+            .getByRole("link", { name: "Read more" });
         this.visualChangelogThumbnail = this.page
             .locator(".rich-right img")
             .first();
