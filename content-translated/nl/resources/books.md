@@ -257,12 +257,12 @@ Deze tweede editie is behoorlijk bijgewerkt vanuit de originele titel, Discover 
 - Organisatie: Locate Press
 - Datum: juni 2025
 
-### Guía de ejercicios QGIS: niveles principiante, intermedio y avanzado
-Tres guías prácticas de ejercicios en QGIS (niveles principiante, intermedio y avanzado) diseñadas para la gestión y el análisis de datos geoespaciales del Servicio Geológico Colombiano mediante soluciones de software libre y de código abierto.
+### QGIS-oefenhandleiding: beginners-, gemiddelde en gevorderde niveaus
+Drie praktische QGIS-oefenhandleidingen (beginners-, intermediair- en gevorderd niveau) ontworpen voor het beheren en analyseren van geospatiale gegevens van de Colombiaanse Geologische Dienst met behulp van gratis en open source softwareoplossingen.
 - [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias.aspx)
 - Auteurs: Samuel Mesa, Jaime Garzón, Luis Salas
 - Organisatie: Servicio Geológico Colombiano
-- Date: Enero 2026
+- Datum: januari 2026
 
 ## Turks
 ### Geological Applications with Open Source Coded Geographic Information Systems

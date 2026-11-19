@@ -2,7 +2,7 @@
 ButtonLink: download/
 ButtonText: Жүктеп алу
 HasBanner: true
-LabelText: Free and open source
+LabelText: Еркін және ашық бастапқы кодты
 Reviewed: 1 June 2024
 Reviewer: Tim Sutton
 SupportedOS: Available on Windows, Mac, Linux
