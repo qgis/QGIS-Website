@@ -18,4 +18,11 @@ Usage example:
 
 `relativeImgPath` is false by default, the logos are taken from static/img/contributors in this case.
 
+`level` shows a single membership level: `flagship`, `large`, `medium` or `small`. Leave it out to show every level. It works with `active` and `changelog`.
+
+The visual changelogs from 3.34 onwards show only the flagship members:
+```
+{{< fund type="active" level="flagship" >}}
+```
+
 ![](img/fund.png)
