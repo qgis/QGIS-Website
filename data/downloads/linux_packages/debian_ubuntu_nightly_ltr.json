@@ -3,32 +3,32 @@
   "prefix": "",
   "distribution": "debian_ubuntu_nightly_ltr",
   "source_folder": "debian-nightly-ltr",
-  "generated_at": "2026-11-20T12:04:50.310873+00:00",
+  "generated_at": "2026-11-20T15:04:21.434914+00:00",
   "statistics": {
-    "total_files": 26527,
-    "total_size": 681307659023,
-    "total_size_formatted": "634.52 GB",
+    "total_files": 26585,
+    "total_size": 682855064992,
+    "total_size_formatted": "635.96 GB",
     "by_category": {
       "other": {
-        "count": 760,
-        "size": 116089347,
-        "size_formatted": "110.71 MB"
+        "count": 761,
+        "size": 116094518,
+        "size_formatted": "110.72 MB"
       },
       "archive": {
-        "count": 633,
-        "size": 128737823540,
-        "size_formatted": "119.90 GB"
+        "count": 634,
+        "size": 129011296442,
+        "size_formatted": "120.15 GB"
       },
       "installer": {
-        "count": 25134,
-        "size": 552453746136,
-        "size_formatted": "514.51 GB"
+        "count": 25190,
+        "size": 553727674032,
+        "size_formatted": "515.70 GB"
       }
     },
     "by_extension": {
-      ".deb": 25134,
-      ".gz": 580,
-      ".dsc": 491,
+      ".deb": 25190,
+      ".gz": 581,
+      ".dsc": 492,
       "no extension": 216,
       ".bz2": 53,
       ".gpg": 33,
@@ -37,7 +37,7 @@
       ".d71472c4": 1,
       ".dd45f6c3": 1
     },
-    "last_updated": "2026-11-20T12:04:50.302283+00:00"
+    "last_updated": "2026-11-20T15:04:21.428557+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -530,8 +530,8 @@
                         "key": "debian-nightly-ltr/dists/bookworm/main/binary-amd64/Packages.bz2",
                         "name": "Packages.bz2",
                         "path": "dists/bookworm/main/binary-amd64",
-                        "size": 167561,
-                        "size_formatted": "163.63 KB",
+                        "size": 167946,
+                        "size_formatted": "164.01 KB",
                         "last_modified": "2026-04-23T21:13:33+00:00",
                         "last_modified_timestamp": 1776978813,
                         "extension": ".bz2",
@@ -541,7 +541,7 @@
                         "key": "debian-nightly-ltr/dists/bookworm/main/binary-amd64/Packages.gz",
                         "name": "Packages.gz",
                         "path": "dists/bookworm/main/binary-amd64",
-                        "size": 205090,
+                        "size": 205087,
                         "size_formatted": "200.28 KB",
                         "last_modified": "2026-04-23T21:13:33+00:00",
                         "last_modified_timestamp": 1776978813,
@@ -582,8 +582,8 @@
                         "key": "debian-nightly-ltr/dists/bookworm/main/binary-i386/Packages.bz2",
                         "name": "Packages.bz2",
                         "path": "dists/bookworm/main/binary-i386",
-                        "size": 168302,
-                        "size_formatted": "164.36 KB",
+                        "size": 168328,
+                        "size_formatted": "164.38 KB",
                         "last_modified": "2026-04-23T21:13:32+00:00",
                         "last_modified_timestamp": 1776978812,
                         "extension": ".bz2",
@@ -593,8 +593,8 @@
                         "key": "debian-nightly-ltr/dists/bookworm/main/binary-i386/Packages.gz",
                         "name": "Packages.gz",
                         "path": "dists/bookworm/main/binary-i386",
-                        "size": 205054,
-                        "size_formatted": "200.25 KB",
+                        "size": 205043,
+                        "size_formatted": "200.24 KB",
                         "last_modified": "2026-04-23T21:13:32+00:00",
                         "last_modified_timestamp": 1776978812,
                         "extension": ".gz",
@@ -634,7 +634,7 @@
                         "key": "debian-nightly-ltr/dists/bookworm/main/source/Sources.gz",
                         "name": "Sources.gz",
                         "path": "dists/bookworm/main/source",
-                        "size": 2055,
+                        "size": 2060,
                         "size_formatted": "2.01 KB",
                         "last_modified": "2026-04-23T21:13:33+00:00",
                         "last_modified_timestamp": 1776978813,
@@ -19806,6 +19806,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-3d3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgis-3d3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 19379104,
+                        "size_formatted": "18.48 MB",
+                        "last_modified": "2026-11-20T14:08:15.878000+00:00",
+                        "last_modified_timestamp": 1795183695,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-3d3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgis-3d3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 19437668,
+                        "size_formatted": "18.54 MB",
+                        "last_modified": "2026-11-20T14:08:16.006000+00:00",
+                        "last_modified_timestamp": 1795183696,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-3d3.44.15_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "libqgis-3d3.44.15_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -34817,6 +34839,28 @@
                         "size_formatted": "58.19 MB",
                         "last_modified": "2026-11-15T16:08:15.922000+00:00",
                         "last_modified_timestamp": 1794758895,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-analysis3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgis-analysis3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 61918272,
+                        "size_formatted": "59.05 MB",
+                        "last_modified": "2026-11-20T14:08:32.896000+00:00",
+                        "last_modified_timestamp": 1795183712,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-analysis3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgis-analysis3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 62073672,
+                        "size_formatted": "59.20 MB",
+                        "last_modified": "2026-11-20T14:08:32.920000+00:00",
+                        "last_modified_timestamp": 1795183712,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -49836,6 +49880,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-app3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgis-app3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 58529600,
+                        "size_formatted": "55.82 MB",
+                        "last_modified": "2026-11-20T14:08:31.420000+00:00",
+                        "last_modified_timestamp": 1795183711,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-app3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgis-app3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 58807372,
+                        "size_formatted": "56.08 MB",
+                        "last_modified": "2026-11-20T14:08:31.476000+00:00",
+                        "last_modified_timestamp": 1795183711,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-app3.44.15_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "libqgis-app3.44.15_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -64851,6 +64917,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-core3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgis-core3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 144310416,
+                        "size_formatted": "137.63 MB",
+                        "last_modified": "2026-11-20T14:09:06.586000+00:00",
+                        "last_modified_timestamp": 1795183746,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-core3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgis-core3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 145208420,
+                        "size_formatted": "138.48 MB",
+                        "last_modified": "2026-11-20T14:09:06.812000+00:00",
+                        "last_modified_timestamp": 1795183746,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-core3.44.15_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "libqgis-core3.44.15_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -71715,6 +71803,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-customwidgets_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgis-customwidgets_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5480284,
+                        "size_formatted": "5.23 MB",
+                        "last_modified": "2026-11-20T14:08:09.741000+00:00",
+                        "last_modified_timestamp": 1795183689,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-customwidgets_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgis-customwidgets_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5500036,
+                        "size_formatted": "5.25 MB",
+                        "last_modified": "2026-11-20T14:08:09.733000+00:00",
+                        "last_modified_timestamp": 1795183689,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-customwidgets_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "libqgis-customwidgets_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -78575,6 +78685,28 @@
                         "size_formatted": "6.94 MB",
                         "last_modified": "2026-11-15T16:07:55.850000+00:00",
                         "last_modified_timestamp": 1794758875,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-dev_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgis-dev_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7275472,
+                        "size_formatted": "6.94 MB",
+                        "last_modified": "2026-11-20T14:08:10.502000+00:00",
+                        "last_modified_timestamp": 1795183690,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-dev_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgis-dev_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7275424,
+                        "size_formatted": "6.94 MB",
+                        "last_modified": "2026-11-20T14:08:10.530000+00:00",
+                        "last_modified_timestamp": 1795183690,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -93594,6 +93726,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-gui3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgis-gui3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 112100208,
+                        "size_formatted": "106.91 MB",
+                        "last_modified": "2026-11-20T14:08:54.528000+00:00",
+                        "last_modified_timestamp": 1795183734,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-gui3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgis-gui3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 112638840,
+                        "size_formatted": "107.42 MB",
+                        "last_modified": "2026-11-20T14:08:54.546000+00:00",
+                        "last_modified_timestamp": 1795183734,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-gui3.44.15_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "libqgis-gui3.44.15_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -108539,6 +108693,28 @@
                         "size_formatted": "4.03 MB",
                         "last_modified": "2026-11-15T16:07:54.761000+00:00",
                         "last_modified_timestamp": 1794758874,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-native3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgis-native3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4230872,
+                        "size_formatted": "4.03 MB",
+                        "last_modified": "2026-11-20T14:08:09.258000+00:00",
+                        "last_modified_timestamp": 1795183689,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-native3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgis-native3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4232296,
+                        "size_formatted": "4.04 MB",
+                        "last_modified": "2026-11-20T14:08:11.564000+00:00",
+                        "last_modified_timestamp": 1795183691,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -123620,6 +123796,28 @@
                         "size_formatted": "8.90 MB",
                         "last_modified": "2026-11-15T16:07:56.618000+00:00",
                         "last_modified_timestamp": 1794758876,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-server3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgis-server3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 9297344,
+                        "size_formatted": "8.87 MB",
+                        "last_modified": "2026-11-20T14:08:14.449000+00:00",
+                        "last_modified_timestamp": 1795183694,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgis-server3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgis-server3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 9362908,
+                        "size_formatted": "8.93 MB",
+                        "last_modified": "2026-11-20T14:08:14.523000+00:00",
+                        "last_modified_timestamp": 1795183694,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -138749,6 +138947,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgisgrass8-3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgisgrass8-3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6193840,
+                        "size_formatted": "5.91 MB",
+                        "last_modified": "2026-11-20T14:08:13.774000+00:00",
+                        "last_modified_timestamp": 1795183693,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgisgrass8-3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgisgrass8-3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6211188,
+                        "size_formatted": "5.92 MB",
+                        "last_modified": "2026-11-20T14:08:13.774000+00:00",
+                        "last_modified_timestamp": 1795183693,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/libqgisgrass8-3.44.15_3.44.15+git20261120+ba6f46d4403+40noble_amd64.deb",
                         "name": "libqgisgrass8-3.44.15_3.44.15+git20261120+ba6f46d4403+40noble_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -153654,6 +153874,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgispython3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "libqgispython3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4186164,
+                        "size_formatted": "3.99 MB",
+                        "last_modified": "2026-11-20T14:08:13.648000+00:00",
+                        "last_modified_timestamp": 1795183693,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/libqgispython3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "libqgispython3.44.15_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4187384,
+                        "size_formatted": "3.99 MB",
+                        "last_modified": "2026-11-20T14:08:15.753000+00:00",
+                        "last_modified_timestamp": 1795183695,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/libqgispython3.44.15_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "libqgispython3.44.15_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -159275,6 +159517,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/python-qgis-common_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "name": "python-qgis-common_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3909140,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-11-20T14:08:15.734000+00:00",
+                        "last_modified_timestamp": 1795183695,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/python-qgis-common_3.44.15+git20261120+ba6f46d4403+36jammy_all.deb",
                         "name": "python-qgis-common_3.44.15+git20261120+ba6f46d4403+36jammy_all.deb",
                         "path": "pool/main/q/qgis",
@@ -164698,6 +164951,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/python-qgis_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "name": "python-qgis_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3909136,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-11-20T14:08:15.741000+00:00",
+                        "last_modified_timestamp": 1795183695,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/python-qgis_3.44.15+git20261120+ba6f46d4403+36jammy_all.deb",
                         "name": "python-qgis_3.44.15+git20261120+ba6f46d4403+36jammy_all.deb",
                         "path": "pool/main/q/qgis",
@@ -170051,6 +170315,17 @@
                         "size_formatted": "6.80 MB",
                         "last_modified": "2026-11-15T16:07:56.021000+00:00",
                         "last_modified_timestamp": 1794758876,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/python3-qgis-common_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "name": "python3-qgis-common_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7141064,
+                        "size_formatted": "6.81 MB",
+                        "last_modified": "2026-11-20T14:08:18.929000+00:00",
+                        "last_modified_timestamp": 1795183698,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -176622,6 +176897,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/python3-qgis_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "python3-qgis_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 57141204,
+                        "size_formatted": "54.49 MB",
+                        "last_modified": "2026-11-20T14:08:39.867000+00:00",
+                        "last_modified_timestamp": 1795183719,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/python3-qgis_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "python3-qgis_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 55280528,
+                        "size_formatted": "52.72 MB",
+                        "last_modified": "2026-11-20T14:08:39.200000+00:00",
+                        "last_modified_timestamp": 1795183719,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/python3-qgis_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "python3-qgis_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -182239,6 +182536,17 @@
                         "size_formatted": "27.62 MB",
                         "last_modified": "2026-11-15T16:08:06.012000+00:00",
                         "last_modified_timestamp": 1794758886,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-common_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "name": "qgis-common_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 28989852,
+                        "size_formatted": "27.65 MB",
+                        "last_modified": "2026-11-20T14:08:27.434000+00:00",
+                        "last_modified_timestamp": 1795183707,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -188634,6 +188942,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-dbg_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-dbg_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3909272,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-11-20T14:08:18.002000+00:00",
+                        "last_modified_timestamp": 1795183698,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-dbg_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-dbg_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3909272,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-11-20T14:08:19.796000+00:00",
+                        "last_modified_timestamp": 1795183699,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-dbg_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "qgis-dbg_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -194251,6 +194581,17 @@
                         "size_formatted": "4.14 MB",
                         "last_modified": "2026-11-15T16:07:56.712000+00:00",
                         "last_modified_timestamp": 1794758876,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-plugin-grass-common_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "name": "qgis-plugin-grass-common_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4345464,
+                        "size_formatted": "4.14 MB",
+                        "last_modified": "2026-11-20T14:08:20.958000+00:00",
+                        "last_modified_timestamp": 1795183700,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -200884,6 +201225,28 @@
                         "size_formatted": "6.64 MB",
                         "last_modified": "2026-11-15T16:07:58.106000+00:00",
                         "last_modified_timestamp": 1794758878,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-plugin-grass_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-plugin-grass_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6959544,
+                        "size_formatted": "6.64 MB",
+                        "last_modified": "2026-11-20T14:08:22.751000+00:00",
+                        "last_modified_timestamp": 1795183702,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-plugin-grass_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-plugin-grass_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6981744,
+                        "size_formatted": "6.66 MB",
+                        "last_modified": "2026-11-20T14:08:23.358000+00:00",
+                        "last_modified_timestamp": 1795183703,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -207752,6 +208115,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-provider-grass_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-provider-grass_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5110252,
+                        "size_formatted": "4.87 MB",
+                        "last_modified": "2026-11-20T14:08:23.223000+00:00",
+                        "last_modified_timestamp": 1795183703,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-provider-grass_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-provider-grass_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5115024,
+                        "size_formatted": "4.88 MB",
+                        "last_modified": "2026-11-20T14:08:28.555000+00:00",
+                        "last_modified_timestamp": 1795183708,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-provider-grass_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "qgis-provider-grass_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -213369,6 +213754,17 @@
                         "size_formatted": "5.29 MB",
                         "last_modified": "2026-11-15T16:07:58.409000+00:00",
                         "last_modified_timestamp": 1794758878,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-providers-common_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "name": "qgis-providers-common_3.44.15+git20261120+ba6f46d4403+17bookworm_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5449740,
+                        "size_formatted": "5.20 MB",
+                        "last_modified": "2026-11-20T14:08:25.156000+00:00",
+                        "last_modified_timestamp": 1795183705,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -220002,6 +220398,28 @@
                         "size_formatted": "44.31 MB",
                         "last_modified": "2026-11-15T16:08:13.703000+00:00",
                         "last_modified_timestamp": 1794758893,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-providers_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-providers_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 46205224,
+                        "size_formatted": "44.06 MB",
+                        "last_modified": "2026-11-20T14:08:44.065000+00:00",
+                        "last_modified_timestamp": 1795183724,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-providers_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-providers_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 46811396,
+                        "size_formatted": "44.64 MB",
+                        "last_modified": "2026-11-20T14:08:44.558000+00:00",
+                        "last_modified_timestamp": 1795183724,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -226734,6 +227152,28 @@
                         "size_formatted": "4.54 MB",
                         "last_modified": "2026-11-15T16:07:58.410000+00:00",
                         "last_modified_timestamp": 1794758878,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-common_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-server-common_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4752496,
+                        "size_formatted": "4.53 MB",
+                        "last_modified": "2026-11-20T14:08:27.289000+00:00",
+                        "last_modified_timestamp": 1795183707,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-common_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-server-common_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4760464,
+                        "size_formatted": "4.54 MB",
+                        "last_modified": "2026-11-20T14:08:29.694000+00:00",
+                        "last_modified_timestamp": 1795183709,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -233965,6 +234405,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-landingpage_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-server-landingpage_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4973052,
+                        "size_formatted": "4.74 MB",
+                        "last_modified": "2026-11-20T14:08:30.881000+00:00",
+                        "last_modified_timestamp": 1795183710,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-landingpage_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-server-landingpage_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4991860,
+                        "size_formatted": "4.76 MB",
+                        "last_modified": "2026-11-20T14:08:31.270000+00:00",
+                        "last_modified_timestamp": 1795183711,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-landingpage_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "qgis-server-landingpage_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -240693,6 +241155,28 @@
                         "size_formatted": "4.52 MB",
                         "last_modified": "2026-11-15T16:07:58.628000+00:00",
                         "last_modified_timestamp": 1794758878,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wcs_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-server-wcs_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4743636,
+                        "size_formatted": "4.52 MB",
+                        "last_modified": "2026-11-20T14:08:31.969000+00:00",
+                        "last_modified_timestamp": 1795183711,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wcs_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-server-wcs_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4756804,
+                        "size_formatted": "4.54 MB",
+                        "last_modified": "2026-11-20T14:08:33.336000+00:00",
+                        "last_modified_timestamp": 1795183713,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -247429,6 +247913,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wfs3_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-server-wfs3_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5218820,
+                        "size_formatted": "4.98 MB",
+                        "last_modified": "2026-11-20T14:08:34.056000+00:00",
+                        "last_modified_timestamp": 1795183714,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wfs3_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-server-wfs3_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5248468,
+                        "size_formatted": "5.01 MB",
+                        "last_modified": "2026-11-20T14:08:34.366000+00:00",
+                        "last_modified_timestamp": 1795183714,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wfs3_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "qgis-server-wfs3_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -254157,6 +254663,28 @@
                         "size_formatted": "5.60 MB",
                         "last_modified": "2026-11-15T16:08:00.312000+00:00",
                         "last_modified_timestamp": 1794758880,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wfs_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-server-wfs_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5868156,
+                        "size_formatted": "5.60 MB",
+                        "last_modified": "2026-11-20T14:08:34.877000+00:00",
+                        "last_modified_timestamp": 1795183714,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wfs_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-server-wfs_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5900556,
+                        "size_formatted": "5.63 MB",
+                        "last_modified": "2026-11-20T14:08:35.421000+00:00",
+                        "last_modified_timestamp": 1795183715,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -260893,6 +261421,28 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wms_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-server-wms_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 8355596,
+                        "size_formatted": "7.97 MB",
+                        "last_modified": "2026-11-20T14:08:37.377000+00:00",
+                        "last_modified_timestamp": 1795183717,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wms_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-server-wms_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 8414564,
+                        "size_formatted": "8.02 MB",
+                        "last_modified": "2026-11-20T14:08:37.414000+00:00",
+                        "last_modified_timestamp": 1795183717,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wms_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "name": "qgis-server-wms_3.44.15+git20261120+ba6f46d4403+36jammy_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -267621,6 +268171,28 @@
                         "size_formatted": "4.69 MB",
                         "last_modified": "2026-11-15T16:08:00.603000+00:00",
                         "last_modified_timestamp": 1794758880,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wmts_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-server-wmts_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4907344,
+                        "size_formatted": "4.68 MB",
+                        "last_modified": "2026-11-20T14:08:36.153000+00:00",
+                        "last_modified_timestamp": 1795183716,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server-wmts_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-server-wmts_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4919864,
+                        "size_formatted": "4.69 MB",
+                        "last_modified": "2026-11-20T14:08:36.245000+00:00",
+                        "last_modified_timestamp": 1795183716,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -274485,6 +275057,28 @@
                         "size_formatted": "3.73 MB",
                         "last_modified": "2026-11-15T16:08:00.223000+00:00",
                         "last_modified_timestamp": 1794758880,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis-server_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3909276,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-11-20T14:08:36.286000+00:00",
+                        "last_modified_timestamp": 1795183716,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis-server_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis-server_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3909276,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-11-20T14:08:36.436000+00:00",
+                        "last_modified_timestamp": 1795183716,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -290611,6 +291205,50 @@
                         "size_formatted": "13.95 MB",
                         "last_modified": "2026-11-15T16:08:04.735000+00:00",
                         "last_modified_timestamp": 1794758884,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis_3.44.15+git20261120+ba6f46d4403+17bookworm.dsc",
+                        "name": "qgis_3.44.15+git20261120+ba6f46d4403+17bookworm.dsc",
+                        "path": "pool/main/q/qgis",
+                        "size": 5171,
+                        "size_formatted": "5.05 KB",
+                        "last_modified": "2026-11-20T14:08:35.690000+00:00",
+                        "last_modified_timestamp": 1795183715,
+                        "extension": ".dsc",
+                        "category": "other"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis_3.44.15+git20261120+ba6f46d4403+17bookworm.tar.gz",
+                        "name": "qgis_3.44.15+git20261120+ba6f46d4403+17bookworm.tar.gz",
+                        "path": "pool/main/q/qgis",
+                        "size": 273472500,
+                        "size_formatted": "260.80 MB",
+                        "last_modified": "2026-11-20T14:09:14.985000+00:00",
+                        "last_modified_timestamp": 1795183754,
+                        "extension": ".gz",
+                        "category": "archive"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "name": "qgis_3.44.15+git20261120+ba6f46d4403+17bookworm_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 14619480,
+                        "size_formatted": "13.94 MB",
+                        "last_modified": "2026-11-20T14:08:43.750000+00:00",
+                        "last_modified_timestamp": 1795183723,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-ltr/pool/main/q/qgis/qgis_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "name": "qgis_3.44.15+git20261120+ba6f46d4403+17bookworm_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 14673544,
+                        "size_formatted": "13.99 MB",
+                        "last_modified": "2026-11-20T14:08:43.924000+00:00",
+                        "last_modified_timestamp": 1795183723,
                         "extension": ".deb",
                         "category": "installer"
                       },
