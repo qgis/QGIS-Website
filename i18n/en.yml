@@ -585,3 +585,9 @@
   translation: "Active groups"
 - id: userGroupsStatCountries
   translation: "Countries"
+- id: organisationSince
+  translation: "Since {{ .Date }}"
+- id: organisationUntil
+  translation: "Until {{ .Date }}"
+- id: organisationFromTo
+  translation: "{{ .From }} to {{ .To }}"
