@@ -2,7 +2,7 @@
     Category filter for a visual changelog. assets/js/changelog-filter.js fills the dropdown
     from the changelog-category-start blocks and shows the panel, so it stays hidden without JavaScript.
 */}}
-{{ $css := resources.Get "sass/changelog-filter.sass" | css.Sass }}
+{{ $css := resources.Get "sass/changelog.sass" | css.Sass }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
 <div class="changelog-filter notification is-light py-3 px-4 mb-5 is-hidden">

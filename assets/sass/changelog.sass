@@ -1,5 +1,24 @@
-// Visual changelog category filter, loaded by the changelog-filter shortcode.
+// Visual changelog styles, loaded by the changelog-filter shortcode.
 // Compiled on its own like user-groups.sass, so values are written out with their source.
+
+.youtube
+  border-radius: 20px
+  width: 560px
+  height: 315px
+  background-size: cover
+  background-position: center center
+  position: relative
+  cursor: pointer
+  overflow: hidden
+
+// Bulma until-fullhd
+@media screen and (max-width: 1407px)
+  .youtube
+    height: 400px
+    width: 100%
+
+  .video
+    order: 1
 
 .changelog-filter-bar
   gap: 0.5rem 1rem
