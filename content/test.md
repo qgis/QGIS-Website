@@ -289,6 +289,18 @@ Creating documentation offers an ideal starting point for your first contributio
 
 [Link to inner page]({{< ref "/community/foundation/charter.md" >}}) 
 
+{{< rich-box-start layoutClass="rounded" githubLink="https://github.com/qgis/QGIS" >}}
+
+{{< rich-content-start themeClass="coloring-1" >}}
+
+### Rich box with a GitHub link
+
+Set `githubLink` on `rich-box-start` to show a small GitHub button in the top-right corner of the box.
+
+{{< rich-content-end >}}
+
+{{< rich-box-end >}}
+
 {{< rich-box-start icon="💁" layoutClass="tips">}}
 
 {{< rich-content-start themeClass="coloring-1" >}}

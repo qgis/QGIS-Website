@@ -1,0 +1,70 @@
+// Visual changelog styles, loaded by the changelog-filter shortcode.
+// Compiled on its own like user-groups.sass, so values are written out with their source.
+
+.youtube
+  border-radius: 20px
+  width: 560px
+  height: 315px
+  background-size: cover
+  background-position: center center
+  position: relative
+  cursor: pointer
+  overflow: hidden
+
+// Bulma until-fullhd
+@media screen and (max-width: 1407px)
+  .youtube
+    height: 400px
+    width: 100%
+
+  .video
+    order: 1
+
+.changelog-filter-bar
+  gap: 0.5rem 1rem
+
+.changelog-filter
+  .dropdown-menu
+    min-width: 100%
+
+  .changelog-filter-option
+    gap: 0.75rem
+    padding-right: 1rem
+    white-space: nowrap
+    cursor: pointer
+
+    &:hover
+      background-color: #ecf1f4  // coloring-1 background in the theme's richbox.sass
+
+    input
+      accent-color: #589632  // config.toml params.success
+      cursor: pointer
+
+@media screen and (min-width: 769px)
+  .changelog-filter
+    .dropdown-content
+      column-count: 2
+      column-gap: 0
+
+    .changelog-filter-option
+      break-inside: avoid
+
+@media screen and (max-width: 768px)
+  .changelog-filter
+    .dropdown,
+    .dropdown-trigger,
+    .dropdown-trigger .button
+      width: 100%
+
+    .dropdown-content
+      max-height: 60vh
+      overflow-y: auto
+
+@media screen and (max-width: 1023px)
+  .changelog-filter
+    .button
+      height: auto
+      min-height: 2.75rem
+
+    .changelog-filter-option
+      min-height: 2.75rem
