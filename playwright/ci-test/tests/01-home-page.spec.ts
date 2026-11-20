@@ -24,6 +24,20 @@ const test = base.extend<HomePageFixtures>({
     },
 });
 
+// A logo with its transparent margin cropped has visible pixels on all four edges.
+const touchesEveryEdge = (img: HTMLImageElement): boolean => {
+    if (!img.complete || !img.naturalWidth) return false;
+    const { naturalWidth: width, naturalHeight: height } = img;
+    const canvas = Object.assign(document.createElement("canvas"), { width, height });
+    const context = canvas.getContext("2d")!;
+    context.drawImage(img, 0, 0);
+    const pixels = context.getImageData(0, 0, width, height).data;
+    const visible = (x: number, y: number) => pixels[(y * width + x) * 4 + 3] > 0;
+    const row = (y: number) => Array.from({ length: width }, (_, x) => visible(x, y)).some(Boolean);
+    const column = (x: number) => Array.from({ length: height }, (_, y) => visible(x, y)).some(Boolean);
+    return row(0) && row(height - 1) && column(0) && column(width - 1);
+};
+
 test.describe("Home page", () => {
     test.beforeEach(async ({ header, homePage }) => {
         // Go to the home url before each test.
@@ -103,6 +117,30 @@ test.describe("Home page", () => {
 
         for (const text of homePage.textList) {
             await expect(homePage.pageBody).toContainText(text);
+        }
+    });
+
+    test("Release announcement", async ({ homePage }) => {
+        test.skip(
+            (await homePage.announcementSection.count()) === 0,
+            "The release announcement is switched off in content/_index.md",
+        );
+
+        await expect(homePage.announcementHeading).toBeVisible();
+
+        await expect(homePage.announcementMembersLink).toHaveAttribute(
+            "href",
+            /\/funding\/membership\/members\/$/,
+        );
+
+        if ((await homePage.AnnouncementVideoId.count()) > 0) {
+            await expect(homePage.AnnouncementVideoId).toBeVisible();
+            await expect(homePage.AnnouncementVideoId).toHaveAttribute("data-video-id", /.+/);
+        }
+
+        for (const logo of await homePage.announcementLogos.all()) {
+            await logo.scrollIntoViewIfNeeded();
+            await expect.poll(() => logo.evaluate(touchesEveryEdge)).toBe(true);
         }
     });
 
