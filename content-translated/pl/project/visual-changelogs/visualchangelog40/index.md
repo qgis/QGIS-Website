@@ -417,7 +417,7 @@ This feature was developed by [North Road](https://north-road.com/)
 These functions are designed to make it easy to customise the display of a degree-based grid annotation, by allowing easy extraction of the individual components of the decimal degree value for individual formatting (e.g., displaying the degrees in bold)
 - extract_degrees: Extracts the integer number of degrees from a decimal degrees value. The minutes and seconds components are ignored. The extracted degrees values will be truncated towards zero (not rounded).
 - extract_minutes: Extracts the integer number of minutes from a decimal degrees value. The degrees and seconds components are ignored. The extracted minutes values will be truncated towards zero (not rounded), and will always be a positive value.
-- Extracts the decimal number of seconds from a decimal degrees value. The degrees and minutes components are ignored. The extracted seconds value will always be a positive value.
+- Wyodrębnia liczbę sekund z częścią dziesiętną z wartości w stopniach dziesiętnych. Składowe stopni i minut są pomijane. Wyodrębniona wartość sekund jest zawsze dodatnia.
 
 <img src="images/entries/afca4fe52738eae1b242ae2720e0bbbb97f119fe.png" class="img-responsive img-rounded" />
 

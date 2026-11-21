@@ -18,7 +18,7 @@ This interactive map displays the geographic distribution of QGIS contributors a
 - **Interactive Markers**: Click on any contributor to see detailed contribution statistics
 - **Contribution Categories**: View contributions broken down by thematic areas (Core, Documentation, Websites)
 
-### Data Source
+### Źródło danych
 Contributor data is automatically generated from GitHub repositories and includes contributions to:
 - QGIS Core
 - Dokumentacja QGIS

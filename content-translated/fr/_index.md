@@ -1,8 +1,8 @@
 ---
-AnnouncementLinkText: Explore the changelog
-AnnouncementText: Discover the new features, improvements, and everything that makes
-  this release a landmark moment.
-AnnouncementTitle: is here!
+AnnouncementLinkText: Explorez le journal des modifications
+AnnouncementText: Découvrez les nouvelles fonctionnalités, améliorations et tout ce
+  qui fait de cette nouvelle version une étape marquante.
+AnnouncementTitle: est ici !
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/
