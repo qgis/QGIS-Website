@@ -28,19 +28,11 @@ See [Unit testing](https://docs.qgis.org/testing/en/docs/developers_guide/unitte
 
 See the [OGC conformance testing documentation](https://docs.qgis.org/testing/en/docs/developers_guide/ogcconformancetesting.html) for more information and notes on how to run these tests yourself.
 
-{{< button
-class = "is-primary1 is-small"
-link = "http://test.qgis.org/ogc_cite"
-text = "OGC Cite tests" >}}
+The OGC test suites (WMS 1.3.0, WFS 1.1.0 and OGC API Features) now run in continuous integration for every pull request and push to QGIS Server. The daily reports previously published at test.qgis.org are no longer available, so the latest results live in the CI workflow runs:
 
 {{< button
 class = "is-primary1 is-small"
-link = "http://test.qgis.org/ogc_cite/wms_130/latest/report.html"
-text = "WMS 1.3.0 Tests" >}}
-
-{{< button
-class = "is-primary1 is-small"
-link = "http://test.qgis.org/ogc_cite/wfs_110/latest/report.html"
-text = "WFS 1.1.0 Tests" >}}
+link = "https://github.com/qgis/QGIS/actions/workflows/ogc.yml"
+text = "OGC tests (CI results)" >}}
 
 {{< content-end >}}
