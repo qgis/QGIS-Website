@@ -3,41 +3,41 @@
   "prefix": "",
   "distribution": "debian_ubuntu_ltr",
   "source_folder": "debian-ltr",
-  "generated_at": "2026-11-21T23:03:50.904522+00:00",
+  "generated_at": "2026-11-22T00:09:13.760882+00:00",
   "statistics": {
-    "total_files": 13106,
-    "total_size": 400836049057,
-    "total_size_formatted": "373.31 GB",
+    "total_files": 13151,
+    "total_size": 402315897214,
+    "total_size_formatted": "374.69 GB",
     "by_category": {
       "other": {
-        "count": 524,
-        "size": 103177039,
-        "size_formatted": "98.40 MB"
+        "count": 533,
+        "size": 103524309,
+        "size_formatted": "98.73 MB"
       },
       "archive": {
-        "count": 401,
-        "size": 55327045772,
-        "size_formatted": "51.53 GB"
+        "count": 406,
+        "size": 55557185275,
+        "size_formatted": "51.74 GB"
       },
       "installer": {
-        "count": 12181,
-        "size": 345405826246,
-        "size_formatted": "321.68 GB"
+        "count": 12212,
+        "size": 346655187630,
+        "size_formatted": "322.85 GB"
       }
     },
     "by_extension": {
-      ".deb": 12181,
-      ".gz": 350,
-      ".dsc": 264,
-      "no extension": 208,
-      ".bz2": 51,
-      ".gpg": 32,
+      ".deb": 12212,
+      ".gz": 354,
+      ".dsc": 265,
+      "no extension": 215,
+      ".bz2": 52,
+      ".gpg": 33,
       ".db": 14,
       ".sh": 3,
       ".d71472c4": 1,
       ".dd45f6c3": 1
     },
-    "last_updated": "2026-11-21T23:03:50.900940+00:00"
+    "last_updated": "2026-11-22T00:09:13.755815+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -54,8 +54,8 @@
             "key": "debian-ltr/conf/distributions",
             "name": "distributions",
             "path": "conf",
-            "size": 6356,
-            "size_formatted": "6.21 KB",
+            "size": 6606,
+            "size_formatted": "6.45 KB",
             "last_modified": "2026-04-08T14:49:30+00:00",
             "last_modified_timestamp": 1775659770,
             "extension": "",
@@ -117,8 +117,8 @@
             "key": "debian-ltr/db/checksums.db",
             "name": "checksums.db",
             "path": "db",
-            "size": 7884800,
-            "size_formatted": "7.52 MB",
+            "size": 7983104,
+            "size_formatted": "7.61 MB",
             "last_modified": "2026-04-09T00:33:01+00:00",
             "last_modified_timestamp": 1775694781,
             "extension": ".db",
@@ -139,8 +139,8 @@
             "key": "debian-ltr/db/packagenames.db",
             "name": "packagenames.db",
             "path": "db",
-            "size": 1851392,
-            "size_formatted": "1.77 MB",
+            "size": 1875968,
+            "size_formatted": "1.79 MB",
             "last_modified": "2026-04-09T00:33:10+00:00",
             "last_modified_timestamp": 1775694790,
             "extension": ".db",
@@ -150,8 +150,8 @@
             "key": "debian-ltr/db/packages.db",
             "name": "packages.db",
             "path": "db",
-            "size": 50991104,
-            "size_formatted": "48.63 MB",
+            "size": 51142656,
+            "size_formatted": "48.77 MB",
             "last_modified": "2026-04-09T00:33:10+00:00",
             "last_modified_timestamp": 1775694790,
             "extension": ".db",
@@ -161,8 +161,8 @@
             "key": "debian-ltr/db/references.db",
             "name": "references.db",
             "path": "db",
-            "size": 2215936,
-            "size_formatted": "2.11 MB",
+            "size": 2220032,
+            "size_formatted": "2.12 MB",
             "last_modified": "2026-04-09T00:33:10+00:00",
             "last_modified_timestamp": 1775694790,
             "extension": ".db",
@@ -172,8 +172,8 @@
             "key": "debian-ltr/db/release.caches.db",
             "name": "release.caches.db",
             "path": "db",
-            "size": 315392,
-            "size_formatted": "308.00 KB",
+            "size": 327680,
+            "size_formatted": "320.00 KB",
             "last_modified": "2026-04-09T00:33:12+00:00",
             "last_modified_timestamp": 1775694792,
             "extension": ".db",
@@ -4738,6 +4738,187 @@
                 "size_formatted": "833.00 B",
                 "last_modified": "2025-06-06T10:16:44.087885+00:00",
                 "last_modified_timestamp": 1749205004,
+                "extension": ".gpg",
+                "category": "other"
+              }
+            ]
+          },
+          {
+            "name": "stonking",
+            "type": "folder",
+            "path": "dists/stonking",
+            "children": [
+              {
+                "name": "main",
+                "type": "folder",
+                "path": "dists/stonking/main",
+                "children": [
+                  {
+                    "name": "binary-amd64",
+                    "type": "folder",
+                    "path": "dists/stonking/main/binary-amd64",
+                    "children": [],
+                    "files": [
+                      {
+                        "key": "debian-ltr/dists/stonking/main/binary-amd64/Packages",
+                        "name": "Packages",
+                        "path": "dists/stonking/main/binary-amd64",
+                        "size": 40643,
+                        "size_formatted": "39.69 KB",
+                        "last_modified": "2026-11-21T23:05:26.766000+00:00",
+                        "last_modified_timestamp": 1795302326,
+                        "extension": "",
+                        "category": "other"
+                      },
+                      {
+                        "key": "debian-ltr/dists/stonking/main/binary-amd64/Packages.bz2",
+                        "name": "Packages.bz2",
+                        "path": "dists/stonking/main/binary-amd64",
+                        "size": 9873,
+                        "size_formatted": "9.64 KB",
+                        "last_modified": "2026-11-21T23:05:26.778000+00:00",
+                        "last_modified_timestamp": 1795302326,
+                        "extension": ".bz2",
+                        "category": "archive"
+                      },
+                      {
+                        "key": "debian-ltr/dists/stonking/main/binary-amd64/Packages.gz",
+                        "name": "Packages.gz",
+                        "path": "dists/stonking/main/binary-amd64",
+                        "size": 10834,
+                        "size_formatted": "10.58 KB",
+                        "last_modified": "2026-11-21T23:05:26.854000+00:00",
+                        "last_modified_timestamp": 1795302326,
+                        "extension": ".gz",
+                        "category": "archive"
+                      },
+                      {
+                        "key": "debian-ltr/dists/stonking/main/binary-amd64/Release",
+                        "name": "Release",
+                        "path": "dists/stonking/main/binary-amd64",
+                        "size": 124,
+                        "size_formatted": "124.00 B",
+                        "last_modified": "2026-11-21T23:05:26.769000+00:00",
+                        "last_modified_timestamp": 1795302326,
+                        "extension": "",
+                        "category": "other"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "debug",
+                    "type": "folder",
+                    "path": "dists/stonking/main/debug",
+                    "children": [
+                      {
+                        "name": "binary-amd64",
+                        "type": "folder",
+                        "path": "dists/stonking/main/debug/binary-amd64",
+                        "children": [],
+                        "files": [
+                          {
+                            "key": "debian-ltr/dists/stonking/main/debug/binary-amd64/Packages",
+                            "name": "Packages",
+                            "path": "dists/stonking/main/debug/binary-amd64",
+                            "size": 0,
+                            "size_formatted": "0.00 B",
+                            "last_modified": "2026-11-21T23:05:27.427000+00:00",
+                            "last_modified_timestamp": 1795302327,
+                            "extension": "",
+                            "category": "other"
+                          },
+                          {
+                            "key": "debian-ltr/dists/stonking/main/debug/binary-amd64/Packages.gz",
+                            "name": "Packages.gz",
+                            "path": "dists/stonking/main/debug/binary-amd64",
+                            "size": 20,
+                            "size_formatted": "20.00 B",
+                            "last_modified": "2026-11-21T23:05:27.462000+00:00",
+                            "last_modified_timestamp": 1795302327,
+                            "extension": ".gz",
+                            "category": "archive"
+                          },
+                          {
+                            "key": "debian-ltr/dists/stonking/main/debug/binary-amd64/Release",
+                            "name": "Release",
+                            "path": "dists/stonking/main/debug/binary-amd64",
+                            "size": 124,
+                            "size_formatted": "124.00 B",
+                            "last_modified": "2026-11-21T23:05:27.462000+00:00",
+                            "last_modified_timestamp": 1795302327,
+                            "extension": "",
+                            "category": "other"
+                          }
+                        ]
+                      }
+                    ],
+                    "files": []
+                  },
+                  {
+                    "name": "source",
+                    "type": "folder",
+                    "path": "dists/stonking/main/source",
+                    "children": [],
+                    "files": [
+                      {
+                        "key": "debian-ltr/dists/stonking/main/source/Release",
+                        "name": "Release",
+                        "path": "dists/stonking/main/source",
+                        "size": 125,
+                        "size_formatted": "125.00 B",
+                        "last_modified": "2026-11-21T23:05:26.935000+00:00",
+                        "last_modified_timestamp": 1795302326,
+                        "extension": "",
+                        "category": "other"
+                      },
+                      {
+                        "key": "debian-ltr/dists/stonking/main/source/Sources.gz",
+                        "name": "Sources.gz",
+                        "path": "dists/stonking/main/source",
+                        "size": 1468,
+                        "size_formatted": "1.43 KB",
+                        "last_modified": "2026-11-21T23:05:26.934000+00:00",
+                        "last_modified_timestamp": 1795302326,
+                        "extension": ".gz",
+                        "category": "archive"
+                      }
+                    ]
+                  }
+                ],
+                "files": []
+              }
+            ],
+            "files": [
+              {
+                "key": "debian-ltr/dists/stonking/InRelease",
+                "name": "InRelease",
+                "path": "dists/stonking",
+                "size": 5101,
+                "size_formatted": "4.98 KB",
+                "last_modified": "2026-11-21T23:05:26.269000+00:00",
+                "last_modified_timestamp": 1795302326,
+                "extension": "",
+                "category": "other"
+              },
+              {
+                "key": "debian-ltr/dists/stonking/Release",
+                "name": "Release",
+                "path": "dists/stonking",
+                "size": 4219,
+                "size_formatted": "4.12 KB",
+                "last_modified": "2026-11-21T23:05:29.784000+00:00",
+                "last_modified_timestamp": 1795302329,
+                "extension": "",
+                "category": "other"
+              },
+              {
+                "key": "debian-ltr/dists/stonking/Release.gpg",
+                "name": "Release.gpg",
+                "path": "dists/stonking",
+                "size": 833,
+                "size_formatted": "833.00 B",
+                "last_modified": "2026-11-21T23:05:29.664000+00:00",
+                "last_modified_timestamp": 1795302329,
                 "extension": ".gpg",
                 "category": "other"
               }
@@ -11155,6 +11336,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgis-3d3.44.16_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgis-3d3.44.16_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4560392,
+                        "size_formatted": "4.35 MB",
+                        "last_modified": "2026-11-21T23:05:33.752000+00:00",
+                        "last_modified_timestamp": 1795302333,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/libqgis-3d3.44.8_3.44.8+17bookworm_amd64.deb",
                         "name": "libqgis-3d3.44.8_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -16937,6 +17129,17 @@
                         "size_formatted": "6.01 MB",
                         "last_modified": "2026-11-21T22:05:21.994000+00:00",
                         "last_modified_timestamp": 1795298721,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgis-analysis3.44.16_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgis-analysis3.44.16_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6298380,
+                        "size_formatted": "6.01 MB",
+                        "last_modified": "2026-11-21T23:05:33.794000+00:00",
+                        "last_modified_timestamp": 1795302333,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -22727,6 +22930,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgis-app3.44.16_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgis-app3.44.16_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 8172524,
+                        "size_formatted": "7.79 MB",
+                        "last_modified": "2026-11-21T23:05:34.617000+00:00",
+                        "last_modified_timestamp": 1795302334,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/libqgis-app3.44.8_3.44.8+17bookworm_amd64.deb",
                         "name": "libqgis-app3.44.8_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -28513,6 +28727,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgis-core3.44.16_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgis-core3.44.16_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 17879094,
+                        "size_formatted": "17.05 MB",
+                        "last_modified": "2026-11-21T23:05:38.112000+00:00",
+                        "last_modified_timestamp": 1795302338,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/libqgis-core3.44.8_3.44.8+17bookworm_amd64.deb",
                         "name": "libqgis-core3.44.8_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -32561,6 +32786,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgis-customwidgets_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgis-customwidgets_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3962728,
+                        "size_formatted": "3.78 MB",
+                        "last_modified": "2026-11-21T23:05:32.898000+00:00",
+                        "last_modified_timestamp": 1795302332,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/libqgis-customwidgets_3.44.8+17bookworm_amd64.deb",
                         "name": "libqgis-customwidgets_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -36605,6 +36841,17 @@
                         "size_formatted": "6.94 MB",
                         "last_modified": "2026-11-21T22:05:22.709000+00:00",
                         "last_modified_timestamp": 1795298722,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgis-dev_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgis-dev_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7280300,
+                        "size_formatted": "6.94 MB",
+                        "last_modified": "2026-11-21T23:05:34.797000+00:00",
+                        "last_modified_timestamp": 1795302334,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -42395,6 +42642,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgis-gui3.44.16_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgis-gui3.44.16_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 11052532,
+                        "size_formatted": "10.54 MB",
+                        "last_modified": "2026-11-21T23:05:35.647000+00:00",
+                        "last_modified_timestamp": 1795302335,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/libqgis-gui3.44.8_3.44.8+17bookworm_amd64.deb",
                         "name": "libqgis-gui3.44.8_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -48111,6 +48369,17 @@
                         "size_formatted": "3.75 MB",
                         "last_modified": "2026-11-21T22:05:21.047000+00:00",
                         "last_modified_timestamp": 1795298721,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgis-native3.44.16_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgis-native3.44.16_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3928498,
+                        "size_formatted": "3.75 MB",
+                        "last_modified": "2026-11-21T23:05:32.882000+00:00",
+                        "last_modified_timestamp": 1795302332,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -53967,6 +54236,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgis-server3.44.16_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgis-server3.44.16_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4253910,
+                        "size_formatted": "4.06 MB",
+                        "last_modified": "2026-11-21T23:05:33.079000+00:00",
+                        "last_modified_timestamp": 1795302333,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/libqgis-server3.44.8_3.44.8+17bookworm_amd64.deb",
                         "name": "libqgis-server3.44.8_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -59775,6 +60055,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgisgrass8-3.44.16_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgisgrass8-3.44.16_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4124968,
+                        "size_formatted": "3.93 MB",
+                        "last_modified": "2026-11-21T23:05:32.955000+00:00",
+                        "last_modified_timestamp": 1795302332,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/libqgisgrass8-3.44.8_3.44.8+17bookworm_amd64.deb",
                         "name": "libqgisgrass8-3.44.8_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -65539,6 +65830,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/libqgispython3.44.16_3.44.16+45stonking_amd64.deb",
+                        "name": "libqgispython3.44.16_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3935506,
+                        "size_formatted": "3.75 MB",
+                        "last_modified": "2026-11-21T23:05:32.877000+00:00",
+                        "last_modified_timestamp": 1795302332,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/libqgispython3.44.8_3.44.8+17bookworm_amd64.deb",
                         "name": "libqgispython3.44.8_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -68509,6 +68811,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/python-qgis-common_3.44.16+45stonking_all.deb",
+                        "name": "python-qgis-common_3.44.16+45stonking_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3910228,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-11-21T23:05:32.899000+00:00",
+                        "last_modified_timestamp": 1795302332,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/python-qgis-common_3.44.8+17bookworm_all.deb",
                         "name": "python-qgis-common_3.44.8+17bookworm_all.deb",
                         "path": "pool/main/q/qgis",
@@ -71446,6 +71759,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/python-qgis_3.44.16+45stonking_all.deb",
+                        "name": "python-qgis_3.44.16+45stonking_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3910220,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-11-21T23:05:32.902000+00:00",
+                        "last_modified_timestamp": 1795302332,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/python-qgis_3.44.8+17bookworm_all.deb",
                         "name": "python-qgis_3.44.8+17bookworm_all.deb",
                         "path": "pool/main/q/qgis",
@@ -74313,6 +74637,17 @@
                         "size_formatted": "6.84 MB",
                         "last_modified": "2026-11-21T22:05:22.472000+00:00",
                         "last_modified_timestamp": 1795298722,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/python3-qgis-common_3.44.16+45stonking_all.deb",
+                        "name": "python3-qgis-common_3.44.16+45stonking_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7167478,
+                        "size_formatted": "6.84 MB",
+                        "last_modified": "2026-11-21T23:05:34.259000+00:00",
+                        "last_modified_timestamp": 1795302334,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -78233,6 +78568,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/python3-qgis_3.44.16+45stonking_amd64.deb",
+                        "name": "python3-qgis_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 20201280,
+                        "size_formatted": "19.27 MB",
+                        "last_modified": "2026-11-21T23:05:39.413000+00:00",
+                        "last_modified_timestamp": 1795302339,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/python3-qgis_3.44.8+17bookworm_amd64.deb",
                         "name": "python3-qgis_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -81210,6 +81556,17 @@
                         "size_formatted": "27.89 MB",
                         "last_modified": "2026-11-21T22:05:32.426000+00:00",
                         "last_modified_timestamp": 1795298732,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-common_3.44.16+45stonking_all.deb",
+                        "name": "qgis-common_3.44.16+45stonking_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 29241578,
+                        "size_formatted": "27.89 MB",
+                        "last_modified": "2026-11-21T23:05:45.050000+00:00",
+                        "last_modified_timestamp": 1795302345,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -84206,6 +84563,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-dbg_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-dbg_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 1043027398,
+                        "size_formatted": "994.71 MB",
+                        "last_modified": "2026-11-21T23:07:58.625000+00:00",
+                        "last_modified_timestamp": 1795302478,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/qgis-dbg_3.44.8+17bookworm_amd64.deb",
                         "name": "qgis-dbg_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -87172,6 +87540,17 @@
                         "size_formatted": "4.15 MB",
                         "last_modified": "2026-11-21T22:05:23.137000+00:00",
                         "last_modified_timestamp": 1795298723,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-plugin-grass-common_3.44.16+45stonking_all.deb",
+                        "name": "qgis-plugin-grass-common_3.44.16+45stonking_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4349108,
+                        "size_formatted": "4.15 MB",
+                        "last_modified": "2026-11-21T23:05:36.440000+00:00",
+                        "last_modified_timestamp": 1795302336,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -91154,6 +91533,17 @@
                         "size_formatted": "4.15 MB",
                         "last_modified": "2026-11-21T22:05:23.214000+00:00",
                         "last_modified_timestamp": 1795298723,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-plugin-grass_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-plugin-grass_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4350820,
+                        "size_formatted": "4.15 MB",
+                        "last_modified": "2026-11-21T23:05:36.882000+00:00",
+                        "last_modified_timestamp": 1795302336,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -95206,6 +95596,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-provider-grass_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-provider-grass_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3983098,
+                        "size_formatted": "3.80 MB",
+                        "last_modified": "2026-11-21T23:05:36.591000+00:00",
+                        "last_modified_timestamp": 1795302336,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/qgis-provider-grass_3.44.8+17bookworm_amd64.deb",
                         "name": "qgis-provider-grass_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -98172,6 +98573,17 @@
                         "size_formatted": "5.36 MB",
                         "last_modified": "2026-11-21T22:05:23.771000+00:00",
                         "last_modified_timestamp": 1795298723,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-providers-common_3.44.16+45stonking_all.deb",
+                        "name": "qgis-providers-common_3.44.16+45stonking_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5627410,
+                        "size_formatted": "5.37 MB",
+                        "last_modified": "2026-11-21T23:05:38.370000+00:00",
+                        "last_modified_timestamp": 1795302338,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -102158,6 +102570,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-providers_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-providers_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7310204,
+                        "size_formatted": "6.97 MB",
+                        "last_modified": "2026-11-21T23:05:39.721000+00:00",
+                        "last_modified_timestamp": 1795302339,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/qgis-providers_3.44.8+17bookworm_amd64.deb",
                         "name": "qgis-providers_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -106070,6 +106493,17 @@
                         "size_formatted": "4.05 MB",
                         "last_modified": "2026-11-21T22:05:23.756000+00:00",
                         "last_modified_timestamp": 1795298723,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-server-common_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-server-common_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4244566,
+                        "size_formatted": "4.05 MB",
+                        "last_modified": "2026-11-21T23:05:38.699000+00:00",
+                        "last_modified_timestamp": 1795302338,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -111783,6 +112217,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-server-landingpage_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-server-landingpage_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3991312,
+                        "size_formatted": "3.81 MB",
+                        "last_modified": "2026-11-21T23:05:39.240000+00:00",
+                        "last_modified_timestamp": 1795302339,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/qgis-server-landingpage_3.44.8+17bookworm_amd64.deb",
                         "name": "qgis-server-landingpage_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -115695,6 +116140,17 @@
                         "size_formatted": "3.76 MB",
                         "last_modified": "2026-11-21T22:05:24.371000+00:00",
                         "last_modified_timestamp": 1795298724,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-server-wcs_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-server-wcs_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3941440,
+                        "size_formatted": "3.76 MB",
+                        "last_modified": "2026-11-21T23:05:39.903000+00:00",
+                        "last_modified_timestamp": 1795302339,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -119615,6 +120071,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-server-wfs3_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-server-wfs3_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4097536,
+                        "size_formatted": "3.91 MB",
+                        "last_modified": "2026-11-21T23:05:40.193000+00:00",
+                        "last_modified_timestamp": 1795302340,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/qgis-server-wfs3_3.44.8+17bookworm_amd64.deb",
                         "name": "qgis-server-wfs3_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -123527,6 +123994,17 @@
                         "size_formatted": "3.89 MB",
                         "last_modified": "2026-11-21T22:05:25.040000+00:00",
                         "last_modified_timestamp": 1795298725,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-server-wfs_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-server-wfs_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4076200,
+                        "size_formatted": "3.89 MB",
+                        "last_modified": "2026-11-21T23:05:40.221000+00:00",
+                        "last_modified_timestamp": 1795302340,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -127447,6 +127925,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-server-wms_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-server-wms_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4211978,
+                        "size_formatted": "4.02 MB",
+                        "last_modified": "2026-11-21T23:05:45.652000+00:00",
+                        "last_modified_timestamp": 1795302345,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-ltr/pool/main/q/qgis/qgis-server-wms_3.44.8+17bookworm_amd64.deb",
                         "name": "qgis-server-wms_3.44.8+17bookworm_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -131359,6 +131848,17 @@
                         "size_formatted": "3.79 MB",
                         "last_modified": "2026-11-21T22:05:28.127000+00:00",
                         "last_modified_timestamp": 1795298728,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-server-wmts_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-server-wmts_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3973494,
+                        "size_formatted": "3.79 MB",
+                        "last_modified": "2026-11-21T23:05:40.800000+00:00",
+                        "last_modified_timestamp": 1795302340,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -135396,6 +135896,17 @@
                         "size_formatted": "3.73 MB",
                         "last_modified": "2026-11-21T22:05:30.106000+00:00",
                         "last_modified_timestamp": 1795298730,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis-server_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis-server_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3910368,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-11-21T23:05:43.105000+00:00",
+                        "last_modified_timestamp": 1795302343,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -144922,6 +145433,39 @@
                         "size_formatted": "8.00 MB",
                         "last_modified": "2026-11-21T22:05:40.623000+00:00",
                         "last_modified_timestamp": 1795298740,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis_3.44.16+45stonking.dsc",
+                        "name": "qgis_3.44.16+45stonking.dsc",
+                        "path": "pool/main/q/qgis",
+                        "size": 5035,
+                        "size_formatted": "4.92 KB",
+                        "last_modified": "2026-11-21T23:05:51.266000+00:00",
+                        "last_modified_timestamp": 1795302351,
+                        "extension": ".dsc",
+                        "category": "other"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis_3.44.16+45stonking.tar.gz",
+                        "name": "qgis_3.44.16+45stonking.tar.gz",
+                        "path": "pool/main/q/qgis",
+                        "size": 230117308,
+                        "size_formatted": "219.46 MB",
+                        "last_modified": "2026-11-21T23:06:30.874000+00:00",
+                        "last_modified_timestamp": 1795302390,
+                        "extension": ".gz",
+                        "category": "archive"
+                      },
+                      {
+                        "key": "debian-ltr/pool/main/q/qgis/qgis_3.44.16+45stonking_amd64.deb",
+                        "name": "qgis_3.44.16+45stonking_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 8386836,
+                        "size_formatted": "8.00 MB",
+                        "last_modified": "2026-11-21T23:05:54.717000+00:00",
+                        "last_modified_timestamp": 1795302354,
                         "extension": ".deb",
                         "category": "installer"
                       },
