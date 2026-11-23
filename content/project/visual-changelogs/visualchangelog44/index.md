@@ -38,9 +38,9 @@ ready for a further year of stable support by the QGIS Community.
 
 For a whirlwind tour of all the new functionalities introduced in this
 release, you can view the [highlight reel video on
-YouTube](https://www.youtube.com/watch?v=XXXX).
+YouTube](https://www.youtube.com/watch?v=_bGc5CPNpNs).
 
-[![](https://img.youtube.com/vi/XXXXX/0.jpg)](https://www.youtube.com/watch?v=XXXX)
+[![](https://img.youtube.com/vi/_bGc5CPNpNs/0.jpg)](https://www.youtube.com/watch?v=_bGc5CPNpNs)
 
 QGIS is a community effort, and we would like to extend a big thank-you
 to the developers, documenters, testers, and the many folks out there
