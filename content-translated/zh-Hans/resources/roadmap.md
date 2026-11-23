@@ -52,7 +52,7 @@ On major and minor release dates, the release branch is created and the release 
 
 一旦某些软件包可用，就可以发布并相应更新网站。
 ## 版本发布计划表
-鉴于我们四个月一发行，LTR版将于2月下旬进入LTR资源库，因此，该计划表每年的日期大致相同。
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 Beginning after 2.12 the development phase is always 12 weeks and the freeze phase is at least 5 weeks. Remainders are used to extend the freeze phase of LTR releases.
 

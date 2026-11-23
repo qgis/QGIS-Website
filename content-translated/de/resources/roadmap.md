@@ -52,7 +52,7 @@ Die Paketersteller werden informiert, dass das Paketieren beginnen kann.
 
 Sobald einige Pakete verfügbar sind kann das Release verkündet werden und die Webseite wird entsprechend aktualisiert.
 ## Freigabe-Zeitplan
-The schedule is aligned to produce roughly the same dates for each year given our four monthly releases with LTRs entering the LTR repo in late february.
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 Beginning after 2.12 the development phase is always 12 weeks and the freeze phase is at least 5 weeks. Remainders are used to extend the freeze phase of LTR releases.
 

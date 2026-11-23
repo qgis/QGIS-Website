@@ -257,12 +257,12 @@ Esta segunda edición es una actualización importante del título original Disc
 - Organization: Locate Press
 - Date: June 2025
 
-### QGIS Exercise Guide: nybörjare, mellanliggande och avancerade nivåer
-Tre praktiska övningsguider i QGIS (nybörjare, medel och avancerad) utformade för hantering och analys av geospatiala data från Servicio Geológico Colombiano med hjälp av programvarulösningar med fri och öppen källkod.
-- [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx)
+### Guía de ejercicios QGIS: niveles principiante, intermedio y avanzado
+Tres guías prácticas de ejercicios en QGIS (niveles principiante, intermedio y avanzado) diseñadas para la gestión y el análisis de datos geoespaciales del Servicio Geológico Colombiano mediante soluciones de software libre y de código abierto.
+- [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias.aspx)
 - Författare: Samuel Mesa, Jaime Garzón, Luis Salas
 - Organisation: Servicio Geológico Colombiano
-- Datum: December 2024
+- Date: Enero 2026
 
 ## Turkisk
 ### Geologiska tillämpningar med öppna källkodskodade geografiska informationssystem

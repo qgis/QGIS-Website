@@ -275,6 +275,7 @@ See ```.github/workflows/playwright-e2e.yml```
 - **Script:** `scripts/changelog_harvest.py`
 - **Manual run:** `./scripts/changelog_harvest.py --version X.XX --release DD.MM.YYYY`
 - **Updates after harvesting:** It is allowed to update the content of `content/project/visual-changelogs` with a PR but only when the harvest from https://changelog.qgis.org is done.
+- **Members list:** The script adds the flagship members and a link to all sustaining members after the sponsors paragraph. If it cannot find that paragraph, it prints a warning and you add the block by hand.
 
 #### 🏢 Sustaining Members & News
 - **Script:** `fetch_feeds.py`

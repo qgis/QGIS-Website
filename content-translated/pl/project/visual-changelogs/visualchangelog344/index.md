@@ -28,6 +28,10 @@ QGIS is a community effort, and we would like to extend a big thank you to the d
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very big thank you to all of our sponsors!
 
+{{<fund type="active" level="flagship" >}}
+
+[Click here to see all of our sustaining members]({{< ref "/funding/membership/members.md" >}})
+
 QGIS is free software and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of their financial or social status - we believe that empowering people with spatial decision-making tools will result in a better society for all of humanity.
 ## Czas
 ### Feature: Allow WMS-T group node to expose time dimension
@@ -147,8 +151,8 @@ This feature was developed by [Jan Caha](https://github.com/JanCaha)
 It is now possible to edit point cloud layers in the 3D map views. Users can pick which attribute to modify, the target value and then interactively select points that should be modified.
 
 There are several map tools to select points for editing:
-- Select by Polygon
-- Select by Paintbrush
+- Zaznacz poligonem
+- Zaznacz pędzlem
 - Select Above/Below Line
 
 Users can set up filtering of edited points using QGIS expressions, so that only some points get their attribute value modified.
@@ -429,9 +433,9 @@ This feature was funded by QGIS grant program 2025
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Improved project management for PostgreSQL stored Projects
 QGIS now includes options in the browser that allow manipulating QGIS Projects stored in a PostGIS database. New functionalities include the ability to:
-- Rename Project
-- Delete Project
-- Duplicate Project
+- Zmień nazwę projektu
+- Usuń projekt
+- Duplikuj projekt
 - Move Project to Schema
 
 <img src="images/entries/2ab1e23aae557053f6271e23db145fc791f425ee" class="img-responsive img-rounded" />

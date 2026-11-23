@@ -42,6 +42,10 @@ If you wish to donate time, money, or otherwise contribute towards making QGIS m
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions, large or small, to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very big thank you to all of our sponsors!
 
+{{<fund type="active" level="flagship" >}}
+
+[Click here to see all of our sustaining members]({{< ref "/funding/membership/members.md" >}})
+
 QGIS is free software, and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of their financial or social status - we believe that empowering people with spatial decision-making tools will result in a better society for all of humanity.
 ## Czas
 ### Feature: Add new accumulate pixels setting to the represent temporal values mode
@@ -413,7 +417,7 @@ This feature was developed by [North Road](https://north-road.com/)
 These functions are designed to make it easy to customise the display of a degree-based grid annotation, by allowing easy extraction of the individual components of the decimal degree value for individual formatting (e.g., displaying the degrees in bold)
 - extract_degrees: Extracts the integer number of degrees from a decimal degrees value. The minutes and seconds components are ignored. The extracted degrees values will be truncated towards zero (not rounded).
 - extract_minutes: Extracts the integer number of minutes from a decimal degrees value. The degrees and seconds components are ignored. The extracted minutes values will be truncated towards zero (not rounded), and will always be a positive value.
-- Extracts the decimal number of seconds from a decimal degrees value. The degrees and minutes components are ignored. The extracted seconds value will always be a positive value.
+- Wyodrębnia liczbę sekund z częścią dziesiętną z wartości w stopniach dziesiętnych. Składowe stopni i minut są pomijane. Wyodrębniona wartość sekund jest zawsze dodatnia.
 
 <img src="images/entries/afca4fe52738eae1b242ae2720e0bbbb97f119fe.png" class="img-responsive img-rounded" />
 
@@ -569,7 +573,7 @@ This feature was funded by [City of Canning](https://www.canning.wa.gov.au/)
 This feature was developed by [North Road](https://north-road.com/)
 ### Feature: Add network analysis validation algorithms
 Two new algorithms useful for validating networks have been added:
-- Validate network
+- Sprawdź poprawność sieci
 - Extract network endpoints
 
 **Validate network**<br />This algorithm analyzes a network vector layer to identify data and topology errors that may affect network analysis tools (like shortest path). Optional checks include:

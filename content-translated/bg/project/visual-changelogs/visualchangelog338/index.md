@@ -28,6 +28,10 @@ QGIS е общностно начинание и бихме искали да и
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very thank you to all of our sponsors!
 
+{{<fund type="active" level="flagship" >}}
+
+[Click here to see all of our sustaining members]({{< ref "/funding/membership/members.md" >}})
+
 QGIS е безплатен софтуер и не сте задължени да плащате нищо, за да го използвате - всъщност ние искаме да насърчим хората от цял ​​свят да го използват, независимо от финансовия или социален статус. Вярваме, че предоставянето на инструменти за вземане на пространствени решения на хората ще доведе до по-добро общество за цялото човечество.
 ## Temporal
 ### Feature: New temporal mode: pixel value as temporal datetime

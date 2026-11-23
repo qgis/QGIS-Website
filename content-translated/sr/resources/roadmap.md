@@ -52,7 +52,7 @@ Pakerima se šalje obaveštenje da pakovanje može da počne.
 
 Kada neki paketi postanu dostupni, izdanje se može objaviti, a sajt se u skladu s tim ažurira.
 ## Raspored izdanja
-Raspored je usklađen tako da svake godine daje približno iste datume, s obzirom na naša izdanja na svaka četiri meseca i LTR verzije koje ulaze u LTR repozitorijum krajem februara.
+The schedule is aligned to produce roughly the same dates for each year given our four-monthly releases with LTRs entering the LTR repo in late february.
 
 Počev od verzije 2.12 faza razvoja uvek traje 12 nedelja, a faza zamrzavanja najmanje 5 nedelja. Preostalo vreme koristi se za produženje faze zamrzavanja LTR izdanja.
 

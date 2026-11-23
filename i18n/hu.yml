@@ -15,7 +15,7 @@
 - id: alternativeDownloads
   translation: Alternatív letöltések
 - id: anOsgeoProject
-  translation: ''
+  translation: Egy OSGeo-projekt
 - id: annualInternationalConference
   translation: éves nemzetközi konferencia
 - id: archive
@@ -321,7 +321,7 @@
 - id: menuQGISTestingWarning
   translation: QGIS Testing figyelmeztetés
 - id: menuQGISUC
-  translation: ''
+  translation: QGIS-felhasználói konferencia
 - id: menuQGISUserMeetings
   translation: QGIS-felhasználói találkozók
 - id: menuReimbursementsForDeveloperMeetings
@@ -349,9 +349,9 @@
 - id: menuTesting
   translation: Tesztelés
 - id: menuUserGroupList
-  translation: ''
+  translation: Csoportok listája
 - id: menuUserGroupMap
-  translation: ''
+  translation: Csoportok térképen
 - id: menuVisualChangelogs
   translation: Vizuális változásnaplók
 - id: menuWindows
@@ -442,23 +442,23 @@
 - id: reportIssue
   translation: Problémái vannak a weboldallal? Jelentse itt 🐙
 - id: searchAllTags
-  translation: ''
+  translation: az összes címkét
 - id: searchClose
-  translation: ''
+  translation: Keresés bezárása
 - id: searchHint
-  translation: ''
+  translation: A kereséshez nyomja meg az Entert, a bezáráshoz az Esc-et
 - id: searchNoResults
-  translation: ''
+  translation: Nincs találat
 - id: searchPlaceholder
   translation: Keresés
 - id: searchPrompt
-  translation: ''
+  translation: Írjon be egy szót vagy kifejezést fent, vagy tekintse meg
 - id: searchResults
   translation: Keresési eredmények
 - id: searchResultsCount
-  translation: ''
+  translation: egyező szakaszok
 - id: searchTitle
-  translation: ''
+  translation: Keresés a QGIS weboldalán
 - id: seconds
   translation: mp.
 - id: skipToDownload
@@ -486,79 +486,80 @@
 - id: userGroupsColumnContacts
   translation: Kapcsolatok
 - id: userGroupsColumnContinent
-  translation: ''
+  translation: Kontinens
 - id: userGroupsColumnCountry
   translation: Ország
 - id: userGroupsColumnLogo
-  translation: ''
+  translation: Logó
 - id: userGroupsColumnName
   translation: Csoport
 - id: userGroupsColumnSince
-  translation: ''
+  translation: Kezdet
 - id: userGroupsContact
-  translation: ''
+  translation: 'Kapcsolat: {{ .Names }}'
 - id: userGroupsContinentAfrica
-  translation: ''
+  translation: Afrika
 - id: userGroupsContinentAsia
-  translation: ''
+  translation: Ázsia
 - id: userGroupsContinentEurope
-  translation: ''
+  translation: Európa
 - id: userGroupsContinentGlobal
-  translation: ''
+  translation: Világszerte
 - id: userGroupsContinentNorthAmerica
-  translation: ''
+  translation: Észak-Amerika
 - id: userGroupsContinentOceania
-  translation: ''
+  translation: Óceánia
 - id: userGroupsContinentSouthAmerica
-  translation: ''
+  translation: Dél-Amerika
 - id: userGroupsCount
-  translation: ''
+  translation: '{{ .Total }} felhasználói csoportból {{ .Showing }} jelenik meg'
 - id: userGroupsDisplayMode
-  translation: ''
+  translation: Megjelenítési mód
 - id: userGroupsFilterByContinent
-  translation: ''
+  translation: Szűrés kontinens szerint
 - id: userGroupsFilterByThisContinent
-  translation: ''
+  translation: Csak az ezen a kontinensen található csoportokat mutassa
 - id: userGroupsGridView
-  translation: ''
+  translation: Rács nézet
 - id: userGroupsIncludeInactive
-  translation: ''
+  translation: Tartalmazza a már nem aktív csoportokat is
 - id: userGroupsMapDisplay
-  translation: ''
+  translation: Térképmegjelenítés
 - id: userGroupsMapFlat
-  translation: ''
+  translation: Lapos térkép
 - id: userGroupsMapGlobe
-  translation: ''
+  translation: Földgömbnézet
 - id: userGroupsMapLoadError
-  translation: ''
+  translation: Nem sikerült betölteni a térképet. Frissítse az oldalt, és próbálja
+    meg újra.
 - id: userGroupsMapLoading
-  translation: ''
+  translation: A térkép betöltése
 - id: userGroupsNoResultsHint
-  translation: ''
+  translation: Próbáljon ki egy másik nevet vagy országot, vagy állítsa vissza a szűrőket.
 - id: userGroupsNoResultsTitle
-  translation: ''
+  translation: A keresésnek nem felel meg egyetlen felhasználói csoport sem
 - id: userGroupsRemoved
-  translation: ''
+  translation: '{{ .Year }} óta inaktív'
 - id: userGroupsResetFilters
-  translation: ''
+  translation: Szűrők visszaállítása
 - id: userGroupsSearchLabel
-  translation: ''
+  translation: Felhasználói csoportok keresése
 - id: userGroupsSearchPlaceholder
-  translation: ''
+  translation: Brazília, QGIS Sverige vagy egy kapcsolattartó neve
 - id: userGroupsSince
-  translation: ''
+  translation: '{{ .Year }} óta'
 - id: userGroupsStatCountries
-  translation: ''
+  translation: Országok
 - id: userGroupsStatGroups
-  translation: ''
+  translation: Aktív csoportok
 - id: userGroupsSuggestChange
-  translation: ''
+  translation: Javasolon módosítást
 - id: userGroupsSuggestChangeHint
-  translation: ''
+  translation: Hiányzik a csoportja, vagy elavultak az adatai?
 - id: userGroupsTableView
-  translation: Tábla nézet
+  translation: Táblázatos nézet
 - id: userGroupsVisitWebsite
-  translation: ''
+  translation: Weboldal megtekintése
 - id: vectorAndRasterFormats
   translation: Vektoros és raszteres formátumok
 - id: vectorEditing

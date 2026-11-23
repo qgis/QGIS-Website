@@ -28,6 +28,10 @@ Als u tijd of geld wilt doneren of op een andere manier wilt bijdragen aan het o
 
 QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote of kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan onze [pagina voor dragende leden](https://qgis.org/en/site/about/sustaining_members.html) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een gemeend bedankt voor al onze sponsoren!
 
+{{<fund type="active" level="flagship" >}}
+
+[Klik hier om al onze dragende leden te bekijken]({{< ref "/funding/membership/members.md" >}})
+
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Belangrijke wijzigingen
 ### Mogelijkheid: Verplaatsen naar de locatie van opslag voor instellingen van QGIS4 met geautomatiseerde migratie vanuit QGIS3
@@ -44,8 +48,8 @@ Dit voegt de opties **Stijl laden…** en **Stijl opslaan…** direct toe aan he
 <img src="images/entries/3649f31a4a1358779fd933bddce5e20161257fd9.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Edit legend labels directly from the Layers panel
-Legend item labels (e.g. for categorized, graduated and rule-based renderers) can now be renamed directly in the **Layers** panel. Pressing **F2** on a legend item starts editing its label.
+### Mogelijkheid: Labels voor de legenda direct bewerken vanuit het paneel Lagen
+Labels voor legenda-items (bijv. voor de renderers Categorieën, Gradueel en Regel-gebaseerd) kunnen nu direct worden hernoemd in het paneel **Lagen**. Drukken op **F2** op een legenda-item start het bewerken van het label ervan.
 
 <img src="images/entries/35e66a67e68cb36039b4407ed01f1efe75c5445d.gif" class="img-responsive img-rounded" />
 
@@ -280,8 +284,8 @@ Nieuwe opties zijn toegevoegd om ervoor te zorgen dat exporteren naar georuimtel
 Dit werd mogelijk gemaakt door de stad Bern
 
 Deze mogelijkheid werd ontwikkeld door [Germap](https://github.com/gacarrillor)
-### Feature: Change behavior of layout guide position editing
-Previously, the list of guides in the layout **Guides** panel was re-sorted every time a guide position value changed, making editing cumbersome. The list is now only sorted once editing of the value is finished. Guides on the layout canvas still move live as the value changes.
+### Mogelijkheid: Gedrag gewijzigd voor bewerken van de positie van de hulplijn in lay-out
+Eerder werd de lijst met hulplijnen, in het paneel **Hulplijnen** van de lay-out, elke keer opnieuw gesorteerd als de waarde van de positie van een hulplijn wijzigde, wat bewerken vervelend maakte. De lijst wordt nu nog maar slechts een keer gesorteerd als het bewerken van de waarde is voltooid. Hulplijnen in het kaartvenster van de lay-out verplaatsen nog steeds live als de waarde wijzigt.
 
 <img src="images/entries/094356e9888560e7c8219f78961d49b95c317543.gif" class="img-responsive img-rounded" />
 
@@ -304,8 +308,8 @@ Een nieuw menu-item "Veldberekening openen" wordt verschaft in het contextmenu v
 <img src="images/entries/8ade61ae18cd9ec8014958f35d175ed4e5d0ed4f.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Patrice Pineault](https://github.com/TurboGraphxBeige)
-### Feature: Add domain column to Fields in vector layer properties
-A new **Domain** column was added to the **Fields** tab of the vector **Layer Properties**, showing the name of the field domain associated with each field. The column is hidden if the data provider does not support field domains.
+### Mogelijkheid: Kolom Domein toegevoegd aan Velden in de eigenschappen voor vectorlagen
+Een nieuwe kolom **Domein** werd toegevoegd aan de tab **Velden** van de vector **Laageigenschappen**, wat de naam weergeeft van elk velddomein dat is geassocieerd met elk veld. De kolom wordt verborgen als de gegevensprovider velddomeinen niet ondersteunt.
 
 <img src="images/entries/1c3f00498dcdc50cfe69639e956828fbc74f0195.png" class="img-responsive img-rounded" />
 
@@ -377,8 +381,8 @@ Wijzigingen zijn gemaakt om de inhoud van de service ESRI REST minder rommelig t
 Dit werd mogelijk gemaakt door Republiek en Kanton Genève
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add Refresh to Cloud Browser item
-A **Refresh** menu item was added to the context menu of the **Cloud** item in the Browser, allowing users to refresh the item and all its sub-items.
+### Mogelijkheid: Actie Vernieuwen toegevoegd aan Browser-item Wolk
+Een menu-item **Vernieuwen** werd toegevoegd aan het contextmenu van het item **Wolk** in de Browser, wat het voor gebruikers mogelijk maakt het item, en al zijn subitems, te vernieuwen.
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
