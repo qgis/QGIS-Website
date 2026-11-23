@@ -13,7 +13,7 @@ type: page
 {{<contributors-map >}}
 ## About This Map
 This interactive map displays the geographic distribution of QGIS contributors around the world. Each marker represents a contributor, with the size indicating their level of contribution to the project.
-### Нысандар
+### Мүмкіндіктер
 - **3D Globe View**: An animated, rotating globe that gradually reveals contributors
 - **Interactive Markers**: Click on any contributor to see detailed contribution statistics
 - **Contribution Categories**: View contributions broken down by thematic areas (Core, Documentation, Websites)
