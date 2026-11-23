@@ -8,21 +8,8 @@
 title: "QGIS Grant Programme #2 Results"
 date: "2017-04-30"
 description: "We are extremely pleased to announce the winning proposals for our 2017 QGIS.ORG grant programme. Funding for the programme was…"
-link: "https://blog.qgis.org/2017/04/30/qgis-grant-programme-%232-results/"
-draft: false
-HasBanner: false
-sidebar: true
+externalLink: "https://blog.qgis.org/2017/04/30/qgis-grant-programme-%232-results/"
+build:
+  render: link
+  list: local
 ---
-
-{{< content-start >}}
-
-<p>We are extremely pleased to announce the winning proposals for our 2017 QGIS.ORG grant programme. Funding for the programme was sourced by you, our <a href="https://www.qgis.org/en/site/about/sponsorship.html">project donors and sponsors</a>! <strong>Note:</strong> For more context surrounding our grant programme, please see:</p>
-<ul>
-<li><a href="http://blog.qgis.org/2017/04/04/update-on-the-qgis-grant-applications/" target="_blank" rel="noopener noreferrer">Update on the QGIS Grant Programme</a></li>
-<li><a href="http://blog.qgis.org/2017/02/19/qgis-grants-2-call-for-grant-proposals-2017/">QGIS Grants: Call for applications</a></li>
-</ul>
-<p>Our intent with the QGIS.ORG Grant Programme is to support work from community that would typically not be funded by client/contractor agreements, and that contributes to the broadest possible swathe of our community by providing cross-cutting, foundational improvements to the QGIS Project.</p>
-
-<p><a href="https://blog.qgis.org/2017/04/30/qgis-grant-programme-%232-results/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
-
-{{< content-end >}}

@@ -8,23 +8,8 @@
 title: "QGIS Grant Programme 2023 Results"
 date: "2023-06-26"
 description: "We are extremely pleased to announce the 4 winning proposals for our 2023 QGIS.ORG grant programme: QEP#266 QGIS Bug Tracker…"
-link: "https://blog.qgis.org/2023/06/26/qgis-grant-programme-2023-results/"
-draft: false
-HasBanner: false
-sidebar: true
+externalLink: "https://blog.qgis.org/2023/06/26/qgis-grant-programme-2023-results/"
+build:
+  render: link
+  list: local
 ---
-
-{{< content-start >}}
-
-<p>We are extremely pleased to announce the 4 winning proposals for our 2023 QGIS.ORG grant programme:</p>
-<ul>
-<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/266">QEP#266 QGIS Bug Tracker cleanup</a></li>
-<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/271">QEP#271 Porting to C++ and harmonization of Processing algorithms</a></li>
-<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267">QEP#267 Add vertical CRS handling to QGIS</a></li>
-<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/268">QEP#268 Improve test result handling on QGIS CI</a></li>
-</ul>
-<p>Funding for the programme was sourced by you, our <a href="https://www.qgis.org/en/site/about/sponsorship.html">project donors and sponsors</a>! <strong>Note:</strong> For more context surrounding our grant programme, please see: <a href="https://blog.qgis.org/2023/04/04/qgis-grants-8-call-for-grant-proposals-2023/">QGIS Grants #8: Call for Grant Proposals 2023</a>.</p>
-
-<p><a href="https://blog.qgis.org/2023/06/26/qgis-grant-programme-2023-results/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
-
-{{< content-end >}}
