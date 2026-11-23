@@ -67,4 +67,9 @@ test("Project page", async ({ homePage, sidebar, projectPage }) => {
     for (const text of projectPage.visualChangelogsTextList) {
         await expect(projectPage.pageBody).toContainText(text);
     }
+    await expect(projectPage.visualChangelogLinks.nth(30)).toBeAttached();
+    await expect(projectPage.visualChangelogThumbnail).toHaveAttribute(
+        "src",
+        /\.webp$/,
+    );
 });

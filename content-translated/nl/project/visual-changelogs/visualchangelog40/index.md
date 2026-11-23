@@ -44,7 +44,7 @@ QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van don
 
 {{<fund type="active" level="flagship" >}}
 
-[Click here to see all of our sustaining members]({{< ref "/funding/membership/members.md" >}})
+[Klik hier om al onze dragende leden te bekijken]({{< ref "/funding/membership/members.md" >}})
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Tijdbeheer

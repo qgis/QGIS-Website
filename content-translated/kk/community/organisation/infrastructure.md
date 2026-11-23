@@ -56,7 +56,7 @@ Flickr Groups
 -
 {{<rich-list listLink="http://www.flickr.com/groups/qgis/pool/" layoutClass="half" listTitle="Скриншоттар" listSubtitle="http://www.flickr.com/groups/qgis/pool/" >}}
 
-{{<rich-list listLink="http://www.flickr.com/groups/qgis-screenshots/" layoutClass="half" listTitle="Сөздіктер" listSubtitle="http://www.flickr.com/groups/qgis-screenshots/" >}}
+{{<rich-list listLink="http://www.flickr.com/groups/qgis-screenshots/" layoutClass="half" listTitle="Карталар" listSubtitle="http://www.flickr.com/groups/qgis-screenshots/" >}}
 
 **Groupstarters:** Nathan W, Anita G, Matieu
 

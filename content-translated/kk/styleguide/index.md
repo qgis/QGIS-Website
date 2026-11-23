@@ -16,7 +16,7 @@ Our visual identity symbolizes QGIS's strength, promise of quality and competenc
 
 This first version of the Graphic Style Guide outlines the core elements of the new QGIS logo. Future versions will focus on branding assets and how to spread the QGIS brand across the web, mobile devices and printed materials.
 ## Logotype
-### Original
+### Бастапқы
 ![Main logo](visual/main_logo.png) ![Main logo monochrome](visual/main_logo_monochrome.png)
 
 **Download logo file**

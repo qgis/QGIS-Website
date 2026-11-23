@@ -8,31 +8,8 @@
 title: "Reports from the winning grant proposals 2019"
 date: "2020-02-23"
 description: "With the QGIS Grant Programme 2019, we were able to support six proposals that were aimed to improve the QGIS…"
-link: "https://blog.qgis.org/2020/02/23/reports-from-the-winning-grant-proposals-2019/"
-draft: false
-HasBanner: false
-sidebar: true
+externalLink: "https://blog.qgis.org/2020/02/23/reports-from-the-winning-grant-proposals-2019/"
+build:
+  render: link
+  list: local
 ---
-
-{{< content-start >}}
-
-<p>With the <a href="http://blog.qgis.org/2019/06/30/qgis-grant-programme-2019-results/">QGIS Grant Programme 2019</a>, we were able to support six proposals that were aimed to improve the QGIS project, including software, infrastructure, and documentation. These are the reports on the work that has been done within the individual projects:</p>
-<ol>
-<li><strong>Profile and optimise the QGIS vector rendering code (Nyall Dawson)<br />
-</strong>We conducted in-depth research into code &#8220;hot spots&#8221; and inefficiencies in the QGIS rendering code using a number of code profiling tools. This work resulted in <a href="https://lists.osgeo.org/pipermail/qgis-psc/2019-December/007960.html">many optimisations </a>in the vector rendering code and other parts of QGIS (such as certain Processing algorithms). These optimisations were made available in the QGIS 3.10.0 release.</li>
-<li><strong>&#8220;Rebalance&#8221; the labeling engine and fix poor automatic label placement choices (Nyall Dawson)</strong><br />
-We first designed unit tests covering a range of different label placement situations and then used these tests as a guide to re-work the label placement engine. Now, labels will never be placed over features from a layer with a higher obstacle weight, avoiding the complexities and bugs which were present in the older approach. To avoid disrupting existing projects, the new labeling logic is only used for newly created projects in QGIS 3.12 and later. (Existing projects can be upgraded via the project&#8217;s label settings dialog.)</li>
-<li><strong>Reuse core functionality to provide DB manager features (Alessandro Pasotti &amp; Nyall Dawson)</strong><br />
-We have developed a new QGIS core API, fully exposed to Python, that makes it possible to manage stored connections to various data provider source in a unified and consistent way. This is part of a larger effort building a <a href="https://www.itopen.it/qgis-abstract-connections-api/">new connections API</a>.</li>
-<li><strong>Snapping cache improvements (Hugo Mercier)</strong><br />
-Snapping is crucial for editing geospatial features. Snapping correctly supposes QGIS have in memory an indexed cache of the geometries to snap to. And maintainting this cache when data is modified, sometimes by another user or database logic, can be a real challenge. This it exactly what <a href="https://lists.osgeo.org/pipermail/qgis-psc/2020-January/008126.html">this work</a> adresses. This feature has been merged into QGIS 3.12.</li>
-<li><strong>Fix problems in larger 3D scenes (Martin Dobias)</strong><br />
-We worked on<a href="https://lists.osgeo.org/pipermail/qgis-psc/2020-January/008158.html"> two issues within 3D map views</a>. The first one was that map tiles were only being prepared using a single CPU core &#8211; this is now fixed and we may use multiple CPUs to load tiles of 3D scenes faster. The other (and greater) problem was that data from vector layers (when they have 3D renderer assigned) were all being prepared at once for the whole layer in the main thread. That resulted in possibly long freeze of the whole user interface while data were being loaded. This is now resolved as well and data from vector layers are being loaded in smaller tiles in background threads (and using multiple CPU cores). As a result, the overall user experience is now much smoother.</li>
-<li><strong>Open documentation issues for pull requests (Matthias Kuhn and Denis Rouzaud)</strong><br />
-A documentation bot is <a href="https://lists.osgeo.org/pipermail/qgis-psc/2020-January/008095.html">now alive</a> and automatically create an issue in the documentation repo for merged PR.</li>
-</ol>
-<p>Thank you to everyone who participated and made this round of grants a great success and thank you to all our sponsor and donors who make this initiative possible!</p>
-
-<p><a href="https://blog.qgis.org/2020/02/23/reports-from-the-winning-grant-proposals-2019/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
-
-{{< content-end >}}

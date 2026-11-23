@@ -433,9 +433,9 @@ This feature was funded by QGIS grant program 2025
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Improved project management for PostgreSQL stored Projects
 QGIS now includes options in the browser that allow manipulating QGIS Projects stored in a PostGIS database. New functionalities include the ability to:
-- Rename Project
-- Delete Project
-- Duplicate Project
+- Zmień nazwę projektu
+- Usuń projekt
+- Duplikuj projekt
 - Move Project to Schema
 
 <img src="images/entries/2ab1e23aae557053f6271e23db145fc791f425ee" class="img-responsive img-rounded" />
