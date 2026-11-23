@@ -172,6 +172,21 @@ class = "is-primary1 is-small is-rounded"
 link = "#"
 text = "User groups" >}}
 
+{{< button
+class = "is-primary6 is-small is-rounded"
+link = "https://github.com/opengeospatial/ogc-conformance-tests"
+text = "OGC Conformance Tests" >}}
+
+{{< button
+class = "is-primary6 is-small is-rounded"
+link = "https://www.ogc.org/standards/conformance"
+text = "OGC Conformance Standards" >}}
+
+{{< button
+class = "is-primary6 is-small is-rounded"
+link = "https://github.com/opengeospatial/ogc-conformance-tests/tree/master/tests"
+text = "OGC Test Cases" >}}
+
 Utilize channels to seek assistance from fellow users and developers or stay updated on current project events.
 
 Feel free to subscribe to any of the lists, and remember to contribute by answering questions and sharing your experiences.
@@ -357,7 +372,7 @@ Interested in crafting your own? Learn how to get started!
 
 ### Develop QGIS Core
 
-QGIS Core comprises libraries for building custom applications through a robust API. It also includes desktop and server applications that showcase the library capabilities, providing a user-friendly interface
+QGIS Core comprises libraries for building custom applications through a robust API. It also includes desktop and server applications that showcase the library capabilities, providing a user‑friendly interface
 
 [Get set up for QGIS Core development](#)
 
