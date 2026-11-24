@@ -18,7 +18,7 @@ HasAnnouncement: true
 AnnouncementTitle: "QGIS 4.4 is here!"
 AnnouncementLinkText: "Find out what's new"
 AnnouncementLink: "project/visual-changelogs/visualchangelog44/"
-AnnouncementVideoId: "5X1JKx7CXZY"
+AnnouncementVideoId: "_bGc5CPNpNs"
 AnnouncementEndDate: "2026-12-20"
 ---
 
