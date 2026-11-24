@@ -1,20 +1,20 @@
 {
   "bucket_name": "qgis-download",
   "prefix": "",
-  "generated_at": "2026-11-24T04:04:46.626686+00:00",
+  "generated_at": "2026-11-24T05:04:12.539651+00:00",
   "statistics": {
-    "total_files": 197996,
-    "total_size": 6470499803618,
-    "total_size_formatted": "5.88 TB",
+    "total_files": 198035,
+    "total_size": 6473335499612,
+    "total_size_formatted": "5.89 TB",
     "by_category": {
       "installer": {
-        "count": 183908,
-        "size": 5465599751170,
+        "count": 183944,
+        "size": 5468124289929,
         "size_formatted": "4.97 TB"
       },
       "other": {
-        "count": 8544,
-        "size": 39169104679,
+        "count": 8546,
+        "size": 39169168180,
         "size_formatted": "36.48 GB"
       },
       "image": {
@@ -28,24 +28,24 @@
         "size_formatted": "99.34 KB"
       },
       "archive": {
-        "count": 5417,
-        "size": 965697884407,
-        "size_formatted": "899.38 GB"
+        "count": 5418,
+        "size": 966008978141,
+        "size_formatted": "899.67 GB"
       }
     },
     "by_extension": {
-      ".deb": 183052,
-      ".gz": 4555,
-      ".dsc": 3592,
+      ".deb": 183087,
+      ".gz": 4556,
+      ".dsc": 3593,
       "no extension": 2299,
       ".bz2": 859,
       ".ddeb": 592,
-      ".sha256sum": 581,
+      ".sha256sum": 582,
       ".exe": 391,
       ".md5sum": 361,
       ".gpg": 357
     },
-    "last_updated": "2026-11-24T04:04:46.545405+00:00"
+    "last_updated": "2026-11-24T05:04:12.477837+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -6494,6 +6494,28 @@
                 "last_modified_timestamp": 1795409011,
                 "extension": ".sha256sum",
                 "category": "other"
+              },
+              {
+                "key": "macos/master/qgis_master_2026-11-24.dmg",
+                "name": "qgis_master_2026-11-24.dmg",
+                "path": "macos/master",
+                "size": 1838948964,
+                "size_formatted": "1.71 GB",
+                "last_modified": "2026-11-24T04:43:37.134000+00:00",
+                "last_modified_timestamp": 1795495417,
+                "extension": ".dmg",
+                "category": "installer"
+              },
+              {
+                "key": "macos/master/qgis_master_2026-11-24.sha256sum",
+                "name": "qgis_master_2026-11-24.sha256sum",
+                "path": "macos/master",
+                "size": 90,
+                "size_formatted": "90.00 B",
+                "last_modified": "2026-11-24T04:45:57.477000+00:00",
+                "last_modified_timestamp": 1795495557,
+                "extension": ".sha256sum",
+                "category": "other"
               }
             ]
           },
@@ -8796,10 +8818,10 @@
             "key": "macos/qgis-macos-master.dmg",
             "name": "qgis-macos-master.dmg",
             "path": "macos",
-            "size": 1838902143,
+            "size": 1838948964,
             "size_formatted": "1.71 GB",
-            "last_modified": "2026-11-23T04:43:30.317000+00:00",
-            "last_modified_timestamp": 1795409010,
+            "last_modified": "2026-11-24T04:45:56.433000+00:00",
+            "last_modified_timestamp": 1795495556,
             "extension": ".dmg",
             "category": "installer"
           },
@@ -8809,8 +8831,8 @@
             "path": "macos",
             "size": 90,
             "size_formatted": "90.00 B",
-            "last_modified": "2026-11-23T04:43:32.637000+00:00",
-            "last_modified_timestamp": 1795409012,
+            "last_modified": "2026-11-24T04:45:58.382000+00:00",
+            "last_modified_timestamp": 1795495558,
             "extension": ".sha256sum",
             "category": "other"
           },
