@@ -10,7 +10,7 @@ will update data/conf.json and content/schedule.ics
 '''
 
 from urllib.request import urlopen
-from urllib.error import HTTPError
+from urllib.error import HTTPError, URLError
 import csv
 import json
 import os
@@ -47,7 +47,7 @@ def fetch_magnet(download_url):
     try:
         with urlopen(magnet_url, timeout=10) as resp:  # nosec: W291
             return resp.read().decode("utf-8").strip()
-    except HTTPError:
+    except HTTPError, URLError:
         sys.stderr.write(f"Could not fetch magnet link for {download_url} [{magnet_url}]\n")
         sys.exit(1)
 

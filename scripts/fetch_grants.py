@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Fetches the QGIS Grant Programme blog posts from the RSS feed and
-# creates individual Markdown files for each post in content/community/organisation/grants/.
+# Fetches the QGIS Grant Programme blog posts from the RSS feed and writes one
+# front matter only file per post in content/community/organisation/grants/.
+# Hugo builds no page for a post: the grants list links straight to the blog.
 # Existing files are overwritten on each run to reflect the latest source content.
 
 import os
@@ -79,20 +80,11 @@ def fetch_grants():
             f'title: "{escaped_title}"\n'
             f'date: "{pub_date}"\n'
             f'description: "{escaped_description}"\n'
-            f'link: "{link}"\n'
-            "draft: false\n"
-            "HasBanner: false\n"
-            "sidebar: true\n"
+            f'externalLink: "{link}"\n'
+            "build:\n"
+            "  render: link\n"
+            "  list: local\n"
             "---\n"
-            "\n"
-            "{{< content-start >}}\n"
-            "\n"
-            f"{summary_html}\n"
-            "\n"
-            f'<p><a href="{link}" target="_blank" rel="noopener noreferrer">'
-            "View original post on blog.qgis.org \u2197</a></p>\n"
-            "\n"
-            "{{< content-end >}}\n"
         )
 
         with open(markdown_filename, "w", encoding="utf-8") as f:

@@ -26,6 +26,10 @@ QGIS is een inspanning van de gemeenschap en we willen ook nogmaals onze grote d
 
 QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote of kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan onze [pagina voor dragende leden](https://qgis.org/en/site/about/sustaining_members.html) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een welgemeend bedankt voor al onze sponsoren!
 
+{{<fund type="active" level="flagship" >}}
+
+[Klik hier om al onze dragende leden te bekijken]({{< ref "/funding/membership/members.md" >}})
+
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Cesium 3D-tegels
 Dankzij een gift van het ecosysteem van het project [Cesium](https://www.cesium.com), heeft QGIS nu ondersteuning voor het laden van 3D-inhoud in de indeling Cesium 3D Tiles! Tegels kunnen worden geladen vanuit ofwel lokale databronnen of databronnen op afstand (inclusief het Cesium ion platform en de Google Earth fotorealistische tegels), en zijn zichtbaar in zowel 2D- als in 3D-kaartweergaven. In 2D-weergaven kunnen gebruikers het uiterlijk beheren van de inhoud van de tegel door ze ofwel in hun originele texturen op te maken of in een weergave draadmodel van de geometrieën van de tegel. Gebruikers hebben ook beheer over het gewenste niveau van detail in zowel 3D- als 2D-weergaven.

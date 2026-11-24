@@ -8,17 +8,8 @@
 title: "QGIS Grant Programme 2021 Results"
 date: "2021-05-04"
 description: "We are extremely pleased to announce the 8 winning proposals for our 2021 QGIS.ORG grant programme. Funding for the programme…"
-link: "https://blog.qgis.org/2021/05/04/qgis-grant-programme-2021-results/"
-draft: false
-HasBanner: false
-sidebar: true
+externalLink: "https://blog.qgis.org/2021/05/04/qgis-grant-programme-2021-results/"
+build:
+  render: link
+  list: local
 ---
-
-{{< content-start >}}
-
-<p>We are extremely pleased to announce the 8 winning proposals for our 2021 QGIS.ORG grant programme. Funding for the programme was sourced by you, our <a href="https://www.qgis.org/en/site/about/sponsorship.html">project donors and sponsors</a>!&nbsp;<strong>Note:</strong> For more context surrounding our grant programme, please see:&nbsp;<a href="https://blog.qgis.org/2021/02/21/qgis-grants-6-call-for-grant-proposals-2021/">QGIS Grants #6: Call for Grant Proposals 2021</a>.</p>
-<p>The QGIS.ORG Grant Programme aims to support work from our community that would typically not be funded by client/contractor agreements. This means that we did not accept proposals for the development of new features. Instead proposals focus on infrastructure improvements and polishing of existing features.<span id="more-1420"></span></p>
-
-<p><a href="https://blog.qgis.org/2021/05/04/qgis-grant-programme-2021-results/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
-
-{{< content-end >}}

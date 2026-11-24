@@ -8,18 +8,8 @@
 title: "QGIS Grants #3: Call for Grant Proposals 2018"
 date: "2018-04-15"
 description: "Dear QGIS Community Our first two rounds of Grant Proposals were a great success. If you are an early adopter…"
-link: "https://blog.qgis.org/2018/04/15/qgis-grants-%233-call-for-grant-proposals-2018/"
-draft: false
-HasBanner: false
-sidebar: true
+externalLink: "https://blog.qgis.org/2018/04/15/qgis-grants-%233-call-for-grant-proposals-2018/"
+build:
+  render: link
+  list: local
 ---
-
-{{< content-start >}}
-
-<p>Dear QGIS Community</p>
-<p>Our first two rounds of Grant Proposals were a great success. If you are an early adopter using QGIS 3.0, you can already try out some of the new capabilities that have arrived in QGIS thanks to these grants.</p>
-<p>We are very pleased to announce the third round of grants is now available to QGIS contributors. The deadline for this round is <strong>Sunday, 13 May 2018</strong>. All the details for the grants are described in the <a href="https://docs.google.com/forms/d/e/1FAIpQLSf99fT42MVWiNYyZGT2YWWY2DEJ8lk08ACBK1CSd_HxwSQ3Ww/viewform?usp=sf_link"><strong>application form</strong></a>, and for more context we encourage you to also read these articles:</p>
-
-<p><a href="https://blog.qgis.org/2018/04/15/qgis-grants-%233-call-for-grant-proposals-2018/" target="_blank" rel="noopener noreferrer">View original post on blog.qgis.org ↗</a></p>
-
-{{< content-end >}}

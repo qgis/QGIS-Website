@@ -28,6 +28,10 @@ QGIS is a community effort, and we would like to extend a big thank you to the d
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very big thank you to all of our sponsors!
 
+{{<fund type="active" level="flagship" >}}
+
+[Click here to see all of our sustaining members]({{< ref "/funding/membership/members.md" >}})
+
 QGIS는 자유 소프트웨어이며 사용하기 위해 어떤 것도 지불할 의무가 없습니다. 사실을 말하자면, 우리는 여러분이 여러분의 재정적 또는 사회적 상태와 상관없이 QGIS를 널리 사용하기를 바랍니다. 우리는 공간적 의사 결정 도구를 통해 사람들에게 힘을 주게 된다면 모든 인류를 위한 더 나은 사회를 맞이할 것이라 믿습니다.
 ## 상징학
 ### Feature: Add configurable extent buffer to symbols

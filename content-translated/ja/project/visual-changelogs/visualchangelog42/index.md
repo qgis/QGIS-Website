@@ -28,6 +28,10 @@ QGISはコミュニティの共同作業によって成り立っています。�
 
 QGISは寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは [寄付者一覧](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors) でご覧いただけます。公式のプロジェクトサステイニングメンバーになることをご希望の方は、詳細について [サステイニングメンバーページ](https://qgis.org/en/site/about/sustaining_members.html) をご覧ください。QGISへのスポンサーシップは、定期的な開発者ミーティングの開催、プロジェクトインフラの維持、およびバグ修正活動の資金として活用されます。現在のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
+{{<fund type="active" level="flagship" >}}
+
+[Click here to see all of our sustaining members]({{< ref "/funding/membership/members.md" >}})
+
 QGISはフリーソフトウェアであり、使用にあたって料金を支払う義務は一切ありません。むしろ、経済的・社会的な立場に関わらず、世界中の多くの方々に使っていただけるよう積極的に推進しています。空間的な意思決定ツールを人々に提供することが、全人類にとってより良い社会の実現につながると信じているからです。
 ## Breaking Changes
 ### 機能:QGIS4の設定保存場所の移動とQGIS3からの自動移行

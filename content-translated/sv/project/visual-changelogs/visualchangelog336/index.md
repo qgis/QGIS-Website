@@ -28,6 +28,10 @@ QGIS är en gemensam ansträngning, och vi vill rikta ett stort tack till utveck
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very thank you to all of our sponsors!
 
+{{<fund type="active" level="flagship" >}}
+
+[Click here to see all of our sustaining members]({{< ref "/funding/membership/members.md" >}})
+
 QGIS är fri programvara och du är inte skyldig att betala något för att använda den - vi vill faktiskt uppmuntra människor över hela världen att använda den oavsett deras ekonomiska eller sociala status - vi tror att om människor får tillgång till spatiala verktyg för beslutsfattande kommer det att leda till ett bättre samhälle för hela mänskligheten.
 ## Breaking Changes
 ### Feature: OTB Processing provider removed

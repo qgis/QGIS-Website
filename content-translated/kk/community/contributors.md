@@ -3,7 +3,7 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Recognizing the amazing people and organizations that make QGIS possible
+subtitle: QGIS-тің дамуына үлес қосып жүрген адамдар мен ұйымдарға алғыс
 title: QGIS қатысушылары
 type: page
 
@@ -13,10 +13,10 @@ type: page
 {{<rich-box-start layoutClass="has-right rounded" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## Sol Katz Award Recipients
-Celebrating QGIS contributors who received the prestigious Sol Katz Award for exceptional leadership and contributions to geospatial open source software.
+## Сол Кац сыйлығының иегерлері
+Кеңістіктік деректерге арналған ашық бастапқы кодты бағдарламаларды дамытуда көшбасшылық танытып, елеулі үлес қосқаны үшін беделді Сол Кац сыйлығын алған QGIS қатысушыларын таныстырамыз.
 
-{{<button class="is-success" link="/community/contributors/sol-katz-award/" text="View recipients" >}}
+{{<button class="is-success" link="/community/contributors/sol-katz-award/" text="Сыйлық иегерлерін көру" >}}
 
 {{<rich-content-end >}}
 
@@ -31,10 +31,10 @@ Celebrating QGIS contributors who received the prestigious Sol Katz Award for ex
 {{<rich-box-start layoutClass="has-right rounded" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## Contributing Organizations
-Organizations making meaningful contributions to the QGIS project through development and collaboration
+## Үлес қосушы ұйымдар
+Әзірлеу және бірлескен жұмыс арқылы QGIS жобасына елеулі үлес қосатын ұйымдар
 
-{{<button class="is-success" link="/community/contributors/organisations/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/organisations/" text="Тізімді көру" >}}
 
 {{<rich-content-end >}}
 
@@ -49,10 +49,10 @@ Organizations making meaningful contributions to the QGIS project through develo
 {{<rich-box-start layoutClass="has-right rounded" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## Individual Contributors
-Celebrating the developers and contributors who help build QGIS through their code contributions and collaborative efforts.
+## Жеке үлес қосушылар
+Код жазып, бірлесіп жұмыс істеу арқылы QGIS-ті дамытуға көмектесетін әзірлеушілер мен басқа да қатысушыларды таныстырамыз.
 
-{{<button class="is-success" link="/community/contributors/individuals/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/individuals/" text="Тізімді көру" >}}
 
 {{<rich-content-end >}}
 
@@ -67,10 +67,10 @@ Celebrating the developers and contributors who help build QGIS through their co
 {{<rich-box-start layoutClass="has-right rounded" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## Supporting Contributors
-Recognizing valuable contributions beyond code commits—community support, outreach, and behind-the-scenes efforts.
+## Жобаға қолдау көрсететін қатысушылар
+Қауымдастықты қолдау, жобаны таныту және көпшілікке көріне бермейтін жұмыстар арқылы үлес қосқан адамдарға алғыс айтамыз.
 
-{{<button class="is-success" link="/community/contributors/supporting/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/supporting/" text="Тізімді көру" >}}
 
 {{<rich-content-end >}}
 

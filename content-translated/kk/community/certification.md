@@ -11,35 +11,35 @@ type: page
 ---
 {{<content-start >}}
 # Сертификаттау бағдарламасы
-## QGIS Certificate
-Are you looking for courses with the official QGIS certificate? At the [QGIS Certification Programme website](https://certification.qgis.org/), you can explore an interactive map to locate organisations in your country that offer certified QGIS training and find upcoming courses that provide an official QGIS certificate.
+## QGIS сертификаты
+Ресми QGIS сертификаты берілетін курстарды іздеп жүрсіз бе? [QGIS сертификаттау бағдарламасының сайтындағы](https://certification.qgis.org/) интерактивті картадан еліңізде сертификатталған QGIS оқыту курстарын ұсынатын ұйымдарды және ресми QGIS сертификаты берілетін алдағы курстарды таба аласыз.
 
-![Students with certificate](../students_with_certificate.webp "Students with certificate")
-## Become a QGIS certified training organisation
-Does your organisation participate actively in the QGIS community and offer high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and training. Each certificate contributes €20 to QGIS.
-### Certification Process
-#### Requirements
-The QGIS Certification Programme is designed to promote both community involvement in the QGIS project and quality education for QGIS software. The application process requires applicants to detail their contributions to the QGIS project and make their training materials available for review. Contributions to the QGIS project include activities such as:
-* Development/commits to QGIS
-* Contributions to the QGIS documentation and training materials
-* Translation of QGIS materials
-* Authoring plugins
-* Filing bug reports
-* Financially supporting new feature development
-* Financial contributions to and sponsorship of QGIS
-* Involvement in your local QGIS User Group
-* Publication of open QGIS course ware
-* Authoring QGIS books
+![Сертификат алған студенттер](../students_with_certificate.webp "Сертификат алған студенттер")
+## QGIS бойынша сертификатталған оқу ұйымы болу
+Ұйымыңыз QGIS қауымдастығына белсенді қатысып, QGIS бойынша сапалы курстар ұсына ма? Онда **QGIS сертификаттау бағдарламасына** өтінім беріңіз. Бағдарлама мүшесі ретінде курстарыңыздың, семинарларыңыздың және тренингтеріңіздің қатысушыларына ресми QGIS сертификатын бере аласыз. Әр сертификат үшін QGIS жобасына €20 аударылады.
+### Сертификаттау тәртібі
+#### Талаптар
+QGIS сертификаттау бағдарламасы қауымдастықтың QGIS жобасына қатысуын және QGIS бағдарламасын сапалы оқытуды қолдайды. Өтінім берушілер QGIS жобасына қосқан үлесін егжей-тегжейлі сипаттап, оқу материалдарын қарауға ұсынуы керек. QGIS жобасына мынадай жолдармен үлес қосуға болады:
+* QGIS-ті әзірлеу және код өзгерістерін енгізу
+* QGIS құжаттамасы мен оқу материалдарына үлес қосу
+* QGIS материалдарын аудару
+* Плагиндер әзірлеу
+* Қателер туралы хабарлау
+* Жаңа мүмкіндіктердің әзірленуін қаржылай қолдау
+* QGIS-ке қаржылай үлес қосу және демеушілік жасау
+* Жергілікті QGIS пайдаланушылар тобына қатысу
+* QGIS бойынша ашық оқу материалдарын жариялау
+* QGIS туралы кітаптар жазу
 
-#### Application
-You are required to provide the training material for each of your courses. This includes exercises, lectures and data. This material will be reviewed for currentness, accurate representation of the QGIS project and overall quality. If the material is not of adequate quality, this can be cause for refusal.
+#### Өтінім
+Әр курсыңыздың оқу материалдарын ұсынуыңыз керек. Оған жаттығулар, дәрістер және деректер кіреді. Материалдардың өзектілігі, QGIS жобасын қаншалықты дұрыс таныстыратыны және жалпы сапасы бағаланады. Материал сапасы жеткіліксіз болса, өтінім қабылданбауы мүмкін.
 
-Following an initial review, the application will be sent to local [QGIS User Groups](https://qgis.org/community/groups/) for their opinion. This part of the review should be completed within a month. If there is not a local QGIS User Group, the QGIS Project Steering Committee (PSC) will make a determination based on material provided and your reputation in the community. In this latter case, you are encouraged to establish a local QGIS User Group. If you are not considered a member in good standing of the QGIS community, this could be a reason for refusal.
+Алғашқы тексеруден кейін өтінім жергілікті [QGIS пайдаланушы топтарына](https://qgis.org/community/groups/) пікір білдіру үшін жіберіледі. Тексерудің бұл кезеңі бір ай ішінде аяқталуы тиіс. Жергілікті QGIS пайдаланушылар тобы болмаса, QGIS жобасының басқарушы комитеті (PSC) ұсынылған материалдар мен қауымдастықтағы беделіңізге сүйеніп шешім қабылдайды. Бұл жағдайда жергілікті QGIS пайдаланушылар тобын құру ұсынылады. Қауымдастықтағы беделіңізге қатысты мәселелер де өтінімді қабылдамауға себеп болуы мүмкін.
 
-The PSC will make the final determination. If accepted as a QGIS Certified Organization, your contributions to the project will be published for transparency.
+Түпкілікті шешімді PSC қабылдайды. Ұйымыңыз QGIS бойынша сертификатталған ұйым ретінде қабылданса, ашықтықты қамтамасыз ету үшін жобаға қосқан үлесіңіз туралы ақпарат жарияланады.
 
-If approved, you are required to pay a **€20 certification fee** to the QGIS project for each certificate you issue. This creates a mechanism for financial support of the project. Payments for certificates are made either using online credit card transactions or on request by regular invoice and SEPA wire transfer. Payments can be handled in batches for many certificates at once.
+Өтініміңіз мақұлданса, әр берген сертификатыңыз үшін QGIS жобасына **€20 сертификаттау алымын** төлеуіңіз керек. Бұл жобаға қаржылай қолдау көрсетудің бір жолы. Төлемді онлайн түрде кредиттік картамен немесе сұрау бойынша шот алып, SEPA банк аударымы арқылы жасауға болады. Бірнеше сертификаттың ақысын бір төлеммен өтеуге болады.
 
-You can apply through the [QGIS Certification Programme website](https://certification.qgis.org/).
+Өтінімді [QGIS сертификаттау бағдарламасының сайты](https://certification.qgis.org/) арқылы бере аласыз.
 
 {{<content-end >}}

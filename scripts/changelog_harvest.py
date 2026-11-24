@@ -37,6 +37,23 @@ SUSTAINING_MEMBERS_BLOCK = (
 )
 SPONSORS_PARAGRAPH = re.compile(r'sponsors\s+is\s+provided\s+below.*?\n\s*\n', re.DOTALL)
 
+HIGHLIGHT_VIDEO_LINK = re.compile(
+    r'\[!\[[^\]]*\]\(https://img\.youtube\.com/vi/([\w-]+)/[^)]*\)\]'
+    r'\(https://www\.youtube\.com/watch\?v=\1\)'
+)
+
+HIGHLIGHT_VIDEO_BLOCK = (
+    '<div class="tile video mb-3">\n'
+    '  <div class="youtube" data-video-id="{video_id}" style="background-image: '
+    'url(&quot;https://img.youtube.com/vi/{video_id}/maxresdefault.jpg&quot;);">\n'
+    '    <iframe width="100%" height="100%" '
+    'src="https://www.youtube.com/embed/{video_id}?autoplay=1" frameborder="0" '
+    'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; '
+    'picture-in-picture; web-share" allowfullscreen="true"></iframe>\n'
+    '  </div>\n'
+    '</div>'
+)
+
 class ChangelogHarvester:
     def __init__(self, version=None, release_date=None):
         """
@@ -104,6 +121,7 @@ type: "visual-changelog"
             insert_pos = match.end()
             content = content[:insert_pos] + f"\n\nRelease date: {self.release_date}\n" + content[insert_pos:]
         content = self.insert_sustaining_members(content)
+        content = self.embed_highlight_video(content)
         content += '\n\n{{< content-end >}}'
 
         with open(index_file_path, 'w') as file:
@@ -125,6 +143,19 @@ type: "visual-changelog"
             print('Warning: no sponsors paragraph found, add the members block by hand')
             return content
         return content[:match.end()] + SUSTAINING_MEMBERS_BLOCK + content[match.end():]
+
+    @staticmethod
+    def embed_highlight_video(content: str) -> str:
+        """Swap the highlight reel thumbnail link for an embedded player.
+
+        :param content: The changelog Markdown.
+        :returns: The Markdown with each YouTube thumbnail link replaced by the
+            player block, or unchanged when it has none.
+        """
+        return HIGHLIGHT_VIDEO_LINK.sub(
+            lambda match: HIGHLIGHT_VIDEO_BLOCK.format(video_id=match.group(1)),
+            content,
+        )
 
     # Resize and Convert images in the index.md to webp format
     def resize_and_convert_images(self):
