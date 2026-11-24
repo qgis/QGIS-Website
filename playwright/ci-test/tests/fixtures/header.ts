@@ -57,7 +57,7 @@ export class Header {
             name: "Plugins",
         });
         this.visualChangelogLink = this.mainNavigation.getByRole("link", {
-            name: "Past Releases (Changelog)",
+            name: "Past Releases (Changelogs)",
         });
         this.roadmapLink = this.mainNavigation.getByRole("link", {
             name: "Future Releases (Roadmap)",
