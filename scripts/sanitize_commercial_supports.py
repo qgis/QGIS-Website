@@ -5,6 +5,7 @@ import requests
 from urllib.parse import urlparse
 from requests.exceptions import RequestException
 import os
+import socket
 
 # Responses that mean "could not verify right now", not "the site is gone":
 # auth walls and bot protection (401/403), HEAD not supported (405), request
@@ -33,6 +34,31 @@ def is_same_domain(original_url, redirect_url):
     redirect_domain = redirect.netloc.lower().replace('www.', '')
     
     return original_domain == redirect_domain
+
+def is_dead_link_error(error):
+    """Check if a request error shows the link is gone, not just unreachable now
+
+    The domain does not exist, nothing accepts connections on the host, or
+    the redirects never end. A redirect to a dead host fails the same way.
+    Timeouts, temporary DNS failures and connection resets are not dead.
+    """
+    if isinstance(error, requests.exceptions.TooManyRedirects):
+        return True
+    # requests wraps the socket error: ConnectionError -> MaxRetryError
+    # (.reason) -> NewConnectionError, raised while handling the socket error.
+    seen = set()
+    pending = [error]
+    while pending:
+        cause = pending.pop()
+        if not isinstance(cause, BaseException) or id(cause) in seen:
+            continue
+        seen.add(id(cause))
+        if isinstance(cause, socket.gaierror):
+            return cause.errno == socket.EAI_NONAME
+        if isinstance(cause, ConnectionRefusedError):
+            return True
+        pending += [*cause.args, getattr(cause, "reason", None), cause.__context__]
+    return False
 
 def check_url_redirects(url):
     """Check if URL redirects to different domain"""
@@ -78,6 +104,9 @@ def check_url_redirects(url):
     except requests.exceptions.SSLError:
         return False
     except RequestException as e:
+        if is_dead_link_error(e):
+            print(f"Dead link {url}: {str(e)}")
+            return True
         # A timeout, DNS hiccup or connection reset says nothing about whether
         # the link is dead. Keep the URL, like the SSLError case above, instead
         # of emptying it in the committed data.

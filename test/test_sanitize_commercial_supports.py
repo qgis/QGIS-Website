@@ -7,7 +7,11 @@ errors, rate limiting, bot-protection responses) the same as a dead link, so a
 network hiccup during the run removed working URLs from the site permanently:
 the script only ever empties, it never restores.
 """
+import errno
+import socket
+
 import requests
+import urllib3
 
 import sanitize_commercial_supports as san
 
@@ -42,6 +46,42 @@ def test_connection_error_keeps_url(monkeypatch):
 def test_timeout_keeps_url(monkeypatch):
     _patch_head(monkeypatch, requests.exceptions.ConnectTimeout("timed out"))
     assert san.check_url_redirects("https://example.com/") is False
+
+
+def _connection_error(socket_error):
+    """Build the error requests raises when the socket fails to connect.
+
+    Same chain as requests 2.28 with urllib3 1.26: ConnectionError wraps
+    MaxRetryError, whose reason is a NewConnectionError raised while handling
+    the socket error.
+    """
+    new_connection = urllib3.exceptions.NewConnectionError(None, "Failed to connect")
+    new_connection.__context__ = socket_error
+    max_retry = urllib3.exceptions.MaxRetryError(None, "/", reason=new_connection)
+    return requests.exceptions.ConnectionError(max_retry)
+
+
+def test_missing_domain_empties_url(monkeypatch):
+    error = socket.gaierror(socket.EAI_NONAME, "Name or service not known")
+    _patch_head(monkeypatch, _connection_error(error))
+    assert san.check_url_redirects("https://example.com/") is True
+
+
+def test_temporary_dns_failure_keeps_url(monkeypatch):
+    error = socket.gaierror(socket.EAI_AGAIN, "Temporary failure in name resolution")
+    _patch_head(monkeypatch, _connection_error(error))
+    assert san.check_url_redirects("https://example.com/") is False
+
+
+def test_refused_connection_empties_url(monkeypatch):
+    error = ConnectionRefusedError(errno.ECONNREFUSED, "Connection refused")
+    _patch_head(monkeypatch, _connection_error(error))
+    assert san.check_url_redirects("https://example.com/") is True
+
+
+def test_redirect_loop_empties_url(monkeypatch):
+    _patch_head(monkeypatch, requests.exceptions.TooManyRedirects("Exceeded 5 redirects."))
+    assert san.check_url_redirects("https://example.com/") is True
 
 
 def test_server_error_keeps_url(monkeypatch):
