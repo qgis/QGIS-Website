@@ -106,7 +106,8 @@ test.describe("Search", () => {
 
 test.describe("Search prompt", () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto("/resources/support/faq/");
+        // The FAQ's zenodo.org DOI badges can stall the load event on CI runners.
+        await page.goto("/resources/support/faq/", { waitUntil: "domcontentloaded" });
     });
 
     test("clicking the search box opens a blurred prompt", async ({ page }) => {
