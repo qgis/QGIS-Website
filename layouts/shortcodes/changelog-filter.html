@@ -1,0 +1,36 @@
+{{/*
+    Category filter for a visual changelog. assets/js/changelog-filter.js fills the dropdown
+    from the changelog-category-start blocks and shows the panel, so it stays hidden without JavaScript.
+*/}}
+{{ $css := resources.Get "sass/changelog.sass" | css.Sass }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+<div class="changelog-filter notification is-light py-3 px-4 mb-5 is-hidden">
+    <div class="changelog-filter-bar is-flex is-flex-wrap-wrap is-align-items-center">
+        <div class="dropdown">
+            <div class="dropdown-trigger">
+                <button class="button" type="button" aria-expanded="false" aria-controls="changelog-filter-menu">
+                    <span class="icon"><i class="fas fa-filter" aria-hidden="true"></i></span>
+                    <span id="changelog-filter-label">{{ i18n "changelogFilterByCategory" }}</span>
+                    <span class="tag is-rounded ml-2 changelog-filter-selected is-hidden"></span>
+                    <span class="icon ml-auto"><i class="fas fa-angle-down" aria-hidden="true"></i></span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="changelog-filter-menu">
+                <div class="dropdown-content" role="group" aria-labelledby="changelog-filter-label"></div>
+            </div>
+        </div>
+        <p class="has-text-grey-dark is-flex-grow-1 mb-0" aria-live="polite">
+            {{ i18n "changelogCount" (dict
+                "Showing" `<strong class="changelog-filter-showing"></strong>`
+                "Total" `<strong class="changelog-filter-total"></strong>`) | safeHTML }}
+        </p>
+        <button class="button is-outlined is-primary3 changelog-filter-reset" type="button" disabled>
+            <span class="icon"><i class="fas fa-redo" aria-hidden="true"></i></span>
+            <span>{{ i18n "changelogResetFilters" }}</span>
+        </button>
+    </div>
+</div>
+
+{{ $js := resources.Get "js/changelog-filter.js" | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
