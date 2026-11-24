@@ -40,7 +40,11 @@ For a whirlwind tour of all the new functionalities introduced in this
 release, you can view the [highlight reel video on
 YouTube](https://www.youtube.com/watch?v=_bGc5CPNpNs).
 
-[![](https://img.youtube.com/vi/_bGc5CPNpNs/0.jpg)](https://www.youtube.com/watch?v=_bGc5CPNpNs)
+<div class="tile video mb-3">
+  <div class="youtube" data-video-id="_bGc5CPNpNs" style="background-image: url(&quot;https://img.youtube.com/vi/_bGc5CPNpNs/maxresdefault.jpg&quot;);">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_bGc5CPNpNs?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+  </div>
+</div>
 
 QGIS is a community effort, and we would like to extend a big thank-you
 to the developers, documenters, testers, and the many folks out there
