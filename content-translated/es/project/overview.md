@@ -5,7 +5,7 @@ HasBanner: true
 LabelText: Free and open source
 Reviewed: 1 June 2024
 Reviewer: Tim Sutton
-SupportedOS: Available on Windows, Mac, Linux
+SupportedOS: Disponible para Windows, Mac, Linux
 draft: false
 heroImage: img/project.jpg
 og_image: img/project.jpg
@@ -17,7 +17,7 @@ type: page
 ---
 {{<content-start >}}
 ## Key features
-{{<tabs tab1="Create maps" tab2="Edit layers" tab3="Process and analyze" tab4="Share maps" >}}
+{{<tabs tab1="Crea mapas" tab2="Edita capas" tab3="Process and analyze" tab4="Share maps" >}}
 
 {{<columns-start id="content-tab-1" >}}
 
@@ -28,11 +28,11 @@ type: page
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Class-leading cartography
+###### Cartografía líder en su clase
 Experience QGIS' extensive set of design options to bring your cartographic ideas to life.
-###### Professional map production
+###### Producción profesional de mapas
 Use the intuitive layout design tool to produce high-quality, large-format print maps.
-###### Powerful reporting tools
+###### Poderosas herramientas de informes
 Create atlases and reports with maps, media and tabular content.
 
 {{<column-end >}}

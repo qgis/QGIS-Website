@@ -1,0 +1,11 @@
+---
+build:
+  list: local
+  render: Enlace
+date: '2017-02-19'
+description: Dear QGIS Community Last year we held our first ever call for Grant Proposals
+  and it was a great success.…
+externalLink: https://blog.qgis.org/2017/02/19/qgis-grants-%232-call-for-grant-proposals-2017/
+title: 'QGIS Grants #2: Call for Grant Proposals 2017'
+
+---
