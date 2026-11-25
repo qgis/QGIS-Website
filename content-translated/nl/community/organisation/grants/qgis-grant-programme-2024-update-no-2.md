@@ -1,6 +1,6 @@
 ---
 build:
-  list: local
+  list: lokaal
   render: link
 date: '2024-06-14'
 description: Dankzij onze genereuze ondersteuners zijn we in de fantastische positie

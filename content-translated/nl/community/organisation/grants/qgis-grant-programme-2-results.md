@@ -1,6 +1,6 @@
 ---
 build:
-  list: local
+  list: lokaal
   render: link
 date: '2017-04-30'
 description: 'We zijn erg blij om de winnende aanvragen voor ons 2017 QGIS.ORG grant

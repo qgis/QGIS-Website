@@ -1,6 +1,6 @@
 ---
 build:
-  list: local
+  list: lokaal
   render: link
 date: '2023-04-04'
 description: Beste gemeenschap van QGIS, we zijn erg blij dat de aanvragen voor financiële

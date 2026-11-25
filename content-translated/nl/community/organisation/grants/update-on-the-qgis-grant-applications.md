@@ -1,6 +1,6 @@
 ---
 build:
-  list: local
+  list: lokaal
   render: link
 date: '2017-04-04'
 description: In februari van dit jaar deden we een oproep voor aanvragen voor de tweede

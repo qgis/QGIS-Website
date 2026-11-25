@@ -1,6 +1,6 @@
 ---
 build:
-  list: local
+  list: lokaal
   render: link
 date: '2026-03-15'
 description: Met het QGIS Grant Programme 2025 waren we in staat 6 aanvragen voor

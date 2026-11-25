@@ -1,6 +1,6 @@
 ---
 build:
-  list: local
+  list: lokaal
   render: link
 date: '2018-04-15'
 description: Beste gemeenschap van QGIS. Onze eerste twee ronden van Grant Proposals

@@ -1,6 +1,6 @@
 ---
 build:
-  list: local
+  list: lokaal
   render: link
 date: '2016-09-25'
 description: Aan het begin van augustus dit jaar deden we een oproep voor toepassingen

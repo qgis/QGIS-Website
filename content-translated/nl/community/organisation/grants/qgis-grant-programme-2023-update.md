@@ -1,6 +1,6 @@
 ---
 build:
-  list: local
+  list: lokaal
   render: link
 date: '2023-09-20'
 description: Dankzij onze genereuze donoren en dragende leden zijn we in de gelukkige

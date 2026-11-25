@@ -1,6 +1,6 @@
 ---
 build:
-  list: local
+  list: lokaal
   render: link
 date: '2018-05-08'
 description: Terwijl we wachten op het arriveren van de grant proposals voor dit jaar,
