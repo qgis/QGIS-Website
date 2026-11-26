@@ -38,9 +38,10 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{< tabs
 tab1 = "QGIS |ltrversion|"
-tab2 = "QGIS testing (>|ltrversion|)"
-tab3 = "Archived releases"
-tab4 = "Data protection" >}}
+tab2 = "QGIS |version|"
+tab3 = "QGIS testing (>|ltrversion|)"
+tab4 = "Archived releases"
+tab5 = "Data protection" >}}
 
 {{< tab-content-start
 tab = "1" >}}
@@ -116,6 +117,77 @@ listTitle = "HTML zip of the manuals" >}}
 {{< tab-content-start
 tab = "2" >}}
 
+**For users (QGIS {{< param "version" >}}):**
+
+{{< rich-list
+listLink = "https://docs.qgis.org/|version|/<lang>/docs/user_manual"
+layoutClass = "inline-block link-with-language"
+listTitle = "Desktop User Guide — <lang>" >}}
+ 
+{{< rich-list
+listLink = "https://docs.qgis.org/|version|/<lang>/docs/training_manual"
+layoutClass = "inline-block link-with-language"
+listTitle = "QGIS Training manual — <lang>" >}}
+
+{{< rich-list
+listLink = "https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction"
+layoutClass = "inline-block link-with-language"
+listTitle = "Gentle Intro to GIS — <lang>" >}}
+
+{{< rich-list
+listLink = "https://docs.qgis.org/|version|/<lang>/docs/server_manual"
+layoutClass = "inline-block link-with-language"
+listTitle = "Server Guide — <lang>" >}}
+
+
+**For documentation writers (QGIS {{< param "version" >}}):**
+
+{{< rich-list
+listLink = "https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelines"
+layoutClass = "inline-block link-with-language"
+listTitle = "Documentation Guidelines — <lang>" >}}
+
+
+**For developers (QGIS {{< param "version" >}}):**
+
+{{< rich-list
+listLink = "https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook"
+layoutClass = "inline-block link-with-language"
+listTitle = "PyQGIS cookbook (for plugins and scripting) — <lang>" >}}
+
+{{< rich-list
+listLink = "https://qgis.org/pyqgis/|version|/"
+layoutClass = "inline-block"
+listTitle = "PyQGIS - QGIS Python Api documentation" >}}
+
+
+{{< rich-list
+listLink = "https://qgis.org/api/|version|/"
+layoutClass = "inline-block"
+listTitle = "C++ API documentation" >}}
+
+{{< rich-list
+listLink = "https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md"
+layoutClass = "inline-block"
+listTitle = "Building QGIS from Source" >}}
+
+**For download (QGIS {{< param "version" >}}):**
+
+{{< rich-list
+listLink = "https://docs.qgis.org/|version|/pdf"
+layoutClass = "inline-block"
+listTitle = "PDF of the manuals" >}}
+
+{{< rich-list
+listLink = "https://docs.qgis.org/|version|/zip"
+layoutClass = "inline-block"
+listTitle = "HTML zip of the manuals" >}}
+
+{{< tab-content-end >}}
+
+{{< tab-content-start
+tab = "3" >}}
+
 We are still updating (not translating yet) the documentation for releases newer than QGIS {{< param "ltrversion" >}}. We call this version 'QGIS Testing' and the documentation can be found here: 
 
 **For users (QGIS testing):**
@@ -185,7 +257,7 @@ listTitle = "HTML zip of the manuals" >}}
 {{< tab-content-end >}}
 
 {{< tab-content-start
-tab = "3" >}}
+tab = "4" >}}
 
 
 {{< rich-list
@@ -231,7 +303,7 @@ listTitle = "QGIS 2.18 Documentation — <lang>" >}}
 {{< tab-content-end >}}
 
 {{< tab-content-start
-tab = "4" >}}
+tab = "5" >}}
 
 In line with GDPR and related data protection regulations, we provide the following documentation:
 
