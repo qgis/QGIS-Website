@@ -29,6 +29,11 @@ export class HomePage {
     public readonly communityImg: Locator;
     public readonly changeLogVideo: Locator;
     public readonly otherSupporters: Locator;
+    public readonly announcementSection: Locator;
+    public readonly announcementHeading: Locator;
+    public readonly AnnouncementVideoId: Locator;
+    public readonly announcementMembersLink: Locator;
+    public readonly announcementLogos: Locator;
 
     public readonly textList: string[] = [
         "Free and Open Source",
@@ -109,7 +114,7 @@ export class HomePage {
             name: "Free download",
         });
         this.youTubeVideoThumbnailOverlayImage = this.page
-            .locator('.youtube');
+            .locator('#start-using-qgis .youtube');
         this.startUsingQGISHeading = this.page.getByRole("heading", {
             name: "Start using QGIS 🚀",
         });
@@ -135,13 +140,20 @@ export class HomePage {
         this.processImg = this.page.locator(".deco-block-3 > img");
         this.shareMapsImg = this.page.locator(".deco-block-4 > img");
         this.communityImg = this.page.locator(
-            ".explore > .columns > div > figure > img",
+            ":not(.qgis-announcement) > .explore > .columns > div > figure > img",
         );
         this.changeLogVideo = this.page
-            .locator('.youtube');
+            .locator('#start-using-qgis .youtube');
         this.otherSupporters = this.page
             .locator(".container > div:nth-child(3)")
             .first();
+        this.announcementSection = this.page.locator("section.qgis-announcement");
+        this.announcementHeading = this.announcementSection.getByRole("heading", {
+            level: 2,
+        });
+        this.AnnouncementVideoId = this.announcementSection.locator(".youtube");
+        this.announcementMembersLink = this.announcementSection.getByRole("link", { name: "See all of our sustaining members" });
+        this.announcementLogos = this.announcementSection.locator(".qgis-announcement-logos img");
     }
 
     async goto() {
