@@ -39,7 +39,7 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 {{< tabs
 tab1 = "QGIS |ltrversion|"
 tab2 = "QGIS |version|"
-tab3 = "QGIS testing (>|ltrversion|)"
+tab3 = "QGIS testing (>|version|)"
 tab4 = "Archived releases"
 tab5 = "Data protection" >}}
 
